@@ -1,0 +1,53 @@
+{
+  "iso": "AU",
+  "name": {
+    "fr": "Australie",
+    "en": "Australia"
+  },
+  "display": "({code})",
+  "system": {
+    "fr": "Area code",
+    "en": "Area code"
+  },
+  "group_label": {
+    "fr": "Bloc",
+    "en": "Block"
+  },
+  "match": "admin",
+  "groups": [
+    {
+      "id": "0",
+      "name": {
+        "fr": "Fixes",
+        "en": "Landlines"
+      },
+      "color": "#EFE04A"
+    }
+  ],
+  "anchors": [
+    "02",
+    "03",
+    "07",
+    "08"
+  ],
+  "twins": [],
+  "tips": [
+    {
+      "title": "02 · 03 · 07 · 08",
+      "codes": [],
+      "fr": "Quatre indicatifs seulement : 02 NSW et ACT, 03 Victoria et Tasmanie, 07 Queensland, 08 WA, SA et NT. 04 est un portable.",
+      "en": "Only four codes: 02 NSW and ACT, 03 Victoria and Tasmania, 07 Queensland, 08 WA, SA and NT. 04 is a mobile."
+    },
+    {
+      "title": "Exceptions",
+      "codes": [
+        "02",
+        "03",
+        "07",
+        "08"
+      ],
+      "fr": "Les limites ne suivent pas exactement les États : Wodonga (VIC) est en 02, Deniliquin et Buronga (NSW) en 03, Tweed Heads (NSW) en 07, Broken Hill (NSW) en 08. Ici on suit les États.",
+      "en": "Borders do not follow the states exactly: Wodonga (VIC) is 02, Deniliquin and Buronga (NSW) 03, Tweed Heads (NSW) 07, Broken Hill (NSW) 08. Here the states are used."
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "iso": "HU",
+  "name": {
+    "fr": "Hongrie",
+    "en": "Hungary"
+  },
+  "display": "(06-{code})",
+  "system": {
+    "fr": "Körzetszám",
+    "en": "Körzetszám"
+  },
+  "group_label": {
+    "fr": "Bloc",
+    "en": "Block"
+  },
+  "match": "admin",
+  "groups": [
+    {
+      "id": "1",
+      "name": {
+        "fr": "Budapest",
+        "en": "Budapest"
+      },
+      "color": "#EE7A6A"
+    },
+    {
+      "id": "2",
+      "name": {
+        "fr": "Pest et Fejér (autour de Budapest)",
+        "en": "Pest and Fejér (around Budapest)"
+      },
+      "color": "#F0A860"
+    },
+    {
+      "id": "3",
+      "name": {
+        "fr": "Nord : Nógrád, Heves, Komárom-Esztergom",
+        "en": "North: Nógrád, Heves, Komárom-Esztergom"
+      },
+      "color": "#EFE04A"
+    },
+    {
+      "id": "4",
+      "name": {
+        "fr": "Nord-Est : Szabolcs, Borsod",
+        "en": "North-East: Szabolcs, Borsod"
+      },
+      "color": "#57D06A"
+    },
+    {
+      "id": "5",
+      "name": {
+        "fr": "Est : Hajdú-Bihar, Szolnok, Cegléd",
+        "en": "East: Hajdú-Bihar, Szolnok, Cegléd"
+      },
+      "color": "#5CC9C4"
+    },
+    {
+      "id": "6",
+      "name": {
+        "fr": "Sud-Est : Csongrád, Békés (et Mohács)",
+        "en": "South-East: Csongrád, Békés (and Mohács)"
+      },
+      "color": "#8FE0BC"
+    },
+    {
+      "id": "7",
+      "name": {
+        "fr": "Sud : Baranya, Tolna, Bács-Kiskun",
+        "en": "South: Baranya, Tolna, Bács-Kiskun"
+      },
+      "color": "#C9A9E0"
+    },
+    {
+      "id": "8",
+      "name": {
+        "fr": "Balaton : Somogy, Veszprém, Keszthely",
+        "en": "Balaton: Somogy, Veszprém, Keszthely"
+      },
+      "color": "#F0A0DC"
+    },
+    {
+      "id": "9",
+      "name": {
+        "fr": "Ouest : Zala, Vas, Győr, Sopron",
+        "en": "West: Zala, Vas, Győr, Sopron"
+      },
+      "color": "#9FD356"
+    }
+  ],
+  "anchors": [
+    "1",
+    "22",
+    "36",
+    "42",
+    "46",
+    "52",
+    "56",
+    "62",
+    "66",
+    "72",
+    "76",
+    "82",
+    "88",
+    "92",
+    "94",
+    "96"
+  ],
+  "twins": [],
+  "tips": [
+    {
+      "title": "1 → 9",
+      "codes": [],
+      "fr": "Un fixe s'écrit (06-XX) XXX-XXX ; 1 est Budapest. Le premier chiffre tourne autour du pays : 2 autour de Budapest, 3 nord, 4 nord-est, 5 est, 6 sud-est, 7 sud, 8 Balaton, 9 ouest.",
+      "en": "A landline is written (06-XX) XXX-XXX; 1 is Budapest. The first digit circles the country: 2 around Budapest, 3 north, 4 north-east, 5 east, 6 south-east, 7 south, 8 Balaton, 9 west."
+    },
+    {
+      "title": "20 · 30 · 31 · 50 · 70",
+      "codes": [],
+      "fr": "Ces préfixes sont des portables : ils ne disent rien du lieu.",
+      "en": "These prefixes are mobiles: they say nothing about the place."
+    },
+    {
+      "title": "Zones",
+      "codes": [],
+      "fr": "Zones reconstruites par district (járás), en rattachant chacun à la ville d'indicatif la plus proche : les limites sont approximatives.",
+      "en": "Areas rebuilt per district (járás), attaching each to the nearest code town: borders are approximate."
+    }
+  ]
+}

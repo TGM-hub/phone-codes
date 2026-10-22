@@ -1,0 +1,84 @@
+{
+  "iso": "HR",
+  "name": {
+    "fr": "Croatie",
+    "en": "Croatia"
+  },
+  "display": "{code}",
+  "system": {
+    "fr": "Pozivni broj",
+    "en": "Pozivni broj"
+  },
+  "group_label": {
+    "fr": "Bloc",
+    "en": "Block"
+  },
+  "match": "admin",
+  "groups": [
+    {
+      "id": "1",
+      "name": {
+        "fr": "Zagreb (ville et comitat)",
+        "en": "Zagreb (city and county)"
+      },
+      "color": "#EE7A6A"
+    },
+    {
+      "id": "2",
+      "name": {
+        "fr": "Dalmatie",
+        "en": "Dalmatia"
+      },
+      "color": "#5CC9C4"
+    },
+    {
+      "id": "3",
+      "name": {
+        "fr": "Slavonie",
+        "en": "Slavonia"
+      },
+      "color": "#EFE04A"
+    },
+    {
+      "id": "4",
+      "name": {
+        "fr": "Nord et centre (Zagorje, Podravina, Sisak, Karlovac)",
+        "en": "North and centre (Zagorje, Podravina, Sisak, Karlovac)"
+      },
+      "color": "#57D06A"
+    },
+    {
+      "id": "5",
+      "name": {
+        "fr": "Kvarner, Istrie, Lika",
+        "en": "Kvarner, Istria, Lika"
+      },
+      "color": "#C9A9E0"
+    }
+  ],
+  "anchors": [
+    "01",
+    "020",
+    "021",
+    "023",
+    "031",
+    "042",
+    "051",
+    "052"
+  ],
+  "twins": [],
+  "tips": [
+    {
+      "title": "0X",
+      "codes": [],
+      "fr": "Un indicatif par comitat : 01 Zagreb, 02x la Dalmatie (020 Dubrovnik, 021 Split, 022 Šibenik, 023 Zadar), 03x la Slavonie, 04x le nord et le centre, 05x Kvarner-Istrie-Lika (051 Rijeka, 052 Istrie, 053 Lika).",
+      "en": "One code per county: 01 Zagreb, 02x Dalmatia (020 Dubrovnik, 021 Split, 022 Šibenik, 023 Zadar), 03x Slavonia, 04x north and centre, 05x Kvarner-Istria-Lika (051 Rijeka, 052 Istria, 053 Lika)."
+    },
+    {
+      "title": "09x",
+      "codes": [],
+      "fr": "09x est un portable : il ne dit rien du lieu.",
+      "en": "09x is a mobile: it says nothing about the place."
+    }
+  ]
+}

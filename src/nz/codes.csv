@@ -1,0 +1,6 @@
+code,group,city,local,admin,lat,lon,cities
+03,0,Christchurch,,Canterbury Region,-43.53,172.64,Dunedin;Nelson;Queenstown
+04,0,Wellington,,Wellington Region,-41.29,174.78,Lower Hutt;Porirua;Paraparaumu
+06,0,Palmerston North,,Manawatu-Wanganui Region,-40.36,175.61,Napier;New Plymouth;Gisborne
+07,0,Hamilton,,Waikato Region,-37.79,175.28,Tauranga;Rotorua
+09,0,Auckland,,Auckland Region,-36.85,174.76,Whangārei

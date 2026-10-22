@@ -1,0 +1,98 @@
+{
+  "iso": "TR",
+  "name": {
+    "fr": "Turquie",
+    "en": "Turkey"
+  },
+  "display": "({code})",
+  "system": {
+    "fr": "Alan kodu",
+    "en": "Alan kodu"
+  },
+  "group_label": {
+    "fr": "Bloc",
+    "en": "Block"
+  },
+  "sub_label": {
+    "fr": "Sous-bloc",
+    "en": "Sub-block"
+  },
+  "sub_len": 3,
+  "match": "admin",
+  "groups": [
+    {
+      "id": "2",
+      "name": {
+        "fr": "Ouest : Marmara, Égée, Antalya",
+        "en": "West: Marmara, Aegean, Antalya"
+      },
+      "color": "#5CC9C4"
+    },
+    {
+      "id": "3",
+      "name": {
+        "fr": "Centre : Anatolie centrale, mer Noire ouest, Méditerranée est",
+        "en": "Centre: Central Anatolia, western Black Sea, eastern Mediterranean"
+      },
+      "color": "#EFE04A"
+    },
+    {
+      "id": "4",
+      "name": {
+        "fr": "Est : mer Noire est, Anatolie orientale, Sud-Est",
+        "en": "East: eastern Black Sea, Eastern Anatolia, Southeast"
+      },
+      "color": "#EE7A6A"
+    }
+  ],
+  "anchors": [
+    "0212",
+    "0216",
+    "0224",
+    "0232",
+    "0242",
+    "0262",
+    "0312",
+    "0322",
+    "0332",
+    "0342",
+    "0352",
+    "0362",
+    "0412",
+    "0422",
+    "0432",
+    "0442",
+    "0462",
+    "0474"
+  ],
+  "twins": [],
+  "tips": [
+    {
+      "title": "02 · 03 · 04",
+      "codes": [],
+      "fr": "Le chiffre après le 0 coupe le pays d'ouest en est : 2 l'ouest (Marmara, Égée, Antalya), 3 le centre (Ankara, Konya, Adana, mer Noire ouest), 4 l'est et le sud-est.",
+      "en": "The digit after the 0 slices the country west to east: 2 the west (Marmara, Aegean, Antalya), 3 the centre (Ankara, Konya, Adana, western Black Sea), 4 the east and southeast."
+    },
+    {
+      "title": "0XY",
+      "codes": [],
+      "fr": "Les trois premiers chiffres forment des grappes de provinces voisines : 028 la Thrace et Çanakkale, 046 Trabzon-Rize-Artvin, 047 la frontière arménienne, 048 la frontière syrienne et irakienne…",
+      "en": "The first three digits form clusters of neighbouring provinces: 028 Thrace and Çanakkale, 046 Trabzon-Rize-Artvin, 047 the Armenian border, 048 the Syrian and Iraqi border…"
+    },
+    {
+      "title": "05xx",
+      "codes": [],
+      "fr": "05xx est un portable : il ne dit rien du lieu.",
+      "en": "05xx is a mobile number: it says nothing about the place."
+    },
+    {
+      "title": "0212 / 0216",
+      "codes": [
+        "0212",
+        "0216"
+      ],
+      "fr": "İstanbul est la seule province à deux indicatifs : 0212 côté européen, 0216 côté asiatique. Ici toute la province accepte les deux, faute de tracé du Bosphore.",
+      "en": "İstanbul is the only province with two codes: 0212 on the European side, 0216 on the Asian side. Here the whole province accepts both, as the Bosphorus split is not drawn."
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "iso": "UA",
+  "name": {
+    "fr": "Ukraine",
+    "en": "Ukraine"
+  },
+  "display": "{code}",
+  "system": {
+    "fr": "Код",
+    "en": "Код"
+  },
+  "group_label": {
+    "fr": "Bloc",
+    "en": "Block"
+  },
+  "match": "admin",
+  "groups": [
+    {
+      "id": "3",
+      "name": {
+        "fr": "Ouest (Galicie, Volhynie, Transcarpatie, Podolie)",
+        "en": "West (Galicia, Volhynia, Transcarpathia, Podolia)"
+      },
+      "color": "#57D06A"
+    },
+    {
+      "id": "4",
+      "name": {
+        "fr": "Centre et nord (Kyiv, Jytomyr, Vinnytsia, Tchernihiv, Tcherkassy, Odesa)",
+        "en": "Centre and north (Kyiv, Zhytomyr, Vinnytsia, Chernihiv, Cherkasy, Odesa)"
+      },
+      "color": "#5CC9C4"
+    },
+    {
+      "id": "5",
+      "name": {
+        "fr": "Sud et est (Mykolaïv, Poltava, Soumy, Kherson, Dnipro, Kharkiv)",
+        "en": "South and east (Mykolaiv, Poltava, Sumy, Kherson, Dnipro, Kharkiv)"
+      },
+      "color": "#EFE04A"
+    },
+    {
+      "id": "6",
+      "name": {
+        "fr": "Donbass, Zaporijjia, Crimée",
+        "en": "Donbas, Zaporizhzhia, Crimea"
+      },
+      "color": "#EE7A6A"
+    }
+  ],
+  "anchors": [
+    "032",
+    "031",
+    "035",
+    "041",
+    "043",
+    "044",
+    "048",
+    "053",
+    "056",
+    "057",
+    "061",
+    "062"
+  ],
+  "twins": [],
+  "tips": [
+    {
+      "title": "0XY",
+      "codes": [],
+      "fr": "Un indicatif par oblast. 03x l'ouest (031 Transcarpatie à 038 Khmelnytskyï), 04x le centre et le nord avec 044 Kyiv et 048 Odesa, 05x le sud et l'est, 06x le Donbass, Zaporijjia et la Crimée.",
+      "en": "One code per oblast. 03x the west (031 Zakarpattia to 038 Khmelnytskyi), 04x the centre and north with 044 Kyiv and 048 Odesa, 05x the south and east, 06x Donbas, Zaporizhzhia and Crimea."
+    },
+    {
+      "title": "044 / 045",
+      "codes": [
+        "044",
+        "045"
+      ],
+      "fr": "044 est la ville de Kyiv ; l'oblast de Kyiv autour est en 045.",
+      "en": "044 is Kyiv city; the surrounding Kyiv Oblast is 045."
+    },
+    {
+      "title": "065 / 0692",
+      "codes": [
+        "065",
+        "0692"
+      ],
+      "fr": "Codes ukrainiens de la Crimée et de Sébastopol. Depuis 2015, les autorités russes y utilisent des numéros +7 (365 et 869).",
+      "en": "Ukrainian codes of Crimea and Sevastopol. Since 2015 the Russian authorities there use +7 numbers (365 and 869)."
+    }
+  ]
+}

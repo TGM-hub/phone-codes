@@ -1,0 +1,9 @@
+code,group,city,admin,lat,lon,cities
+21,2,Athens,Attikis,37.98,23.73,Piraeus
+22,2,Lamia,Stereas Elladas,38.9,22.43,Chalkida;Rhodes;Mytilene;Syros
+23,2,Thessaloniki,Kentrikis Makedonias,40.64,22.94,Serres;Veria;Kilkis
+24,2,Larissa,Thessalias,39.64,22.42,Volos;Trikala;Kozani
+25,2,Kavala,Anatolikis Makedonias kai Thr*,40.94,24.41,Drama;Xanthi;Komotini;Alexandroupoli
+26,2,Patras,Dytikis Elladas,38.25,21.73,Ioannina;Corfu;Missolonghi
+27,2,Tripoli,Peloponnisoy,37.51,22.37,Kalamata;Corinth;Sparta
+28,2,Heraklion,Kritis,35.34,25.13,Chania;Rethymno;Agios Nikolaos

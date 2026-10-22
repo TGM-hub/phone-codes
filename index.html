@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Phone codes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#151B21; --ink-2:#1F272E; --ink-3:#2D3944;
+  --text:#E7EBEE; --muted:#8794A0;
+  --right:#2E7D5B; --wrong:#C43D2E; --amber:#E0A63C;
+  --sea:#101C25; --land:#38444E; --brd:#7A8A96;
+  --r:4px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{background:var(--ink);color:var(--text);font-family:'IBM Plex Sans',system-ui,sans-serif;
+  font-size:15px;line-height:1.45;-webkit-text-size-adjust:100%;overflow:hidden}
+button{font:inherit;color:inherit}
+#app{height:100dvh;max-width:1100px;margin:0 auto;display:flex;flex-direction:column}
+
+/* ---- top rail ---- */
+#rail{display:flex;align-items:center;gap:8px;padding:8px 12px;flex-wrap:wrap;
+  border-bottom:1px solid var(--ink-3);flex:0 0 auto;font-size:13px}
+#rail .spacer{flex:1}
+#rail .stat{display:flex;gap:4px;align-items:baseline}
+#rail .stat b{font-weight:600;font-variant-numeric:tabular-nums}
+#rail .stat span{color:var(--muted)}
+select{background:var(--ink-2);color:var(--text);border:1px solid var(--ink-3);border-radius:var(--r);
+  font:inherit;font-size:13px;padding:4px 6px}
+.seg{display:inline-flex;border:1px solid var(--ink-3);border-radius:var(--r);overflow:hidden}
+.seg button{background:none;border:0;padding:4px 10px;font-size:12px;color:var(--muted);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink-3);color:var(--text)}
+.railbtn{background:none;border:1px solid var(--ink-3);color:var(--muted);
+  font-size:12px;padding:4px 9px;border-radius:var(--r);cursor:pointer}
+.railbtn:hover{color:var(--text);border-color:var(--muted)}
+
+/* ---- play ---- */
+#play{flex:1 1 auto;min-height:0;display:flex;flex-direction:column}
+#prompt{flex:0 0 auto;padding:12px 12px 8px;text-align:center}
+#code{font-family:'IBM Plex Mono',monospace;font-weight:600;letter-spacing:.02em;
+  font-size:clamp(2.6rem,13vw,4.6rem);line-height:1;color:var(--amber)}
+#code .deco{color:var(--muted);font-weight:500}
+#ask{color:var(--muted);font-size:13px;margin-top:6px}
+.mapwrap{flex:1 1 auto;min-height:0;display:flex;flex-direction:column;padding:0 9px 9px;gap:8px}
+svg.map{flex:1 1 auto;min-height:200px;width:100%;background:var(--sea);border:1px solid var(--ink-3);
+  border-radius:var(--r);touch-action:none;cursor:crosshair;display:block}
+svg.map .lbl{fill:#F3E6C9;font-family:'IBM Plex Sans',sans-serif;paint-order:stroke;
+  stroke:var(--sea);stroke-width:3px;vector-effect:non-scaling-stroke;pointer-events:none}
+svg.map .lbl.mono{font-family:'IBM Plex Mono',monospace;font-weight:600}
+svg.map .dot{fill:var(--amber);stroke:var(--sea);stroke-width:.6;vector-effect:non-scaling-stroke}
+#bar{display:flex;align-items:center;gap:8px;min-height:38px;flex:0 0 auto}
+#msg{flex:1;font-size:14px;color:var(--muted)}
+#msg.good{color:#7FD3A8} #msg.bad{color:#F08A7A}
+#msg b{color:var(--text)}
+.act{background:var(--ink-3);border:1px solid var(--brd);border-radius:var(--r);padding:6px 16px;
+  cursor:pointer;display:none;font-weight:500}
+.act.on{display:inline-block}
+.act.primary{background:var(--amber);color:#1A1306;border-color:var(--amber)}
+
+/* ---- fiche ---- */
+.fiche{background:var(--ink-2);border:1px solid var(--ink-3);border-radius:var(--r);padding:10px 12px;font-size:14px}
+.fiche h3{font-size:16px;font-weight:600;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.fiche h3 .c{font-family:'IBM Plex Mono',monospace;color:var(--amber)}
+.fiche h3 .loc{color:var(--muted);font-weight:500}
+.fiche .meta{color:var(--muted);margin-top:2px}
+.fiche .cities{margin-top:6px}
+.fiche .tip{margin-top:8px;padding-left:9px;border-left:2px solid var(--amber)}
+.fiche .tip b{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--amber);display:block}
+#play .fiche{flex:0 0 auto;max-height:30vh;overflow:auto;display:none}
+#play .fiche.on{display:block}
+
+/* ---- explore ---- */
+#explore{flex:1 1 auto;min-height:0;display:none;gap:9px;padding:9px}
+#explore .mapwrap{padding:0}
+#side{flex:0 0 330px;display:flex;flex-direction:column;gap:8px;min-height:0}
+#search{background:var(--ink-2);color:var(--text);border:1px solid var(--ink-3);border-radius:var(--r);
+  font:inherit;padding:7px 9px;width:100%}
+#list{flex:1 1 auto;overflow:auto;min-height:80px;border:1px solid var(--ink-3);border-radius:var(--r)}
+#list .gh{position:sticky;top:0;background:var(--ink);font-size:12px;color:var(--muted);padding:5px 9px;
+  border-bottom:1px solid var(--ink-3);display:flex;gap:7px;align-items:center}
+#list .sw{width:10px;height:10px;border-radius:2px;flex:0 0 auto}
+#list button{display:flex;gap:10px;width:100%;text-align:left;background:none;border:0;padding:4px 9px;cursor:pointer}
+#list button:hover,#list button.sel{background:var(--ink-3)}
+#list button .c{font-family:'IBM Plex Mono',monospace;color:var(--amber);min-width:3.6em}
+#list button .loc{color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:5px}
+.chip{background:var(--ink-2);border:1px solid var(--ink-3);border-radius:var(--r);padding:3px 8px;
+  font-size:12px;cursor:pointer;color:var(--muted);display:inline-flex;gap:5px;align-items:center}
+.chip[aria-pressed="true"]{color:var(--text);border-color:var(--text)}
+.chip .sw{width:9px;height:9px;border-radius:2px}
+
+/* ---- settings ---- */
+.overlay{position:fixed;inset:0;background:var(--ink);display:none;flex-direction:column;z-index:10}
+.overlay.open{display:flex}
+.ov-head{display:flex;align-items:center;padding:10px 13px;border-bottom:1px solid var(--ink-3)}
+.ov-head h2{font-size:16px;font-weight:600}
+.ov-head .spacer{flex:1}
+.ov-body{padding:13px;overflow:auto;max-width:700px;width:100%;margin:0 auto}
+fieldset{border:1px solid var(--ink-3);border-radius:var(--r);padding:10px 12px;margin-bottom:12px}
+legend{padding:0 5px;color:var(--muted);font-size:13px}
+.ov-body p{color:var(--muted);font-size:13px}
+
+#loading{margin:auto;color:var(--muted)}
+@media (max-width:760px){
+  #explore{flex-direction:column}
+  #explore .mapwrap{flex:0 0 auto;height:56vh}
+  #side{flex:1 1 auto;min-height:0}
+  #list{max-height:22vh}
+}
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="rail">
+    <select id="country" aria-label="Country"></select>
+    <div class="seg" id="mode-seg">
+      <button data-mode="play" data-t="play"></button>
+      <button data-mode="explore" data-t="explore"></button>
+    </div>
+    <div class="spacer"></div>
+    <div class="stat" id="stat-acc"><b id="s-acc">—</b><span data-t="acc"></span></div>
+    <div class="stat" id="stat-streak"><b id="s-streak">0</b><span data-t="streak"></span></div>
+    <button class="railbtn" id="btn-settings" data-t="settings"></button>
+    <div class="seg" id="lang-seg">
+      <button data-lang="fr">FR</button><button data-lang="en">EN</button>
+    </div>
+  </div>
+
+  <div id="loading">…</div>
+
+  <div id="play" style="display:none">
+    <div id="prompt">
+      <div id="code">—</div>
+      <div id="ask"></div>
+    </div>
+    <div class="mapwrap">
+      <svg class="map" id="playsvg" xmlns="http://www.w3.org/2000/svg"></svg>
+      <div id="bar">
+        <span id="msg"></span>
+        <button class="act primary" id="btn-ok" data-t="confirm"></button>
+        <button class="act" id="btn-next" data-t="next"></button>
+      </div>
+      <div class="fiche" id="play-fiche"></div>
+    </div>
+  </div>
+
+  <div id="explore">
+    <div class="mapwrap">
+      <div class="chips" id="ex-groups"></div>
+      <div class="chips" id="ex-subs"></div>
+      <svg class="map" id="exsvg" xmlns="http://www.w3.org/2000/svg"></svg>
+    </div>
+    <div id="side">
+      <input id="search" type="search" autocomplete="off">
+      <div class="fiche" id="ex-fiche"></div>
+      <div id="list"></div>
+    </div>
+  </div>
+</div>
+
+<div class="overlay" id="ov-settings">
+  <div class="ov-head"><h2 data-t="settings"></h2><div class="spacer"></div>
+    <button class="railbtn" id="btn-close" data-t="close"></button></div>
+  <div class="ov-body">
+    <fieldset><legend data-t="level"></legend>
+      <div class="chips" id="lvl-chips"></div>
+    </fieldset>
+    <fieldset><legend id="groups-legend"></legend>
+      <div class="chips" id="grp-chips"></div>
+      <p style="margin-top:7px" data-t="none_all"></p>
+    </fieldset>
+    <fieldset><legend data-t="advance"></legend>
+      <div class="chips" id="adv-chips">
+        <button class="chip" data-adv="auto" data-t="auto"></button>
+        <button class="chip" data-adv="manual" data-t="manual"></button>
+      </div>
+    </fieldset>
+  </div>
+</div>
+
+<script>
+"use strict";
+/* ============================================================
+   I18N
+   ============================================================ */
+const T = {
+  fr: {play:"Jeu", explore:"Explorer", acc:"réussite", streak:"série", settings:"Réglages", close:"Fermer",
+       confirm:"Valider", next:"Suivant", level:"Niveau", advance:"Enchaînement", auto:"Automatique",
+       manual:"Attendre", none_all:"Aucune sélection = toutes.", search:"Code ou ville…",
+       code_word:"Indicatif", code_direct:"Indicatif directement",
+       ask_g:"Dans quel {g} ?", ask_s:"{G} {id}. Quel {s} ?", ask_c:"{ctx}. Où est cet indicatif ?",
+       click_map:"Clique sur la carte.", outside:"Clique à l'intérieur du pays.", stay:"Reste dans {ctx}.",
+       confirm_hint:"Valider pour confirmer.", step_ok:"{L} <b>{x}</b> ✓",
+       g_bad:"Tu as pris {g} <b>{sel}</b>. Le {code} est dans {g} <b>{id}</b> ({gname}), à <b>{city}</b>.",
+       s_bad:"Tu as pris {s} <b>{sel}</b>. Le {code} est dans {s} <b>{id}</b> ({rname}), à <b>{city}</b>.",
+       g_done:"{G} <b>{id}</b> : {gname}.", s_done:"{S} <b>{id}</b> : {rname}.",
+       code_ok:"<b>{code} : {city}</b>.",
+       code_bad:"Tu as pris <b>{sel} {scity}</b>. Le {code} c'est <b>{city}</b>, {km} km plus loin.",
+       groups:"{G}s travaillés", all:"Tout", cities:"Aussi", system:"Logique du système",
+       codes_n:"{n} indicatifs", load_err:"Impossible de charger les données. Ouvre la page via serve.cmd ou GitHub Pages."},
+  en: {play:"Play", explore:"Explore", acc:"accuracy", streak:"streak", settings:"Settings", close:"Close",
+       confirm:"Confirm", next:"Next", level:"Level", advance:"Advance", auto:"Automatic",
+       manual:"Wait", none_all:"Nothing selected = all.", search:"Code or city…",
+       code_word:"Code", code_direct:"Code directly",
+       ask_g:"Which {g}?", ask_s:"{G} {id}. Which {s}?", ask_c:"{ctx}. Where is this code?",
+       click_map:"Click on the map.", outside:"Click inside the country.", stay:"Stay within {ctx}.",
+       confirm_hint:"Confirm to lock it in.", step_ok:"{L} <b>{x}</b> ✓",
+       g_bad:"You picked {g} <b>{sel}</b>. {code} is in {g} <b>{id}</b> ({gname}), at <b>{city}</b>.",
+       s_bad:"You picked {s} <b>{sel}</b>. {code} is in {s} <b>{id}</b> ({rname}), at <b>{city}</b>.",
+       g_done:"{G} <b>{id}</b>: {gname}.", s_done:"{S} <b>{id}</b>: {rname}.",
+       code_ok:"<b>{code}: {city}</b>.",
+       code_bad:"You picked <b>{sel} {scity}</b>. {code} is <b>{city}</b>, {km} km away.",
+       groups:"{G}s to practise", all:"All", cities:"Also", system:"How the system works",
+       codes_n:"{n} codes", load_err:"Could not load the data. Open the page through serve.cmd or GitHub Pages."}
+};
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const $ = s => document.querySelector(s);
+
+/* ============================================================
+   PREFERENCES (no learning history in v1, only settings)
+   ============================================================ */
+const PKEY = "phonecodes.v1";
+const PDEF = {lang:"fr", iso:null, mode:"play", lvls:{}, groups:{}, adv:"auto"};
+let P = (() => { try { return {...PDEF, ...JSON.parse(localStorage.getItem(PKEY) || "{}")}; } catch(e){ return {...PDEF}; } })();
+if(typeof P.lvls !== "object" || !P.lvls) P.lvls = {};
+const saveP = () => { try { localStorage.setItem(PKEY, JSON.stringify(P)); } catch(e){} };
+function t(key, vars = {}){
+  const s = T[P.lang][key] ?? key;
+  const G = C ? C.group_label[P.lang] : "", S = C && C.sub_label ? C.sub_label[P.lang] : "";
+  vars = {g: G.toLowerCase(), G, s: S.toLowerCase(), S, ...vars};
+  return s.replace(/\{(\w+)\}/g, (_, k) => vars[k] ?? "");
+}
+
+/* ============================================================
+   COUNTRY DATA
+   ============================================================ */
+let INDEX = [], C = null;
+const cache = {};
+let K = 1;                               // x scale = cos(mid latitude)
+const PATH = {};                         // admin key -> svg path
+const SUB_COLORS = ["#57D06A","#EE7A6A","#EFE04A","#5CC9C4","#C9A9E0","#F0A860","#F0A0DC","#8FE0BC","#9FD356","#DCD39A"];
+
+async function loadCountry(iso){
+  const key = iso.toLowerCase();
+  if(!cache[key]){
+    const r = await fetch(`data/${key}.json`);
+    if(!r.ok) throw new Error(r.status);
+    cache[key] = await r.json();
+  }
+  C = cache[key];
+  if(!C.sorted){                         // draw big units first so enclaves (Kyiv, Berlin, Moscow) stay on top
+    const box = b => (b[2]-b[0])*(b[3]-b[1]);
+    C.admin = Object.fromEntries(Object.entries(C.admin).sort((p, q) => box(q[1].bbox) - box(p[1].bbox)));
+    C.sorted = true;
+  }
+  K = Math.cos((C.bbox[1] + C.bbox[3]) / 2 * Math.PI / 180);
+  for(const k in PATH) delete PATH[k];
+  for(const k in C.admin)
+    PATH[k] = C.admin[k].rings.map(r => "M" + r.map(p => (p[0]*K).toFixed(3) + " " + (-p[1]).toFixed(3)).join("L") + "Z").join("");
+  C.byCode = {};
+  C.codes.forEach(c => (C.byCode[c.code] = C.byCode[c.code] || []).push(c));
+  C.G = {}; C.groups.forEach(g => C.G[g.id] = g);
+  C.S = {};
+  (C.subs || []).forEach(s => C.S[s.id] = s);
+  C.groups.forEach(g => (C.subs || []).filter(s => s.group === g.id).forEach((s, i) => s.color = SUB_COLORS[i % SUB_COLORS.length]));
+  C.twin = {};
+  (C.twins || []).forEach(list => list.forEach(a => list.forEach(b => { if(a !== b) (C.twin[a] = C.twin[a] || new Set()).add(b); })));
+  C.hosts = {};                          // code -> admin keys (match = admin)
+  for(const k in C.admin) (C.admin[k].codes || []).forEach(code => (C.hosts[code] = C.hosts[code] || []).push(k));
+  SHAPES.clear();
+}
+const hasSub = () => !!(C.subs && C.subs.length);
+const disp = code => esc(C.display).replace("{code}", `</span>${esc(code)}<span class="deco">`);
+const dispText = code => C.display.replace("{code}", code);
+const gname = id => C.G[id].name[P.lang];
+const rname = id => C.S[id].regions.join(", ");
+const codesOfGroup = id => C.codes.filter(c => c.group === id);
+const codesOfSub = id => C.codes.filter(c => c.sub === id);
+const sameCode = (a, b) => a === b || !!(C.twin[a] && C.twin[a].has(b));
+
+/* ============================================================
+   GEOMETRY
+   ============================================================ */
+function haversine(la1, lo1, la2, lo2){
+  const R = 6371, r = Math.PI/180, dLa = (la2-la1)*r, dLo = (lo2-lo1)*r;
+  const a = Math.sin(dLa/2)**2 + Math.cos(la1*r)*Math.cos(la2*r)*Math.sin(dLo/2)**2;
+  return 2*R*Math.asin(Math.min(1, Math.sqrt(a)));
+}
+function ringContains(lon, lat, ring){
+  let inside = false;
+  for(let i = 0, j = ring.length-1; i < ring.length; j = i++){
+    const xi = ring[i][0], yi = ring[i][1], xj = ring[j][0], yj = ring[j][1];
+    if(((yi > lat) !== (yj > lat)) && lon < (xj-xi)*(lat-yi)/(yj-yi) + xi) inside = !inside;
+  }
+  return inside;
+}
+/* outer rings only (holes are dropped at import), so an enclave such as Kyiv
+   city inside Kyiv Oblast is also "inside" its surroundings: keep the smallest */
+function adminAt(lon, lat){
+  let best = null, bestA = Infinity;
+  for(const k in C.admin){
+    const a = C.admin[k], b = a.bbox;
+    if(lon < b[0] || lon > b[2] || lat < b[1] || lat > b[3]) continue;
+    const area = (b[2]-b[0])*(b[3]-b[1]);
+    if(area < bestA && a.rings.some(r => ringContains(lon, lat, r))){ best = k; bestA = area; }
+  }
+  return best;
+}
+function nearestIn(list, lon, lat){
+  let best = null;
+  for(const c of list){
+    const d = (c.lon*K - lon*K)**2 + (c.lat - lat)**2;
+    if(!best || d < best.d) best = {c, d};
+  }
+  return best && best.c;
+}
+/* simplified coastlines leave some coastal cities (Santos, Vitória…) in the
+   sea: a click in the sea snaps to the nearest city within a few pixels */
+function seaSnap(V, lon, lat){
+  const c = nearestIn(C.codes, lon, lat); if(!c) return null;
+  const px = Math.hypot((c.lon - lon)*K, c.lat - lat) * V.fit().s;
+  return px < 28 ? c : null;
+}
+/* groups under a click (an admin unit can sit in several: Tokyo is 03 and 042) */
+function groupsAt(V, lon, lat){
+  const a = adminAt(lon, lat);
+  if(a) return C.admin[a].groups;
+  const s = seaSnap(V, lon, lat);
+  return s ? [s.group] : [];
+}
+/* the code under a click, among candidate codes; null if the click is outside them.
+   match=admin: the admin unit's own codes (exact areas).
+   match=nearest: the candidate whose city is nearest, if the click is in the group. */
+function codeAt(V, lon, lat, cands, prefer){
+  const codes = new Set(cands.map(c => c.code));
+  const a = adminAt(lon, lat);
+  if(C.match === "admin"){
+    let list = a ? (C.admin[a].codes || []).filter(x => codes.has(x)) : [];
+    if(!a){ const s = seaSnap(V, lon, lat); if(s && codes.has(s.code)) list = [s.code]; }
+    if(!list.length) return null;
+    const code = prefer && list.find(x => prefer(x)) || list[0];
+    return cands.find(c => c.code === code);
+  }
+  const gid = cands[0].group;
+  const inside = a ? C.admin[a].groups.includes(gid) : (() => { const s = seaSnap(V, lon, lat); return s && s.group === gid; })();
+  return inside ? nearestIn(cands, lon, lat) : null;
+}
+
+/* shapes of a list of codes: exact unions of admin units (match=admin), or
+   Voronoi cells of the anchor cities by half-plane clipping (match=nearest) */
+const SHAPES = new Map();
+function clipHP(poly, p, q){
+  const mx = (p[0]+q[0])/2, my = (p[1]+q[1])/2, nx = q[0]-p[0], ny = q[1]-p[1];
+  const side = v => (v[0]-mx)*nx + (v[1]-my)*ny;
+  const out = [];
+  for(let i = 0; i < poly.length; i++){
+    const a = poly[i], b = poly[(i+1) % poly.length], sa = side(a), sb = side(b);
+    if(sa <= 0) out.push(a);
+    if((sa < 0 && sb > 0) || (sa > 0 && sb < 0)){
+      const k = sa/(sa-sb); out.push([a[0]+(b[0]-a[0])*k, a[1]+(b[1]-a[1])*k]);
+    }
+  }
+  return out;
+}
+function shapesOf(list){
+  const key = list.map(c => c.code + c.city).join("|");
+  if(SHAPES.has(key)) return SHAPES.get(key);
+  let res;
+  if(C.match === "admin"){
+    res = list.map(c => ({c, d: (C.hosts[c.code] || []).map(k => PATH[k]).join("")}));
+  } else {
+    const g = C.G[list[0].group], pad = 6;
+    const pts = list.map(c => [c.lon*K, -c.lat]);
+    const box = [[(g.bbox[0]-pad)*K, -(g.bbox[3]+pad)], [(g.bbox[2]+pad)*K, -(g.bbox[3]+pad)],
+                 [(g.bbox[2]+pad)*K, -(g.bbox[1]-pad)], [(g.bbox[0]-pad)*K, -(g.bbox[1]-pad)]];
+    res = list.map((c, i) => {
+      let poly = box;
+      for(let j = 0; j < pts.length && poly.length; j++)
+        if(j !== i && (pts[j][0] !== pts[i][0] || pts[j][1] !== pts[i][1])) poly = clipHP(poly, pts[i], pts[j]);
+      return {c, d: poly.length ? "M" + poly.map(p => p[0].toFixed(3) + " " + p[1].toFixed(3)).join("L") + "Z" : ""};
+    });
+  }
+  SHAPES.set(key, res);
+  return res;
+}
+/* Voronoi cells overflow the land: clip them to the group's admin units */
+function clipOpen(id, gid){
+  if(C.match === "admin") return "<g>";
+  return `<defs><clipPath id="${id}">${C.G[gid].admins.map(k => `<path d="${PATH[k]}"/>`).join("")}</clipPath></defs><g clip-path="url(#${id})">`;
+}
+
+/* ============================================================
+   MAP VIEW (shared by both maps)
+   ============================================================ */
+function makeView(svg, onClick, redraw){
+  const V = {svg, x:0, y:0, w:1, h:1, home:null};
+  V.fit = () => { const r = svg.getBoundingClientRect(); return {r, s: r.width / V.w}; };
+  V.apply = () => {
+    const r = svg.getBoundingClientRect();
+    if(r.width > 0) V.h = V.w * r.height / r.width;
+    svg.setAttribute("viewBox", `${V.x} ${V.y} ${V.w} ${V.h}`);
+  };
+  V.clamp = () => {
+    const H = V.home; if(!H) return;
+    V.w = Math.min(H.w*1.4, Math.max(H.w/120, V.w));
+    const r = svg.getBoundingClientRect(); if(r.width > 0) V.h = V.w * r.height / r.width;
+    V.x = Math.min(H.x + H.w - V.w*0.2, Math.max(H.x - V.w*0.8, V.x));
+    V.y = Math.min(H.y + H.h - V.h*0.2, Math.max(H.y - V.h*0.8, V.y));
+  };
+  V.frame = (b, pad = 1.15) => {               // lon/lat box -> view
+    const r = svg.getBoundingClientRect(), ar = r.width > 0 ? r.height / r.width : 1;
+    const x0 = b[0]*K, x1 = b[2]*K, y0 = -b[3], y1 = -b[1];
+    const w = Math.max((x1-x0)*pad, (y1-y0)*pad/ar, 0.4);
+    V.w = w; V.h = w*ar; V.x = (x0+x1)/2 - w/2; V.y = (y0+y1)/2 - V.h/2;
+    V.clamp(); V.apply();
+  };
+  V.toMap = (cx, cy) => { const f = V.fit(); const x = V.x + (cx - f.r.left)/f.s, y = V.y + (cy - f.r.top)/f.s;
+    return {lon: x / K, lat: -y}; };
+  const act = new Map(); let moved = 0, last = null, pinch = null, raf = 0;
+  const later = () => { if(!raf) raf = requestAnimationFrame(() => { raf = 0; redraw(); }); };
+  svg.addEventListener("wheel", e => {
+    e.preventDefault();
+    const f = V.fit(), mx = V.x + (e.clientX - f.r.left)/f.s, my = V.y + (e.clientY - f.r.top)/f.s;
+    const k = e.deltaY > 0 ? 1.18 : 1/1.18, ow = V.w;
+    V.w *= k; V.clamp(); const ratio = V.w / ow;
+    V.x = mx - (mx - V.x)*ratio; V.y = my - (my - V.y)*ratio;
+    V.clamp(); V.apply(); later();
+  }, {passive:false});
+  svg.addEventListener("pointerdown", e => {
+    svg.setPointerCapture(e.pointerId);
+    act.set(e.pointerId, {x:e.clientX, y:e.clientY});
+    moved = 0; last = {x:e.clientX, y:e.clientY};
+    if(act.size === 2){ const [a,b] = [...act.values()]; pinch = {d:Math.hypot(a.x-b.x, a.y-b.y), w:V.w}; }
+  });
+  svg.addEventListener("pointermove", e => {
+    if(!act.has(e.pointerId)) return;
+    act.set(e.pointerId, {x:e.clientX, y:e.clientY});
+    if(act.size === 2 && pinch){
+      const [a,b] = [...act.values()], d = Math.hypot(a.x-b.x, a.y-b.y);
+      if(d > 4){ const cx = V.x + V.w/2, cy = V.y + V.h/2; V.w = pinch.w*(pinch.d/d); V.clamp();
+        V.x = cx - V.w/2; V.y = cy - V.h/2; V.clamp(); V.apply(); later(); }
+      moved = 99; return;
+    }
+    if(last){
+      const dx = e.clientX-last.x, dy = e.clientY-last.y, s = V.fit().s;
+      moved += Math.abs(dx) + Math.abs(dy);
+      if(moved > 5){ V.x -= dx/s; V.y -= dy/s; V.clamp(); V.apply(); later(); }
+      last = {x:e.clientX, y:e.clientY};
+    }
+  });
+  svg.addEventListener("pointerup", e => {
+    const single = act.size === 1;
+    act.delete(e.pointerId);
+    if(act.size < 2) pinch = null;
+    if(!act.size) last = null;
+    if(single && moved <= 5){ const m = V.toMap(e.clientX, e.clientY); onClick(m.lon, m.lat); }
+  });
+  svg.addEventListener("pointercancel", e => { act.delete(e.pointerId); last = null; pinch = null; });
+  V.setHome = () => { V.home = null; V.frame(C.bbox, 1.08); V.home = {x:V.x, y:V.y, w:V.w, h:V.h}; };
+  V.goHome = () => { V.x = V.home.x; V.y = V.home.y; V.w = V.home.w; V.clamp(); V.apply(); };
+  return V;
+}
+
+/* label placement: nudge down until no overlap with already placed labels */
+/* many labels: drop the ones that collide instead of stacking them */
+function placeLabels(items, fs){
+  const put = [], out = [], drop = items.length > 40;
+  items.sort((a, b) => a.y - b.y).forEach(it => {
+    let y = it.y;
+    const w = fs * 0.55 * it.text.length;
+    for(let i = 0; i < put.length; i++){
+      const q = put[i];
+      if(Math.abs(q.y - y) < fs*1.05 && Math.abs(q.x - it.x) < (w + q.w)/2){
+        if(drop) return;
+        y = q.y + fs*1.1; i = -1;
+      }
+    }
+    put.push({x:it.x, y, w});
+    out.push({...it, y});
+  });
+  return out;
+}
+const inView = (V, x, y) => x > V.x && x < V.x + V.w && y > V.y && y < V.y + V.h;
+const fsOf = V => { const s = V.fit().s; return (s > 0 ? 16 / s : V.w / 38); };   // ~16 px whatever the zoom
+const thin = () => C.match === "admin";        // many small units: lighter borders
+function landHTML(on){
+  let h = "";
+  for(const k in C.admin)
+    h += `<path d="${PATH[k]}" fill="var(--land)" fill-opacity="${on(k) ? 1 : 0.35}" stroke="var(--brd)"
+      stroke-opacity="${thin() ? 0.35 : 1}" stroke-width="${thin() ? .4 : .7}" vector-effect="non-scaling-stroke"/>`;
+  return h;
+}
+function labelsHTML(V, list, fs, text, mono){
+  let h = "";
+  const r = V.w/230;
+  list.forEach(c => h += `<circle class="dot" cx="${c.lon*K}" cy="${-c.lat}" r="${r}"/>`);
+  placeLabels(list.map(c => ({x: c.lon*K, y: -c.lat - fs*0.6, text: text(c)})).filter(it => inView(V, it.x, it.y)), fs)
+    .forEach(it => h += `<text class="lbl${mono ? " mono" : ""}" x="${it.x}" y="${it.y}" font-size="${fs}" text-anchor="middle">${esc(it.text)}</text>`);
+  return h;
+}
+
+/* ============================================================
+   LEVELS
+   ============================================================ */
+function levelOptions(){
+  const G = C.group_label[P.lang], S = hasSub() ? C.sub_label[P.lang] : "", Cw = t("code_word");
+  return hasSub()
+    ? [["g",[ "g"], G], ["gs",["g","s"], `${G} → ${S.toLowerCase()}`], ["gsc",["g","s","c"], `${G} → ${S.toLowerCase()} → ${Cw.toLowerCase()}`],
+       ["sc",["s","c"], `${S} → ${Cw.toLowerCase()}`], ["c",["c"], t("code_direct")]]
+    : [["g",["g"], G], ["gc",["g","c"], `${G} → ${Cw.toLowerCase()}`], ["c",["c"], t("code_direct")]];
+}
+function currentLevel(){
+  const opts = levelOptions();
+  return opts.find(o => o[0] === P.lvls[C.iso]) || opts.find(o => o[0] === (hasSub() ? "gsc" : "gc"));
+}
+
+/* ============================================================
+   PLAY
+   ============================================================ */
+let PV = null, round = null, sel = null, locked = false, timer = null;
+const SES = {seen:0, right:0, streak:0};
+
+function activeCodes(){
+  const g = P.groups[C.iso] || [];
+  return C.codes.filter(c => !g.length || g.includes(c.group));
+}
+const step = () => round.steps[round.i];
+/* candidates for the current step, and the box to frame */
+function stepScope(){
+  const tg = round.target;
+  const subKnown = hasSub() && step() === "c";
+  const cands = subKnown ? codesOfSub(tg.sub) : codesOfGroup(tg.group);
+  return {cands, box: subKnown ? C.S[tg.sub].bbox : C.G[tg.group].bbox,
+          ctx: subKnown ? `${C.sub_label[P.lang]} ${dispText(tg.sub).replace(/[()\-]/g, "")}` : `${C.group_label[P.lang]} ${tg.group}`};
+}
+function newRound(){
+  clearTimeout(timer);
+  const list = activeCodes();
+  let c = list[(Math.random()*list.length) | 0];
+  if(round && list.length > 1) for(let i = 0; i < 5 && c.code === round.target.code; i++) c = list[(Math.random()*list.length) | 0];
+  sel = null; locked = false;
+  round = {target:c, steps: currentLevel()[1], i:0};
+  $("#code").innerHTML = `<span class="deco">${disp(c.code)}</span>`;
+  $("#msg").className = "";
+  $("#btn-next").classList.remove("on");
+  $("#play-fiche").classList.remove("on");
+  skipTrivial();
+  paintStep();
+}
+/* a step with a single possible answer is not asked */
+function trivial(){
+  const tg = round.target, s = step();
+  if(s === "g") return C.groups.length < 2;
+  if(s === "s") return new Set(codesOfGroup(tg.group).map(c => c.sub)).size < 2;
+  if(s === "c") return new Set(stepScope().cands.map(c => c.code)).size < 2;
+  return false;
+}
+function skipTrivial(){ while(round.i < round.steps.length - 1 && trivial()) round.i++; }
+
+function askText(){
+  const tg = round.target, s = step();
+  if(s === "g") return t("ask_g");
+  if(s === "s") return t("ask_s", {id: tg.group});
+  return t("ask_c", {ctx: C.groups.length < 2 ? C.name[P.lang] : stepScope().ctx});
+}
+function paintStep(){
+  $("#ask").textContent = askText();
+  $("#msg").textContent = t("click_map");
+  $("#btn-ok").classList.remove("on");
+  if(step() === "g") PV.goHome(); else PV.frame(stepScope().box, 1.2);
+  drawPlay();
+}
+function playClick(lon, lat){
+  if(!round || locked) return;
+  const tg = round.target, s = step();
+  if(s === "g"){
+    const gs = groupsAt(PV, lon, lat);
+    if(!gs.length){ $("#msg").textContent = t("outside"); return; }
+    sel = gs.includes(tg.group) ? tg.group : gs[0];   // shared units count for every group they belong to
+  } else {
+    const sc = stepScope();
+    const prefer = s === "s" ? (x => x.slice(0, C.sub_len) === tg.sub) : (x => sameCode(x, tg.code));
+    const c = codeAt(PV, lon, lat, sc.cands, prefer);
+    if(!c){ $("#msg").textContent = t("stay", {ctx: s === "s" ? `${C.group_label[P.lang]} ${tg.group}` : sc.ctx}); return; }
+    sel = s === "s" ? c.sub : c;
+  }
+  $("#msg").className = ""; $("#msg").textContent = t("confirm_hint");
+  $("#btn-ok").classList.add("on");
+  drawPlay();
+}
+function finish(ok, html, fiche){
+  locked = true;
+  SES.seen++; if(ok){ SES.right++; SES.streak++; } else SES.streak = 0;
+  $("#msg").innerHTML = html; $("#msg").className = ok ? "good" : "bad";
+  $("#btn-ok").classList.remove("on");
+  const f = $("#play-fiche");
+  f.innerHTML = fiche; f.classList.add("on");
+  drawPlay(); paintRail();
+  if(P.adv === "manual") $("#btn-next").classList.add("on");
+  else timer = setTimeout(newRound, ok ? 2200 : 4500);
+}
+function answer(){
+  if(!round || locked || !sel) return;
+  const tg = round.target, s = step(), last = round.i === round.steps.length - 1;
+  const v = {code: esc(dispText(tg.code)), city: esc(tg.city), gname: esc(gname(tg.group))};
+  if(s === "g" || s === "s"){
+    const id = s === "g" ? tg.group : tg.sub;
+    if(s === "s") v.rname = esc(rname(tg.sub));
+    if(sel !== id){ finish(false, t(s + "_bad", {...v, sel: esc(sel), id: esc(id)}), ficheHTML(tg)); return; }
+    if(last){ finish(true, t(s + "_done", {...v, id: esc(id)}), s === "g" ? groupFicheHTML(id) : subFicheHTML(id)); return; }
+    round.i++; sel = null;
+    const L = s === "g" ? C.group_label[P.lang] : C.sub_label[P.lang];
+    skipTrivial();
+    if(trivial()){ finish(true, t("code_ok", v), ficheHTML(tg)); return; }   // only one code left
+    paintStep();
+    $("#msg").innerHTML = t("step_ok", {L: esc(L), x: esc(id)}); $("#msg").className = "good";
+    return;
+  }
+  const ok = sameCode(sel.code, tg.code);
+  const km = Math.round(haversine(sel.lat, sel.lon, tg.lat, tg.lon));
+  finish(ok, ok ? t("code_ok", v) : t("code_bad", {...v, sel: esc(dispText(sel.code)), scity: esc(sel.city), km}), ficheHTML(tg));
+}
+
+function drawPlay(){
+  if(!round) return;
+  const V = PV, tg = round.target, s = step(), fs = fsOf(V);
+  let h = "";
+  if(s === "g"){
+    for(const k in C.admin){
+      const a = C.admin[k], g = a.groups[0];
+      let op = 0.52;
+      if(locked) op = a.groups.includes(tg.group) || a.groups.includes(sel) ? 0.5 : 0.16;
+      h += `<path d="${PATH[k]}" fill="${g ? C.G[g].color : "var(--land)"}" fill-opacity="${op}" stroke="rgba(0,0,0,${thin() ? .25 : .45})" stroke-width="${thin() ? .4 : .8}" vector-effect="non-scaling-stroke"/>`;
+    }
+    const outline = (gid, stroke, op) => C.G[gid].admins.map(k =>
+      `<path d="${PATH[k]}" fill="${C.G[gid].color}" fill-opacity="${op}" stroke="${stroke}" stroke-width="${thin() ? .6 : 2.2}" vector-effect="non-scaling-stroke"/>`).join("");
+    if(locked){
+      if(sel && sel !== tg.group) h += outline(sel, "var(--wrong)", .85);
+      h += outline(tg.group, "#fff", .85);
+      const lbl = gid => { const big = C.G[gid].admins.map(k => C.admin[k])
+          .sort((p, q) => (q.bbox[2]-q.bbox[0])*(q.bbox[3]-q.bbox[1]) - (p.bbox[2]-p.bbox[0])*(p.bbox[3]-p.bbox[1]))[0];
+        return `<text class="lbl mono" x="${big.label[0]*K}" y="${-big.label[1]}" font-size="${fs*1.4}" text-anchor="middle" style="fill:#fff">${esc(gid)}</text>`; };
+      h += lbl(tg.group); if(sel && sel !== tg.group) h += lbl(sel);
+    } else if(sel) h += outline(sel, "#fff", .8);
+    /* anchors carry the system: names while asking, codes on reveal */
+    const anchors = (C.anchors || []).flatMap(code => C.byCode[code] || []);
+    h += labelsHTML(V, anchors, fs*0.85, c => (locked ? c.code + " " : "") + c.city, locked);
+  } else if(s === "s"){
+    const gid = tg.group, list = codesOfGroup(gid);
+    h += landHTML(k => C.G[gid].admins.includes(k));
+    h += clipOpen("pc", gid);
+    shapesOf(list).forEach(({c, d}) => {
+      if(!d) return;
+      const sub = C.S[c.sub];
+      let fill = sub.color, op = 0.4, stroke = "rgba(0,0,0,.35)";
+      if(locked){
+        if(c.sub === tg.sub){ fill = "#3FBF85"; op = 0.85; }
+        else if(c.sub === sel){ fill = "#E05A48"; op = 0.85; }
+        else op = 0.12;
+      } else if(c.sub === sel){ op = 0.9; stroke = "#fff"; }
+      h += `<path d="${d}" fill="${fill}" fill-opacity="${op}" stroke="${stroke}" stroke-width=".5" vector-effect="non-scaling-stroke"/>`;
+    });
+    h += `</g>`;
+    const reps = C.subs.filter(x => x.group === gid).map(x => C.byCode[x.rep][0]);
+    h += labelsHTML(V, reps, fs*0.8, c => (locked ? c.sub + " " : "") + c.city, locked);
+  } else {
+    const {cands} = stepScope(), gid = tg.group;
+    h += landHTML(k => C.G[gid].admins.includes(k));
+    h += clipOpen("pc", gid);
+    const isT = c => sameCode(c.code, tg.code);
+    const base = hasSub() ? C.S[tg.sub].color : C.G[gid].color;
+    shapesOf(cands).forEach(({c, d}) => {
+      if(!d) return;
+      let fill = base, op = 0.26, stroke = "rgba(0,0,0,.5)", sw = thin() ? .6 : 1;
+      if(locked){
+        if(isT(c)){ fill = "#3FBF85"; op = 0.85; sw = 2; stroke = "#fff"; }
+        else if(sel && c.code === sel.code){ fill = "#E05A48"; op = 0.85; sw = 2; stroke = "#fff"; }
+        else op = 0.12;
+      } else if(sel && c === sel){ op = 0.8; sw = 2; stroke = "#fff"; }
+      h += `<path d="${d}" fill="${fill}" fill-opacity="${op}" stroke="${stroke}" stroke-width="${sw}" vector-effect="non-scaling-stroke"/>`;
+    });
+    h += `</g>`;
+    /* city names while asking, codes on reveal: the names are the bridge you
+       are building, and anonymous click feedback stops probing */
+    h += labelsHTML(V, cands, fs*0.8, c => (locked ? c.code + " " : "") + c.city, locked);
+  }
+  V.svg.innerHTML = h;
+}
+
+/* ============================================================
+   FICHES
+   ============================================================ */
+const tipsFor = code => (C.tips || []).filter(tp => (tp.codes || []).includes(code));
+const tipHTML = tp => `<div class="tip"><b>${esc(tp.title)}</b>${esc(tp[P.lang])}</div>`;
+function ficheHTML(c){
+  const same = (C.byCode[c.code] || []).filter(o => o !== c);
+  const a = C.admin[c.admin];
+  let h = `<h3><span class="c">${esc(dispText(c.code))}</span>${esc(c.city)}${c.local ? `<span class="loc">${esc(c.local)}</span>` : ""}</h3>`;
+  const where = [a.name !== c.city ? a.name : "", a.local || "", a.region || ""].filter(Boolean).join(" · ");
+  let path = `${C.group_label[P.lang]} ${c.group} : ${gname(c.group)}`;
+  if(c.sub) path += ` · ${C.sub_label[P.lang]} ${c.sub}`;
+  h += `<div class="meta">${where ? esc(where) + " — " : ""}${esc(path)}</div>`;
+  const cities = [...same.map(o => o.city), ...(c.cities || [])];
+  if(cities.length) h += `<div class="cities">${esc(t("cities"))} : ${cities.map(esc).join(", ")}</div>`;
+  tipsFor(c.code).forEach(tp => h += tipHTML(tp));
+  return h;
+}
+function groupFicheHTML(id){
+  const codes = [...new Set(codesOfGroup(id).map(c => c.code))];
+  const list = codes.length > 24 ? codes.slice(0, 24).join(", ") + "…" : codes.join(", ");
+  return `<h3><span class="c">${esc(id)}</span>${esc(gname(id))}</h3><div class="meta">${esc(t("codes_n", {n: codes.length}))} : ${esc(list)}</div>`;
+}
+function subFicheHTML(id){
+  const codes = [...new Set(codesOfSub(id).map(c => c.code))];
+  return `<h3><span class="c">${esc(id)}</span>${esc(rname(id))}</h3><div class="meta">${esc(t("codes_n", {n: codes.length}))} : ${esc(codes.join(", "))}</div>`;
+}
+
+/* ============================================================
+   EXPLORE
+   ============================================================ */
+let EV = null, exGroup = null, exSub = null, exSel = null;
+function exClick(lon, lat){
+  const gs = groupsAt(EV, lon, lat);
+  if(!gs.length) return;
+  const gid = exGroup && gs.includes(exGroup) ? exGroup : gs[0];
+  const cands = exSub && C.S[exSub].group === gid ? codesOfSub(exSub) : codesOfGroup(gid);
+  /* repeated clicks on a unit with several codes cycle through them */
+  let c = codeAt(EV, lon, lat, cands, null);
+  if(C.match === "admin" && c){
+    const a = adminAt(lon, lat), list = a ? (C.admin[a].codes || []).filter(x => cands.some(o => o.code === x)) : [];
+    if(exSel && list.length > 1 && list.includes(exSel.code)) c = cands.find(o => o.code === list[(list.indexOf(exSel.code) + 1) % list.length]);
+  }
+  if(!c) c = nearestIn(cands, lon, lat);
+  exSel = c; paintExplore();
+}
+function exSelect(c){
+  exSel = c;
+  if(exGroup !== c.group){ exGroup = c.group; exSub = null; EV.frame(C.G[c.group].bbox, 1.2); }
+  else if(exSub && exSub !== c.sub){ exSub = null; EV.frame(C.G[c.group].bbox, 1.2); }
+  paintExplore();
+}
+function setExGroup(id){
+  exGroup = id; exSub = null;
+  if(id) EV.frame(C.G[id].bbox, 1.2); else EV.goHome();
+  paintExplore();
+}
+function setExSub(id){
+  exSub = id;
+  EV.frame(id ? C.S[id].bbox : C.G[exGroup].bbox, 1.2);
+  paintExplore();
+}
+function paintExplore(){
+  $("#ex-groups").innerHTML = `<button class="chip" data-g="" aria-pressed="${!exGroup}">${esc(t("all"))}</button>` +
+    C.groups.map(g => `<button class="chip" data-g="${esc(g.id)}" aria-pressed="${exGroup === g.id}" title="${esc(g.name[P.lang])}">
+      <span class="sw" style="background:${g.color}"></span>${esc(g.id)}</button>`).join("");
+  const subs = exGroup && hasSub() ? C.subs.filter(s => s.group === exGroup) : [];
+  $("#ex-subs").style.display = subs.length > 1 ? "" : "none";
+  $("#ex-subs").innerHTML = subs.length > 1 ? subs.map(s => `<button class="chip" data-s="${esc(s.id)}" aria-pressed="${exSub === s.id}" title="${esc(s.regions.join(", "))}">
+      <span class="sw" style="background:${s.color}"></span>${esc(s.id)}</button>`).join("") : "";
+  $("#ex-fiche").innerHTML = exSel ? ficheHTML(exSel)
+    : exSub ? subFicheHTML(exSub)
+    : exGroup ? groupFicheHTML(exGroup)
+    : `<h3>${esc(t("system"))}</h3>` + (C.tips || []).filter(tp => !(tp.codes || []).length).map(tipHTML).join("");
+  paintList(); drawExplore();
+}
+const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+function paintList(){
+  const q = norm($("#search").value.trim()), qd = q.replace(/[^0-9]/g, "");
+  const match = c => !q || (qd && c.code.startsWith(qd)) || norm(c.city).includes(q)
+    || (c.local || "").includes(q) || norm(C.admin[c.admin].name).includes(q) || norm(C.admin[c.admin].region || "").includes(q)
+    || (c.cities || []).some(x => norm(x).includes(q));
+  let h = "";
+  C.groups.forEach(g => {
+    if(exGroup && !q && g.id !== exGroup) return;
+    const list = codesOfGroup(g.id).filter(c => match(c) && (q || !exSub || c.sub === exSub));
+    if(!list.length) return;
+    h += `<div class="gh"><span class="sw" style="background:${g.color}"></span>${esc(C.group_label[P.lang])} ${esc(g.id)} · ${esc(g.name[P.lang])}</div>`;
+    list.forEach(c => h += `<button data-i="${C.codes.indexOf(c)}" class="${c === exSel ? "sel" : ""}">
+      <span class="c">${esc(c.code)}</span><span>${esc(c.city)} <span class="loc">${esc(c.local || C.admin[c.admin].region || "")}</span></span></button>`);
+  });
+  $("#list").innerHTML = h;
+}
+function drawExplore(){
+  const V = EV, fs = fsOf(V);
+  let h = "";
+  if(!exGroup){
+    /* a single-group country (AU, NZ, CO) is coloured by code instead */
+    const one = C.groups.length < 2, codes = [...new Set(C.codes.map(c => c.code))];
+    const fillOf = a => one && a.codes && a.codes.length ? SUB_COLORS[codes.indexOf(a.codes[0]) % SUB_COLORS.length]
+      : a.groups[0] ? C.G[a.groups[0]].color : "var(--land)";
+    for(const k in C.admin){
+      const a = C.admin[k];
+      h += `<path d="${PATH[k]}" fill="${fillOf(a)}" fill-opacity=".45" stroke="rgba(0,0,0,${thin() ? .25 : .5})" stroke-width="${thin() ? .4 : .7}" vector-effect="non-scaling-stroke"/>`;
+    }
+    /* whole country: every code if they fit, otherwise the anchors */
+    const list = C.codes.length > 90 ? (C.anchors || []).flatMap(code => C.byCode[code] || []) : C.codes;
+    h += labelsHTML(V, list, fs*0.8, c => C.codes.length > 90 ? c.code + " " + c.city : c.code, true);
+  } else {
+    const g = C.G[exGroup];
+    h += landHTML(k => g.admins.includes(k));
+    h += clipOpen("ec", exGroup);
+    shapesOf(codesOfGroup(exGroup)).forEach(({c, d}) => {
+      if(!d) return;
+      const on = exSel && c.code === exSel.code, dim = exSub && c.sub !== exSub;
+      const fill = on ? "#3FBF85" : hasSub() ? C.S[c.sub].color : g.color;
+      h += `<path d="${d}" fill="${fill}" fill-opacity="${on ? 0.85 : dim ? 0.08 : 0.34}" stroke="rgba(0,0,0,.5)" stroke-width="${on ? 1.6 : thin() ? .5 : 1}" vector-effect="non-scaling-stroke"/>`;
+    });
+    h += `</g>`;
+    /* a big group shows one label per sub-block until one is picked */
+    const all = codesOfGroup(exGroup);
+    const list = exSub ? all.filter(c => c.sub === exSub)
+      : hasSub() && all.length > 25 ? C.subs.filter(x => x.group === exGroup).map(x => C.byCode[x.rep][0]) : all;
+    h += labelsHTML(V, list, fs*0.8, c => (exSub || !hasSub() || all.length <= 25 ? c.code : c.sub + "…") + " " + c.city, true);
+  }
+  if(exSel) h += `<circle cx="${exSel.lon*K}" cy="${-exSel.lat}" r="${V.w/140}" fill="none" stroke="#fff" stroke-width="2" vector-effect="non-scaling-stroke"/>`;
+  V.svg.innerHTML = h;
+}
+
+/* ============================================================
+   SHELL
+   ============================================================ */
+function paintStatic(){
+  document.documentElement.lang = P.lang;
+  document.querySelectorAll("[data-t]").forEach(el => el.textContent = t(el.dataset.t));
+  document.querySelectorAll("#lang-seg button").forEach(b => b.setAttribute("aria-pressed", b.dataset.lang === P.lang));
+  document.querySelectorAll("#mode-seg button").forEach(b => b.setAttribute("aria-pressed", b.dataset.mode === P.mode));
+  $("#search").placeholder = t("search");
+  $("#country").innerHTML = INDEX.map(c => `<option value="${c.iso}"${C && c.iso === C.iso ? " selected" : ""}>${esc(c.name[P.lang])} · ${esc(c.system[P.lang])}</option>`).join("");
+  if(C){ document.title = `${C.name[P.lang]} · ${C.system[P.lang]}`; paintSettings(); }
+}
+function paintRail(){
+  $("#s-acc").textContent = SES.seen ? Math.round(100*SES.right/SES.seen) + "%" : "—";
+  $("#s-streak").textContent = SES.streak;
+  $("#stat-acc").style.display = $("#stat-streak").style.display = P.mode === "play" ? "" : "none";
+}
+function paintSettings(){
+  const cur = currentLevel()[0];
+  $("#lvl-chips").innerHTML = levelOptions().map(([k, , label]) => `<button class="chip" data-lvl="${k}" aria-pressed="${k === cur}">${esc(label)}</button>`).join("");
+  document.querySelectorAll("#adv-chips .chip").forEach(b => b.setAttribute("aria-pressed", b.dataset.adv === P.adv));
+  $("#groups-legend").textContent = t("groups");
+  const on = P.groups[C.iso] || [];
+  $("#grp-chips").innerHTML = C.groups.map(g => `<button class="chip" data-g="${esc(g.id)}" aria-pressed="${on.includes(g.id)}">
+    <span class="sw" style="background:${g.color}"></span>${esc(g.id)} · ${esc(g.name[P.lang])}</button>`).join("");
+}
+function setMode(m){
+  P.mode = m; saveP();
+  $("#play").style.display = m === "play" ? "flex" : "none";
+  $("#explore").style.display = m === "explore" ? "flex" : "none";
+  paintStatic(); paintRail();
+  requestAnimationFrame(() => {
+    if(m === "play"){ PV.setHome(); newRound(); }
+    else { EV.setHome(); exSel = null; setExGroup(exGroup && C.G[exGroup] ? exGroup : null); }
+  });
+}
+let wanted = null;
+async function selectCountry(iso){
+  wanted = iso;
+  try {
+    const key = iso.toLowerCase();
+    if(!cache[key]){ const r = await fetch(`data/${key}.json`); if(!r.ok) throw new Error(r.status); cache[key] = await r.json(); }
+    if(wanted !== iso) return;               // a later choice won the race
+    await loadCountry(iso);
+  }
+  catch(e){ $("#loading").textContent = t("load_err"); $("#loading").style.display = ""; return; }
+  P.iso = C.iso; saveP();
+  history.replaceState(null, "", "#" + C.iso.toLowerCase());
+  $("#loading").style.display = "none";
+  round = null; exGroup = null; exSub = null; exSel = null;
+  SES.seen = SES.right = SES.streak = 0;
+  setMode(P.mode);
+}
+
+async function init(){
+  PV = makeView($("#playsvg"), playClick, drawPlay);
+  EV = makeView($("#exsvg"), exClick, drawExplore);
+  $("#btn-ok").onclick = answer;
+  $("#btn-next").onclick = newRound;
+  document.addEventListener("keydown", e => {
+    if(e.target.tagName === "INPUT" || P.mode !== "play") return;
+    if(e.key === "Enter" || e.key === " "){ e.preventDefault(); if(locked) newRound(); else answer(); }
+  });
+  $("#country").onchange = e => selectCountry(e.target.value);
+  document.querySelectorAll("#mode-seg button").forEach(b => b.onclick = () => setMode(b.dataset.mode));
+  document.querySelectorAll("#lang-seg button").forEach(b => b.onclick = () => {
+    P.lang = b.dataset.lang; saveP(); paintStatic();
+    if(P.mode === "play" && round){ if(locked) newRound(); else $("#ask").textContent = askText(); }
+    else if(C) paintExplore();
+  });
+  $("#btn-settings").onclick = () => $("#ov-settings").classList.add("open");
+  $("#btn-close").onclick = () => { $("#ov-settings").classList.remove("open"); if(P.mode === "play") newRound(); };
+  $("#lvl-chips").onclick = e => { const b = e.target.closest("[data-lvl]"); if(!b) return; P.lvls[C.iso] = b.dataset.lvl; saveP(); paintSettings(); };
+  $("#adv-chips").onclick = e => { const b = e.target.closest("[data-adv]"); if(!b) return; P.adv = b.dataset.adv; saveP(); paintSettings(); };
+  $("#grp-chips").onclick = e => {
+    const b = e.target.closest("[data-g]"); if(!b) return;
+    const cur = new Set(P.groups[C.iso] || []);
+    cur.has(b.dataset.g) ? cur.delete(b.dataset.g) : cur.add(b.dataset.g);
+    P.groups[C.iso] = [...cur]; saveP(); paintSettings();
+  };
+  $("#ex-groups").onclick = e => { const b = e.target.closest("[data-g]"); if(!b) return; exSel = null; setExGroup(b.dataset.g || null); };
+  $("#ex-subs").onclick = e => { const b = e.target.closest("[data-s]"); if(!b) return; exSel = null; setExSub(exSub === b.dataset.s ? null : b.dataset.s); };
+  $("#list").onclick = e => { const b = e.target.closest("[data-i]"); if(!b) return; exSelect(C.codes[+b.dataset.i]); };
+  $("#search").oninput = paintList;
+  window.addEventListener("resize", () => {
+    if(!C) return;
+    if(P.mode === "play"){ PV.clamp(); PV.apply(); drawPlay(); } else { EV.clamp(); EV.apply(); drawExplore(); }
+  });
+
+  try {
+    const r = await fetch("data/countries.json");
+    if(!r.ok) throw new Error(r.status);
+    INDEX = await r.json();
+  } catch(e){ $("#loading").textContent = T[P.lang].load_err; return; }
+  const fromHash = location.hash.slice(1).toUpperCase();
+  const iso = [fromHash, P.iso, INDEX[0].iso].find(x => x && INDEX.some(c => c.iso === x));
+  paintStatic();
+  selectCountry(iso);
+}
+init();
+</script>
+</body>
+</html>

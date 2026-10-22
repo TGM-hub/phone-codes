@@ -1,0 +1,126 @@
+{
+  "iso": "PL",
+  "name": {
+    "fr": "Pologne",
+    "en": "Poland"
+  },
+  "display": "{code}",
+  "system": {
+    "fr": "Numer kierunkowy",
+    "en": "Numer kierunkowy"
+  },
+  "group_label": {
+    "fr": "Bloc",
+    "en": "Block"
+  },
+  "match": "admin",
+  "groups": [
+    {
+      "id": "1",
+      "name": {
+        "fr": "Sud-Est : Petite-Pologne, Basses-Carpates",
+        "en": "South-East: Lesser Poland, Subcarpathia"
+      },
+      "color": "#EE7A6A"
+    },
+    {
+      "id": "2",
+      "name": {
+        "fr": "Mazovie (Varsovie)",
+        "en": "Masovia (Warsaw)"
+      },
+      "color": "#F0A860"
+    },
+    {
+      "id": "3",
+      "name": {
+        "fr": "Silésie",
+        "en": "Silesia"
+      },
+      "color": "#C9A9E0"
+    },
+    {
+      "id": "4",
+      "name": {
+        "fr": "Centre : Łódź, Kielce, Radom",
+        "en": "Centre: Łódź, Kielce, Radom"
+      },
+      "color": "#EFE04A"
+    },
+    {
+      "id": "5",
+      "name": {
+        "fr": "Nord : Poméranie, Couïavie",
+        "en": "North: Pomerania, Kuyavia"
+      },
+      "color": "#5CC9C4"
+    },
+    {
+      "id": "6",
+      "name": {
+        "fr": "Grande-Pologne et Lubusz sud",
+        "en": "Greater Poland and southern Lubusz"
+      },
+      "color": "#57D06A"
+    },
+    {
+      "id": "7",
+      "name": {
+        "fr": "Basse-Silésie et Opole",
+        "en": "Lower Silesia and Opole"
+      },
+      "color": "#F0A0DC"
+    },
+    {
+      "id": "8",
+      "name": {
+        "fr": "Est : Lublin, Podlachie, Varmie",
+        "en": "East: Lublin, Podlaskie, Warmia"
+      },
+      "color": "#8FE0BC"
+    },
+    {
+      "id": "9",
+      "name": {
+        "fr": "Nord-Ouest : Poméranie occidentale, Gorzów",
+        "en": "North-West: West Pomerania, Gorzów"
+      },
+      "color": "#9FD356"
+    }
+  ],
+  "anchors": [
+    "12",
+    "17",
+    "22",
+    "32",
+    "42",
+    "58",
+    "61",
+    "71",
+    "81",
+    "85",
+    "89",
+    "91"
+  ],
+  "twins": [],
+  "tips": [
+    {
+      "title": "1 → 9",
+      "codes": [],
+      "fr": "Le premier chiffre tourne autour du pays : 1 sud-est, 2 Varsovie, 3 Silésie, 4 centre, 5 nord, 6 Grande-Pologne, 7 Basse-Silésie, 8 est, 9 nord-ouest. Le second chiffre situe la ville ; x1 ou x2 est souvent la grande ville (12 Kraków, 22 Varsovie, 32 Katowice, 42 Łódź, 58 Gdańsk, 61 Poznań, 71 Wrocław, 81 Lublin, 91 Szczecin).",
+      "en": "The first digit circles the country: 1 south-east, 2 Warsaw, 3 Silesia, 4 centre, 5 north, 6 Greater Poland, 7 Lower Silesia, 8 east, 9 north-west. The second digit places the city; x1 or x2 is often the big city (12 Kraków, 22 Warsaw, 32 Katowice, 42 Łódź, 58 Gdańsk, 61 Poznań, 71 Wrocław, 81 Lublin, 91 Szczecin)."
+    },
+    {
+      "title": "xx xxx xx xx",
+      "codes": [],
+      "fr": "Les numéros fixes font 9 chiffres et commencent par l'indicatif. Les portables commencent par 45, 5x, 6x, 7x ou 88 : ils ne disent rien du lieu.",
+      "en": "Landline numbers have 9 digits and start with the code. Mobiles start with 45, 5x, 6x, 7x or 88: they say nothing about the place."
+    },
+    {
+      "title": "49 zones",
+      "codes": [],
+      "fr": "Les 49 zones suivent les anciennes voïvodies (avant 1999). Ici elles sont reconstruites au niveau des powiats, en rattachant chaque powiat à la ville-zone la plus proche : les limites sont approximatives.",
+      "en": "The 49 zones follow the old voivodeships (before 1999). Here they are rebuilt at powiat level, attaching each powiat to the nearest zone city: borders are approximate."
+    }
+  ]
+}

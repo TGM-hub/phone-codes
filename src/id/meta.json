@@ -1,0 +1,35 @@
+{
+  "iso": "ID",
+  "name": {"fr": "Indonésie", "en": "Indonesia"},
+  "display": "({code})",
+  "system": {"fr": "Kode area", "en": "Kode area"},
+  "group_label": {"fr": "Bloc", "en": "Block"},
+  "sub_label": {"fr": "Sous-bloc", "en": "Sub-block"},
+  "sub_len": 3,
+  "match": "admin",
+  "groups": [
+    {"id": "2", "name": {"fr": "Java ouest et centre (Jakarta, Banten, Yogyakarta)", "en": "West & Central Java (Jakarta, Banten, Yogyakarta)"}, "color": "#EE7A6A"},
+    {"id": "3", "name": {"fr": "Java est, Bali, Nusa Tenggara", "en": "East Java, Bali, Nusa Tenggara"}, "color": "#F0A860"},
+    {"id": "4", "name": {"fr": "Sulawesi", "en": "Sulawesi"}, "color": "#C9A9E0"},
+    {"id": "5", "name": {"fr": "Kalimantan", "en": "Kalimantan"}, "color": "#57D06A"},
+    {"id": "6", "name": {"fr": "Sumatra nord (Aceh, Sumatera Utara)", "en": "Northern Sumatra (Aceh, North Sumatra)"}, "color": "#5CC9C4"},
+    {"id": "7", "name": {"fr": "Sumatra centre et sud, Riau, Bangka, Kepri", "en": "Central & southern Sumatra, Riau, Bangka, Riau Islands"}, "color": "#EFE04A"},
+    {"id": "9", "name": {"fr": "Maluku et Papua", "en": "Maluku & Papua"}, "color": "#F0A0DC"}
+  ],
+  "anchors": ["021", "022", "024", "0274", "031", "0361", "0380", "0411", "0431", "0451", "0511", "0541", "0561", "061", "0651", "0751", "0761", "0711", "0721", "0911", "0967", "0951"],
+  "twins": [],
+  "tips": [
+    {"title": "0X", "codes": [],
+     "fr": "Le chiffre après le 0 donne la grande île, d'ouest en est en gros : 06 et 07 Sumatra, 02 Java ouest et centre, 03 Java est jusqu'à Nusa Tenggara, 05 Kalimantan, 04 Sulawesi, 09 Maluku et Papua.",
+     "en": "The digit after the 0 gives the big island, roughly west to east: 06 and 07 Sumatra, 02 West and Central Java, 03 East Java to Nusa Tenggara, 05 Kalimantan, 04 Sulawesi, 09 Maluku and Papua."},
+    {"title": "08xx", "codes": [],
+     "fr": "08xx est un numéro de portable : il ne dit rien du lieu.",
+     "en": "08xx is a mobile number: it says nothing about the place."},
+    {"title": "021 · 022 · 024 · 031 · 061", "codes": ["021", "022", "024", "031", "061"],
+     "fr": "Les seuls indicatifs à trois chiffres : Jakarta, Bandung, Semarang, Surabaya, Medan. Tous les autres en ont quatre.",
+     "en": "The only three-digit codes: Jakarta, Bandung, Semarang, Surabaya, Medan. All the others have four."},
+    {"title": "021", "codes": ["021"],
+     "fr": "Couvre tout le Grand Jakarta, débordant sur Banten (Tangerang) et Java ouest (Bekasi, Depok, une partie de Bogor).",
+     "en": "Covers all of Greater Jakarta, spilling into Banten (Tangerang) and West Java (Bekasi, Depok, part of Bogor)."}
+  ]
+}

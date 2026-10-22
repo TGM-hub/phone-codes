@@ -1,0 +1,164 @@
+{
+  "iso": "JP",
+  "name": {
+    "fr": "Japon",
+    "en": "Japan"
+  },
+  "display": "{code}-",
+  "system": {
+    "fr": "市外局番",
+    "en": "市外局番"
+  },
+  "group_label": {
+    "fr": "Bloc",
+    "en": "Block"
+  },
+  "groups": [
+    {
+      "id": "1",
+      "name": {
+        "fr": "Hokkaidō et Tōhoku nord",
+        "en": "Hokkaidō & northern Tōhoku"
+      },
+      "color": "#57D06A"
+    },
+    {
+      "id": "2",
+      "name": {
+        "fr": "Tōhoku sud, Kantō nord, Shin'etsu",
+        "en": "Southern Tōhoku, northern Kantō, Shin'etsu"
+      },
+      "color": "#8FE0BC"
+    },
+    {
+      "id": "3",
+      "name": {
+        "fr": "Tokyo (23 arrondissements)",
+        "en": "Tokyo (23 wards)"
+      },
+      "color": "#EE7A6A"
+    },
+    {
+      "id": "4",
+      "name": {
+        "fr": "Kantō sud",
+        "en": "Southern Kantō"
+      },
+      "color": "#EFE04A"
+    },
+    {
+      "id": "5",
+      "name": {
+        "fr": "Tōkai et Yamanashi",
+        "en": "Tōkai & Yamanashi"
+      },
+      "color": "#F0A860"
+    },
+    {
+      "id": "6",
+      "name": {
+        "fr": "Ōsaka",
+        "en": "Ōsaka"
+      },
+      "color": "#C9A9E0"
+    },
+    {
+      "id": "7",
+      "name": {
+        "fr": "Kansai et Hokuriku",
+        "en": "Kansai & Hokuriku"
+      },
+      "color": "#F0A0DC"
+    },
+    {
+      "id": "8",
+      "name": {
+        "fr": "Chūgoku et Shikoku",
+        "en": "Chūgoku & Shikoku"
+      },
+      "color": "#5CC9C4"
+    },
+    {
+      "id": "9",
+      "name": {
+        "fr": "Kyūshū et Okinawa",
+        "en": "Kyūshū & Okinawa"
+      },
+      "color": "#9FD356"
+    }
+  ],
+  "anchors": [
+    "011",
+    "022",
+    "03",
+    "045",
+    "052",
+    "075",
+    "06",
+    "078",
+    "082",
+    "092",
+    "098"
+  ],
+  "twins": [],
+  "tips": [
+    {
+      "title": "03 / 06",
+      "codes": [
+        "03",
+        "06"
+      ],
+      "fr": "Les deux seuls indicatifs à deux chiffres du pays : Tokyo (23 arrondissements) et Ōsaka-ville. Voir « 03- » sur une devanture suffit à conclure.",
+      "en": "The only two-digit codes in the country: Tokyo (23 wards) and Ōsaka city. Seeing “03-” on a shopfront settles it."
+    },
+    {
+      "title": "076",
+      "codes": [
+        "076"
+      ],
+      "fr": "Un même indicatif pour Kanazawa (Ishikawa) et Toyama, deux préfectures voisines du Hokuriku.",
+      "en": "One code for both Kanazawa (Ishikawa) and Toyama, neighbouring prefectures in Hokuriku."
+    },
+    {
+      "title": "088",
+      "codes": [
+        "088"
+      ],
+      "fr": "Un même indicatif de part et d'autre du Shikoku : Tokushima au nord-est et Kōchi au sud-ouest.",
+      "en": "One code on both sides of Shikoku: Tokushima in the northeast and Kōchi in the southwest."
+    },
+    {
+      "title": "Bloc 07",
+      "codes": [],
+      "fr": "Censé être le Kansai, il contient aussi tout le Hokuriku (Toyama, Ishikawa, Fukui), qui est au nord. C'est la principale entorse à la logique nord-sud.",
+      "en": "Meant to be Kansai, it also holds all of Hokuriku (Toyama, Ishikawa, Fukui), further north. It is the main break in the north-to-south logic."
+    },
+    {
+      "title": "059 · Mie",
+      "codes": [
+        "059"
+      ],
+      "fr": "Mie est en Kinki mais porte un indicatif du bloc 05 (Tōkai), pour des raisons de routage du réseau.",
+      "en": "Mie is in Kinki but carries a block-05 (Tōkai) code, for network routing reasons."
+    },
+    {
+      "title": "098 · Okinawa",
+      "codes": [
+        "098",
+        "0985"
+      ],
+      "fr": "Okinawa était sous administration américaine lors de l'attribution des numéros. Elle a reçu après coup un créneau réservé au Miyazaki, d'où 098 pour Naha et 0985 pour Miyazaki.",
+      "en": "Okinawa was under US administration when numbers were assigned. It later got a slot reserved for Miyazaki, hence 098 for Naha and 0985 for Miyazaki."
+    },
+    {
+      "title": "0776 / 0952 / 0985",
+      "codes": [
+        "0776",
+        "0952",
+        "0985"
+      ],
+      "fr": "À trois chiffres ces aires se télescopent avec leurs voisines : Fukui se distingue d'Ōtsu (077), Saga de Nagasaki (095), Miyazaki d'Okinawa (098). Il faut le quatrième chiffre.",
+      "en": "At three digits these areas collide with their neighbours: Fukui vs Ōtsu (077), Saga vs Nagasaki (095), Miyazaki vs Okinawa (098). You need the fourth digit."
+    }
+  ]
+}

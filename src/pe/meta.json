@@ -1,0 +1,92 @@
+{
+  "iso": "PE",
+  "name": {
+    "fr": "Pérou",
+    "en": "Peru"
+  },
+  "display": "(0{code})",
+  "system": {
+    "fr": "Código de área",
+    "en": "Código de área"
+  },
+  "group_label": {
+    "fr": "Bloc",
+    "en": "Block"
+  },
+  "match": "admin",
+  "groups": [
+    {
+      "id": "1",
+      "name": {
+        "fr": "Lima et Callao",
+        "en": "Lima and Callao"
+      },
+      "color": "#EE7A6A"
+    },
+    {
+      "id": "4",
+      "name": {
+        "fr": "Nord-centre : Amazonas, San Martín, Áncash, La Libertad",
+        "en": "North-central: Amazonas, San Martín, Áncash, La Libertad"
+      },
+      "color": "#57D06A"
+    },
+    {
+      "id": "5",
+      "name": {
+        "fr": "Sud : Arequipa, Puno, Tacna, Moquegua, Ica",
+        "en": "South: Arequipa, Puno, Tacna, Moquegua, Ica"
+      },
+      "color": "#EFE04A"
+    },
+    {
+      "id": "6",
+      "name": {
+        "fr": "Centre et Amazonie : Junín, Huánuco, Pasco, Ayacucho, Huancavelica, Ucayali, Loreto",
+        "en": "Centre and Amazon: Junín, Huánuco, Pasco, Ayacucho, Huancavelica, Ucayali, Loreto"
+      },
+      "color": "#5CC9C4"
+    },
+    {
+      "id": "7",
+      "name": {
+        "fr": "Côte nord : Tumbes, Piura, Lambayeque, Cajamarca",
+        "en": "North coast: Tumbes, Piura, Lambayeque, Cajamarca"
+      },
+      "color": "#F0A860"
+    },
+    {
+      "id": "8",
+      "name": {
+        "fr": "Sud-Est : Cusco, Apurímac, Madre de Dios",
+        "en": "South-East: Cusco, Apurímac, Madre de Dios"
+      },
+      "color": "#C9A9E0"
+    }
+  ],
+  "anchors": [
+    "1",
+    "44",
+    "54",
+    "64",
+    "65",
+    "73",
+    "74",
+    "84"
+  ],
+  "twins": [],
+  "tips": [
+    {
+      "title": "(0XX)",
+      "codes": [],
+      "fr": "Un fixe s'écrit (01) 123-4567 à Lima et (084) 123456 en région. Les portables (9 chiffres commençant par 9) ne disent rien du lieu.",
+      "en": "A landline is written (01) 123-4567 in Lima and (084) 123456 elsewhere. Mobiles (9 digits starting with 9) say nothing about the place."
+    },
+    {
+      "title": "1 · 4 · 5 · 6 · 7 · 8",
+      "codes": [],
+      "fr": "1 Lima ; 4 nord-centre ; 5 sud ; 6 centre et Amazonie ; 7 côte nord et Cajamarca ; 8 Cusco et le sud-est.",
+      "en": "1 Lima; 4 north-central; 5 south; 6 centre and Amazon; 7 north coast and Cajamarca; 8 Cusco and the south-east."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+code,group,city,local,admin,lat,lon,cities
+02,0,Köln,,"Köln, Kreisfreie Stadt",50.94,6.96,Düsseldorf;Essen;Dortmund;Münster
+03,0,Berlin,,Berlin,52.52,13.4,Potsdam;Leipzig;Dresden;Chemnitz
+04,0,Hamburg,,Hamburg,53.55,9.99,Bremen;Kiel;Lübeck;Flensburg
+05,0,Hannover,,Region Hannover,52.37,9.73,Braunschweig;Göttingen;Kassel;Osnabrück
+06,0,Frankfurt am Main,,"Frankfurt am Main, Kreisfreie Stadt",50.11,8.68,Wiesbaden;Darmstadt;Gießen;Marburg
+07,0,Stuttgart,,"Stuttgart, Stadtkreis",48.78,9.18,Karlsruhe;Freiburg;Ulm;Konstanz
+08,0,München,,"München, Kreisfreie Stadt",48.14,11.58,Augsburg;Ingolstadt;Rosenheim;Passau
+09,0,Nürnberg,,"Nürnberg, Kreisfreie Stadt",49.45,11.08,Würzburg;Regensburg;Bamberg;Bayreuth

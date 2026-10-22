@@ -1,0 +1,58 @@
+{
+  "iso": "DE",
+  "name": {
+    "fr": "Allemagne",
+    "en": "Germany"
+  },
+  "display": "{code}…",
+  "system": {
+    "fr": "Vorwahl",
+    "en": "Vorwahl"
+  },
+  "group_label": {
+    "fr": "Bloc",
+    "en": "Block"
+  },
+  "match": "admin",
+  "groups": [
+    {
+      "id": "0",
+      "name": {
+        "fr": "Premier chiffre (02-09)",
+        "en": "First digit (02-09)"
+      },
+      "color": "#EFE04A"
+    }
+  ],
+  "anchors": [
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "08",
+    "09"
+  ],
+  "twins": [],
+  "tips": [
+    {
+      "title": "02 → 09",
+      "codes": [],
+      "fr": "Le premier chiffre de la Vorwahl donne la région : 02 Rhénanie et Ruhr (NRW sauf nord-est, nord de la Rhénanie-Palatinat), 03 l'ex-RDA et Berlin, 04 le nord (Schleswig-Holstein, Hambourg, Brême, côte de Basse-Saxe), 05 Basse-Saxe intérieure, nord-est de la NRW, nord de la Hesse, 06 Hesse, Sarre, Palatinat, Mannheim-Heidelberg, 07 Bade-Wurtemberg, 08 sud de la Bavière, 09 nord de la Bavière.",
+      "en": "The first digit of the Vorwahl gives the region: 02 Rhineland and Ruhr (NRW except north-east, northern Rhineland-Palatinate), 03 former GDR and Berlin, 04 the north (Schleswig-Holstein, Hamburg, Bremen, Lower Saxony coast), 05 inland Lower Saxony, north-east NRW, northern Hesse, 06 Hesse, Saarland, Palatinate, Mannheim-Heidelberg, 07 Baden-Württemberg, 08 southern Bavaria, 09 northern Bavaria."
+    },
+    {
+      "title": "030 · 040 · 069 · 089",
+      "codes": [],
+      "fr": "Les quatre seules Vorwahlen à deux chiffres : 030 Berlin, 040 Hambourg, 069 Francfort, 089 Munich. Les portables commencent par 015, 016 ou 017.",
+      "en": "The only four two-digit codes: 030 Berlin, 040 Hamburg, 069 Frankfurt, 089 Munich. Mobiles start with 015, 016 or 017."
+    },
+    {
+      "title": "Zones",
+      "codes": [],
+      "fr": "Zones reconstruites par Kreis, en rattachant chacun à la ville repère la plus proche : les limites entre premiers chiffres sont approximatives.",
+      "en": "Areas rebuilt per Kreis, attaching each to the nearest reference city: borders between first digits are approximate."
+    }
+  ]
+}

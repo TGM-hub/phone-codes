@@ -1,0 +1,23 @@
+code,group,city,admin,lat,lon,cities
+02,2,Bangkok,Bangkok,,,Nonthaburi;Pathum Thani;Samut Prakan
+032,3,Ratchaburi,Ratchaburi Province,,,Phetchaburi;Hua Hin
+034,3,Nakhon Pathom,Nakhon Pathom Province,,,Kanchanaburi;Samut Sakhon
+035,3,Ayutthaya,Phra Nakhon Si Ayutthaya Province,,,Suphan Buri;Ang Thong
+036,3,Lopburi,Lopburi Province,,,Saraburi;Sing Buri
+037,3,Prachin Buri,Prachin Buri Province,,,Sa Kaeo;Nakhon Nayok
+038,3,Chon Buri,Chon Buri Province,,,Pattaya;Rayong;Chachoengsao
+039,3,Chanthaburi,Chanthaburi Province,,,Trat
+042,4,Udon Thani,Udon Thani Province,,,Nong Khai;Sakon Nakhon;Loei
+043,4,Khon Kaen,Khon Kaen Province,,,Roi Et;Kalasin;Maha Sarakham
+044,4,Nakhon Ratchasima,Nakhon Ratchasima Province,,,Buri Ram;Surin;Chaiyaphum
+045,4,Ubon Ratchathani,Ubon Ratchathani Province,,,Si Sa Ket;Yasothon;Amnat Charoen
+052,5,Chiang Rai,Chiang Rai Province,,,Chiang Mai;Lamphun;Mae Hong Son
+053,5,Chiang Mai,Chiang Mai Province,,,Chiang Rai;Lamphun;Mae Hong Son
+054,5,Lampang,Lampang Province,,,Phrae;Nan;Phayao
+055,5,Phitsanulok,Phitsanulok Province,,,Sukhothai;Tak;Uttaradit
+056,5,Nakhon Sawan,Nakhon Sawan Province,,,Phetchabun;Phichit;Chai Nat
+073,7,Yala,Yala Province,,,Pattani;Narathiwat
+074,7,Hat Yai,Songkhla Province,,,Songkhla;Satun;Phatthalung
+075,7,Nakhon Si Thammarat,Nakhon Si Thammarat Province,,,Krabi;Trang
+076,7,Phuket,Phuket Province,,,Phang Nga
+077,7,Surat Thani,Surat Thani Province,,,Chumphon;Ranong

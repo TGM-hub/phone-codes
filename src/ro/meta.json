@@ -1,0 +1,90 @@
+{
+  "iso": "RO",
+  "name": {
+    "fr": "Roumanie",
+    "en": "Romania"
+  },
+  "display": "{code}",
+  "system": {
+    "fr": "Prefix",
+    "en": "Prefix"
+  },
+  "group_label": {
+    "fr": "Bloc",
+    "en": "Block"
+  },
+  "match": "admin",
+  "groups": [
+    {
+      "id": "1",
+      "name": {
+        "fr": "Bucarest et Ilfov",
+        "en": "Bucharest and Ilfov"
+      },
+      "color": "#EE7A6A"
+    },
+    {
+      "id": "3",
+      "name": {
+        "fr": "Moldavie (et Buzău, Brăila, Galați)",
+        "en": "Moldavia (and Buzău, Brăila, Galați)"
+      },
+      "color": "#5CC9C4"
+    },
+    {
+      "id": "4",
+      "name": {
+        "fr": "Dobroudja et Munténie",
+        "en": "Dobruja and Muntenia"
+      },
+      "color": "#EFE04A"
+    },
+    {
+      "id": "5",
+      "name": {
+        "fr": "Olténie, Banat, Crișana, Hunedoara, Alba",
+        "en": "Oltenia, Banat, Crișana, Hunedoara, Alba"
+      },
+      "color": "#F0A860"
+    },
+    {
+      "id": "6",
+      "name": {
+        "fr": "Transylvanie et Maramureș",
+        "en": "Transylvania and Maramureș"
+      },
+      "color": "#57D06A"
+    }
+  ],
+  "anchors": [
+    "021",
+    "0230",
+    "0232",
+    "0236",
+    "0241",
+    "0244",
+    "0248",
+    "0251",
+    "0256",
+    "0259",
+    "0264",
+    "0268",
+    "0269",
+    "0262"
+  ],
+  "twins": [],
+  "tips": [
+    {
+      "title": "02XY",
+      "codes": [],
+      "fr": "Un fixe s'écrit 02XY… : 021 Bucarest, puis un indicatif par județ de 0230 (Suceava) à 0269 (Sibiu). La numérotation tourne autour du pays : 023x Moldavie, 024x Dobroudja et Munténie, 025x Olténie et Banat, 026x Transylvanie et Maramureș. Les numéros en 03XY sont les mêmes zones chez d'autres opérateurs (0364 = Cluj comme 0264).",
+      "en": "A landline is written 02XY…: 021 Bucharest, then one code per county from 0230 (Suceava) to 0269 (Sibiu). The numbering circles the country: 023x Moldavia, 024x Dobruja and Muntenia, 025x Oltenia and Banat, 026x Transylvania and Maramureș. Numbers in 03XY are the same areas with other operators (0364 = Cluj like 0264)."
+    },
+    {
+      "title": "07xx",
+      "codes": [],
+      "fr": "07xx est un portable : il ne dit rien du lieu.",
+      "en": "07xx is a mobile: it says nothing about the place."
+    }
+  ]
+}

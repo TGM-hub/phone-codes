@@ -1,0 +1,5 @@
+code,group,city,admin,lat,lon,cities
+02,0,Sydney,New South Wales,-33.87,151.21,Canberra;Newcastle;Wollongong
+03,0,Melbourne,Victoria,-37.81,144.96,Hobart;Geelong;Launceston
+07,0,Brisbane,Queensland,-27.47,153.03,Gold Coast;Townsville;Cairns
+08,0,Perth,Western Australia,-31.95,115.86,Adelaide;Darwin;Alice Springs

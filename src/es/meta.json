@@ -1,0 +1,124 @@
+{
+  "iso": "ES",
+  "name": {
+    "fr": "Espagne",
+    "en": "Spain"
+  },
+  "display": "{code}",
+  "system": {
+    "fr": "Prefijo",
+    "en": "Prefijo"
+  },
+  "group_label": {
+    "fr": "Bloc",
+    "en": "Block"
+  },
+  "match": "admin",
+  "groups": [
+    {
+      "id": "1",
+      "name": {
+        "fr": "Madrid (91x)",
+        "en": "Madrid (91x)"
+      },
+      "color": "#EE7A6A"
+    },
+    {
+      "id": "2",
+      "name": {
+        "fr": "Ouest : Castille-et-León ouest, Estrémadure, Castille-La Manche, Canaries",
+        "en": "West: western Castile-León, Extremadura, Castile-La Mancha, Canaries"
+      },
+      "color": "#F0A860"
+    },
+    {
+      "id": "3",
+      "name": {
+        "fr": "Barcelone (93x)",
+        "en": "Barcelona (93x)"
+      },
+      "color": "#C9A9E0"
+    },
+    {
+      "id": "4",
+      "name": {
+        "fr": "Nord : Pays basque, Navarre, Cantabrie, La Rioja, Burgos, Guadalajara",
+        "en": "North: Basque Country, Navarre, Cantabria, La Rioja, Burgos, Guadalajara"
+      },
+      "color": "#5CC9C4"
+    },
+    {
+      "id": "5",
+      "name": {
+        "fr": "Andalousie",
+        "en": "Andalusia"
+      },
+      "color": "#EFE04A"
+    },
+    {
+      "id": "6",
+      "name": {
+        "fr": "Levant : Valence, Alicante, Castellón, Murcie, Albacete, Cuenca",
+        "en": "East: Valencia, Alicante, Castellón, Murcia, Albacete, Cuenca"
+      },
+      "color": "#57D06A"
+    },
+    {
+      "id": "7",
+      "name": {
+        "fr": "Nord-Est : Catalogne hors Barcelone, Aragon, Baléares, Soria, Palencia",
+        "en": "North-East: Catalonia outside Barcelona, Aragon, Balearics, Soria, Palencia"
+      },
+      "color": "#F0A0DC"
+    },
+    {
+      "id": "8",
+      "name": {
+        "fr": "Nord-Ouest : Galice, Asturies, León, Valladolid, Zamora",
+        "en": "North-West: Galicia, Asturias, León, Valladolid, Zamora"
+      },
+      "color": "#8FE0BC"
+    }
+  ],
+  "anchors": [
+    "91",
+    "93",
+    "944",
+    "954",
+    "958",
+    "963",
+    "965",
+    "968",
+    "971",
+    "976",
+    "981",
+    "985",
+    "983",
+    "928",
+    "922"
+  ],
+  "twins": [],
+  "tips": [
+    {
+      "title": "9X",
+      "codes": [],
+      "fr": "Un fixe espagnol fait 9 chiffres et commence par 9 ; le 2e chiffre donne le bloc : 91 Madrid, 93 Barcelone, 95 Andalousie, 96 Levant, 97 Catalogne-Aragon-Baléares, 98 Nord-Ouest, 94 Nord, 92 Ouest et Canaries.",
+      "en": "A Spanish landline has 9 digits and starts with 9; the 2nd digit gives the block: 91 Madrid, 93 Barcelona, 95 Andalusia, 96 East, 97 Catalonia-Aragon-Balearics, 98 North-West, 94 North, 92 West and Canaries."
+    },
+    {
+      "title": "6xx · 7xx · 8xx",
+      "codes": [],
+      "fr": "6xx et 7xx sont des portables : ils ne disent rien du lieu. Il existe aussi des fixes en 8xx (ex. 856 Cádiz, 881 A Coruña), qui suivent les mêmes provinces que le 9xx correspondant ; ils ne sont pas dans le jeu.",
+      "en": "6xx and 7xx are mobiles: they say nothing about the place. Some landlines use 8xx (e.g. 856 Cádiz, 881 A Coruña), following the same provinces as the matching 9xx; they are not in the game."
+    },
+    {
+      "title": "91 · 93",
+      "codes": [
+        "91",
+        "93"
+      ],
+      "fr": "Madrid et Barcelone ont chacune toute une dizaine (911-918, 931-938) : ici on les compte comme 91 et 93.",
+      "en": "Madrid and Barcelona each own a whole range (911-918, 931-938): here they count as 91 and 93."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "iso": "CO",
+  "name": {
+    "fr": "Colombie",
+    "en": "Colombia"
+  },
+  "display": "{code}",
+  "system": {
+    "fr": "Indicativo",
+    "en": "Indicativo"
+  },
+  "group_label": {
+    "fr": "Bloc",
+    "en": "Block"
+  },
+  "match": "admin",
+  "groups": [
+    {
+      "id": "6",
+      "name": {
+        "fr": "Fixes (60X)",
+        "en": "Landlines (60X)"
+      },
+      "color": "#EFE04A"
+    }
+  ],
+  "anchors": [
+    "601",
+    "602",
+    "604",
+    "605",
+    "606",
+    "607",
+    "608"
+  ],
+  "twins": [],
+  "tips": [
+    {
+      "title": "60X",
+      "codes": [],
+      "fr": "Depuis 2021, un fixe fait 10 chiffres : 60 + le chiffre de zone + 7 chiffres. 1 Bogotá et Cundinamarca, 2 sud-ouest (Cali), 4 Antioquia (Medellín), 5 côte caraïbe, 6 Eje Cafetero, 7 Santanders, 8 tout le reste (centre, Llanos, Amazonie). Les anciens numéros commençaient directement par ce chiffre.",
+      "en": "Since 2021 a landline has 10 digits: 60 + the zone digit + 7 digits. 1 Bogotá and Cundinamarca, 2 south-west (Cali), 4 Antioquia (Medellín), 5 Caribbean coast, 6 Coffee Axis, 7 Santanders, 8 everything else (centre, Llanos, Amazon). Old numbers started directly with that digit."
+    },
+    {
+      "title": "3xx",
+      "codes": [],
+      "fr": "Un numéro qui commence par 3 (3xx xxx xxxx) est un portable : il ne dit rien du lieu.",
+      "en": "A number starting with 3 (3xx xxx xxxx) is a mobile: it says nothing about the place."
+    }
+  ]
+}

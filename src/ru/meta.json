@@ -1,0 +1,96 @@
+{
+  "iso": "RU",
+  "name": {
+    "fr": "Russie",
+    "en": "Russia"
+  },
+  "display": "8 ({code})",
+  "system": {
+    "fr": "Код ABC",
+    "en": "Код ABC"
+  },
+  "group_label": {
+    "fr": "Bloc",
+    "en": "Block"
+  },
+  "sub_label": {
+    "fr": "Sous-bloc",
+    "en": "Sub-block"
+  },
+  "sub_len": 2,
+  "match": "admin",
+  "groups": [
+    {
+      "id": "3",
+      "name": {
+        "fr": "Oural et Sibérie",
+        "en": "Urals and Siberia"
+      },
+      "color": "#57D06A"
+    },
+    {
+      "id": "4",
+      "name": {
+        "fr": "Russie centrale, Kaliningrad, Extrême-Orient",
+        "en": "Central Russia, Kaliningrad, Far East"
+      },
+      "color": "#5CC9C4"
+    },
+    {
+      "id": "8",
+      "name": {
+        "fr": "Nord-Ouest, Volga, Sud et Caucase",
+        "en": "North-West, Volga, South and Caucasus"
+      },
+      "color": "#EE7A6A"
+    }
+  ],
+  "anchors": [
+    "495",
+    "812",
+    "831",
+    "843",
+    "846",
+    "863",
+    "861",
+    "343",
+    "383",
+    "391",
+    "395",
+    "423",
+    "401",
+    "473"
+  ],
+  "twins": [],
+  "tips": [
+    {
+      "title": "8 (ABC)",
+      "codes": [],
+      "fr": "Un numéro russe s'écrit 8 (ABC) xxx-xx-xx : le 8 est le préfixe interurbain, l'indicatif est le bloc de 3 chiffres entre parenthèses. 8 (9xx) est un portable : il ne dit rien du lieu.",
+      "en": "A Russian number is written 8 (ABC) xxx-xx-xx: the 8 is the trunk prefix, the code is the 3-digit group in brackets. 8 (9xx) is a mobile: it says nothing about the place."
+    },
+    {
+      "title": "3xx · 4xx · 8xx",
+      "codes": [],
+      "fr": "3xx : Oural et Sibérie (34x Oural, 38x-39x Sibérie). 4xx : Russie centrale autour de Moscou (47x-49x), Kaliningrad (401) et l'Extrême-Orient (41x-42x). 8xx : Nord-Ouest (81x), Volga (83x-84x), Sud et Caucase (86x-87x).",
+      "en": "3xx: Urals and Siberia (34x Urals, 38x-39x Siberia). 4xx: Central Russia around Moscow (47x-49x), Kaliningrad (401) and the Far East (41x-42x). 8xx: North-West (81x), Volga (83x-84x), South and Caucasus (86x-87x)."
+    },
+    {
+      "title": "495 / 499",
+      "codes": [
+        "495",
+        "499"
+      ],
+      "fr": "Moscou (ville). La région de Moscou autour est en 496 et 498.",
+      "en": "Moscow city. The surrounding Moscow Oblast is 496 and 498."
+    },
+    {
+      "title": "812",
+      "codes": [
+        "812"
+      ],
+      "fr": "Saint-Pétersbourg ; l'oblast de Léningrad autour est en 813.",
+      "en": "Saint Petersburg; the surrounding Leningrad Oblast is 813."
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "iso": "BR",
+  "name": {
+    "fr": "Brésil",
+    "en": "Brazil"
+  },
+  "display": "({code})",
+  "system": {
+    "fr": "DDD",
+    "en": "DDD"
+  },
+  "group_label": {
+    "fr": "Zone",
+    "en": "Zone"
+  },
+  "groups": [
+    {
+      "id": "1",
+      "name": {
+        "fr": "São Paulo",
+        "en": "São Paulo"
+      },
+      "color": "#C9A9E0"
+    },
+    {
+      "id": "2",
+      "name": {
+        "fr": "Rio de Janeiro et Espírito Santo",
+        "en": "Rio de Janeiro & Espírito Santo"
+      },
+      "color": "#DCD39A"
+    },
+    {
+      "id": "3",
+      "name": {
+        "fr": "Minas Gerais",
+        "en": "Minas Gerais"
+      },
+      "color": "#F0A860"
+    },
+    {
+      "id": "4",
+      "name": {
+        "fr": "Paraná et Santa Catarina",
+        "en": "Paraná & Santa Catarina"
+      },
+      "color": "#5CC9C4"
+    },
+    {
+      "id": "5",
+      "name": {
+        "fr": "Rio Grande do Sul",
+        "en": "Rio Grande do Sul"
+      },
+      "color": "#8FE0BC"
+    },
+    {
+      "id": "6",
+      "name": {
+        "fr": "Centre-Ouest, Acre, Rondônia, Tocantins",
+        "en": "Centre-West, Acre, Rondônia, Tocantins"
+      },
+      "color": "#EFE04A"
+    },
+    {
+      "id": "7",
+      "name": {
+        "fr": "Bahia et Sergipe",
+        "en": "Bahia & Sergipe"
+      },
+      "color": "#F0A0DC"
+    },
+    {
+      "id": "8",
+      "name": {
+        "fr": "Nordeste (PE, AL, PB, RN, CE, PI)",
+        "en": "Northeast (PE, AL, PB, RN, CE, PI)"
+      },
+      "color": "#EE7A6A"
+    },
+    {
+      "id": "9",
+      "name": {
+        "fr": "Nord et Maranhão",
+        "en": "North & Maranhão"
+      },
+      "color": "#57D06A"
+    }
+  ],
+  "anchors": [
+    "11",
+    "21",
+    "31",
+    "41",
+    "51",
+    "61",
+    "71",
+    "81",
+    "85",
+    "91",
+    "92",
+    "98"
+  ],
+  "twins": [
+    [
+      "74",
+      "87"
+    ]
+  ],
+  "tips": [
+    {
+      "title": "1 → 9",
+      "codes": [],
+      "fr": "Le premier chiffre donne la macro-zone, du sud-est (1 = São Paulo) vers le nord (9 = Amazonie et Maranhão). Le second chiffre situe la ville dans la zone ; x1 est presque toujours la capitale.",
+      "en": "The first digit gives the macro-zone, from the southeast (1 = São Paulo) to the north (9 = Amazon and Maranhão). The second digit places the city within the zone; x1 is almost always the capital."
+    },
+    {
+      "title": "74 / 87",
+      "codes": [
+        "74",
+        "87"
+      ],
+      "fr": "Juazeiro (74, Bahia) et Petrolina (87, Pernambuco) se font face de part et d'autre du São Francisco, à 3 km : les deux réponses sont acceptées.",
+      "en": "Juazeiro (74, Bahia) and Petrolina (87, Pernambuco) face each other across the São Francisco, 3 km apart: both answers are accepted."
+    }
+  ]
+}

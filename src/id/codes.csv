@@ -1,0 +1,306 @@
+code,group,city,local,admin,lat,lon,cities
+021,2,Jakarta,,31.71,-6.181,106.835,Kepulauan Seribu;Jakarta Pusat;Jakarta Utara
+022,2,Bandung,,32.73,-6.924,107.619,Sumedang;Bandung Barat;Cimahi
+0231,2,Cirebon,,32.74,-6.742,108.554,
+0232,2,Kuningan,,32.08,-7.007,108.559,
+0233,2,Majalengka,,32.10,-6.811,108.267,
+0234,2,Indramayu,,32.12,-6.439,108.212,
+024,2,Semarang,,33.74,-7.021,110.389,Demak
+0251,2,Bogor,,32.71,-6.588,106.803,Depok
+0252,2,Lebak,,36.02,-6.642,106.213,
+0253,2,Pandeglang,,36.01,-6.655,105.776,
+0254,2,Cilegon,,36.72,-5.999,106.021,Serang
+0260,2,Subang,,32.13,-6.479,107.729,
+0261,2,Sumedang,,32.11,-6.825,107.981,
+0262,2,Garut,,32.05,-7.459,107.783,
+0263,2,Cianjur,,32.03,-7.253,107.119,
+0264,2,Karawang,,32.15,-6.386,107.415,Purwakarta
+0265,2,Tasikmalaya,,32.78,-7.361,108.22,Ciamis;Pangandaran;Banjar
+0266,2,Sukabumi,,32.72,-6.938,106.932,Cianjur
+0267,2,Karawang,,32.15,-6.278,107.407,
+0271,2,Surakarta,,33.72,-7.558,110.824,Boyolali;Sukoharjo;Karanganyar
+0272,2,Klaten,,33.10,-7.686,110.62,
+0273,2,Wonogiri,,33.12,-7.919,111.0,
+0274,2,Yogyakarta,,34.71,-7.802,110.375,Kulon Progo;Bantul;Gunungkidul
+0275,2,Purworejo,,33.06,-7.706,109.964,
+0276,2,Boyolali,,33.09,-7.4,110.703,
+0280,2,Cilacap,,33.01,-7.573,108.869,
+0281,2,Banyumas,,33.02,-7.393,109.263,Purbalingga
+0282,2,Cilacap,,33.01,-7.521,108.984,Banyumas
+0283,2,Tegal,,33.76,-6.869,109.116,Brebes
+0284,2,Pemalang,,33.27,-7.038,109.281,Tegal
+0285,2,Pekalongan,,33.75,-6.893,109.677,Batang;Pemalang
+0286,2,Banjarnegara,,33.04,-7.381,109.785,Wonosobo
+0287,2,Banyumas,,33.02,-7.541,109.394,Kebumen
+0289,2,Brebes,,33.29,-6.969,108.897,
+0291,2,Jepara,,33.20,-6.742,110.732,Kudus;Demak
+0292,2,Grobogan,,33.15,-7.112,110.948,
+0293,2,Magelang,,33.71,-7.482,110.221,Temanggung
+0294,2,Kendal,,33.24,-7.006,110.017,Batang
+0295,2,Pati,,33.18,-6.765,111.24,Rembang
+0296,2,Blora,,33.16,-7.075,111.391,
+0297,2,Jepara,,33.20,-6.58,110.775,
+0298,2,Salatiga,,33.73,-7.339,110.498,Semarang
+031,3,Surabaya,,35.78,-7.276,112.724,Sidoarjo;Mojokerto;Gresik
+0321,3,Mojokerto,,35.76,-7.469,112.443,Jombang
+0322,3,Lamongan,,35.24,-7.141,112.318,
+0323,3,Sampang,,35.27,-7.052,113.257,
+0324,3,Pamekasan,,35.28,-7.073,113.493,
+0328,3,Sumenep,,35.29,-6.991,113.811,
+0331,3,Jember,,35.09,-8.231,113.662,
+0332,3,Bondowoso,,35.11,-7.919,113.958,
+0333,3,Banyuwangi,,35.10,-8.356,114.165,
+0334,3,Lumajang,,35.08,-8.125,113.138,
+0335,3,Probolinggo,,35.74,-7.776,113.206,
+0336,3,Jember,,35.09,-8.231,113.662,
+0338,3,Situbondo,,35.12,-7.826,114.203,
+0341,3,Malang,,35.73,-7.985,112.632,Batu
+0342,3,Blitar,,35.72,-8.1,112.169,
+0343,3,Pasuruan,,35.75,-7.65,112.91,Sidoarjo;Mojokerto
+0351,3,Madiun,,35.77,-7.628,111.528,Magetan;Ngawi
+0352,3,Ponorogo,,35.02,-7.931,111.5,
+0353,3,Bojonegoro,,35.22,-7.269,111.802,
+0354,3,Kediri,,35.71,-7.823,112.012,Malang
+0355,3,Trenggalek,,35.03,-8.159,111.764,Tulungagung
+0356,3,Tuban,,35.23,-6.891,111.75,Rembang
+0357,3,Pacitan,,35.01,-8.146,111.196,
+0358,3,Nganjuk,,35.18,-7.566,111.951,
+0361,3,Denpasar,,51.71,-8.669,115.222,Tabanan;Badung;Gianyar
+0362,3,Buleleng,,51.08,-8.199,115.101,
+0363,3,Karangasem,,51.07,-8.374,115.531,
+0365,3,Jembrana,,51.01,-8.314,114.682,
+0366,3,Bangli,,51.06,-8.436,115.423,Klungkung
+0368,3,Tabanan,,51.02,-8.427,115.076,
+0370,3,Mataram,,52.71,-8.59,116.11,Lombok Barat;Lombok Tengah;Lombok Utara
+0371,3,Sumbawa,,52.04,-8.742,117.47,
+0372,3,Sumbawa Barat,,52.07,-8.867,116.932,
+0373,3,Dompu,,52.05,-8.517,118.344,
+0374,3,Bima,,52.72,-8.464,118.783,
+0376,3,Lombok Timur,,52.03,-8.533,116.528,
+0380,3,Kupang,,53.71,-10.199,123.605,Rote Ndao;Sabu Raijua
+0381,3,Ende,,53.08,-8.676,121.735,
+0382,3,Sikka,,53.07,-8.639,122.075,
+0383,3,Flores Timur,,53.06,-8.482,123.06,Lembata
+0384,3,Ngada,,53.09,-8.658,121.126,Nagekeo
+0385,3,Manggarai Barat,,53.15,-8.583,120.368,Manggarai;Manggarai Timur
+0386,3,Alor,,53.05,-8.279,124.732,
+0387,3,Sumba Timur,,53.11,-9.795,119.958,Sumba Barat;Sumba Tengah;Sumba Barat Daya
+0388,3,Timor Tengah Selatan,,53.02,-9.663,124.467,Timor Tengah Utara
+0389,3,Belu,,53.04,-9.327,124.909,Malaka
+0401,4,Kendari,,74.71,-4.019,122.518,
+0402,4,Baubau,,74.72,-5.428,122.702,Buton;Buton Utara;Buton Tengah
+0403,4,Muna,,74.03,-5.037,122.489,
+0404,4,Wakatobi,,74.07,-5.941,124.019,
+0405,4,Kolaka Timur,,74.11,-3.477,121.331,Kolaka;Kolaka Utara
+0408,4,Konawe,,74.02,-3.817,122.151,Konawe Selatan;Konawe Utara
+0409,4,Morowali,,72.06,-2.78,121.885,
+0410,4,Pangkajene dan Kepulauan,,73.10,-4.803,119.604,
+0411,4,Makassar,,73.71,-5.136,119.465,Gowa;Maros
+0413,4,Bulukumba,,73.02,-5.445,120.174,Bantaeng
+0414,4,Kepulauan Selayar,,73.01,-6.056,120.504,
+0417,4,Gowa,,73.06,-5.325,119.745,
+0418,4,Takalar,,73.05,-5.375,119.527,
+0419,4,Jeneponto,,73.04,-5.625,119.721,
+0420,4,Enrekang,,73.16,-3.503,119.872,
+0421,4,Parepare,,73.72,-4.029,119.661,Sidenreng Rappang;Pinrang
+0422,4,Majene,,76.05,-3.008,118.942,
+0423,4,Tana Toraja,,73.18,-3.027,119.786,Toraja Utara
+0424,4,Pasangkayu,,76.01,-1.578,119.479,
+0426,4,Mamuju,,76.02,-2.299,119.435,Mamuju Tengah
+0427,4,Barru,,73.11,-4.439,119.677,
+0428,4,Mamasa,,76.03,-3.092,119.243,Polewali Mandar
+0429,4,Mamuju Tengah,,76.06,-1.99,119.52,
+0430,4,Minahasa Selatan,,71.05,1.087,124.452,
+0431,4,Manado,,71.71,1.523,124.88,Minahasa;Minahasa Utara;Minahasa Tenggara
+0432,4,Kepulauan Talaud,,71.04,3.91,126.233,Kepulauan Sangihe;Kepulauan Siau Tagulandang Biaro
+0434,4,Kotamobagu,,71.74,0.711,124.32,Bolaang Mongondow;Bolaang Mongondow Utara;Bolaang Mongondow Timur
+0435,4,Gorontalo,,75.71,0.54,123.055,
+0438,4,Bitung,,71.72,1.495,125.144,
+0442,4,Gorontalo Utara,,75.05,0.852,122.994,
+0443,4,Pohuwato,,75.04,0.713,121.796,
+0445,4,Buol,,72.05,1.027,121.316,
+0450,4,Parigi Moutong,,72.08,0.551,120.937,
+0451,4,Palu,,72.71,-0.85,119.932,Sigi
+0452,4,Poso,,72.02,-1.668,120.529,
+0453,4,Tolitoli,,72.04,0.84,120.755,
+0457,4,Donggala,,72.03,0.31,119.973,
+0461,4,Banggai,,72.01,-1.033,122.423,
+0462,4,Banggai,,72.01,-1.115,122.532,Banggai Kepulauan
+0464,4,Tojo Una-Una,,72.09,-1.175,121.542,
+0465,4,Morowali Utara,,72.12,-2.047,121.117,
+0471,4,Palopo,,73.73,-2.982,120.135,Luwu
+0472,4,Wajo,,73.13,-4.007,120.171,
+0473,4,Luwu Utara,,73.22,-2.378,120.165,
+0474,4,Luwu Timur,,73.24,-2.565,121.221,
+0475,4,Luwu Timur,,73.24,-2.565,121.221,
+0481,4,Bone,,73.08,-4.689,120.144,
+0482,4,Sinjai,,73.07,-5.195,120.135,
+0484,4,Soppeng,,73.12,-4.361,119.881,
+0485,4,Wajo,,73.13,-4.007,120.171,
+0511,5,Banjarmasin,,63.71,-3.329,114.592,Banjar;Barito Kuala;Banjarbaru
+0512,5,Tanah Laut,,63.01,-3.888,114.857,
+0513,5,Kapuas,,62.03,-2.097,114.174,Pulang Pisau
+0517,5,Tapin,,63.05,-2.775,115.19,Hulu Sungai Selatan;Hulu Sungai Tengah
+0518,5,Kotabaru,,63.02,-3.046,115.809,Tanah Bumbu
+0519,5,Barito Utara,,62.05,-0.94,115.118,
+0522,5,Barito Timur,,62.13,-1.978,115.16,
+0525,5,Barito Selatan,,62.04,-1.713,114.807,
+0526,5,Barito Timur,,62.13,-2.016,115.419,Tabalong;Balangan
+0527,5,Hulu Sungai Utara,,63.08,-2.442,115.157,
+0528,5,Murung Raya,,62.12,-0.031,114.279,
+0531,5,Kotawaringin Timur,,62.02,-2.062,112.724,
+0532,5,Kotawaringin Barat,,62.01,-2.3,111.534,Sukamara;Lamandau
+0534,5,Ketapang,,61.04,-1.703,110.443,
+0535,5,Kayong Utara,,61.11,-1.049,110.132,
+0536,5,Palangka Raya,,62.71,-1.837,113.693,Katingan
+0537,5,Gunung Mas,,62.10,-1.181,113.549,
+0538,5,Seruyan,,62.07,-2.9,112.369,
+0539,5,Kotawaringin Timur,,62.02,-2.062,112.724,
+0541,5,Samarinda,,64.72,-0.5,117.172,Kutai Kartanegara
+0542,5,Balikpapan,,64.71,-1.159,116.866,Penajam Paser Utara
+0543,5,Paser,,64.01,-1.534,116.124,Penajam Paser Utara
+0545,5,Mahakam Ulu,,64.11,0.353,115.083,Kutai Barat
+0548,5,Bontang,,64.74,0.066,117.434,Kutai Timur
+0549,5,Kutai Timur,,64.08,0.987,116.724,
+0551,5,Tarakan,,65.71,3.36,117.6,Bulungan
+0552,5,Bulungan,,65.01,2.995,116.965,Tana Tidung
+0553,5,Malinau,,65.02,2.016,115.499,
+0554,5,Berau,,64.03,2.047,117.225,
+0556,5,Nunukan,,65.03,4.01,116.679,
+0561,5,Pontianak,,61.71,-0.044,109.322,Mempawah;Kubu Raya
+0562,5,Singkawang,,61.72,0.908,109.031,Sambas;Bengkayang
+0563,5,Landak,,61.08,0.482,109.79,
+0564,5,Sanggau,,61.03,0.157,110.631,Sekadau
+0565,5,Sintang,,61.05,-0.172,112.715,
+0567,5,Kapuas Hulu,,61.06,0.835,112.811,
+0568,5,Melawi,,61.10,-0.602,111.696,
+061,6,Medan,,12.71,3.574,98.672,Langkat;Deli Serdang;Serdang Bedagai
+0620,6,Langkat,,12.05,3.719,98.206,
+0621,6,Tebing Tinggi,,12.76,3.326,99.158,Serdang Bedagai
+0622,6,Pematangsiantar,,12.72,2.963,99.056,Simalungun;Batu Bara
+0623,6,Tanjungbalai,,12.74,2.954,99.796,Asahan
+0624,6,Rokan Hilir,,14.07,1.964,100.349,Labuhanbatu;Labuhanbatu Selatan;Labuhanbatu Utara
+0625,6,Simalungun,,12.08,2.774,99.165,Toba;Samosir
+0626,6,Samosir,,12.17,2.531,98.614,
+0627,6,Subulussalam,,11.75,2.736,97.937,Dairi;Pakpak Bharat
+0628,6,Deli Serdang,,12.07,3.252,98.556,Karo
+0629,6,Aceh Tenggara,,11.02,3.37,97.696,
+0630,6,Nias Selatan,,12.14,0.799,97.753,
+0631,6,Sibolga,,12.73,1.741,98.788,Tapanuli Tengah
+0632,6,Toba,,12.12,2.374,99.294,
+0633,6,Tapanuli Utara,,12.02,2.094,98.865,Humbang Hasundutan
+0634,6,Padangsidimpuan,,12.77,1.407,99.27,Tapanuli Selatan
+0635,6,Padang Lawas Utara,,12.20,1.571,99.678,
+0636,6,Mandailing Natal,,12.13,0.896,99.54,Padang Lawas
+0639,6,Gunungsitoli,,12.78,1.326,97.541,Nias;Nias Utara;Nias Barat
+0641,6,Langsa,,11.74,4.483,97.982,Aceh Tamiang
+0642,6,Gayo Lues,,11.13,3.962,97.357,
+0643,6,Aceh Tengah,,11.04,4.556,96.936,Bener Meriah
+0644,6,Bireuen,,11.11,5.089,96.605,
+0645,6,Lhokseumawe,,11.73,5.17,97.109,Aceh Utara
+0646,6,Aceh Timur,,11.03,4.629,97.63,
+0650,6,Simeulue,,11.09,2.677,95.986,
+0651,6,Banda Aceh,,11.71,5.557,95.33,Aceh Besar;Aceh Jaya
+0652,6,Sabang,,11.72,5.814,95.314,
+0653,6,Pidie,,11.07,5.031,96.047,Pidie Jaya
+0654,6,Aceh Jaya,,11.14,4.832,95.679,
+0655,6,Nagan Raya,,11.15,4.314,96.372,Aceh Barat
+0656,6,Aceh Selatan,,11.01,3.37,97.285,
+0657,6,Aceh Selatan,,11.01,3.37,97.285,
+0658,6,Aceh Singkil,,11.10,2.403,97.959,
+0659,6,Aceh Barat Daya,,11.12,3.818,96.914,
+0702,7,Empat Lawang,,16.11,-3.765,102.959,
+0711,7,Palembang,,16.71,-2.973,104.733,Banyuasin;Ogan Ilir
+0712,7,Ogan Komering Ilir,,16.02,-3.32,105.311,Ogan Ilir
+0713,7,Prabumulih,,16.74,-3.453,104.23,Muara Enim;Penukal Abab Lematang Ilir
+0714,7,Musi Banyuasin,,16.06,-2.504,103.741,
+0715,7,Bangka,,19.01,-1.92,105.936,
+0716,7,Bangka Barat,,19.05,-1.901,105.507,
+0717,7,Pangkalpinang,,19.71,-2.113,106.112,Bangka
+0718,7,Bangka Selatan,,19.03,-2.607,106.235,Bangka Tengah
+0719,7,Belitung Timur,,19.06,-2.848,107.911,Belitung
+0721,7,Bandar Lampung,,18.71,-5.405,105.265,Lampung Selatan;Pesawaran
+0722,7,Tanggamus,,18.06,-5.341,104.63,
+0723,7,Way Kanan,,18.08,-4.485,104.547,
+0724,7,Lampung Utara,,18.03,-4.809,104.806,
+0725,7,Metro,,18.72,-5.141,105.301,Lampung Tengah;Lampung Timur
+0726,7,Tulang Bawang,,18.05,-4.219,105.376,Mesuji;Tulang Bawang Barat
+0727,7,Lampung Selatan,,18.01,-5.535,105.342,Pesawaran
+0728,7,Pesisir Barat,,18.13,-5.226,104.223,Lampung Barat
+0729,7,Pringsewu,,18.10,-5.336,104.928,
+0730,7,Pagar Alam,,16.72,-4.117,103.26,Lahat
+0731,7,Lahat,,16.04,-3.791,103.426,
+0732,7,Rejang Lebong,,17.02,-3.495,102.682,Kepahiang
+0733,7,Lubuklinggau,,16.73,-3.264,102.88,Musi Rawas;Musi Rawas Utara
+0734,7,Muara Enim,,16.03,-3.699,103.96,
+0735,7,Ogan Komering Ulu Selatan,,16.09,-4.29,104.211,Ogan Komering Ulu;Ogan Komering Ulu Timur
+0736,7,Bengkulu,,17.71,-3.823,102.32,Bengkulu Utara;Seluma;Bengkulu Tengah
+0737,7,Bengkulu Utara,,17.03,-3.003,101.751,Mukomuko
+0738,7,Lebong,,17.07,-3.179,102.334,
+0739,7,Kaur,,17.04,-4.598,103.331,Bengkulu Selatan
+0740,7,Tanjung Jabung Timur,,15.07,-1.176,103.75,
+0741,7,Jambi,,15.71,-1.614,103.599,Muaro Jambi
+0742,7,Tanjung Jabung Barat,,15.06,-1.061,103.104,
+0743,7,Batanghari,,15.04,-1.715,103.102,
+0744,7,Tebo,,15.09,-1.249,102.349,
+0745,7,Sarolangun,,15.03,-2.368,102.656,
+0746,7,Merangin,,15.02,-2.186,102.07,
+0747,7,Bungo,,15.08,-1.599,101.931,
+0748,7,Sungai Penuh,,15.72,-2.113,101.341,Kerinci
+0751,7,Padang,,13.71,-0.895,100.436,Padang Pariaman;Pariaman
+0752,7,Padang Panjang,,13.74,-0.471,100.404,Tanah Datar;Agam;Lima Puluh Kota
+0753,7,Pasaman,,13.08,0.34,99.844,Pasaman Barat
+0754,7,Sawahlunto,,13.73,-0.651,100.755,Sijunjung;Dharmasraya
+0755,7,Solok,,13.72,-0.779,100.647,Solok Selatan
+0756,7,Pesisir Selatan,,13.01,-2.114,101.054,
+0757,7,Pesisir Selatan,,13.01,-2.114,101.054,
+0759,7,Kepulauan Mentawai,,13.09,-1.381,98.913,
+0760,7,Kuantan Singingi,,14.09,-0.479,101.504,
+0761,7,Pekanbaru,,14.71,0.55,101.465,Pelalawan;Siak
+0762,7,Kampar,,14.01,0.586,100.83,Rokan Hulu
+0763,7,Kepulauan Meranti,,14.10,0.887,102.735,
+0764,7,Siak,,14.08,0.745,101.819,
+0765,7,Dumai,,14.72,1.917,101.218,Bengkalis;Rokan Hilir
+0766,7,Bengkalis,,14.03,1.273,101.533,
+0767,7,Rokan Hilir,,14.07,1.723,100.724,
+0768,7,Indragiri Hilir,,14.04,-0.154,102.989,
+0769,7,Indragiri Hulu,,14.02,-0.533,102.328,
+0770,7,Batam,,21.71,1.092,103.99,
+0771,7,Tanjungpinang,,21.72,0.917,104.498,Bintan
+0772,7,Kepulauan Anambas,,21.05,2.931,105.752,
+0773,7,Natuna,,21.03,3.939,108.197,
+0776,7,Lingga,,21.04,-0.16,104.598,
+0777,7,Karimun,,21.02,0.756,103.423,
+0778,7,Batam,,21.71,1.092,103.99,
+0779,7,Karimun,,21.02,0.756,103.423,
+0901,9,Mimika,,94.04,-4.493,136.911,
+0902,9,Asmat,,93.04,-5.369,138.56,
+0911,9,Ambon,,81.71,-3.7,128.226,
+0913,9,Buru,,81.04,-3.289,126.727,
+0914,9,Maluku Tengah,,81.01,-3.099,129.401,
+0915,9,Seram Bagian Timur,,81.05,-3.368,130.394,
+0916,9,Tual,,81.72,-5.619,132.774,
+0917,9,Kepulauan Aru,,81.07,-6.663,134.27,
+0918,9,Kepulauan Tanimbar,,81.03,-7.587,131.407,
+0921,9,Ternate,,82.71,0.807,127.341,Tidore Kepulauan
+0922,9,Halmahera Barat,,82.01,1.244,127.527,
+0923,9,Pulau Morotai,,82.07,2.317,128.457,
+0924,9,Halmahera Utara,,82.03,1.524,127.87,
+0927,9,Halmahera Selatan,,82.04,-0.212,127.843,
+0929,9,Pulau Taliabu,,82.08,-1.824,125.129,Kepulauan Sula
+0951,9,Sorong,,96.71,-0.87,131.34,
+0952,9,Sorong Selatan,,96.02,-1.778,132.242,
+0955,9,Teluk Bintuni,,92.06,-1.752,133.241,
+0956,9,Fakfak,,92.03,-3.017,133.03,
+0957,9,Kaimana,,92.08,-3.398,134.001,
+0966,9,Sarmi,,91.10,-2.472,139.043,
+0967,9,Jayapura,,91.71,-2.686,140.881,
+0969,9,Jayawijaya,,95.01,-4.088,138.869,
+0971,9,Merauke,,93.01,-7.735,140.339,
+0975,9,Boven Digoel,,93.02,-5.977,140.376,
+0980,9,Manokwari Selatan,,92.11,-1.594,133.972,
+0981,9,Biak Numfor,,91.06,-0.997,135.976,
+0983,9,Kepulauan Yapen,,91.05,-1.757,136.205,
+0984,9,Dogiyai,,94.06,-4.033,135.811,
+0985,9,Nabire,,94.01,-3.507,135.713,
+0986,9,Manokwari,,92.02,-0.855,133.888,

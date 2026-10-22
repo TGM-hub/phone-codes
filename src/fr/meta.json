@@ -1,0 +1,49 @@
+{
+  "iso": "FR",
+  "name": {
+    "fr": "France",
+    "en": "France"
+  },
+  "display": "{code}",
+  "system": {
+    "fr": "Indicatif",
+    "en": "Indicatif"
+  },
+  "group_label": {
+    "fr": "Bloc",
+    "en": "Block"
+  },
+  "match": "admin",
+  "groups": [
+    {
+      "id": "0",
+      "name": {
+        "fr": "Fixes (01-05)",
+        "en": "Landlines (01-05)"
+      },
+      "color": "#5CC9C4"
+    }
+  ],
+  "anchors": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05"
+  ],
+  "twins": [],
+  "tips": [
+    {
+      "title": "01 → 05",
+      "codes": [],
+      "fr": "Cinq zones : 01 Île-de-France, 02 nord-ouest, 03 nord-est, 04 sud-est (avec la Corse), 05 sud-ouest. Les limites suivent les anciennes régions (avant 2016) : l'Auvergne est en 04, le Limousin et Poitou-Charentes en 05, la Bourgogne et la Franche-Comté en 03, le Centre en 02.",
+      "en": "Five zones: 01 Île-de-France, 02 north-west, 03 north-east, 04 south-east (with Corsica), 05 south-west. Borders follow the old regions (before 2016): Auvergne is 04, Limousin and Poitou-Charentes 05, Burgundy and Franche-Comté 03, Centre 02."
+    },
+    {
+      "title": "06 · 07 · Outre-mer",
+      "codes": [],
+      "fr": "06 et 07 sont des portables, 09 de la VoIP : ils ne disent rien du lieu. Outre-mer : 0262/0263 La Réunion, 0269 Mayotte, 0590 Guadeloupe, 0594 Guyane, 0596 Martinique (absents de la carte).",
+      "en": "06 and 07 are mobiles, 09 VoIP: they say nothing about the place. Overseas: 0262/0263 Réunion, 0269 Mayotte, 0590 Guadeloupe, 0594 French Guiana, 0596 Martinique (not on the map)."
+    }
+  ]
+}

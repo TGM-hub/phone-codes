@@ -1,0 +1,288 @@
+[
+ {
+  "iso": "AU",
+  "name": {
+   "fr": "Australie",
+   "en": "Australia"
+  },
+  "system": {
+   "fr": "Area code",
+   "en": "Area code"
+  },
+  "codes": 4,
+  "groups": 1
+ },
+ {
+  "iso": "BR",
+  "name": {
+   "fr": "Brésil",
+   "en": "Brazil"
+  },
+  "system": {
+   "fr": "DDD",
+   "en": "DDD"
+  },
+  "codes": 67,
+  "groups": 9
+ },
+ {
+  "iso": "CO",
+  "name": {
+   "fr": "Colombie",
+   "en": "Colombia"
+  },
+  "system": {
+   "fr": "Indicativo",
+   "en": "Indicativo"
+  },
+  "codes": 7,
+  "groups": 1
+ },
+ {
+  "iso": "HR",
+  "name": {
+   "fr": "Croatie",
+   "en": "Croatia"
+  },
+  "system": {
+   "fr": "Pozivni broj",
+   "en": "Pozivni broj"
+  },
+  "codes": 20,
+  "groups": 5
+ },
+ {
+  "iso": "FR",
+  "name": {
+   "fr": "France",
+   "en": "France"
+  },
+  "system": {
+   "fr": "Indicatif",
+   "en": "Indicatif"
+  },
+  "codes": 5,
+  "groups": 1
+ },
+ {
+  "iso": "DE",
+  "name": {
+   "fr": "Allemagne",
+   "en": "Germany"
+  },
+  "system": {
+   "fr": "Vorwahl",
+   "en": "Vorwahl"
+  },
+  "codes": 8,
+  "groups": 1
+ },
+ {
+  "iso": "GR",
+  "name": {
+   "fr": "Grèce",
+   "en": "Greece"
+  },
+  "system": {
+   "fr": "Κωδικός",
+   "en": "Κωδικός"
+  },
+  "codes": 8,
+  "groups": 1
+ },
+ {
+  "iso": "HU",
+  "name": {
+   "fr": "Hongrie",
+   "en": "Hungary"
+  },
+  "system": {
+   "fr": "Körzetszám",
+   "en": "Körzetszám"
+  },
+  "codes": 54,
+  "groups": 9
+ },
+ {
+  "iso": "ID",
+  "name": {
+   "fr": "Indonésie",
+   "en": "Indonesia"
+  },
+  "system": {
+   "fr": "Kode area",
+   "en": "Kode area"
+  },
+  "codes": 305,
+  "groups": 7
+ },
+ {
+  "iso": "JP",
+  "name": {
+   "fr": "Japon",
+   "en": "Japan"
+  },
+  "system": {
+   "fr": "市外局番",
+   "en": "市外局番"
+  },
+  "codes": 63,
+  "groups": 9
+ },
+ {
+  "iso": "MY",
+  "name": {
+   "fr": "Malaisie",
+   "en": "Malaysia"
+  },
+  "system": {
+   "fr": "Kod kawasan",
+   "en": "Kod kawasan"
+  },
+  "codes": 14,
+  "groups": 7
+ },
+ {
+  "iso": "NZ",
+  "name": {
+   "fr": "Nouvelle-Zélande",
+   "en": "New Zealand"
+  },
+  "system": {
+   "fr": "Area code",
+   "en": "Area code"
+  },
+  "codes": 5,
+  "groups": 1
+ },
+ {
+  "iso": "PE",
+  "name": {
+   "fr": "Pérou",
+   "en": "Peru"
+  },
+  "system": {
+   "fr": "Código de área",
+   "en": "Código de área"
+  },
+  "codes": 24,
+  "groups": 6
+ },
+ {
+  "iso": "PH",
+  "name": {
+   "fr": "Philippines",
+   "en": "Philippines"
+  },
+  "system": {
+   "fr": "Area code",
+   "en": "Area code"
+  },
+  "codes": 37,
+  "groups": 7
+ },
+ {
+  "iso": "PL",
+  "name": {
+   "fr": "Pologne",
+   "en": "Poland"
+  },
+  "system": {
+   "fr": "Numer kierunkowy",
+   "en": "Numer kierunkowy"
+  },
+  "codes": 49,
+  "groups": 9
+ },
+ {
+  "iso": "RO",
+  "name": {
+   "fr": "Roumanie",
+   "en": "Romania"
+  },
+  "system": {
+   "fr": "Prefix",
+   "en": "Prefix"
+  },
+  "codes": 41,
+  "groups": 5
+ },
+ {
+  "iso": "RU",
+  "name": {
+   "fr": "Russie",
+   "en": "Russia"
+  },
+  "system": {
+   "fr": "Код ABC",
+   "en": "Код ABC"
+  },
+  "codes": 89,
+  "groups": 3
+ },
+ {
+  "iso": "ZA",
+  "name": {
+   "fr": "Afrique du Sud",
+   "en": "South Africa"
+  },
+  "system": {
+   "fr": "Area code",
+   "en": "Area code"
+  },
+  "codes": 36,
+  "groups": 5
+ },
+ {
+  "iso": "ES",
+  "name": {
+   "fr": "Espagne",
+   "en": "Spain"
+  },
+  "system": {
+   "fr": "Prefijo",
+   "en": "Prefijo"
+  },
+  "codes": 58,
+  "groups": 8
+ },
+ {
+  "iso": "TH",
+  "name": {
+   "fr": "Thaïlande",
+   "en": "Thailand"
+  },
+  "system": {
+   "fr": "รหัสพื้นที่",
+   "en": "รหัสพื้นที่"
+  },
+  "codes": 22,
+  "groups": 5
+ },
+ {
+  "iso": "TR",
+  "name": {
+   "fr": "Turquie",
+   "en": "Turkey"
+  },
+  "system": {
+   "fr": "Alan kodu",
+   "en": "Alan kodu"
+  },
+  "codes": 82,
+  "groups": 3
+ },
+ {
+  "iso": "UA",
+  "name": {
+   "fr": "Ukraine",
+   "en": "Ukraine"
+  },
+  "system": {
+   "fr": "Код",
+   "en": "Код"
+  },
+  "codes": 27,
+  "groups": 4
+ }
+]

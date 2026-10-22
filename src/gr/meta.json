@@ -1,0 +1,55 @@
+{
+  "iso": "GR",
+  "name": {
+    "fr": "Grèce",
+    "en": "Greece"
+  },
+  "display": "{code}…",
+  "system": {
+    "fr": "Κωδικός",
+    "en": "Κωδικός"
+  },
+  "group_label": {
+    "fr": "Bloc",
+    "en": "Block"
+  },
+  "match": "admin",
+  "groups": [
+    {
+      "id": "2",
+      "name": {
+        "fr": "Fixes (2X)",
+        "en": "Landlines (2X)"
+      },
+      "color": "#5CC9C4"
+    }
+  ],
+  "anchors": [
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28"
+  ],
+  "twins": [],
+  "tips": [
+    {
+      "title": "2X",
+      "codes": [],
+      "fr": "Tous les fixes commencent par 2 ; le 2e chiffre donne la grande région : 21 Athènes, 22 Grèce-Centrale, est de l'Attique et îles de l'Égée, 23 Macédoine-Centrale (231 Thessalonique), 24 Thessalie et Macédoine-Occidentale, 25 Macédoine-Orientale et Thrace, 26 Grèce-Occidentale, Épire et îles Ioniennes, 27 Péloponnèse, 28 Crète. 69x est un portable.",
+      "en": "All landlines start with 2; the 2nd digit gives the big region: 21 Athens, 22 Central Greece, eastern Attica and the Aegean islands, 23 Central Macedonia (231 Thessaloniki), 24 Thessaly and Western Macedonia, 25 Eastern Macedonia and Thrace, 26 Western Greece, Epirus and the Ionian Islands, 27 Peloponnese, 28 Crete. 69x is a mobile."
+    },
+    {
+      "title": "21 / 22",
+      "codes": [
+        "21",
+        "22"
+      ],
+      "fr": "L'Attique est partagée : Athènes et sa banlieue en 21, l'est de l'Attique, Mégare et les îles Saroniques en 229x. Ici toute l'Attique accepte les deux. Florina (Macédoine-Occidentale) est en 2385, une exception ignorée.",
+      "en": "Attica is shared: Athens and suburbs on 21, eastern Attica, Megara and the Saronic islands on 229x. Here all of Attica accepts both. Florina (Western Macedonia) is on 2385, an exception left out."
+    }
+  ]
+}

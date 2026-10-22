@@ -1,0 +1,15 @@
+code,group,city,local,admin,lat,lon,cities
+03,3,Kuala Lumpur,,Kuala Lumpur,3.145,101.691,Shah Alam;Petaling Jaya;Klang
+04,4,George Town,,Timur Laut,5.41,100.281,Alor Setar;Kangar;Langkawi
+05,5,Ipoh,,Kinta,4.571,101.132,Taiping;Teluk Intan;Cameron Highlands
+06,6,Seremban,,Seremban,2.755,101.919,Melaka;Muar;Segamat
+07,7,Johor Bahru,,Johor Bahru,1.509,103.777,Batu Pahat;Kluang;Mersing
+082,8,Kuching,,Kuching,1.483,110.309,Samarahan;Serian
+083,8,Sri Aman,,Sri Aman,1.202,111.309,Betong
+084,8,Sibu,,Sibu,2.306,111.883,Sarikei;Mukah;Kapit
+085,8,Miri,,Miri,3.517,115.364,Limbang;Lawas
+086,8,Bintulu,,Bintulu,3.31,113.235,Belaga
+087,8,Labuan,,Labuan,5.313,115.221,Keningau;Beaufort
+088,8,Kota Kinabalu,,Kota Kinabalu,6.007,116.179,Kudat;Ranau
+089,8,Sandakan,,Sandakan,5.775,117.978,Tawau;Lahad Datu
+09,9,Kuantan,,Kuantan,3.86,103.091,Kota Bharu;Kuala Terengganu

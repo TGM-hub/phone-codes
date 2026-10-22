@@ -1,0 +1,38 @@
+code,group,city,local,admin,lat,lon,cities
+02,2,Manila,,ncr-city-of-manila-first-district,14.599,120.984,Quezon City;Makati;Antipolo
+032,3,Cebu City,,cebu,10.316,123.891,Mandaue;Lapu-Lapu;Toledo
+033,3,Iloilo City,,guimaras,10.72,122.562,Passi;Miagao;Guimaras
+034,3,Bacolod,,negros-occidental,10.676,122.951,Silay;Kabankalan;San Carlos
+035,3,Dumaguete,,negros-oriental,9.307,123.308,Bais;Bayawan;Siquijor
+036,3,Roxas,,capiz,11.585,122.751,Kalibo;Boracay;San Jose de Buenavista
+038,3,Tagbilaran,,bohol,9.648,123.855,Ubay;Talibon;Jagna
+042,4,Lucena,,quezon,13.931,121.617,Tayabas;Gumaca;Boac
+043,4,Batangas City,,batangas,13.757,121.058,Lipa;Calapan;San Jose
+044,4,Malolos,,bulacan,14.844,120.811,Meycauayan;Cabanatuan;Gapan
+045,4,San Fernando,,pampanga,15.034,120.684,Angeles;Tarlac City;Mabalacat
+046,4,Dasmariñas,,cavite,14.329,120.937,Imus;Tagaytay;Trece Martires
+047,4,Olongapo,,bataan,14.829,120.283,Balanga;Iba;Subic
+048,4,Puerto Princesa,,palawan,9.74,118.735,
+049,4,Calamba,,laguna,14.212,121.165,Santa Rosa;San Pablo;Los Baños
+052,5,Legazpi,,albay,13.139,123.744,Tabaco;Ligao;Virac
+053,5,Tacloban,,leyte,11.244,125.004,Ormoc;Palo;Naval
+054,5,Naga,,camarines-sur,13.621,123.195,Iriga;Daet;Pili
+055,5,Calbayog,,samar,12.067,124.6,Catbalogan;Borongan;Catarman
+056,5,Sorsogon City,,sorsogon,12.971,124.006,Masbate City;Bulan;Gubat
+062,6,Zamboanga City,,zamboanga-del-sur,6.91,122.073,Pagadian;Ipil;Isabela City
+063,6,Iligan,,lanao-del-norte,8.228,124.245,Marawi;Tubod;Kapatagan
+064,6,Cotabato City,,cotabato-city,7.223,124.246,Kidapawan;Tacurong;Isulan
+065,6,Dipolog,,zamboanga-del-norte,8.589,123.341,Dapitan
+068,6,Jolo,,sulu,6.053,121.002,Bongao
+072,7,San Fernando,,la-union,16.616,120.317,Agoo;Bauang
+074,7,Baguio,,benguet,16.402,120.596,La Trinidad;Bontoc;Tabuk
+075,7,Dagupan,,pangasinan,16.043,120.334,Lingayen;Urdaneta;Alaminos
+077,7,Laoag,,ilocos-norte,18.198,120.593,Vigan;Batac;Candon
+078,7,Tuguegarao,,cagayan,17.613,121.727,Santiago;Ilagan;Bayombong
+082,8,Davao City,,davao-del-sur,7.073,125.613,Digos
+083,8,General Santos,,sarangani,6.113,125.172,Koronadal;Polomolok
+084,8,Tagum,,compostela-valley,7.448,125.808,Panabo
+085,8,Butuan,,agusan-del-norte,8.948,125.544,Cabadbaran;Bayugan
+086,8,Surigao City,,surigao-del-norte,9.787,125.491,Bislig;Tandag
+087,8,Mati,,davao-oriental,6.955,126.217,
+088,8,Cagayan de Oro,,bukidnon,8.454,124.632,Malaybalay;Ozamiz;Oroquieta

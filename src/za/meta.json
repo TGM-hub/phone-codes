@@ -1,0 +1,99 @@
+{
+  "iso": "ZA",
+  "name": {
+    "fr": "Afrique du Sud",
+    "en": "South Africa"
+  },
+  "display": "{code}",
+  "system": {
+    "fr": "Area code",
+    "en": "Area code"
+  },
+  "group_label": {
+    "fr": "Bloc",
+    "en": "Block"
+  },
+  "match": "admin",
+  "groups": [
+    {
+      "id": "1",
+      "name": {
+        "fr": "Nord : Gauteng, Mpumalanga, Limpopo, North West",
+        "en": "North: Gauteng, Mpumalanga, Limpopo, North West"
+      },
+      "color": "#EE7A6A"
+    },
+    {
+      "id": "2",
+      "name": {
+        "fr": "Ouest : Cap-Occidental et ouest du Cap-Nord",
+        "en": "West: Western Cape and western Northern Cape"
+      },
+      "color": "#5CC9C4"
+    },
+    {
+      "id": "3",
+      "name": {
+        "fr": "KwaZulu-Natal",
+        "en": "KwaZulu-Natal"
+      },
+      "color": "#57D06A"
+    },
+    {
+      "id": "4",
+      "name": {
+        "fr": "Cap-Oriental et Garden Route",
+        "en": "Eastern Cape and Garden Route"
+      },
+      "color": "#C9A9E0"
+    },
+    {
+      "id": "5",
+      "name": {
+        "fr": "Intérieur : Free State, Kimberley, Upington",
+        "en": "Interior: Free State, Kimberley, Upington"
+      },
+      "color": "#EFE04A"
+    }
+  ],
+  "anchors": [
+    "011",
+    "012",
+    "013",
+    "015",
+    "018",
+    "021",
+    "023",
+    "027",
+    "031",
+    "033",
+    "041",
+    "043",
+    "044",
+    "047",
+    "051",
+    "053",
+    "054"
+  ],
+  "twins": [],
+  "tips": [
+    {
+      "title": "0X",
+      "codes": [],
+      "fr": "Le 2e chiffre donne la grande région : 01 le nord (Gauteng, Mpumalanga, Limpopo, North West), 02 l'ouest (Le Cap), 03 le KwaZulu-Natal, 04 le Cap-Oriental et la Garden Route, 05 l'intérieur (Free State, Kimberley).",
+      "en": "The 2nd digit gives the big region: 01 the north (Gauteng, Mpumalanga, Limpopo, North West), 02 the west (Cape Town), 03 KwaZulu-Natal, 04 the Eastern Cape and Garden Route, 05 the interior (Free State, Kimberley)."
+    },
+    {
+      "title": "06 · 07 · 08",
+      "codes": [],
+      "fr": "06x, 07x et 082-084 sont des portables : ils ne disent rien du lieu. 010 est une surcouche de Johannesburg (même zone que 011), absente du jeu.",
+      "en": "06x, 07x and 082-084 are mobiles: they say nothing about the place. 010 is an overlay for Johannesburg (same area as 011), left out of the game."
+    },
+    {
+      "title": "Zones",
+      "codes": [],
+      "fr": "Les zones sont reconstruites par municipalité locale, en rattachant chacune à la ville d'indicatif la plus proche : les limites sont approximatives.",
+      "en": "Areas are rebuilt per local municipality, attaching each to the nearest code town: borders are approximate."
+    }
+  ]
+}

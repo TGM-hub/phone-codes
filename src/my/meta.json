@@ -1,0 +1,112 @@
+{
+  "iso": "MY",
+  "name": {
+    "fr": "Malaisie",
+    "en": "Malaysia"
+  },
+  "display": "{code}-",
+  "system": {
+    "fr": "Kod kawasan",
+    "en": "Kod kawasan"
+  },
+  "group_label": {
+    "fr": "Bloc",
+    "en": "Block"
+  },
+  "match": "admin",
+  "groups": [
+    {
+      "id": "3",
+      "name": {
+        "fr": "Selangor, Kuala Lumpur, Putrajaya",
+        "en": "Selangor, Kuala Lumpur, Putrajaya"
+      },
+      "color": "#EE7A6A"
+    },
+    {
+      "id": "4",
+      "name": {
+        "fr": "Nord-Ouest : Perlis, Kedah, Penang",
+        "en": "North-West: Perlis, Kedah, Penang"
+      },
+      "color": "#57D06A"
+    },
+    {
+      "id": "5",
+      "name": {
+        "fr": "Perak (et Cameron Highlands)",
+        "en": "Perak (and Cameron Highlands)"
+      },
+      "color": "#EFE04A"
+    },
+    {
+      "id": "6",
+      "name": {
+        "fr": "Negeri Sembilan, Malacca, nord du Johor",
+        "en": "Negeri Sembilan, Malacca, northern Johor"
+      },
+      "color": "#F0A860"
+    },
+    {
+      "id": "7",
+      "name": {
+        "fr": "Johor",
+        "en": "Johor"
+      },
+      "color": "#C9A9E0"
+    },
+    {
+      "id": "8",
+      "name": {
+        "fr": "Bornéo : Sarawak (082-086), Sabah et Labuan (087-089)",
+        "en": "Borneo: Sarawak (082-086), Sabah and Labuan (087-089)"
+      },
+      "color": "#5CC9C4"
+    },
+    {
+      "id": "9",
+      "name": {
+        "fr": "Côte est : Pahang, Terengganu, Kelantan",
+        "en": "East coast: Pahang, Terengganu, Kelantan"
+      },
+      "color": "#F0A0DC"
+    }
+  ],
+  "anchors": [
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "082",
+    "084",
+    "085",
+    "088",
+    "089",
+    "09"
+  ],
+  "twins": [],
+  "tips": [
+    {
+      "title": "0X",
+      "codes": [],
+      "fr": "Péninsule, en gros du nord-ouest vers le sud : 04 Perlis-Kedah-Penang, 05 Perak, 03 Selangor-KL, 06 Negeri Sembilan-Malacca, 07 Johor ; 09 toute la côte est. 08x = Bornéo : 082-086 Sarawak, 087-089 Sabah et Labuan.",
+      "en": "Peninsula, roughly north-west to south: 04 Perlis-Kedah-Penang, 05 Perak, 03 Selangor-KL, 06 Negeri Sembilan-Malacca, 07 Johor; 09 the whole east coast. 08x = Borneo: 082-086 Sarawak, 087-089 Sabah and Labuan."
+    },
+    {
+      "title": "01x",
+      "codes": [],
+      "fr": "01x (010 à 019) est un portable : il ne dit rien du lieu.",
+      "en": "01x (010 to 019) is a mobile: it says nothing about the place."
+    },
+    {
+      "title": "06 · 05",
+      "codes": [
+        "06",
+        "05"
+      ],
+      "fr": "Le nord du Johor (Muar, Tangkak, Segamat) est en 06, et les Cameron Highlands (Pahang) en 05. Petites exceptions ignorées : Genting Highlands (03), Gemas (07), Pengkalan Hulu (04), Hulu Bernam (05).",
+      "en": "Northern Johor (Muar, Tangkak, Segamat) is 06, and the Cameron Highlands (Pahang) 05. Small exceptions ignored: Genting Highlands (03), Gemas (07), Pengkalan Hulu (04), Hulu Bernam (05)."
+    }
+  ]
+}

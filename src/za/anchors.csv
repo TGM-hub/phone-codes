@@ -1,0 +1,37 @@
+code,group,city,admin,lat,lon,cities
+011,1,Johannesburg,,-26.2,28.05,Soweto;Randburg;Germiston
+012,1,Pretoria,,-25.75,28.19,Brits
+013,1,Middelburg,,-25.77,29.46,eMalahleni (Witbank);Mbombela (Nelspruit);Bronkhorstspruit
+014,1,Rustenburg,,-25.67,27.24,Modimolle
+015,1,Polokwane,,-23.9,29.45,Tzaneen;Thohoyandou
+016,1,Vereeniging,,-26.67,27.93,Vanderbijlpark;Sasolburg
+017,1,Ermelo,,-26.53,29.98,
+018,1,Mahikeng,,-25.86,25.64,Klerksdorp;Potchefstroom;Lichtenburg
+021,2,Cape Town,,-33.92,18.42,Stellenbosch;Somerset West
+022,2,Malmesbury,,-33.46,18.73,West Coast
+023,2,Worcester,,-33.65,19.45,Beaufort West
+027,2,Vredendal,,-31.67,18.5,Springbok;Calvinia;Port Nolloth
+028,2,Swellendam,,-34.02,20.44,Hermanus;Caledon
+031,3,Durban,,-29.86,31.03,
+032,3,KwaDukuza (Stanger),,-29.34,31.29,Ballito;Tongaat;Verulam
+033,3,Pietermaritzburg,,-29.6,30.38,
+034,3,Vryheid,,-27.77,30.79,Newcastle
+035,3,Richards Bay,,-28.78,32.04,Ulundi;St Lucia
+036,3,Ladysmith,,-28.56,29.78,
+039,3,Port Shepstone,,-30.74,30.45,
+040,4,Bhisho,,-32.85,27.44,
+041,4,Gqeberha,,-33.96,25.6,Uitenhage
+042,4,Humansdorp,,-34.03,24.77,
+043,4,East London,,-33.02,27.91,
+044,4,George,,-33.96,22.46,Oudtshoorn;Knysna;Mossel Bay
+045,4,Komani (Queenstown),,-31.9,26.88,
+046,4,Makhanda (Grahamstown),,-33.31,26.53,Port Alfred
+047,4,Mthatha,,-31.59,28.78,
+048,4,Steynsburg,,-31.3,25.82,
+049,4,Graaff-Reinet,,-32.25,24.53,
+051,5,Bloemfontein,,-29.12,26.21,Aliwal North
+053,5,Kimberley,,-28.74,24.77,
+054,5,Upington,,-28.45,21.25,
+056,5,Kroonstad,,-27.65,27.23,
+057,5,Welkom,,-27.98,26.73,
+058,5,Bethlehem,,-28.23,28.31,

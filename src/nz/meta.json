@@ -1,0 +1,52 @@
+{
+  "iso": "NZ",
+  "name": {
+    "fr": "Nouvelle-Zélande",
+    "en": "New Zealand"
+  },
+  "display": "({code})",
+  "system": {
+    "fr": "Area code",
+    "en": "Area code"
+  },
+  "group_label": {
+    "fr": "Bloc",
+    "en": "Block"
+  },
+  "match": "admin",
+  "groups": [
+    {
+      "id": "0",
+      "name": {
+        "fr": "Fixes",
+        "en": "Landlines"
+      },
+      "color": "#5CC9C4"
+    }
+  ],
+  "anchors": [
+    "03",
+    "04",
+    "06",
+    "07",
+    "09"
+  ],
+  "twins": [],
+  "tips": [
+    {
+      "title": "03 · 04 · 06 · 07 · 09",
+      "codes": [],
+      "fr": "03 toute l'île du Sud, 04 Wellington et la Kāpiti Coast, 06 Taranaki, Manawatū-Whanganui, Hawke's Bay, Gisborne et Wairarapa, 07 Waikato et Bay of Plenty, 09 Auckland et Northland. 02x est un portable.",
+      "en": "03 the whole South Island, 04 Wellington and the Kāpiti Coast, 06 Taranaki, Manawatū-Whanganui, Hawke's Bay, Gisborne and Wairarapa, 07 Waikato and Bay of Plenty, 09 Auckland and Northland. 02x is a mobile."
+    },
+    {
+      "title": "04 / 06",
+      "codes": [
+        "04",
+        "06"
+      ],
+      "fr": "La région de Wellington est coupée : agglomération et Kāpiti en 04, Wairarapa et Ōtaki en 06. Ici toute la région accepte les deux. Autres exceptions ignorées : Taumarunui et National Park (07), Tuakau et Pōkeno (09).",
+      "en": "The Wellington region is split: the metro area and Kāpiti on 04, the Wairarapa and Ōtaki on 06. Here the whole region accepts both. Other exceptions ignored: Taumarunui and National Park (07), Tuakau and Pōkeno (09)."
+    }
+  ]
+}

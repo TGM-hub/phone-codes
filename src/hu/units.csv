@@ -1,0 +1,199 @@
+shape,name,codes
+Bóly,Bóly,69
+Komló,Komló,72
+Mohács,Mohács,69
+Pécs,Pécs,72
+Pécsvárad,Pécsvárad,72
+Hegyhát,Hegyhát,72
+Sellye,Sellye,73
+Siklós,Siklós,72
+Szentlőrinc,Szentlőrinc,73
+Szigetvár,Szigetvár,73
+Baja,Baja,79
+Bácsalmás,Bácsalmás,79
+Jánoshalma,Jánoshalma,77
+Kalocsa,Kalocsa,75
+Kecskemét,Kecskemét,76
+Kiskőrös,Kiskőrös,78
+Kiskunfélegyháza,Kiskunfélegyháza,76
+Kiskunhalas,Kiskunhalas,77
+Kiskunmajsa,Kiskunmajsa,77
+Kunszentmiklós,Kunszentmiklós,25
+Tiszakécske,Tiszakécske,76
+Békés,Békés,66
+Békéscsaba,Békéscsaba,66
+Gyomaendrőd,Gyomaendrőd,59
+Gyula,Gyula,66
+Mezőkovácsháza,Mezőkovácsháza,68
+Orosháza,Orosháza,68
+Sarkad,Sarkad,54
+Szarvas,Szarvas,63
+Szeghalom,Szeghalom,54
+Cigánd,Cigánd,45
+Edelény,Edelény,46
+Encs,Encs,47
+Gönc,Gönc,47
+Kazincbarcika,Kazincbarcika,46
+Mezőcsát,Mezőcsát,49
+Mezőkövesd,Mezőkövesd,49
+Miskolc,Miskolc,46
+Ózd,Ózd,48
+Putnok,Putnok,48
+Sárospatak,Sárospatak,47
+Sátoraljaújhely,Sátoraljaújhely,47
+Szerencs,Szerencs,47
+Szikszó,Szikszó,47
+Tiszaújváros,Tiszaújváros,46
+Tokaj,Tokaj,47
+Csongrád,Csongrád,63
+Hódmezővásárhely,Hódmezővásárhely,63
+Kistelek,Kistelek,62
+Makó,Makó,62
+Mórahalom,Mórahalom,62
+Szeged,Szeged,62
+Szentes,Szentes,63
+Bicske,Bicske,34
+Dunaújváros,Dunaújváros,25
+Enying,Enying,84
+Gárdony,Gárdony,22
+Martonvásár,Martonvásár,24
+Mór,Mór,22
+Polgard,Polgard,22
+Sárbogárd,Sárbogárd,25
+Székesfehérvár,Székesfehérvár,22
+Csorna,Csorna,96
+Győr,Győr,96
+Kapuvár,Kapuvár,99
+Mosonmagyaróvár,Mosonmagyaróvár,96
+Pannonhalm,Pannonhalm,96
+Sopron,Sopron,99
+Tét,Tét,96
+Balmazújváros,Balmazújváros,52
+Berettyóújfalu,Berettyóújfalu,54
+Debrecen,Debrecen,52
+Derecske,Derecske,52
+Hajdúböszörmény,Hajdúböszörmény,52
+Hajdúhadház,Hajdúhadház,52
+Hajdúnánás,Hajdúnánás,42
+Hajdúszoboszló,Hajdúszoboszló,52
+Nyíradony,Nyíradony,52
+Püspökladány,Püspökladány,54
+Bélapátfalva,Bélapátfalva,48
+Eger,Eger,36
+Füzesabony,Füzesabony,49
+Gyöngyös,Gyöngyös,37
+Hatvan,Hatvan,37
+Heves,Heves,57
+Pétervására,Pétervására,36
+Jászapáti,Jászapáti,57
+Jászberény,Jászberény,57
+Karcag,Karcag,59
+Kunhegyes,Kunhegyes,59
+Kunszentmártonj,Kunszentmártonj,63
+Mezőtúr,Mezőtúr,56
+Szolnok,Szolnok,56
+Tiszafüred,Tiszafüred,59
+Törökszentmiklós,Törökszentmiklós,56
+Esztergom,Esztergom,33
+Kisbér,Kisbér,96
+Komárom,Komárom,96
+Oroszlány,Oroszlány,34
+Tata,Tata,34
+Tatabánya,Tatabánya,34
+Balassagyarmat,Balassagyarmat,35
+Bátonyterenye,Bátonyterenye,32
+Pásztó,Pásztó,35
+Rétság,Rétság,35
+Salgótarján,Salgótarján,32
+Szécsény,Szécsény,32
+Aszód,Aszód,28
+Budakeszi,Budakeszi,23
+Cegléd,Cegléd,53
+Dabas,Dabas,29
+Dunakeszi,Dunakeszi,26
+Érd,Érd,24
+Gödöllő,Gödöllő,28
+Gyál,Gyál,24
+Monor,Monor,29
+Nagykáta,Nagykáta,57
+Nagykőrös,Nagykőrös,53
+Pilisvörösvár,Pilisvörösvár,23
+Ráckeve,Ráckeve,24
+Szentendre,Szentendre,26
+Szigetszentmiklós,Szigetszentmiklós,24
+Szob,Szob,26
+Vác,Vác,27
+Vecsés,Vecsés,29
+Barcs,Barcs,73
+Csurgó,Csurgó,93
+Fonyód,Fonyód,87
+Kaposvár,Kaposvár,82
+Marcali,Marcali,85
+Nagyatád,Nagyatád,82
+Siófok,Siófok,84
+Tab,Tab,84
+Baktalórántháza,Baktalórántháza,45
+Csenger,Csenger,44
+Fehérgyarmat,Fehérgyarmat,44
+Ibrány,Ibrány,42
+Kemecse,Kemecse,45
+Kisvárda,Kisvárda,45
+Mátészalka,Mátészalka,44
+Nagykálló,Nagykálló,42
+Nyírbátor,Nyírbátor,44
+Nyíregyháza,Nyíregyháza,42
+Tiszavasvári,Tiszavasvári,47
+Vásárosnamény,Vásárosnamény,45
+Záhony,Záhony,45
+Bonyhád,Bonyhád,74
+Dombóvár,Dombóvár,82
+Paks,Paks,75
+Szekszárd,Szekszárd,74
+Tamási,Tamási,75
+Tolna,Tolna,74
+Celldömölk,Celldömölk,95
+Körmend,Körmend,92
+Kőszeg,Kőszeg,94
+Sárvár,Sárvár,95
+Szentgotthárd,Szentgotthárd,94
+Szombathely,Szombathely,94
+Vasvár,Vasvár,94
+Ajka,Ajka,88
+Balatonalmádi,Balatonalmádi,88
+Balatonfüred,Balatonfüred,84
+Devecser,Devecser,89
+Pápa,Pápa,89
+Sümeg,Sümeg,87
+Tapolca,Tapolca,87
+Várpalota,Várpalota,88
+Veszprém,Veszprém,88
+Zirc,Zirc,88
+Keszthely,Keszthely,83
+Lenti,Lenti,92
+Letenye,Letenye,93
+Nagykanizsa,Nagykanizsa,93
+Zalaegerszeg,Zalaegerszeg,92
+Zalaszentgrót,Zalaszentgrót,83
+XXI. kerület,XXI. kerület,1
+XXII. kerület,XXII. kerület,1
+III. kerület,III. kerület,1
+II. kerület,II. kerület,1
+I. kerület,I. kerület,1
+XII. kerület,XII. kerület,1
+XI. kerület,XI. kerület,1
+IV. kerület,IV. kerület,1
+XXIII. kerület,XXIII. kerület,1
+XVIII. kerület,XVIII. kerület,1
+XVII. kerület,XVII. kerület,1
+XIX. kerület,XIX. kerület,1
+XX. kerület,XX. kerület,1
+IX. kerület,IX. kerület,1
+X. kerület,X. kerület,1
+XVI. kerület,XVI. kerület,1
+XIII. kerület,XIII. kerület,1
+XV. kerület,XV. kerület,1
+XIV. kerület,XIV. kerület,1
+VIII. kerület,VIII. kerület,1
+VI. kerület,VI. kerület,1
+VII. kerület,VII. kerület,1
+V. kerület,V. kerület,1
