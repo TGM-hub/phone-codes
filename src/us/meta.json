@@ -1,0 +1,115 @@
+{
+  "iso": "US",
+  "name": {
+    "fr": "États-Unis + Canada",
+    "en": "United States + Canada"
+  },
+  "aliases": [
+    "CA",
+    "PR"
+  ],
+  "display": "({code})",
+  "system": {
+    "fr": "Area code",
+    "en": "Area code"
+  },
+  "group_label": {
+    "fr": "Région",
+    "en": "Region"
+  },
+  "match": "admin",
+  "unit_labels": true,
+  "groups": [
+    {
+      "id": "NE",
+      "name": {
+        "fr": "Nord-Est",
+        "en": "Northeast"
+      },
+      "color": "#EE7A6A"
+    },
+    {
+      "id": "MW",
+      "name": {
+        "fr": "Midwest",
+        "en": "Midwest"
+      },
+      "color": "#EFE04A"
+    },
+    {
+      "id": "S",
+      "name": {
+        "fr": "Sud (avec Porto Rico)",
+        "en": "South (with Puerto Rico)"
+      },
+      "color": "#F0A860"
+    },
+    {
+      "id": "W",
+      "name": {
+        "fr": "Ouest (avec Alaska et Hawaï)",
+        "en": "West (with Alaska and Hawaii)"
+      },
+      "color": "#57D06A"
+    },
+    {
+      "id": "CA",
+      "name": {
+        "fr": "Canada",
+        "en": "Canada"
+      },
+      "color": "#5CC9C4"
+    }
+  ],
+  "anchors": [
+    "212",
+    "213",
+    "312",
+    "305",
+    "713",
+    "404",
+    "617",
+    "206",
+    "303",
+    "702",
+    "907",
+    "808",
+    "416",
+    "514",
+    "604",
+    "403",
+    "902",
+    "787"
+  ],
+  "twins": [],
+  "tips": [
+    {
+      "title": "(XXX)",
+      "codes": [],
+      "fr": "États-Unis et Canada partagent un seul plan : (XXX) XXX-XXXX. L'indicatif à 3 chiffres ne sort quasiment jamais d'un État ou d'une province ; un même État en a souvent plusieurs, superposés sur la même zone.",
+      "en": "The US and Canada share one plan: (XXX) XXX-XXXX. The 3-digit area code almost never crosses a state or province line; a state often has several, overlaid on the same area."
+    },
+    {
+      "title": "Un seul code",
+      "codes": [],
+      "fr": "États à indicatif unique, faciles à retenir : 907 Alaska, 808 Hawaï, 406 Montana, 307 Wyoming, 701 Dakota du Nord, 605 Dakota du Sud, 802 Vermont, 603 New Hampshire, 401 Rhode Island, 302 Delaware ; au Canada 709 Terre-Neuve, 867 les trois territoires.",
+      "en": "Single-code states, easy wins: 907 Alaska, 808 Hawaii, 406 Montana, 307 Wyoming, 701 North Dakota, 605 South Dakota, 802 Vermont, 603 New Hampshire, 401 Rhode Island, 302 Delaware; in Canada 709 Newfoundland, 867 the three territories."
+    },
+    {
+      "title": "Canada",
+      "codes": [],
+      "fr": "Québec : 418/581/367 (Québec, est), 514/438/263 (Montréal), 450/579/354 (couronne), 819/873/468 (ouest et nord). Ontario : 416/647/437 Toronto, 905/289/365 autour, 613/343 Ottawa, 519/226/548 le sud-ouest, 705/249 et 807 le nord. Colombie-Britannique : 604 Vancouver, 250 le reste, 778/236/672 superposés aux deux. 902/782 Nouvelle-Écosse et Île-du-Prince-Édouard.",
+      "en": "Quebec: 418/581/367 (Quebec City, east), 514/438/263 (Montreal), 450/579/354 (suburbs), 819/873/468 (west and north). Ontario: 416/647/437 Toronto, 905/289/365 around it, 613/343 Ottawa, 519/226/548 the south-west, 705/249 and 807 the north. British Columbia: 604 Vancouver, 250 the rest, 778/236/672 overlaid on both. 902/782 Nova Scotia and PEI."
+    },
+    {
+      "title": "Exceptions",
+      "codes": [],
+      "fr": "Exceptions ignorées : Hyder (Alaska) utilise les codes de la Colombie-Britannique, Estcourt Station (Maine) ceux du Québec. Les tout derniers indicatifs (2025-2026) peuvent manquer.",
+      "en": "Ignored exceptions: Hyder (Alaska) uses British Columbia codes, Estcourt Station (Maine) Quebec's. The very latest codes (2025-2026) may be missing."
+    }
+  ],
+  "group_q": {
+    "fr": "Dans quelle région ?",
+    "en": "Which region?"
+  }
+}

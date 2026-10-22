@@ -9,6 +9,7 @@
    "fr": "Area code",
    "en": "Area code"
   },
+  "aliases": [],
   "codes": 4,
   "groups": 1
  },
@@ -22,6 +23,7 @@
    "fr": "DDD",
    "en": "DDD"
   },
+  "aliases": [],
   "codes": 67,
   "groups": 9
  },
@@ -35,6 +37,7 @@
    "fr": "Indicativo",
    "en": "Indicativo"
   },
+  "aliases": [],
   "codes": 7,
   "groups": 1
  },
@@ -48,6 +51,7 @@
    "fr": "Pozivni broj",
    "en": "Pozivni broj"
   },
+  "aliases": [],
   "codes": 20,
   "groups": 5
  },
@@ -61,6 +65,7 @@
    "fr": "Indicatif",
    "en": "Indicatif"
   },
+  "aliases": [],
   "codes": 5,
   "groups": 1
  },
@@ -74,6 +79,7 @@
    "fr": "Vorwahl",
    "en": "Vorwahl"
   },
+  "aliases": [],
   "codes": 8,
   "groups": 1
  },
@@ -87,6 +93,7 @@
    "fr": "Κωδικός",
    "en": "Κωδικός"
   },
+  "aliases": [],
   "codes": 8,
   "groups": 1
  },
@@ -100,6 +107,7 @@
    "fr": "Körzetszám",
    "en": "Körzetszám"
   },
+  "aliases": [],
   "codes": 54,
   "groups": 9
  },
@@ -113,6 +121,7 @@
    "fr": "Kode area",
    "en": "Kode area"
   },
+  "aliases": [],
   "codes": 305,
   "groups": 7
  },
@@ -126,6 +135,7 @@
    "fr": "市外局番",
    "en": "市外局番"
   },
+  "aliases": [],
   "codes": 63,
   "groups": 9
  },
@@ -139,6 +149,7 @@
    "fr": "Kod kawasan",
    "en": "Kod kawasan"
   },
+  "aliases": [],
   "codes": 14,
   "groups": 7
  },
@@ -152,6 +163,7 @@
    "fr": "Area code",
    "en": "Area code"
   },
+  "aliases": [],
   "codes": 5,
   "groups": 1
  },
@@ -165,6 +177,7 @@
    "fr": "Código de área",
    "en": "Código de área"
   },
+  "aliases": [],
   "codes": 24,
   "groups": 6
  },
@@ -178,6 +191,7 @@
    "fr": "Area code",
    "en": "Area code"
   },
+  "aliases": [],
   "codes": 37,
   "groups": 7
  },
@@ -191,6 +205,7 @@
    "fr": "Numer kierunkowy",
    "en": "Numer kierunkowy"
   },
+  "aliases": [],
   "codes": 49,
   "groups": 9
  },
@@ -204,6 +219,7 @@
    "fr": "Prefix",
    "en": "Prefix"
   },
+  "aliases": [],
   "codes": 41,
   "groups": 5
  },
@@ -217,6 +233,7 @@
    "fr": "Код ABC",
    "en": "Код ABC"
   },
+  "aliases": [],
   "codes": 89,
   "groups": 3
  },
@@ -230,6 +247,7 @@
    "fr": "Area code",
    "en": "Area code"
   },
+  "aliases": [],
   "codes": 36,
   "groups": 5
  },
@@ -243,6 +261,7 @@
    "fr": "지역번호",
    "en": "지역번호"
   },
+  "aliases": [],
   "codes": 17,
   "groups": 5
  },
@@ -256,6 +275,7 @@
    "fr": "Prefijo",
    "en": "Prefijo"
   },
+  "aliases": [],
   "codes": 58,
   "groups": 8
  },
@@ -269,6 +289,7 @@
    "fr": "รหัสพื้นที่",
    "en": "รหัสพื้นที่"
   },
+  "aliases": [],
   "codes": 22,
   "groups": 5
  },
@@ -282,6 +303,7 @@
    "fr": "Alan kodu",
    "en": "Alan kodu"
   },
+  "aliases": [],
   "codes": 82,
   "groups": 3
  },
@@ -295,7 +317,25 @@
    "fr": "Код",
    "en": "Код"
   },
+  "aliases": [],
   "codes": 27,
   "groups": 4
+ },
+ {
+  "iso": "US",
+  "name": {
+   "fr": "États-Unis + Canada",
+   "en": "United States + Canada"
+  },
+  "system": {
+   "fr": "Area code",
+   "en": "Area code"
+  },
+  "aliases": [
+   "CA",
+   "PR"
+  ],
+  "codes": 427,
+  "groups": 5
  }
 ]

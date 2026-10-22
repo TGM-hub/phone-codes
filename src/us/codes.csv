@@ -1,0 +1,428 @@
+code,group,city,local,admin,lat,lon,cities
+201,NE,Bayonne,,New Jersey,40.839,-74.046,Bergenfield;Cliffside Park;Englewood
+202,S,Washington,,District of Columbia,38.895,-77.036,
+203,NE,Bridgeport,,Connecticut,41.292,-73.122,Danbury;East Haven;Meriden
+204,CA,Winnipeg,,Manitoba,51.203,-98.73,Portage la Prairie;Flin Flon;Steinbach
+205,S,Alabaster,,Alabama,33.428,-86.886,Bessemer;Birmingham;Center Point
+206,W,Seattle,,Washington,47.564,-122.349,Bainbridge Island;Burien;Des Moines
+207,NE,Maine,,Maine,44.0,-69.988,Auburn;Augusta;Bangor
+208,W,Boise,,Idaho,44.416,-115.558,Caldwell;Coeur d'Alene;Idaho Falls
+209,W,Atwater,,California,37.604,-120.999,Ceres;Lodi;Los Banos
+210,S,San Antonio,,Texas,29.424,-98.494,
+212,NE,New York,,New York,40.714,-74.006,New York City;New York City
+213,W,Los Angeles,,California,34.052,-118.244,
+214,S,Dallas,,Texas,32.864,-96.838,Allen;Arlington;Carrollton
+215,NE,Philadelphia,,Pennsylvania,40.054,-74.996,Levittown
+216,MW,Cleveland,,Ohio,41.475,-81.617,Brook Park;East Cleveland;Cleveland Heights
+217,MW,Champaign,,Illinois,39.918,-88.895,Charleston;Danville;Decatur
+218,MW,Andover,,Minnesota,46.297,-94.056,Duluth;Moorhead
+219,MW,East Chicago,,Indiana,41.566,-87.264,Gary;Hammond;Highland
+220,MW,Athens,,Ohio,39.749,-82.661,Chillicothe;Delaware;Lancaster
+223,NE,Pennsylvania,,Pennsylvania,40.873,-77.799,
+224,MW,Algonquin,,Illinois,42.147,-87.948,Arlington Heights;Buffalo Grove;Carpentersville
+225,S,Baton Rouge,,Louisiana,30.451,-91.155,
+226,CA,Orangeville,,Ontario,43.234,-81.231,Guelph;Brantford;London
+227,S,Maryland,,Maryland,39.044,-76.775,
+228,S,Biloxi,,Mississippi,30.389,-88.845,West Gulfport;Pascagoula
+229,S,Albany,,Georgia,31.206,-83.718,Valdosta
+231,MW,Muskegon,,Michigan,43.025,-85.182,Norton Shores;Shelby
+234,MW,Akron,,Ohio,41.064,-81.315,Alliance;Austintown;Barberton
+235,MW,Missouri,,Missouri,38.378,-92.479,
+236,CA,Victoria,,British Columbia,50.433,-121.515,Aldergrove;West Vancouver;White Rock
+239,S,Bonita Springs,,Florida,26.456,-81.801,Cape Coral;North Fort Myers;Golden Gate
+240,S,Aspen Hill,,Maryland,39.048,-77.121,North Bethesda;Bowie;Chillum
+248,MW,West Bloomfield Township,,Michigan,42.544,-83.262,Farmington Hills;Ferndale;Madison Heights
+249,CA,Bracebridge,,Ontario,46.042,-80.003,Parry Sound;Collingwood;Greater Sudbury
+250,CA,Revelstoke,,British Columbia,50.837,-121.842,Campbell River;Port Alberni;Courtenay
+251,S,Mobile,,Alabama,30.717,-88.061,Prichard
+252,S,Greenville,,North Carolina,35.42,-77.433,Havelock;Kinston;New Bern
+253,W,Auburn,,Washington,47.229,-122.366,East Hill-Meridian;Federal Way;Lakewood
+254,S,Copperas Cove,,Texas,31.205,-97.579,Fort Hood;Killeen;Temple
+256,S,Anniston,,Alabama,34.418,-86.639,Decatur;Florence;Gadsden
+257,CA,British Columbia,,British Columbia,54.978,-124.588,
+260,MW,Fort Wayne,,Indiana,41.131,-85.129,
+262,MW,Brookfield,,Wisconsin,42.991,-88.04,Caledonia;Kenosha;Menomonee Falls
+263,CA,Quebec,,Quebec,53.748,-71.963,
+267,NE,Levittown,,Pennsylvania,40.054,-74.996,Philadelphia
+269,MW,Battle Creek,,Michigan,42.27,-85.448,Kalamazoo;Portage
+270,S,Bowling Green,,Kentucky,37.441,-87.007,Elizabethtown;Henderson;Hopkinsville
+272,NE,Back Mountain,,Pennsylvania,41.238,-76.104,Hazleton;Scranton;Wilkes-Barre
+274,MW,Wisconsin,,Wisconsin,44.634,-90.013,
+276,S,Richmond,,Virginia,37.554,-77.46,
+279,W,California,,California,37.254,-119.619,
+281,S,Alvin,,Texas,29.709,-95.3,Atascocita;Baytown;Channelview
+283,MW,Ohio,,Ohio,40.293,-82.791,
+289,CA,Ajax,,Ontario,43.565,-79.333,Brampton;Ancaster;Burlington
+301,S,Aspen Hill,,Maryland,39.048,-77.121,North Bethesda;Bowie;Chillum
+302,S,Delaware,,Delaware,39.529,-75.607,Dover;Newark;Wilmington
+303,W,Denver,,Colorado,39.778,-105.003,Arvada;Aurora;Boulder
+304,S,South Charleston,,West Virginia,39.361,-81.162,Huntington;Morgantown;Parkersburg
+305,S,Miami,,Florida,25.74,-80.359,Aventura;Carol City;Coral Gables
+306,CA,Regina,,Saskatchewan,51.4,-105.689,Saskatoon;North Battleford;Moose Jaw
+307,W,Wyoming,,Wyoming,42.402,-105.557,Casper;Cheyenne;Gillette
+308,MW,Grand Island,,Nebraska,40.916,-99.396,Kearney;North Platte
+309,MW,Bloomington,,Illinois,40.932,-89.856,East Moline;East Peoria;Galesburg
+310,W,Beverly Hills,,California,33.899,-118.353,West Carson;Culver City;Gardena
+312,MW,Chicago,,Illinois,41.885,-88.204,West Chicago
+313,MW,Detroit,,Michigan,42.312,-83.201,Allen Park;Dearborn;Dearborn Heights
+314,MW,St. Louis,,Missouri,38.649,-90.323,Kirkwood;Maryland Heights;Mehlville
+315,NE,Auburn,,New York,43.254,-75.863,Rome;Syracuse;Utica
+316,MW,Wichita,,Kansas,37.692,-97.338,
+317,MW,Indianapolis,,Indiana,39.867,-86.072,Carmel;Fishers;Greenwood
+318,S,Alexandria,,Louisiana,32.279,-92.943,Bossier City;West Monroe;Ruston
+319,MW,Burlington,,Iowa,41.922,-91.779,Cedar Falls;Cedar Rapids;Iowa City
+320,MW,Saint Cloud,,Minnesota,45.561,-94.162,
+321,S,Altamonte Springs,,Florida,28.376,-81.154,South Apopka;Casselberry;Kissimmee
+323,W,Los Angeles,,California,33.987,-118.212,Bell;Bell Gardens;Cudahy
+324,S,Florida,,Florida,28.651,-82.504,
+325,S,Abilene,,Texas,31.956,-100.085,San Angelo
+326,MW,Ohio,,Ohio,40.293,-82.791,
+327,S,Arkansas,,Arkansas,34.9,-92.439,
+329,NE,New York,,New York,42.945,-75.505,
+330,MW,Akron,,Ohio,41.064,-81.315,Alliance;Austintown;Barberton
+331,MW,Addison,,Illinois,41.877,-88.095,North Aurora;Bartlett;Batavia
+332,NE,New York,,New York,42.945,-75.505,
+334,S,Auburn,,Alabama,32.188,-85.861,Dothan;Enterprise;Montgomery
+336,S,Asheboro,,North Carolina,35.986,-79.859,Burlington;Greensboro;High Point
+337,S,Lafayette,,Louisiana,30.242,-92.5,Lake Charles;New Iberia;Opelousas
+339,NE,Arlington,,Massachusetts,42.389,-71.1,Braintree;Burlington;Dedham
+340,S,Charlotte Amalie,,United States Virgin Islands,17.736,-64.781,
+341,W,California,,California,37.254,-119.619,
+343,CA,Clarence-Rockland,,Ontario,44.955,-76.087,Ottawa;Carleton Place;Brockville
+346,S,Alvin,,Texas,29.709,-95.3,Atascocita;Baytown;Channelview
+347,NE,New York,,New York,40.692,-73.96,The Bronx;Brooklyn;New York City
+350,W,California,,California,37.254,-119.619,
+351,NE,Beverly,,Massachusetts,42.604,-71.226,Chelmsford;Danvers;Fitchburg
+352,S,Gainesville,,Florida,28.372,-81.781,Oakland Park;Ocala;Spring Hill
+353,MW,Wisconsin,,Wisconsin,44.634,-90.013,
+354,CA,Quebec,,Quebec,53.748,-71.963,
+357,W,California,,California,37.254,-119.619,
+360,W,Bellingham,,Washington,47.411,-122.57,Bremerton;Lacey;Longview
+361,S,Corpus Christi,,Texas,28.041,-97.419,Kingsville;Victoria
+363,NE,New York,,New York,42.945,-75.505,
+364,S,Bowling Green,,Kentucky,37.441,-87.007,Elizabethtown;Henderson;Hopkinsville
+365,CA,Hamilton,,Ontario,43.575,-79.35,Oshawa
+367,CA,Quebec,,Quebec,53.748,-71.963,
+368,CA,Alberta,,Alberta,55.169,-114.511,
+369,W,California,,California,37.254,-119.619,
+380,MW,Ohio,,Ohio,40.293,-82.791,
+382,CA,Ontario,,Ontario,50.473,-86.049,
+385,W,American Fork,,Utah,40.654,-111.88,West Bountiful;Clearfield;Cottonwood Heights
+386,S,Daytona Beach,,Florida,29.168,-81.111,DeLand;Deltona;New Smyrna Beach
+401,NE,Rhode Island,,Rhode Island,41.774,-71.418,Bristol;Cranston;East Providence
+402,MW,Bellevue,,Nebraska,41.239,-96.881,Columbus;Fremont;Hastings
+403,CA,Calgary,,Alberta,51.209,-113.591,Taber;Red Deer;Okotoks
+404,S,Atlanta,,Georgia,33.735,-84.372,Candler-McAfee;College Park;College Park
+405,S,Bethany,,Oklahoma,35.504,-97.414,Del City;Edmond;Midwest City
+406,W,Montana,,Montana,46.405,-111.567,Billings;Bozeman;Butte
+407,S,Orlando,,Florida,28.394,-81.308,Altamonte Springs;South Apopka;Casselberry
+408,W,San Jose,,California,37.267,-121.885,Campbell;Gilroy;Los Gatos
+409,S,Beaumont,,Texas,29.664,-94.436,Galveston;Port Arthur;Texas City
+410,S,Annapolis,,Maryland,39.25,-76.588,Arbutus;Arnold;Baltimore
+412,NE,Pittsburgh,,Pennsylvania,40.399,-79.92,Bethel Park;McKeesport;Mount Lebanon
+413,NE,Agawam,,Massachusetts,42.196,-72.713,North Chicopee;Holyoke;Northampton
+414,MW,Milwaukee,,Wisconsin,42.946,-87.95,Franklin;Greenfield;South Milwaukee
+415,W,San Francisco,,California,37.928,-122.518,Novato;San Anselmo;South San Francisco
+416,CA,Toronto,,Ontario,43.459,-79.702,Ancaster
+417,MW,Joplin,,Missouri,37.15,-93.906,Springfield
+418,CA,Québec,,Quebec,47.216,-71.384,Baie-Saint-Paul;La Malbaie;Saint-Jean-sur-Richelieu
+419,MW,Ashland,,Ohio,41.129,-83.215,Bowling Green;Findlay;Lima
+423,S,Bristol,,Tennessee,35.842,-83.682,East Chattanooga;South Cleveland;East Ridge
+424,W,Beverly Hills,,California,33.899,-118.353,West Carson;Culver City;Gardena
+425,W,Bellevue,,Washington,47.733,-121.864,Bothell;Fairwood;Cottage Lake
+428,CA,New Brunswick,,New Brunswick,46.622,-66.387,
+430,S,Texas,,Texas,31.489,-99.35,
+431,CA,Winnipeg,,Manitoba,51.203,-98.73,Steinbach;Brandon;Morden
+432,S,Big Spring,,Texas,32.03,-102.018,Midland;West Odessa
+434,S,Charlottesville,,Virginia,37.339,-79.017,Danville;West Lynchburg
+435,W,Cedar City,,Utah,39.27,-112.687,North Logan;Saint George;Tooele
+436,MW,Ohio,,Ohio,40.293,-82.791,
+437,CA,Toronto,,Ontario,43.7,-79.416,
+438,CA,Montréal,,Quebec,45.555,-73.883,Montréal-Ouest;Notre-Dame-de-l'Île-Perrot;Pointe-Claire
+440,MW,Ashtabula,,Ohio,41.48,-81.697,Eastlake;Elyria;Lorain
+442,W,La Quinta,,California,33.67,-116.758,Oceanside;Palm Desert;Palm Springs
+443,S,Annapolis,,Maryland,39.25,-76.588,Arbutus;Arnold;Baltimore
+445,NE,Pennsylvania,,Pennsylvania,40.873,-77.799,
+447,MW,Illinois,,Illinois,40.067,-89.199,
+448,S,Florida,,Florida,28.651,-82.504,
+450,CA,Châteauguay,,Quebec,45.789,-73.216,Hudson;Granby;Sainte-Anne-des-Plaines
+457,S,Louisiana,,Louisiana,31.063,-91.987,
+458,W,Albany,,Oregon,43.773,-123.194,North Bend;Corvallis;Gresham
+463,MW,Indiana,,Indiana,39.909,-86.279,
+464,MW,Illinois,,Illinois,40.067,-89.199,
+465,NE,New York,,New York,42.945,-75.505,
+468,CA,Quebec,,Quebec,53.748,-71.963,
+469,S,Allen,,Texas,32.869,-96.826,Carrollton;Cedar Hill;Coppell
+470,S,Georgia,,Georgia,32.648,-83.448,
+471,S,Mississippi,,Mississippi,32.751,-89.664,
+472,S,North Carolina,,North Carolina,35.542,-79.387,
+474,CA,Saskatchewan,,Saskatchewan,54.417,-105.889,
+475,NE,Connecticut,,Connecticut,41.62,-72.73,
+478,S,Macon,,Georgia,32.731,-83.616,Warner Robins
+479,S,Fayetteville,,Arkansas,35.849,-93.987,Fort Smith;Rogers;Russellville
+480,W,Apache Junction,,Arizona,33.432,-111.791,Chandler;Fountain Hills;Gilbert
+483,S,Alabama,,Alabama,32.791,-86.827,
+484,NE,Allentown,,Pennsylvania,40.251,-75.458,Bethlehem;West Chester;Drexel Hill
+501,S,Benton,,Arkansas,34.768,-92.422,Conway;Hot Springs;Jacksonville
+502,S,Louisville,,Kentucky,38.228,-85.316,Frankfort
+503,W,Portland,,Oregon,45.348,-122.797,Aloha;Beaverton;Gresham
+504,S,New Orleans,,Louisiana,29.941,-90.092,Chalmette;Harvey;Kenner
+505,W,Albuquerque,,New Mexico,35.545,-107.149,Farmington;Gallup;Rio Rancho
+506,CA,Edmundston,,New Brunswick,46.566,-66.06,Saint John;Moncton;Fredericton
+507,MW,Austin,,Minnesota,44.048,-92.935,Faribault;North Mankato;Owatonna
+508,NE,Attleboro,,Massachusetts,42.007,-71.224,Barnstable;Brockton;Fall River
+509,W,Kennewick,,Washington,46.765,-118.734,Opportunity;Pasco;Pullman
+510,W,Alameda,,California,37.432,-121.807,Berkeley;Castro Valley;El Cerrito
+512,S,Austin,,Texas,30.359,-97.772,Cedar Park;Georgetown;Round Rock
+513,MW,Cincinnati,,Ohio,39.349,-84.499,Fairfield;Hamilton;Mason
+514,CA,Montréal,,Quebec,46.127,-73.356,Jonquière;Montréal-Ouest;Sainte-Adèle
+515,MW,Ames,,Iowa,41.84,-93.755,Ankeny;West Des Moines;Fort Dodge
+516,NE,Baldwin,,New York,40.702,-73.598,East Meadow;Elmont;Franklin Square
+517,MW,Adrian,,Michigan,42.487,-84.138,Clinton;East Lansing;Jackson
+518,NE,West Albany,,New York,42.819,-73.833,Rotterdam;Saratoga Springs;Schenectady
+519,CA,London,,Ontario,43.21,-81.143,Dorchester;St. Thomas;Kitchener
+520,W,Casa Grande,,Arizona,32.118,-110.976,Catalina Foothills;Drexel Heights;Nogales
+530,W,Chico,,California,39.339,-121.567,Davis;Paradise;Redding
+531,MW,Bellevue,,Nebraska,41.239,-96.881,Columbus;Fremont;Hastings
+534,MW,Wisconsin,,Wisconsin,44.634,-90.013,
+539,S,Bartlesville,,Oklahoma,36.175,-95.784,Broken Arrow;Muskogee;Tulsa
+540,S,Blacksburg,,Virginia,37.83,-79.504,Cave Spring;Harrisonburg;Roanoke
+541,W,Albany,,Oregon,43.773,-123.194,North Bend;Corvallis;Gresham
+548,CA,Ontario,,Ontario,50.473,-86.049,
+551,NE,Bayonne,,New Jersey,40.839,-74.046,Bergenfield;Cliffside Park;Englewood
+557,MW,Missouri,,Missouri,38.378,-92.479,
+559,W,Clovis,,California,36.508,-119.536,Fresno;Hanford;Madera
+561,S,Boca Del Mar,,Florida,26.556,-80.135,Boca Raton;Boynton Beach;Delray Beach
+562,W,Bellflower,,California,33.898,-118.084,Cerritos;Downey;La Habra
+563,MW,Bettendorf,,Iowa,41.764,-90.598,Clinton;Davenport;Dubuque
+564,W,Washington,,Washington,47.375,-120.437,
+567,MW,Ashland,,Ohio,41.129,-83.215,Bowling Green;Findlay;Lima
+570,NE,Back Mountain,,Pennsylvania,41.238,-76.104,Hazleton;Scranton;Wilkes-Barre
+571,S,Alexandria,,Virginia,38.832,-77.271,Annandale;Arlington;Burke
+572,S,Oklahoma,,Oklahoma,35.586,-97.511,
+573,MW,Cape Girardeau,,Missouri,38.278,-91.342,Columbia;Jefferson City
+574,MW,Elkhart,,Indiana,41.673,-86.066,Goshen;Granger;Mishawaka
+575,W,Alamogordo,,New Mexico,33.022,-104.639,Carlsbad;Clovis;Hobbs
+579,CA,Cowansville,,Quebec,45.757,-73.278,Granby;Longueuil;Boucherville
+580,S,Altus,,Oklahoma,35.171,-97.965,Ardmore;Duncan;Enid
+581,CA,Alma,,Quebec,47.261,-71.353,Québec;Saint-Lambert-de-Lauzon;Dolbeau-Mistassini
+582,NE,Pennsylvania,,Pennsylvania,40.873,-77.799,
+584,CA,Manitoba,,Manitoba,54.93,-97.429,
+585,NE,Brighton,,New York,43.172,-77.582,Irondequoit;Rochester
+586,MW,Clinton,,Michigan,42.54,-82.97,Eastpointe;Roseville;Shelby
+587,CA,Bonnyville,,Alberta,52.688,-113.702,Calgary;Lethbridge;Banff
+601,S,Clinton,,Mississippi,32.197,-89.961,West Hattiesburg;Jackson;Meridian
+602,W,Phoenix,,Arizona,33.448,-112.074,
+603,NE,New Hampshire,,New Hampshire,43.049,-71.335,East Concord;Derry;Dover
+604,CA,Vancouver,,British Columbia,49.306,-122.985,New Westminster;Whistler;Richmond
+605,MW,South Dakota,,South Dakota,44.473,-99.177,Aberdeen;Pierre;Rapid City
+606,S,Ashland,,Kentucky,38.478,-82.638,
+607,NE,Binghamton,,New York,42.21,-76.407,Elmira;Ithaca
+608,MW,Beloit,,Wisconsin,43.042,-89.564,Fitchburg;Janesville;North La Crosse
+609,NE,Atlantic City,,New Jersey,39.97,-74.709,Ewing;Trenton;Willingboro
+610,NE,Allentown,,Pennsylvania,40.251,-75.458,Bethlehem;West Chester;Drexel Hill
+612,MW,Minneapolis,,Minnesota,44.971,-93.321,Crystal;Golden Valley;Richfield
+613,CA,Ottawa,,Ontario,44.936,-76.402,Perth;Smiths Falls;Cornwall
+614,MW,Columbus,,Ohio,40.009,-83.006,Dublin;Gahanna;Grove City
+615,S,Nashville,,Tennessee,36.107,-86.588,Brentwood;Franklin;Gallatin
+616,MW,Forest Hills,,Michigan,42.916,-85.731,Grand Rapids;Holland;Kentwood
+617,NE,Boston,,Massachusetts,42.349,-71.1,Belmont;South Boston;Brookline
+618,MW,East Alton,,Illinois,38.566,-89.933,Belleville;Carbondale;Collinsville
+619,W,San Diego,,California,32.721,-117.047,Chula Vista;Coronado;El Cajon
+620,MW,Dodge City,,Kansas,38.047,-98.75,Emporia;Garden City;Hutchinson
+621,S,Texas,,Texas,31.489,-99.35,
+623,W,Avondale,,Arizona,33.585,-112.298,Glendale;Peoria;Sun City West
+624,NE,New York,,New York,42.945,-75.505,
+626,W,Alhambra,,California,34.078,-118.005,Altadena;Arcadia;Azusa
+628,W,Novato,,California,37.928,-122.518,San Anselmo;South San Francisco;San Rafael
+629,S,Brentwood,,Tennessee,36.107,-86.588,Franklin;Gallatin;Hendersonville
+630,MW,Addison,,Illinois,41.877,-88.095,North Aurora;Bartlett;Batavia
+631,NE,North Bay Shore,,New York,40.794,-73.206,Brentwood;Centereach;Central Islip
+636,MW,Ballwin,,Missouri,38.706,-90.599,Chesterfield;O'Fallon;Saint Charles
+639,CA,Prince Albert,,Saskatchewan,51.637,-106.001,Regina;Saskatoon;Estevan
+640,NE,New Jersey,,New Jersey,40.189,-74.663,
+641,MW,Marshalltown,,Iowa,42.074,-92.84,Mason City;Ottumwa
+645,S,Florida,,Florida,28.651,-82.504,
+646,NE,New York,,New York,40.714,-74.006,New York City;New York City
+647,CA,Toronto,,Ontario,43.7,-79.416,
+650,W,Belmont,,California,37.535,-122.285,Burlingame;Daly City;East Palo Alto
+651,MW,Apple Valley,,Minnesota,44.912,-93.084,Cottage Grove;Eagan;Inver Grove Heights
+656,S,Florida,,Florida,28.651,-82.504,
+657,W,Anaheim,,California,33.805,-117.925,Brea;Buena Park;Cypress
+659,S,Alabama,,Alabama,32.791,-86.827,
+660,MW,Sedalia,,Missouri,38.704,-93.228,
+661,W,Bakersfield,,California,35.118,-118.775,Delano;Lancaster;Oildale
+662,S,Clarksdale,,Mississippi,34.109,-89.632,Columbus;Greenville;Olive Branch
+667,S,Annapolis,,Maryland,39.25,-76.588,Arbutus;Arnold;Baltimore
+669,W,Campbell,,California,37.267,-121.885,Gilroy;Los Gatos;Milpitas
+672,CA,British Columbia,,British Columbia,54.978,-124.588,
+678,S,Alpharetta,,Georgia,33.814,-84.361,Atlanta;Candler-McAfee;College Park
+679,MW,Michigan,,Michigan,43.484,-84.622,
+680,NE,New York,,New York,42.945,-75.505,
+681,S,South Charleston,,West Virginia,39.361,-81.162,Huntington;Morgantown;Parkersburg
+682,S,Arlington,,Texas,32.76,-97.223,Bedford;Benbrook;Burleson
+683,CA,Ontario,,Ontario,50.473,-86.049,
+686,S,Virginia,,Virginia,37.518,-78.868,
+689,S,Florida,,Florida,28.651,-82.504,
+701,MW,North Dakota,,North Dakota,47.46,-99.003,Bismarck;West Fargo;Grand Forks
+702,W,Las Vegas,,Nevada,36.141,-115.114,Henderson;North Las Vegas;North Las Vegas
+703,S,Alexandria,,Virginia,38.832,-77.271,Annandale;Arlington;Burke
+704,S,Charlotte,,North Carolina,35.368,-80.748,Concord;South Gastonia;Huntersville
+705,CA,Peterborough,,Ontario,45.723,-80.313,Parry Sound;Bracebridge;Sault Ste. Marie
+706,S,Athens,,Georgia,33.639,-83.94,Augusta;Columbus;Dalton
+707,W,Benicia,,California,38.514,-122.527,Eureka;Fairfield;Napa
+708,MW,Bellwood,,Illinois,41.706,-87.727,Berwyn;Blue Island;Burbank
+709,CA,St. John's,,Newfoundland and Labrador,48.95,-55.96,Stephenville;Corner Brook;Happy Valley-Goose Bay
+712,MW,Council Bluffs,,Iowa,41.881,-96.131,Sioux City
+713,S,Houston,,Texas,29.709,-95.3,Alvin;Atascocita;Baytown
+714,W,Anaheim,,California,33.805,-117.925,Brea;Buena Park;Cypress
+715,MW,Eau Claire,,Wisconsin,45.254,-90.702,Stevens Point;Superior;Wausau
+716,NE,Buffalo,,New York,42.876,-78.895,Cheektowaga;Jamestown;South Lockport
+717,NE,Harrisburg,,Pennsylvania,40.154,-76.582,Lancaster;Lebanon;York
+718,NE,New York,,New York,40.692,-73.96,The Bronx;Brooklyn;New York City
+719,W,Colorado Springs,,Colorado,38.644,-104.753,Pueblo West;Security-Widefield
+720,W,Denver,,Colorado,39.778,-105.003,Arvada;Aurora;Boulder
+724,NE,Monroeville,,Pennsylvania,40.565,-79.992,New Castle;Plum;Upper Saint Clair
+725,W,Henderson,,Nevada,36.141,-115.114,North Las Vegas;North Las Vegas;Paradise
+726,S,Texas,,Texas,31.489,-99.35,
+727,S,Bayonet Point,,Florida,28.007,-82.736,Clearwater;Dunedin;Holiday
+728,S,Florida,,Florida,28.651,-82.504,
+729,S,Tennessee,,Tennessee,35.844,-86.345,
+730,MW,Illinois,,Illinois,40.067,-89.199,
+731,S,Jackson,,Tennessee,35.615,-88.814,
+732,NE,Carteret,,New Jersey,40.421,-74.324,East Brunswick;Edison;Lakewood
+734,MW,Ann Arbor,,Michigan,42.251,-83.413,Canton;Garden City;Livonia
+737,S,Austin,,Texas,30.359,-97.772,Cedar Park;Georgetown;Round Rock
+738,W,California,,California,37.254,-119.619,
+740,MW,Athens,,Ohio,39.749,-82.661,Chillicothe;Delaware;Lancaster
+742,CA,Ontario,,Ontario,50.473,-86.049,
+743,S,Asheboro,,North Carolina,35.986,-79.859,Burlington;Greensboro;High Point
+747,W,Agoura Hills,,California,34.186,-118.436,Burbank;Calabasas;North Glendale
+748,W,Colorado,,Colorado,38.999,-105.546,
+753,CA,Ontario,,Ontario,50.473,-86.049,
+754,S,Coconut Creek,,Florida,26.143,-80.202,Cooper City;Coral Springs;Dania Beach
+757,S,Chesapeake,,Virginia,36.87,-76.314,Hampton;Newport News;Norfolk
+760,W,Apple Valley,,California,33.67,-116.758,Barstow;Brawley;Calexico
+762,S,Athens,,Georgia,33.639,-83.94,Augusta;Columbus;Dalton
+763,MW,Blaine,,Minnesota,45.099,-93.359,Brooklyn Center;Brooklyn Park;Champlin
+765,MW,Anderson,,Indiana,40.289,-85.938,Kokomo;West Lafayette;Marion
+769,S,Clinton,,Mississippi,32.197,-89.961,West Hattiesburg;Jackson;Meridian
+770,S,Alpharetta,,Georgia,33.834,-84.357,Atlanta;College Park;Douglasville
+771,S,District of Columbia,,District of Columbia,38.904,-77.016,
+772,S,Fort Pierce South,,Florida,27.372,-80.346,Palm City;Port Saint Lucie;Vero Beach South
+773,MW,Chicago,,Illinois,41.885,-88.204,West Chicago
+774,NE,Attleboro,,Massachusetts,42.007,-71.224,Barnstable;Brockton;Fall River
+775,W,Carson City,,Nevada,38.609,-118.829,Pahrump;Reno;Sparks
+778,CA,West Vancouver,,British Columbia,50.337,-122.215,Abbotsford;Smithers;Vernon
+779,MW,Belvidere,,Illinois,42.051,-88.623,Crystal Lake;DeKalb;Freeport
+780,CA,Edmonton,,Alberta,53.93,-113.87,Bonnyville;Drayton Valley;Whitecourt
+781,NE,Arlington,,Massachusetts,42.389,-71.1,Braintree;Burlington;Dedham
+782,CA,Halifax,,Nova Scotia,44.687,-64.112,Yarmouth;New Glasgow
+785,MW,Hays,,Kansas,38.985,-96.885,Lawrence;Manhattan;Salina
+786,S,Miami,,Florida,25.74,-80.359,Aventura;Carol City;Coral Gables
+787,S,San Juan,,Puerto Rico,18.227,-66.478,
+801,W,Salt Lake City,,Utah,40.654,-111.88,American Fork;West Bountiful;Clearfield
+802,NE,Vermont,,Vermont,44.364,-72.873,South Burlington;Montpelier
+803,S,Aiken,,South Carolina,34.089,-81.058,West Columbia;Rock Hill;Saint Andrews
+804,S,Hopewell,,Virginia,37.457,-77.416,Mechanicsville;Petersburg;Richmond
+805,W,Atascadero,,California,34.602,-119.696,Camarillo;Paso Robles;Goleta
+806,S,Amarillo,,Texas,34.328,-101.798,Lubbock;Plainview
+807,CA,Dryden,,Ontario,47.496,-88.847,Thunder Bay;Fort Frances;Ancaster
+808,W,Honolulu,,Hawaii,20.956,-157.238,Hilo;Kahului;Kailua-Kona
+810,MW,Burton,,Michigan,42.994,-83.243,Flint;Port Huron
+812,MW,Bloomington,,Indiana,38.667,-86.391,Clarksville;Columbus;Evansville
+813,S,Tampa,,Florida,28.047,-82.428,Brandon;Citrus Park;Greater Northdale
+814,NE,Altoona,,Pennsylvania,40.942,-78.815,Erie;Johnstown;State College
+815,MW,Belvidere,,Illinois,42.051,-88.623,Crystal Lake;DeKalb;Freeport
+816,MW,Kansas City,,Missouri,39.104,-94.501,Belton;Blue Springs;Gladstone
+817,S,Arlington,,Texas,32.76,-97.223,Bedford;Benbrook;Burleson
+818,W,Agoura Hills,,California,34.186,-118.436,Burbank;Calabasas;North Glendale
+819,CA,Sherbrooke,,Quebec,46.34,-73.466,Magog;Mont-Laurier;Notre-Dame-des-Prairies
+820,W,California,,California,37.254,-119.619,
+821,S,South Carolina,,South Carolina,33.901,-80.892,
+825,CA,Calgary,,Alberta,53.549,-113.321,Edmonton;Red Deer;Fort McMurray
+826,S,Virginia,,Virginia,37.518,-78.868,
+828,S,Asheville,,North Carolina,35.667,-81.948,Hickory
+830,S,Del Rio,,Texas,29.478,-99.325,Eagle Pass;Kerrville;New Braunfels
+831,W,Hollister,,California,36.759,-121.77,Marina;Monterey;Salinas
+832,S,Houston,,Texas,29.709,-95.3,Alvin;Atascocita;Baytown
+835,NE,Pennsylvania,,Pennsylvania,40.873,-77.799,
+837,W,California,,California,37.254,-119.619,
+838,NE,New York,,New York,42.945,-75.505,
+839,S,South Carolina,,South Carolina,33.901,-80.892,
+840,W,California,,California,37.254,-119.619,
+843,S,North Charleston,,South Carolina,33.091,-79.902,Florence;Goose Creek;Hilton Head Island
+845,NE,Kingston,,New York,41.473,-74.064,Middletown;New City;Newburgh
+847,MW,Algonquin,,Illinois,42.147,-87.948,Arlington Heights;Buffalo Grove;Carpentersville
+848,NE,Carteret,,New Jersey,40.421,-74.324,East Brunswick;Edison;Lakewood
+850,S,Bellview,,Florida,30.419,-86.613,Brent;Ferry Pass;Fort Walton Beach
+854,S,North Charleston,,South Carolina,33.091,-79.902,Florence;Goose Creek;Hilton Head Island
+856,NE,Bridgeton,,New Jersey,39.737,-75.054,Camden;Cherry Hill;Millville
+857,NE,Belmont,,Massachusetts,42.349,-71.1,South Boston;Brookline;Cambridge
+858,W,Poway,,California,32.963,-117.036,
+859,S,Covington,,Kentucky,38.455,-84.477,Florence;Lexington;Richmond
+860,NE,Bristol,,Connecticut,41.674,-72.641,Manchester;East Hartford;West Hartford
+861,MW,Illinois,,Illinois,40.067,-89.199,
+862,NE,Belleville,,New Jersey,40.825,-74.216,Bloomfield;Clifton;East Orange
+863,S,Lakeland,,Florida,28.031,-81.841,Winter Haven
+864,S,Anderson,,South Carolina,34.721,-82.295,Greenville;Greenwood;Spartanburg
+865,S,Knoxville,,Tennessee,35.934,-84.108,Maryville;Oak Ridge;Oak Ridge
+867,CA,Whitehorse,,Northwest Territories,62.456,-114.353,Yellowknife
+870,S,El Dorado,,Arkansas,34.654,-91.682,Jonesboro;Paragould;Pine Bluff
+872,MW,Illinois,,Illinois,40.067,-89.199,
+873,CA,Sherbrooke,,Quebec,46.469,-74.105,Sainte-Adèle;Trois-Rivières;Drummondville
+878,NE,Bethel Park,,Pennsylvania,40.46,-79.962,McKeesport;Mount Lebanon;Monroeville
+901,S,Memphis,,Tennessee,35.121,-89.849,Bartlett;Collierville;Germantown
+902,CA,Halifax,,Nova Scotia,45.267,-63.095,Sydney;Bridgewater;Glace Bay
+903,S,Corsicana,,Texas,33.012,-95.526,Denison;Greenville;Longview
+904,S,Jacksonville,,Florida,30.252,-81.606,Jacksonville Beach;Lakeside
+905,CA,Markham,,Ontario,43.565,-79.333,Milton;Cobourg;Oakville
+907,W,Anchorage,,Alaska,60.268,-141.136,College;Fairbanks;Juneau
+908,NE,Cranford,,New Jersey,40.663,-74.29,Elizabeth;Hillside;Linden
+909,W,Chino,,California,34.074,-117.541,Chino Hills;Claremont;Colton
+910,S,Fayetteville,,North Carolina,34.758,-78.454,Fort Bragg;Jacksonville;Lumberton
+912,S,Hinesville,,Georgia,32.126,-81.493,Savannah;Statesboro
+913,MW,Kansas City,,Kansas,39.03,-94.718,Leavenworth;Leawood;Lenexa
+914,NE,Harrison,,New York,41.027,-73.805,Mount Vernon;New Rochelle;Ossining
+915,S,El Paso,,Texas,31.707,-106.395,Socorro
+916,W,Arden-Arcade,,California,38.54,-121.398,Carmichael;Citrus Heights;Elk Grove
+917,NE,New York,,New York,40.695,-73.967,The Bronx;Brooklyn;New York City
+918,S,Bartlesville,,Oklahoma,36.175,-95.784,Broken Arrow;Muskogee;Tulsa
+919,S,Raleigh,,North Carolina,35.726,-78.775,Apex;Cary;Chapel Hill
+920,MW,Appleton,,Wisconsin,43.948,-88.281,De Pere;North Fond du Lac;Green Bay
+924,MW,Minnesota,,Minnesota,46.319,-94.311,
+925,W,Antioch,,California,37.892,-121.935,Bay Point;Brentwood;Concord
+928,W,Bullhead City,,Arizona,34.319,-113.552,Flagstaff;Fortuna Foothills;Kingman
+929,NE,The Bronx,,New York,40.692,-73.96,Brooklyn;New York City;Borough of Queens
+930,MW,Bloomington,,Indiana,38.667,-86.391,Clarksville;Columbus;Evansville
+931,S,Clarksville,,Tennessee,36.103,-86.632,Columbia;Cookeville
+934,NE,New York,,New York,42.945,-75.505,
+936,S,Conroe,,Texas,30.994,-95.098,Huntsville;Lufkin;Nacogdoches
+937,MW,Beavercreek,,Ohio,39.854,-84.116,Centerville;Dayton;Fairborn
+938,S,Alabama,,Alabama,32.791,-86.827,
+939,S,Puerto Rico,,Puerto Rico,18.227,-66.478,
+940,S,Denton,,Texas,33.392,-97.54,Lewisville;Wichita Falls
+941,S,South Bradenton,,Florida,27.202,-82.344,North Port;Port Charlotte;Punta Gorda
+942,CA,Ontario,,Ontario,50.473,-86.049,
+945,S,Texas,,Texas,31.489,-99.35,
+947,MW,West Bloomfield Township,,Michigan,42.544,-83.262,Farmington Hills;Ferndale;Madison Heights
+948,S,Virginia,,Virginia,37.518,-78.868,
+949,W,Aliso Viejo,,California,33.573,-117.734,Costa Mesa;Dana Point;Irvine
+951,W,Banning,,California,33.82,-117.259,Corona;Hemet;Moreno Valley
+952,MW,Bloomington,,Minnesota,44.838,-93.412,Burnsville;Chanhassen;Eden Prairie
+954,S,Coconut Creek,,Florida,26.143,-80.202,Cooper City;Coral Springs;Dania Beach
+956,S,Brownsville,,Texas,26.3,-98.138,Edinburg;Harlingen;Laredo
+959,NE,Bristol,,Connecticut,41.674,-72.641,Manchester;East Hartford;West Hartford
+970,W,Fort Collins,,Colorado,40.118,-105.855,Grand Junction;Greeley;Loveland
+971,W,Aloha,,Oregon,45.348,-122.797,Beaverton;Gresham;Hillsboro
+972,S,Dallas,,Texas,32.869,-96.826,Allen;Carrollton;Cedar Hill
+973,NE,Belleville,,New Jersey,40.835,-74.219,Bloomfield;Clifton;East Orange
+975,MW,Missouri,,Missouri,38.378,-92.479,
+978,NE,Beverly,,Massachusetts,42.604,-71.226,Chelmsford;Danvers;Fitchburg
+979,S,Bryan,,Texas,30.112,-96.046,College Station;Lake Jackson
+980,S,Charlotte,,North Carolina,35.368,-80.748,Concord;South Gastonia;Huntersville
+983,W,Colorado,,Colorado,38.999,-105.546,
+984,S,Apex,,North Carolina,35.726,-78.775,Cary;Chapel Hill;Durham
+985,S,Houma,,Louisiana,29.979,-90.327,Laplace;Slidell
+986,W,Idaho,,Idaho,44.394,-114.665,
+989,MW,Bay City,,Michigan,43.529,-84.161,Midland;Mount Pleasant;Saginaw

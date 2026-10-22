@@ -149,7 +149,7 @@ def build_country(d):
     if not any(c.get("cities") for c in codes): warn(iso, "no 'cities' filled yet")
     out = {**meta, "match": match, "groups": groups, "subs": subs, "codes": codes, "admin": admin, "bbox": bbox(
         [r for u in admin.values() for r in u["rings"]])}
-    summary = {"iso": iso, "name": meta["name"], "system": meta["system"],
+    summary = {"iso": iso, "name": meta["name"], "system": meta["system"], "aliases": meta.get("aliases", []),
                "codes": len(known), "groups": len(groups)}
     return out, summary
 

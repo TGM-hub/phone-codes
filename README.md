@@ -14,7 +14,8 @@ Peru (24 codes, departments), Colombia (60X zones, departments), South Africa (3
 local municipalities), Malaysia (14 codes, districts), Australia (4 codes, states), New Zealand (5 codes, regions),
 Romania (41 county codes), Ukraine (27 oblast codes), Croatia (20 county codes), France (5 zones, départements),
 Germany (first digit 02-09, rebuilt on Kreise), Hungary (54 codes, rebuilt on járások), Greece (second digit 21-28, regions),
-South Korea (17 codes, provinces and metropolitan cities).
+South Korea (17 codes, provinces and metropolitan cities), United States + Canada (427 area codes,
+state/province level; also opens with #ca and #pr).
 Next: Mexico, Argentina, Italy (need a district-level source). Chile has no geographic codes.
 
 ## How it works
@@ -62,8 +63,11 @@ from the fetched text and were added by hand). France: zones by département fol
 *Telefonvorwahl (Deutschland)*; Kreise attached to the nearest reference city (coordinates typed by hand).
 Hungary: code towns from English Wikipedia; járások attached to the nearest code town, Budapest districts = 1.
 Greece: second-digit regions per periphery (Wikipedia lists towns only); Attica accepts 21 and 22.
+United States + Canada: area codes per state/province from English Wikipedia *List of North American
+Numbering Plan area codes* (codes 200-858 read; 859-999 from the notes of that page and from
+ravisorg/Area-Code-Geolocation-Database, which also gives the cities). The answer is the state or province.
 Spain: 9xx prefixes only; Ceuta (956) and Melilla (952) are not in that table.
-Boundaries: geoBoundaries gbOpen THA ADM1, TUR ADM1, RUS ADM1, POL ADM2, ESP ADM2, PER ADM1, COL ADM1, ZAF ADM3, MYS ADM2, AUS ADM1, NZL ADM1, ROU ADM1, UKR ADM1, HRV ADM1, FRA ADM2, DEU ADM3, HUN ADM2, GRC ADM2, KOR ADM1, CC BY 3.0 IGO.
+Boundaries: geoBoundaries gbOpen THA ADM1, TUR ADM1, RUS ADM1, POL ADM2, ESP ADM2, PER ADM1, COL ADM1, ZAF ADM3, MYS ADM2, AUS ADM1, NZL ADM1, ROU ADM1, UKR ADM1, HRV ADM1, FRA ADM2, DEU ADM3, HUN ADM2, GRC ADM2, KOR ADM1, USA ADM1, CAN ADM1, CC BY 3.0 IGO.
 
 Philippines: codes per province from Wikipedia, *Telephone numbers in the Philippines*
 (Davao Occidental, Davao de Oro and Dinagat Islands are not in its table and take the code of

@@ -529,13 +529,15 @@ function activeCodes(){
   return C.codes.filter(c => !g.length || g.includes(c.group));
 }
 const step = () => round.steps[round.i];
+/* numeric groups read "Bloc 7"; named ones (US regions) read by their name */
+const groupCtx = id => /^\d+$/.test(id) ? `${C.group_label[P.lang]} ${id}` : gname(id);
 /* candidates for the current step, and the box to frame */
 function stepScope(){
   const tg = round.target;
   const subKnown = hasSub() && step() === "c";
   const cands = subKnown ? codesOfSub(tg.sub) : codesOfGroup(tg.group);
   return {cands, box: subKnown ? C.S[tg.sub].bbox : C.G[tg.group].bbox,
-          ctx: subKnown ? `${C.sub_label[P.lang]} ${dispText(tg.sub).replace(/[()\-]/g, "")}` : `${C.group_label[P.lang]} ${tg.group}`};
+          ctx: subKnown ? `${C.sub_label[P.lang]} ${dispText(tg.sub).replace(/[()\-]/g, "")}` : groupCtx(tg.group)};
 }
 function newRound(){
   clearTimeout(timer);
@@ -563,7 +565,7 @@ function skipTrivial(){ while(round.i < round.steps.length - 1 && trivial()) rou
 
 function askText(){
   const tg = round.target, s = step();
-  if(s === "g") return t("ask_g");
+  if(s === "g") return C.group_q ? C.group_q[P.lang] : t("ask_g");
   if(s === "s") return t("ask_s", {id: tg.group});
   return t("ask_c", {ctx: C.groups.length < 2 ? C.name[P.lang] : stepScope().ctx});
 }
@@ -622,6 +624,12 @@ function answer(){
   }
   const ok = sameCode(sel.code, tg.code);
   const km = Math.round(haversine(sel.lat, sel.lon, tg.lat, tg.lon));
+  if(C.unit_labels){                       // the answer is a state: name states, not codes
+    const st = c => C.admin[c.admin].name;
+    v.city = esc(st(tg) === tg.city ? st(tg) : `${st(tg)} (${tg.city})`);
+    finish(ok, ok ? t("code_ok", v) : t("code_bad", {...v, sel: "", scity: esc(st(sel)), km}), ficheHTML(tg));
+    return;
+  }
   finish(ok, ok ? t("code_ok", v) : t("code_bad", {...v, sel: esc(dispText(sel.code)), scity: esc(sel.city), km}), ficheHTML(tg));
 }
 
@@ -670,6 +678,7 @@ function drawPlay(){
   } else {
     const {cands} = stepScope(), gid = tg.group;
     h += landHTML(k => C.G[gid].admins.includes(k));
+    if(C.unit_labels){ h += unitsHTML(V, cands, tg, sel, fs); V.svg.innerHTML = h; return; }
     h += clipOpen("pc", gid);
     const isT = c => sameCode(c.code, tg.code);
     const base = hasSub() ? C.S[tg.sub].color : C.G[gid].color;
@@ -689,6 +698,30 @@ function drawPlay(){
     h += labelsHTML(V, cands, fs*0.8, c => (locked ? c.code + " " : "") + c.city, locked);
   }
   V.svg.innerHTML = h;
+}
+
+/* Countries with many codes per unit (US states): draw each unit once and
+   label units, not codes; the answer is the unit, the code shows on reveal */
+const hostsOf = code => C.hosts[code] || [];
+function unitsHTML(V, cands, tg, picked, fs, shownSel){
+  const units = [...new Set(cands.flatMap(c => hostsOf(c.code)))];
+  const tgU = tg ? hostsOf(tg.code) : [], selU = picked ? hostsOf(picked.code) : [];
+  let h = "";
+  units.forEach(k => {
+    let fill = C.G[cands[0].group].color, op = 0.3, stroke = "rgba(0,0,0,.5)", sw = .8;
+    if(shownSel){ if(selU.includes(k)){ fill = "#3FBF85"; op = .8; sw = 1.6; } }
+    else if(locked){
+      if(tgU.includes(k)){ fill = "#3FBF85"; op = .85; sw = 2; stroke = "#fff"; }
+      else if(selU.includes(k)){ fill = "#E05A48"; op = .85; sw = 2; stroke = "#fff"; }
+      else op = .12;
+    } else if(selU.includes(k)){ op = .8; sw = 2; stroke = "#fff"; }
+    h += `<path d="${PATH[k]}" fill="${fill}" fill-opacity="${op}" stroke="${stroke}" stroke-width="${sw}" vector-effect="non-scaling-stroke"/>`;
+  });
+  const items = units.map(k => { const a = C.admin[k];
+    return {x: a.label[0]*K, y: -a.label[1], text: (locked && !shownSel && tgU.includes(k) ? tg.code + " " : "") + a.name}; })
+    .filter(it => inView(V, it.x, it.y));
+  placeLabels(items, fs*0.8).forEach(it => h += `<text class="lbl" x="${it.x}" y="${it.y}" font-size="${fs*0.8}" text-anchor="middle">${esc(it.text)}</text>`);
+  return h;
 }
 
 /* ============================================================
@@ -802,6 +835,7 @@ function drawExplore(){
   } else {
     const g = C.G[exGroup];
     h += landHTML(k => g.admins.includes(k));
+    if(C.unit_labels){ h += unitsHTML(V, codesOfGroup(exGroup), null, exSel, fs, true); V.svg.innerHTML = h; return; }
     h += clipOpen("ec", exGroup);
     shapesOf(codesOfGroup(exGroup)).forEach(({c, d}) => {
       if(!d) return;
@@ -914,8 +948,9 @@ async function init(){
     if(!r.ok) throw new Error(r.status);
     INDEX = await r.json();
   } catch(e){ $("#loading").textContent = T[P.lang].load_err; return; }
-  const fromHash = location.hash.slice(1).toUpperCase();
-  const iso = [fromHash, P.iso, INDEX[0].iso].find(x => x && INDEX.some(c => c.iso === x));
+  /* #au opens Australia; aliases let #ca open the shared US + Canada map */
+  const resolve = x => x && (INDEX.find(c => c.iso === x) || INDEX.find(c => (c.aliases || []).includes(x)) || {}).iso;
+  const iso = resolve(location.hash.slice(1).toUpperCase()) || resolve(P.iso) || INDEX[0].iso;
   paintStatic();
   selectCountry(iso);
 }
