@@ -1,0 +1,18 @@
+code,group,city,local,admin,lat,lon,cities
+02,2,Seoul,,Seoul,37.537,127.005,
+031,3,Suwon,,Gyeonggi,37.521,127.163,Seongnam;Goyang;Yongin
+032,3,Incheon,,Incheon,37.462,126.688,Bucheon
+033,3,Chuncheon,,Gangwon,37.664,128.344,Gangneung;Wonju;Sokcho
+041,4,Cheonan,,South Chungcheong,36.504,126.871,Asan;Gongju
+042,4,Daejeon,,Daejeon,36.367,127.362,
+043,4,Cheongju,,North Chungcheong,36.705,127.81,
+044,4,Sejong,,Sejong,36.548,127.183,
+051,5,Busan,,Busan,35.165,129.061,
+052,5,Ulsan,,Ulsan,35.516,129.229,
+053,5,Daegu,,Daegu,35.894,128.628,
+054,5,Pohang,,North Gyeongsang,36.258,128.702,Andong;Gyeongju;Gumi
+055,5,Changwon,,South Gyeongsang,35.345,128.291,Gimhae;Jinju;Tongyeong
+061,6,Mokpo,,South Jeolla,34.938,126.975,Suncheon;Yeosu;Naju
+062,6,Gwangju,,Gwangju,35.209,126.919,
+063,6,Jeonju,,North Jeolla,35.694,127.164,Gunsan;Iksan
+064,6,Jeju,,Jeju,33.386,126.555,Seogwipo

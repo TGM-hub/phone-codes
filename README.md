@@ -13,7 +13,8 @@ Russia (89 codes, federal subjects), Poland (49 zones, rebuilt on powiats), Spai
 Peru (24 codes, departments), Colombia (60X zones, departments), South Africa (36 codes, rebuilt on
 local municipalities), Malaysia (14 codes, districts), Australia (4 codes, states), New Zealand (5 codes, regions),
 Romania (41 county codes), Ukraine (27 oblast codes), Croatia (20 county codes), France (5 zones, départements),
-Germany (first digit 02-09, rebuilt on Kreise), Hungary (54 codes, rebuilt on járások), Greece (second digit 21-28, regions).
+Germany (first digit 02-09, rebuilt on Kreise), Hungary (54 codes, rebuilt on járások), Greece (second digit 21-28, regions),
+South Korea (17 codes, provinces and metropolitan cities).
 Next: Mexico, Argentina, Italy (need a district-level source). Chile has no geographic codes.
 
 ## How it works
@@ -49,7 +50,7 @@ publish.cmd           build, preview, confirm, commit, push
 
 ## Sources
 
-Thailand, Turkey, Russia, Poland, Spain, Peru, Colombia, South Africa, Malaysia, Australia, New Zealand, Romania, Croatia: codes from the English Wikipedia pages *Telephone numbers in
+Thailand, Turkey, Russia, Poland, Spain, Peru, Colombia, South Africa, Malaysia, Australia, New Zealand, Romania, Croatia, South Korea: codes from the English Wikipedia pages *Telephone numbers in
 <country>* (read 2026-10-21). Russia: the 83 subjects of the geoBoundaries file (no annexed
 territories). Poland: zones attached to powiats by nearest zone city, so borders are approximate.
 South Africa: areas attached to local municipalities by nearest code town (town coordinates typed by hand),
@@ -62,7 +63,7 @@ from the fetched text and were added by hand). France: zones by département fol
 Hungary: code towns from English Wikipedia; járások attached to the nearest code town, Budapest districts = 1.
 Greece: second-digit regions per periphery (Wikipedia lists towns only); Attica accepts 21 and 22.
 Spain: 9xx prefixes only; Ceuta (956) and Melilla (952) are not in that table.
-Boundaries: geoBoundaries gbOpen THA ADM1, TUR ADM1, RUS ADM1, POL ADM2, ESP ADM2, PER ADM1, COL ADM1, ZAF ADM3, MYS ADM2, AUS ADM1, NZL ADM1, ROU ADM1, UKR ADM1, HRV ADM1, FRA ADM2, DEU ADM3, HUN ADM2, GRC ADM2, CC BY 3.0 IGO.
+Boundaries: geoBoundaries gbOpen THA ADM1, TUR ADM1, RUS ADM1, POL ADM2, ESP ADM2, PER ADM1, COL ADM1, ZAF ADM3, MYS ADM2, AUS ADM1, NZL ADM1, ROU ADM1, UKR ADM1, HRV ADM1, FRA ADM2, DEU ADM3, HUN ADM2, GRC ADM2, KOR ADM1, CC BY 3.0 IGO.
 
 Philippines: codes per province from Wikipedia, *Telephone numbers in the Philippines*
 (Davao Occidental, Davao de Oro and Dinagat Islands are not in its table and take the code of

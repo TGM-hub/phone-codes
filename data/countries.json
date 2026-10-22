@@ -234,6 +234,19 @@
   "groups": 5
  },
  {
+  "iso": "KR",
+  "name": {
+   "fr": "Corée du Sud",
+   "en": "South Korea"
+  },
+  "system": {
+   "fr": "지역번호",
+   "en": "지역번호"
+  },
+  "codes": 17,
+  "groups": 5
+ },
+ {
   "iso": "ES",
   "name": {
    "fr": "Espagne",

@@ -1,0 +1,99 @@
+{
+  "iso": "KR",
+  "name": {
+    "fr": "Corée du Sud",
+    "en": "South Korea"
+  },
+  "display": "{code}-",
+  "system": {
+    "fr": "지역번호",
+    "en": "지역번호"
+  },
+  "group_label": {
+    "fr": "Bloc",
+    "en": "Block"
+  },
+  "match": "admin",
+  "groups": [
+    {
+      "id": "2",
+      "name": {
+        "fr": "Séoul",
+        "en": "Seoul"
+      },
+      "color": "#EE7A6A"
+    },
+    {
+      "id": "3",
+      "name": {
+        "fr": "Nord-Ouest : Gyeonggi, Incheon, Gangwon",
+        "en": "North-West: Gyeonggi, Incheon, Gangwon"
+      },
+      "color": "#5CC9C4"
+    },
+    {
+      "id": "4",
+      "name": {
+        "fr": "Centre : Chungcheong, Daejeon, Sejong",
+        "en": "Centre: Chungcheong, Daejeon, Sejong"
+      },
+      "color": "#EFE04A"
+    },
+    {
+      "id": "5",
+      "name": {
+        "fr": "Sud-Est : Gyeongsang, Busan, Daegu, Ulsan",
+        "en": "South-East: Gyeongsang, Busan, Daegu, Ulsan"
+      },
+      "color": "#57D06A"
+    },
+    {
+      "id": "6",
+      "name": {
+        "fr": "Sud-Ouest : Jeolla, Gwangju, Jeju",
+        "en": "South-West: Jeolla, Gwangju, Jeju"
+      },
+      "color": "#C9A9E0"
+    }
+  ],
+  "anchors": [
+    "02",
+    "031",
+    "032",
+    "033",
+    "041",
+    "042",
+    "043",
+    "051",
+    "052",
+    "053",
+    "054",
+    "055",
+    "061",
+    "062",
+    "063",
+    "064"
+  ],
+  "twins": [],
+  "tips": [
+    {
+      "title": "0X",
+      "codes": [],
+      "fr": "Un indicatif par province ou métropole. 02 Séoul, 03x le nord-ouest (031 Gyeonggi, 032 Incheon, 033 Gangwon), 04x le centre (Chungcheong, 042 Daejeon, 044 Sejong), 05x le sud-est (051 Busan, 052 Ulsan, 053 Daegu, 054-055 Gyeongsang), 06x le sud-ouest (061-063 Jeolla et Gwangju, 064 Jeju). 010 est un portable.",
+      "en": "One code per province or metropolitan city. 02 Seoul, 03x the north-west (031 Gyeonggi, 032 Incheon, 033 Gangwon), 04x the centre (Chungcheong, 042 Daejeon, 044 Sejong), 05x the south-east (051 Busan, 052 Ulsan, 053 Daegu, 054-055 Gyeongsang), 06x the south-west (061-063 Jeolla and Gwangju, 064 Jeju). 010 is a mobile."
+    },
+    {
+      "title": "Exceptions",
+      "codes": [
+        "02",
+        "031",
+        "032",
+        "042",
+        "053",
+        "054"
+      ],
+      "fr": "Les codes ne suivent pas tout à fait les provinces : Gwacheon et Gwangmyeong (Gyeonggi) sont en 02, Bucheon en 032, Gyeryong (Chungnam) en 042, Gyeongsan (Gyeongbuk) en 053 et Gunwi (Daegu) en 054. Ici on suit les provinces.",
+      "en": "Codes do not quite follow the provinces: Gwacheon and Gwangmyeong (Gyeonggi) are 02, Bucheon 032, Gyeryong (Chungnam) 042, Gyeongsan (Gyeongbuk) 053 and Gunwi (Daegu) 054. Here the provinces are used."
+    }
+  ]
+}
