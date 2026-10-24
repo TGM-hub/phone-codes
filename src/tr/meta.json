@@ -94,5 +94,12 @@
       "fr": "İstanbul est la seule province à deux indicatifs : 0212 côté européen, 0216 côté asiatique. Ici toute la province accepte les deux, faute de tracé du Bosphore.",
       "en": "İstanbul is the only province with two codes: 0212 on the European side, 0216 on the Asian side. Here the whole province accepts both, as the Bosphorus split is not drawn."
     }
-  ]
+  ],
+  "real": {
+    "fmt": "({code}) {n}",
+    "total": 11,
+    "chunks": {
+      "7": "3 2 2"
+    }
+  }
 }

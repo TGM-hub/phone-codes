@@ -120,5 +120,13 @@
       "fr": "Madrid et Barcelone ont chacune toute une dizaine (911-918, 931-938) : ici on les compte comme 91 et 93.",
       "en": "Madrid and Barcelona each own a whole range (911-918, 931-938): here they count as 91 and 93."
     }
-  ]
+  ],
+  "real": {
+    "fmt": "{code} {n}",
+    "total": 9,
+    "chunks": {
+      "7": "3 2 2",
+      "6": "2 2 2"
+    }
+  }
 }

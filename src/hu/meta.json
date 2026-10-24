@@ -126,5 +126,13 @@
       "fr": "Zones reconstruites par district (járás), en rattachant chacun à la ville d'indicatif la plus proche : les limites sont approximatives.",
       "en": "Areas rebuilt per district (járás), attaching each to the nearest code town: borders are approximate."
     }
-  ]
+  ],
+  "real": {
+    "fmt": "(06-{code}) {n}",
+    "total": 8,
+    "chunks": {
+      "7": "3 4",
+      "6": "3 3"
+    }
+  }
 }

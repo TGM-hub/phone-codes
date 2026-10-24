@@ -109,5 +109,13 @@
       "fr": "Bangkok et sa première couronne (Nonthaburi, Pathum Thani, Samut Prakan). Seul indicatif à un chiffre après le 0.",
       "en": "Bangkok and its inner ring (Nonthaburi, Pathum Thani, Samut Prakan). The only code with a single digit after the 0."
     }
-  ]
+  ],
+  "real": {
+    "fmt": "{code}-{n}",
+    "total": 9,
+    "chunks": {
+      "7": "3-4",
+      "6": "3-3"
+    }
+  }
 }

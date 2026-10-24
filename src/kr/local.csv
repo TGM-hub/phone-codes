@@ -1,0 +1,35 @@
+kind,key,local
+code,02,서울
+code,031,수원
+code,032,인천
+code,033,춘천
+code,041,천안
+code,042,대전
+code,043,청주
+code,044,세종
+code,051,부산
+code,052,울산
+code,053,대구
+code,054,포항
+code,055,창원
+code,061,목포
+code,062,광주
+code,063,전주
+code,064,제주
+admin,Gangwon,강원도
+admin,Gyeonggi,경기도
+admin,Chungcheongnam,충청남도 · 충남
+admin,Incheon,인천
+admin,Jeollabuk,전라북도 · 전북
+admin,Jeollanam,전라남도 · 전남
+admin,Gyeongsangnam,경상남도 · 경남
+admin,Busan,부산
+admin,Ulsan,울산
+admin,Gyeongsangbuk,경상북도 · 경북
+admin,Jeju,제주도
+admin,Seoul,서울
+admin,Daejeon,대전
+admin,Sejong,세종
+admin,Chungcheongbuk,충청북도 · 충북
+admin,Gwangju,광주
+admin,Daegu,대구

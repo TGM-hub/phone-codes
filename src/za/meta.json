@@ -95,5 +95,12 @@
       "fr": "Les zones sont reconstruites par municipalité locale, en rattachant chacune à la ville d'indicatif la plus proche : les limites sont approximatives.",
       "en": "Areas are rebuilt per local municipality, attaching each to the nearest code town: borders are approximate."
     }
-  ]
+  ],
+  "real": {
+    "fmt": "{code} {n}",
+    "total": 10,
+    "chunks": {
+      "7": "3 4"
+    }
+  }
 }

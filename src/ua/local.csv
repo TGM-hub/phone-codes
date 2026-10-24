@@ -1,0 +1,55 @@
+kind,key,local
+code,031,Ужгород
+code,032,Львів
+code,033,Луцьк
+code,034,Івано-Франківськ
+code,035,Тернопіль
+code,036,Рівне
+code,037,Чернівці
+code,038,Хмельницький
+code,041,Житомир
+code,043,Вінниця
+code,044,Київ
+code,045,Біла Церква
+code,046,Чернігів
+code,047,Черкаси
+code,048,Одеса
+code,051,Миколаїв
+code,052,Кропивницький
+code,053,Полтава
+code,054,Суми
+code,055,Херсон
+code,056,Дніпро
+code,057,Харків
+code,061,Запоріжжя
+code,062,Донецьк
+code,064,Луганськ
+code,065,Сімферополь
+code,0692,Севастополь
+admin,Kherson,Херсонська область
+admin,Volyn,Волинська область
+admin,Rivne,Рівненська область
+admin,Zhytomyr,Житомирська область
+admin,Kyiv (oblast),Київська область
+admin,Chernihiv,Чернігівська область
+admin,Sumy,Сумська область
+admin,Kharkiv,Харківська область
+admin,Luhansk,Луганська область
+admin,Donetsk,Донецька область
+admin,Zaporizhzhia,Запорізька область
+admin,Lviv,Львівська область
+admin,Ivano-Frankivsk,Івано-Франківська область
+admin,Zakarpattia,Закарпатська область
+admin,Ternopil,Тернопільська область
+admin,Chernivtsi,Чернівецька область
+admin,Odesa,Одеська область
+admin,Mykolaiv,Миколаївська область
+admin,Crimée,Автономна Республіка Крим
+admin,Vinnytsia,Вінницька область
+admin,Khmelnytskyi,Хмельницька область
+admin,Cherkasy,Черкаська область
+admin,Poltava,Полтавська область
+admin,Dnipropetrovsk,Дніпропетровська область
+admin,Kirovohrad,Кіровоградська область
+admin,Kyiv (ville),Київ
+admin,Sevastopol,Севастополь

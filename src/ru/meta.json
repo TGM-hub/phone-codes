@@ -92,5 +92,12 @@
       "fr": "Saint-Pétersbourg ; l'oblast de Léningrad autour est en 813.",
       "en": "Saint Petersburg; the surrounding Leningrad Oblast is 813."
     }
-  ]
+  ],
+  "real": {
+    "fmt": "8 ({code}) {n}",
+    "total": 10,
+    "chunks": {
+      "7": "3-2-2"
+    }
+  }
 }

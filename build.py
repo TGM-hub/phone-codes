@@ -108,6 +108,31 @@ def build_country(d):
             if a.get(k): u[k] = a[k]
         if a.get("codes"): u["codes"] = a["codes"]
         admin[key] = u
+    # optional local-script names (Cyrillic, Greek, Hangul, Thai), shown after the answer:
+    # src/<iso>/local.csv  kind,key,local   kind = code (key = code) or admin (key = admin key or name)
+    lp = d / "local.csv"
+    if lp.exists():
+        by_name = {u["name"]: k for k, u in admin.items()}
+        seen_c, seen_a = set(), set()
+        with open(lp, encoding="utf-8") as f:
+            for n, r in enumerate(csv.DictReader(f), 2):
+                kind, key, loc = r["kind"].strip(), r["key"].strip(), r["local"].strip()
+                if kind == "code":
+                    hit = [c for c in codes if c["code"] == key]
+                    if not hit: err(iso, f"local.csv line {n}: unknown code {key}")
+                    for c in hit: c["local"] = loc
+                    seen_c.add(key)
+                elif kind == "admin":
+                    k = key if key in admin else by_name.get(key)
+                    if not k: err(iso, f"local.csv line {n}: unknown admin {key!r}"); continue
+                    admin[k]["local"] = loc; seen_a.add(k)
+                else: err(iso, f"local.csv line {n}: kind must be code or admin")
+        for code in sorted(known - seen_c): warn(iso, f"local.csv: no local name for code {code}")
+        for k in sorted(set(admin) - seen_a): warn(iso, f"local.csv: no local name for admin {k}")
+    if "real" in meta:
+        rl = meta["real"]
+        if "{code}" not in rl.get("fmt", "") or "{n}" not in rl.get("fmt", ""): err(iso, "real.fmt needs {code} and {n}")
+        if not isinstance(rl.get("total"), int): err(iso, "real.total must be an integer")
     if match == "admin":
         for code in sorted(known - set(hosted)): err(iso, f"code {code} is hosted by no admin unit (match=admin)")
 

@@ -49,5 +49,12 @@
       "fr": "Les limites ne suivent pas exactement les États : Wodonga (VIC) est en 02, Deniliquin et Buronga (NSW) en 03, Tweed Heads (NSW) en 07, Broken Hill (NSW) en 08. Ici on suit les États.",
       "en": "Borders do not follow the states exactly: Wodonga (VIC) is 02, Deniliquin and Buronga (NSW) 03, Tweed Heads (NSW) 07, Broken Hill (NSW) 08. Here the states are used."
     }
-  ]
+  ],
+  "real": {
+    "fmt": "({code}) {n}",
+    "total": 10,
+    "chunks": {
+      "8": "4 4"
+    }
+  }
 }

@@ -48,5 +48,12 @@
       "fr": "La région de Wellington est coupée : agglomération et Kāpiti en 04, Wairarapa et Ōtaki en 06. Ici toute la région accepte les deux. Autres exceptions ignorées : Taumarunui et National Park (07), Tuakau et Pōkeno (09).",
       "en": "The Wellington region is split: the metro area and Kāpiti on 04, the Wairarapa and Ōtaki on 06. Here the whole region accepts both. Other exceptions ignored: Taumarunui and National Park (07), Tuakau and Pōkeno (09)."
     }
-  ]
+  ],
+  "real": {
+    "fmt": "({code}) {n}",
+    "total": 9,
+    "chunks": {
+      "7": "3 4"
+    }
+  }
 }

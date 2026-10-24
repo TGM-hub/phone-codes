@@ -47,5 +47,12 @@
       "fr": "Un numéro qui commence par 3 (3xx xxx xxxx) est un portable : il ne dit rien du lieu.",
       "en": "A number starting with 3 (3xx xxx xxxx) is a mobile: it says nothing about the place."
     }
-  ]
+  ],
+  "real": {
+    "fmt": "{code} {n}",
+    "total": 10,
+    "chunks": {
+      "7": "3 4"
+    }
+  }
 }

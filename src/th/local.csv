@@ -1,0 +1,100 @@
+kind,key,local
+code,02,กรุงเทพฯ
+code,032,ราชบุรี
+code,034,นครปฐม
+code,035,อยุธยา
+code,036,ลพบุรี
+code,037,ปราจีนบุรี
+code,038,ชลบุรี
+code,039,จันทบุรี
+code,042,อุดรธานี
+code,043,ขอนแก่น
+code,044,นครราชสีมา
+code,045,อุบลราชธานี
+code,052,เชียงราย
+code,053,เชียงใหม่
+code,054,ลำปาง
+code,055,พิษณุโลก
+code,056,นครสวรรค์
+code,073,ยะลา
+code,074,หาดใหญ่
+code,075,นครศรีธรรมราช
+code,076,ภูเก็ต
+code,077,สุราษฎร์ธานี
+admin,Roi Et,ร้อยเอ็ด
+admin,Phayao,พะเยา
+admin,Nakhon Sawan,นครสวรรค์
+admin,Nong Bua Lam Phu,หนองบัวลำภู
+admin,Chachoengsao,ฉะเชิงเทรา
+admin,Surin,สุรินทร์
+admin,Nakhon Ratchasima,นครราชสีมา
+admin,Sukhothai,สุโขทัย
+admin,Phetchaburi,เพชรบุรี
+admin,Chaiyaphum,ชัยภูมิ
+admin,Phetchabun,เพชรบูรณ์
+admin,Surat Thani,สุราษฎร์ธานี
+admin,Si Sa Ket,ศรีสะเกษ
+admin,Nong Khai,หนองคาย
+admin,Bangkok,กรุงเทพมหานคร
+admin,Khon Kaen,ขอนแก่น
+admin,Loei,เลย
+admin,Saraburi,สระบุรี
+admin,Uthai Thani,อุทัยธานี
+admin,Chumphon,ชุมพร
+admin,Kalasin,กาฬสินธุ์
+admin,Phitsanulok,พิษณุโลก
+admin,Ranong,ระนอง
+admin,Udon Thani,อุดรธานี
+admin,Sakon Nakhon,สกลนคร
+admin,Chiang Rai,เชียงราย
+admin,Tak,ตาก
+admin,Nakhon Pathom,นครปฐม
+admin,Lamphun,ลำพูน
+admin,Trat,ตราด
+admin,Ratchaburi,ราชบุรี
+admin,Yasothon,ยโสธร
+admin,Phrae,แพร่
+admin,Yala,ยะลา
+admin,Uttaradit,อุตรดิตถ์
+admin,Buri Ram,บุรีรัมย์
+admin,Kamphaeng Phet,กำแพงเพชร
+admin,Lampang,ลำปาง
+admin,Nonthaburi,นนทบุรี
+admin,Bueng Kan,บึงกาฬ
+admin,Narathiwat,นราธิวาส
+admin,Ubon Ratchathani,อุบลราชธานี
+admin,Prachuap Khiri Khan,ประจวบคีรีขันธ์
+admin,Songkhla,สงขลา
+admin,Phuket,ภูเก็ต
+admin,Ang Thong,อ่างทอง
+admin,Maha Sarakham,มหาสารคาม
+admin,Trang,ตรัง
+admin,Suphan Buri,สุพรรณบุรี
+admin,Sing Buri,สิงห์บุรี
+admin,Samut Songkhram,สมุทรสงคราม
+admin,Rayong,ระยอง
+admin,Prachin Buri,ปราจีนบุรี
+admin,Phra Nakhon Si Ayutthaya,พระนครศรีอยุธยา
+admin,Phichit,พิจิตร
+admin,Phatthalung,พัทลุง
+admin,Phang Nga,พังงา
+admin,Pattani,ปัตตานี
+admin,Pathum Thani,ปทุมธานี
+admin,Nakhon Si Thammarat,นครศรีธรรมราช
+admin,Nakhon Nayok,นครนายก
+admin,Mukdahan,มุกดาหาร
+admin,Lopburi,ลพบุรี
+admin,Krabi,กระบี่
+admin,Chon Buri,ชลบุรี
+admin,Chiang Mai,เชียงใหม่
+admin,Chai Nat,ชัยนาท
+admin,Amnat Charoen,อำนาจเจริญ
+admin,Samut Sakhon,สมุทรสาคร
+admin,Samut Prakan,สมุทรปราการ
+admin,Nan,น่าน
+admin,Chanthaburi,จันทบุรี
+admin,Nakhon Phanom,นครพนม
+admin,Kanchanaburi,กาญจนบุรี
+admin,Mae Hong Son,แม่ฮ่องสอน
+admin,Sa Kaeo,สระแก้ว
+admin,Satun,สตูล

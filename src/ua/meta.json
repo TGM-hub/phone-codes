@@ -88,5 +88,13 @@
       "fr": "Codes ukrainiens de la Crimée et de Sébastopol. Depuis 2015, les autorités russes y utilisent des numéros +7 (365 et 869).",
       "en": "Ukrainian codes of Crimea and Sevastopol. Since 2015 the Russian authorities there use +7 numbers (365 and 869)."
     }
-  ]
+  ],
+  "real": {
+    "fmt": "{code} {n}",
+    "total": 10,
+    "chunks": {
+      "7": "3 2 2",
+      "6": "2 2 2"
+    }
+  }
 }

@@ -51,5 +51,13 @@
       "fr": "L'Attique est partagée : Athènes et sa banlieue en 21, l'est de l'Attique, Mégare et les îles Saroniques en 229x. Ici toute l'Attique accepte les deux. Florina (Macédoine-Occidentale) est en 2385, une exception ignorée.",
       "en": "Attica is shared: Athens and suburbs on 21, eastern Attica, Megara and the Saronic islands on 229x. Here all of Attica accepts both. Florina (Western Macedonia) is on 2385, an exception left out."
     }
-  ]
+  ],
+  "real": {
+    "fmt": "{code}{x} {n}",
+    "ext": 1,
+    "total": 10,
+    "chunks": {
+      "7": "3 4"
+    }
+  }
 }

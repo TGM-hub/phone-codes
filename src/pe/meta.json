@@ -88,5 +88,13 @@
       "fr": "1 Lima ; 4 nord-centre ; 5 sud ; 6 centre et Amazonie ; 7 côte nord et Cajamarca ; 8 Cusco et le sud-est.",
       "en": "1 Lima; 4 north-central; 5 south; 6 centre and Amazon; 7 north coast and Cajamarca; 8 Cusco and the south-east."
     }
-  ]
+  ],
+  "real": {
+    "fmt": "(0{code}) {n}",
+    "total": 8,
+    "chunks": {
+      "7": "3-4",
+      "6": "3-3"
+    }
+  }
 }

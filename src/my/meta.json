@@ -108,5 +108,17 @@
       "fr": "Le nord du Johor (Muar, Tangkak, Segamat) est en 06, et les Cameron Highlands (Pahang) en 05. Petites exceptions ignorées : Genting Highlands (03), Gemas (07), Pengkalan Hulu (04), Hulu Bernam (05).",
       "en": "Northern Johor (Muar, Tangkak, Segamat) is 06, and the Cameron Highlands (Pahang) 05. Small exceptions ignored: Genting Highlands (03), Gemas (07), Pengkalan Hulu (04), Hulu Bernam (05)."
     }
-  ]
+  ],
+  "real": {
+    "fmt": "{code}-{n}",
+    "total": 9,
+    "lens": {
+      "03": 8
+    },
+    "chunks": {
+      "8": "4 4",
+      "7": "3 4",
+      "6": "3 3"
+    }
+  }
 }

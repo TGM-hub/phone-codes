@@ -122,5 +122,12 @@
       "fr": "Les 49 zones suivent les anciennes voïvodies (avant 1999). Ici elles sont reconstruites au niveau des powiats, en rattachant chaque powiat à la ville-zone la plus proche : les limites sont approximatives.",
       "en": "The 49 zones follow the old voivodeships (before 1999). Here they are rebuilt at powiat level, attaching each powiat to the nearest zone city: borders are approximate."
     }
-  ]
+  ],
+  "real": {
+    "fmt": "{code} {n}",
+    "total": 9,
+    "chunks": {
+      "7": "3 2 2"
+    }
+  }
 }

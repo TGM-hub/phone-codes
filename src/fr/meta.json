@@ -45,5 +45,12 @@
       "fr": "06 et 07 sont des portables, 09 de la VoIP : ils ne disent rien du lieu. Outre-mer : 0262/0263 La Réunion, 0269 Mayotte, 0590 Guadeloupe, 0594 Guyane, 0596 Martinique (absents de la carte).",
       "en": "06 and 07 are mobiles, 09 VoIP: they say nothing about the place. Overseas: 0262/0263 Réunion, 0269 Mayotte, 0590 Guadeloupe, 0594 French Guiana, 0596 Martinique (not on the map)."
     }
-  ]
+  ],
+  "real": {
+    "fmt": "{code} {n}",
+    "total": 10,
+    "chunks": {
+      "8": "2 2 2 2"
+    }
+  }
 }

@@ -20,7 +20,7 @@ html,body{height:100%}
 body{background:var(--ink);color:var(--text);font-family:'IBM Plex Sans',system-ui,sans-serif;
   font-size:15px;line-height:1.45;-webkit-text-size-adjust:100%;overflow:hidden}
 button{font:inherit;color:inherit}
-#app{height:100dvh;max-width:1100px;margin:0 auto;display:flex;flex-direction:column}
+#app{height:100dvh;max-width:1600px;margin:0 auto;display:flex;flex-direction:column}
 
 /* ---- top rail ---- */
 #rail{display:flex;align-items:center;gap:8px;padding:8px 12px;flex-wrap:wrap;
@@ -44,6 +44,14 @@ select{background:var(--ink-2);color:var(--text);border:1px solid var(--ink-3);b
 #code{font-family:'IBM Plex Mono',monospace;font-weight:600;letter-spacing:.02em;
   font-size:clamp(2.6rem,13vw,4.6rem);line-height:1;color:var(--amber)}
 #code .deco{color:var(--muted);font-weight:500}
+#code.long{font-size:clamp(1.7rem,7.2vw,3.9rem)}
+#code .hid{color:#4A5763}
+#code .num{color:#B9C2CA;font-weight:500}
+#inv{display:none;margin:10px auto 0;width:min(260px,80%);text-align:center;font-family:'IBM Plex Mono',monospace;
+  font-size:26px;font-weight:600;letter-spacing:.08em;background:var(--ink-2);color:var(--amber);
+  border:1px solid var(--brd);border-radius:var(--r);padding:6px 10px}
+#inv.on{display:block}
+#inv:focus{outline:none;border-color:var(--amber)}
 #ask{color:var(--muted);font-size:13px;margin-top:6px}
 .mapwrap{flex:1 1 auto;min-height:0;display:flex;flex-direction:column;padding:0 9px 9px;gap:8px}
 svg.map{flex:1 1 auto;min-height:200px;width:100%;background:var(--sea);border:1px solid var(--ink-3);
@@ -66,6 +74,8 @@ svg.map .dot{fill:var(--amber);stroke:var(--sea);stroke-width:.6;vector-effect:n
 .fiche h3{font-size:16px;font-weight:600;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
 .fiche h3 .c{font-family:'IBM Plex Mono',monospace;color:var(--amber)}
 .fiche h3 .loc{color:var(--muted);font-weight:500}
+.fiche h3 .script{color:#F3E6C9;font-weight:500;font-size:18px}
+.fiche .meta .script{color:#D9CDB2}
 .fiche .meta{color:var(--muted);margin-top:2px}
 .fiche .cities{margin-top:6px}
 .fiche .tip{margin-top:8px;padding-left:9px;border-left:2px solid var(--amber)}
@@ -76,7 +86,7 @@ svg.map .dot{fill:var(--amber);stroke:var(--sea);stroke-width:.6;vector-effect:n
 /* ---- explore ---- */
 #explore{flex:1 1 auto;min-height:0;display:none;gap:9px;padding:9px}
 #explore .mapwrap{padding:0}
-#side{flex:0 0 330px;display:flex;flex-direction:column;gap:8px;min-height:0}
+#side{flex:0 0 380px;display:flex;flex-direction:column;gap:8px;min-height:0}
 #search{background:var(--ink-2);color:var(--text);border:1px solid var(--ink-3);border-radius:var(--r);
   font:inherit;padding:7px 9px;width:100%}
 #list{flex:1 1 auto;overflow:auto;min-height:80px;border:1px solid var(--ink-3);border-radius:var(--r)}
@@ -92,6 +102,12 @@ svg.map .dot{fill:var(--amber);stroke:var(--sea);stroke-width:.6;vector-effect:n
   font-size:12px;cursor:pointer;color:var(--muted);display:inline-flex;gap:5px;align-items:center}
 .chip[aria-pressed="true"]{color:var(--text);border-color:var(--text)}
 .chip .sw{width:9px;height:9px;border-radius:2px}
+.chip.tog{margin-left:auto}
+.misslist{display:flex;flex-direction:column;gap:2px;margin-bottom:10px}
+.misslist div{display:flex;gap:10px;padding:3px 0;border-bottom:1px solid var(--ink-3)}
+.misslist .c{font-family:'IBM Plex Mono',monospace;color:var(--amber);min-width:5em}
+.misslist .loc{color:var(--muted)}
+.railbtn.warn{color:#F08A7A;border-color:#6B3A33}
 
 /* ---- settings ---- */
 .overlay{position:fixed;inset:0;background:var(--ink);display:none;flex-direction:column;z-index:10}
@@ -119,11 +135,13 @@ legend{padding:0 5px;color:var(--muted);font-size:13px}
     <select id="country" aria-label="Country"></select>
     <div class="seg" id="mode-seg">
       <button data-mode="play" data-t="play"></button>
+      <button data-mode="inverse" data-t="inverse"></button>
       <button data-mode="explore" data-t="explore"></button>
     </div>
     <div class="spacer"></div>
     <div class="stat" id="stat-acc"><b id="s-acc">—</b><span data-t="acc"></span></div>
     <div class="stat" id="stat-streak"><b id="s-streak">0</b><span data-t="streak"></span></div>
+    <button class="railbtn warn" id="btn-miss" style="display:none"></button>
     <button class="railbtn" id="btn-settings" data-t="settings"></button>
     <div class="seg" id="lang-seg">
       <button data-lang="fr">FR</button><button data-lang="en">EN</button>
@@ -136,6 +154,7 @@ legend{padding:0 5px;color:var(--muted);font-size:13px}
     <div id="prompt">
       <div id="code">—</div>
       <div id="ask"></div>
+      <input id="inv" inputmode="numeric" autocomplete="off" aria-label="code">
     </div>
     <div class="mapwrap">
       <svg class="map" id="playsvg" xmlns="http://www.w3.org/2000/svg"></svg>
@@ -173,12 +192,38 @@ legend{padding:0 5px;color:var(--muted);font-size:13px}
       <div class="chips" id="grp-chips"></div>
       <p style="margin-top:7px" data-t="none_all"></p>
     </fieldset>
+    <fieldset><legend data-t="reveal"></legend>
+      <div class="chips" id="rev-chips">
+        <button class="chip" data-rev="1" data-t="reveal_on"></button>
+        <button class="chip" data-rev="0" data-t="reveal_off"></button>
+      </div>
+      <p style="margin-top:7px" id="rev-note"></p>
+    </fieldset>
+    <fieldset><legend data-t="format"></legend>
+      <div class="chips" id="real-chips">
+        <button class="chip" data-real="1" data-t="real_on"></button>
+        <button class="chip" data-real="0" data-t="real_off"></button>
+      </div>
+    </fieldset>
     <fieldset><legend data-t="advance"></legend>
       <div class="chips" id="adv-chips">
         <button class="chip" data-adv="auto" data-t="auto"></button>
         <button class="chip" data-adv="manual" data-t="manual"></button>
       </div>
     </fieldset>
+  </div>
+</div>
+
+<div class="overlay" id="ov-miss">
+  <div class="ov-head"><h2 data-t="misses"></h2><div class="spacer"></div>
+    <button class="railbtn" id="btn-miss-close" data-t="close"></button></div>
+  <div class="ov-body">
+    <p style="margin-bottom:10px" data-t="miss_note"></p>
+    <div class="misslist" id="miss-list"></div>
+    <div class="chips">
+      <button class="chip" id="btn-replay" data-t="replay" style="color:var(--text);border-color:var(--amber)"></button>
+      <button class="chip" id="btn-miss-clear" data-t="clear"></button>
+    </div>
   </div>
 </div>
 
@@ -201,7 +246,18 @@ const T = {
        code_ok:"<b>{code} : {city}</b>.",
        code_bad:"Tu as pris <b>{sel} {scity}</b>. Le {code} c'est <b>{city}</b>, {km} km plus loin.",
        groups:"{G}s travaillés", all:"Tout", cities:"Aussi", system:"Logique du système",
-       codes_n:"{n} indicatifs", load_err:"Impossible de charger les données. Ouvre la page via serve.cmd ou GitHub Pages."},
+       codes_n:"{n} indicatifs", inverse:"Inverse",
+       reveal:"Indicatif", reveal_on:"Dévoilé chiffre par chiffre", reveal_off:"Complet dès le départ",
+       reveal_note_ok:"À chaque étape, un chiffre de plus : 8xx → 81x → 812.",
+       reveal_note_no:"Ce pays ne s'y prête pas (le {g} n'est pas le premier chiffre) : l'indicatif est affiché complet.",
+       format:"Affichage", real_on:"Numéro complet, comme sur un panneau", real_off:"Indicatif seul",
+       inv_ask:"{place}. Quel indicatif ?", inv_ok:"<b>{code} : {city}</b> ✓", inv_unknown:"<b>{typed}</b> n'existe pas ici. C'était <b>{code}</b> ({city}).",
+       inv_bad:"Tu as tapé <b>{typed}</b> ({scity}). C'était <b>{code}</b> ({city}), {km} km plus loin.",
+       inv_hint:"Tape l'indicatif puis Entrée.", path:"Ordre des numéros",
+       misses:"Erreurs de la session", miss_btn:"Erreurs {n}", replay:"Rejouer mes erreurs", clear:"Vider la liste",
+       miss_note:"Rien n'est gardé après la fermeture de la page. En mode rejeu, un indicatif réussi sort de la liste.",
+       replay_on:"Rejeu des erreurs : {n} restante(s).", replay_done:"Plus aucune erreur à rejouer ✓",
+       load_err:"Impossible de charger les données. Ouvre la page via serve.cmd ou GitHub Pages."},
   en: {play:"Play", explore:"Explore", acc:"accuracy", streak:"streak", settings:"Settings", close:"Close",
        confirm:"Confirm", next:"Next", level:"Level", advance:"Advance", auto:"Automatic",
        manual:"Wait", none_all:"Nothing selected = all.", search:"Code or city…",
@@ -215,7 +271,18 @@ const T = {
        code_ok:"<b>{code}: {city}</b>.",
        code_bad:"You picked <b>{sel} {scity}</b>. {code} is <b>{city}</b>, {km} km away.",
        groups:"{G}s to practise", all:"All", cities:"Also", system:"How the system works",
-       codes_n:"{n} codes", load_err:"Could not load the data. Open the page through serve.cmd or GitHub Pages."}
+       codes_n:"{n} codes", inverse:"Reverse",
+       reveal:"Code", reveal_on:"Revealed digit by digit", reveal_off:"Full code from the start",
+       reveal_note_ok:"Each step reveals one more digit: 8xx → 81x → 812.",
+       reveal_note_no:"Not for this country (the {g} is not the first digit): the code is shown in full.",
+       format:"Display", real_on:"Full number, as on a sign", real_off:"Code only",
+       inv_ask:"{place}. Which code?", inv_ok:"<b>{code}: {city}</b> ✓", inv_unknown:"<b>{typed}</b> does not exist here. It was <b>{code}</b> ({city}).",
+       inv_bad:"You typed <b>{typed}</b> ({scity}). It was <b>{code}</b> ({city}), {km} km away.",
+       inv_hint:"Type the code, then Enter.", path:"Number order",
+       misses:"Session mistakes", miss_btn:"Mistakes {n}", replay:"Replay my mistakes", clear:"Clear the list",
+       miss_note:"Nothing is kept once the page is closed. In replay, a code you get right leaves the list.",
+       replay_on:"Replaying mistakes: {n} left.", replay_done:"No mistakes left to replay ✓",
+       load_err:"Could not load the data. Open the page through serve.cmd or GitHub Pages."}
 };
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const $ = s => document.querySelector(s);
@@ -224,7 +291,7 @@ const $ = s => document.querySelector(s);
    PREFERENCES (no learning history in v1, only settings)
    ============================================================ */
 const PKEY = "phonecodes.v1";
-const PDEF = {lang:"fr", iso:null, mode:"play", lvls:{}, groups:{}, adv:"auto"};
+const PDEF = {lang:"fr", iso:null, mode:"play", lvls:{}, groups:{}, adv:"auto", reveal:true, real:true, path:true};
 let P = (() => { try { return {...PDEF, ...JSON.parse(localStorage.getItem(PKEY) || "{}")}; } catch(e){ return {...PDEF}; } })();
 if(typeof P.lvls !== "object" || !P.lvls) P.lvls = {};
 const saveP = () => { try { localStorage.setItem(PKEY, JSON.stringify(P)); } catch(e){} };
@@ -266,14 +333,41 @@ async function loadCountry(iso){
   C.G = {}; C.groups.forEach(g => C.G[g.id] = g);
   C.S = {};
   (C.subs || []).forEach(s => C.S[s.id] = s);
-  C.groups.forEach(g => (C.subs || []).filter(s => s.group === g.id).forEach((s, i) => s.color = SUB_COLORS[i % SUB_COLORS.length]));
+  /* sub-blocks take shades of their block's colour: 81x, 83x, 86x read as one family */
+  C.groups.forEach(g => { const list = (C.subs || []).filter(s => s.group === g.id);
+    list.forEach((s, i) => s.color = shade(g.color, i, list.length)); });
+  /* digit-by-digit reveal works when every block is the first digit(s) of its codes (after the trunk 0) */
+  C.revealable = C.groups.length > 1 && C.groups.every(g => /^\d+$/.test(g.id))
+    && C.codes.every(c => c.code.replace(/^0+/, "").startsWith(c.group));
   C.twin = {};
   (C.twins || []).forEach(list => list.forEach(a => list.forEach(b => { if(a !== b) (C.twin[a] = C.twin[a] || new Set()).add(b); })));
   C.hosts = {};                          // code -> admin keys (match = admin)
   for(const k in C.admin) (C.admin[k].codes || []).forEach(code => (C.hosts[code] = C.hosts[code] || []).push(k));
   SHAPES.clear();
 }
+/* hex colour -> n distinct shades around its hue (hue ±30°, alternating lightness) */
+function shade(hex, i, n){
+  const v = parseInt(hex.slice(1), 16), r = (v >> 16 & 255)/255, g = (v >> 8 & 255)/255, b = (v & 255)/255;
+  const mx = Math.max(r, g, b), mn = Math.min(r, g, b), d = mx - mn;
+  let h = 0;
+  if(d) h = mx === r ? ((g - b)/d) % 6 : mx === g ? (b - r)/d + 2 : (r - g)/d + 4;
+  h = (h*60 + 360) % 360;
+  if(n < 2) return hex;
+  const hh = (h - 30 + 60*i/(n-1) + 360) % 360, l = [52, 70, 40, 62, 46, 76][i % 6];
+  return `hsl(${hh.toFixed(0)} 62% ${l}%)`;
+}
 const hasSub = () => !!(C.subs && C.subs.length);
+/* frame a block on its cities, not on its full extent: far Arctic islands
+   (Franz Josef Land in block 8) would otherwise shrink the map to a strip */
+function cityBox(list, bbox){
+  const lo = list.map(c => c.lon), la = list.map(c => c.lat);
+  let b = [Math.min(...lo), Math.min(...la), Math.max(...lo), Math.max(...la)];
+  const dx = (b[2]-b[0])*.3 + 1, dy = (b[3]-b[1])*.3 + 1;
+  b = [Math.max(bbox[0], b[0]-dx), Math.max(bbox[1], b[1]-dy), Math.min(bbox[2], b[2]+dx), Math.min(bbox[3], b[3]+dy)];
+  return (b[2]-b[0])*(b[3]-b[1]) < 0.5*(bbox[2]-bbox[0])*(bbox[3]-bbox[1]) ? b : bbox;
+}
+const groupBox = id => cityBox(codesOfGroup(id), C.G[id].bbox);
+const subBox = id => cityBox(codesOfSub(id), C.S[id].bbox);
 const disp = code => esc(C.display).replace("{code}", `</span>${esc(code)}<span class="deco">`);
 const dispText = code => C.display.replace("{code}", code);
 const gname = id => C.G[id].name[P.lang];
@@ -405,8 +499,8 @@ function makeView(svg, onClick, redraw){
     svg.setAttribute("viewBox", `${V.x} ${V.y} ${V.w} ${V.h}`);
   };
   V.clamp = () => {
-    const H = V.home; if(!H) return;
-    V.w = Math.min(H.w*1.4, Math.max(H.w/120, V.w));
+    const H = V.box || V.home; if(!H) return;              // pan bounds: the whole country, even if home is a close-up
+    V.w = Math.min(Math.max(V.home.w*1.4, H.w*1.1), Math.max(V.home.w/120, V.w));
     const r = svg.getBoundingClientRect(); if(r.width > 0) V.h = V.w * r.height / r.width;
     V.x = Math.min(H.x + H.w - V.w*0.2, Math.max(H.x - V.w*0.8, V.x));
     V.y = Math.min(H.y + H.h - V.h*0.2, Math.max(H.y - V.h*0.8, V.y));
@@ -460,7 +554,19 @@ function makeView(svg, onClick, redraw){
     if(single && moved <= 5){ const m = V.toMap(e.clientX, e.clientY); onClick(m.lon, m.lat); }
   });
   svg.addEventListener("pointercancel", e => { act.delete(e.pointerId); last = null; pinch = null; });
-  V.setHome = () => { V.home = null; V.frame(C.bbox, 1.08); V.home = {x:V.x, y:V.y, w:V.w, h:V.h}; };
+  /* portrait screens: home is the dense part of the country (the quantiles of its
+     code cities), the rest stays one pinch away */
+  V.setHome = () => {
+    V.home = V.box = null; V.frame(C.bbox, 1.08); V.box = {x:V.x, y:V.y, w:V.w, h:V.h}; V.home = V.box;
+    const r = svg.getBoundingClientRect();
+    if(r.height > r.width * 1.1){
+      const q = (a, f) => { const s = [...a].sort((x, y) => x - y); return s[Math.min(s.length - 1, Math.floor(f*s.length))]; };
+      const lo = C.codes.map(c => c.lon), la = C.codes.map(c => c.lat);
+      const b = [q(lo, .12), q(la, .12), q(lo, .88), q(la, .88)], dx = (b[2]-b[0])*.25 + .3, dy = (b[3]-b[1])*.25 + .3;
+      const d = [Math.max(C.bbox[0], b[0]-dx), Math.max(C.bbox[1], b[1]-dy), Math.min(C.bbox[2], b[2]+dx), Math.min(C.bbox[3], b[3]+dy)];
+      if((d[2]-d[0])*(d[3]-d[1]) < 0.6*(C.bbox[2]-C.bbox[0])*(C.bbox[3]-C.bbox[1])){ V.frame(d, 1.1); V.home = {x:V.x, y:V.y, w:V.w, h:V.h}; }
+    }
+  };
   V.goHome = () => { V.x = V.home.x; V.y = V.home.y; V.w = V.home.w; V.clamp(); V.apply(); };
   return V;
 }
@@ -469,7 +575,7 @@ function makeView(svg, onClick, redraw){
 /* many labels: drop the ones that collide instead of stacking them */
 function placeLabels(items, fs){
   const put = [], out = [], drop = items.length > 40;
-  items.sort((a, b) => a.y - b.y).forEach(it => {
+  items.sort((a, b) => (b.pri || 0) - (a.pri || 0) || a.y - b.y).forEach(it => {
     let y = it.y;
     const w = fs * 0.55 * it.text.length;
     for(let i = 0; i < put.length; i++){
@@ -494,12 +600,16 @@ function landHTML(on){
       stroke-opacity="${thin() ? 0.35 : 1}" stroke-width="${thin() ? .4 : .7}" vector-effect="non-scaling-stroke"/>`;
   return h;
 }
-function labelsHTML(V, list, fs, text, mono){
+function labelsHTML(V, list, fs, text, mono, pri){
   let h = "";
   const r = V.w/230;
   list.forEach(c => h += `<circle class="dot" cx="${c.lon*K}" cy="${-c.lat}" r="${r}"/>`);
-  placeLabels(list.map(c => ({x: c.lon*K, y: -c.lat - fs*0.6, text: text(c)})).filter(it => inView(V, it.x, it.y)), fs)
-    .forEach(it => h += `<text class="lbl${mono ? " mono" : ""}" x="${it.x}" y="${it.y}" font-size="${fs}" text-anchor="middle">${esc(it.text)}</text>`);
+  placeLabels(list.map(c => ({x: c.lon*K, y: -c.lat - fs*0.6, text: text(c), pri: pri ? pri(c) : 0})).filter(it => inView(V, it.x, it.y)), fs)
+    .forEach(it => {
+      /* near the map edge, anchor the label inwards instead of cutting it */
+      const w = fs*0.55*it.text.length, anchor = it.x - w/2 < V.x ? "start" : it.x + w/2 > V.x + V.w ? "end" : "middle";
+      h += `<text class="lbl${mono ? " mono" : ""}" x="${it.x}" y="${it.y}" font-size="${fs}" text-anchor="${anchor}">${esc(it.text)}</text>`;
+    });
   return h;
 }
 
@@ -522,7 +632,58 @@ function currentLevel(){
    PLAY
    ============================================================ */
 let PV = null, round = null, sel = null, locked = false, timer = null;
-const SES = {seen:0, right:0, streak:0};
+const SES = {seen:0, right:0, streak:0, miss:new Map(), replay:false};
+const inverse = () => P.mode === "inverse";
+
+/* ---- the number on screen ----
+   known digits: block digits in the block colour, sub-block digits in its shade, the rest amber;
+   hidden digits are a muted x. Full-number mode wraps the code in a realistic number. */
+function shownLen(c){
+  if(locked || inverse() || !P.reveal || !C.revealable) return inverse() && !locked ? 0 : c.code.length;
+  const s = step();
+  if(s === "g") return c.code.length - c.code.replace(/^0+/, "").length + c.group.length;
+  if(s === "s") return Math.min(C.sub_len, c.code.length);
+  return c.code.length;
+}
+function codeDigitsHTML(c, n){
+  const z = c.code.length - c.code.replace(/^0+/, "").length, gEnd = z + c.group.length;
+  const sEnd = hasSub() ? C.sub_len : gEnd;
+  let h = "";
+  [...c.code].forEach((d, i) => {
+    if(i >= n){ h += `<span class="hid">x</span>`; return; }
+    let col = "";
+    if(C.revealable && P.reveal && !inverse()){
+      if(i < z) col = "";
+      else if(i < gEnd) col = C.G[c.group].color;
+      else if(i < sEnd && c.sub) col = C.S[c.sub].color;
+    }
+    h += col ? `<span style="color:${col}">${d}</span>` : d;
+  });
+  return h;
+}
+function chunk(digits, spec){
+  let out = "", i = 0;
+  for(const m of spec.matchAll(/(\d+)(\D*)/g)){ out += digits.slice(i, i + +m[1]) + m[2]; i += +m[1]; }
+  return out + digits.slice(i);
+}
+const rnd = (n, first) => Array.from({length:n}, (_, i) => i === 0 && first ? 2 + (Math.random()*8 | 0) : Math.random()*10 | 0).join("");
+function newNumber(c){
+  const rl = C.real; if(!rl) return null;
+  const ext = rl.ext || 0, n = (rl.lens && rl.lens[c.code]) || rl.total - c.code.length - ext;
+  return {x: rnd(ext, false), n: chunk(rnd(n, true), (rl.chunks || {})[n] || String(n))};
+}
+function renderCode(){
+  const c = round.target, n = shownLen(c), digits = codeDigitsHTML(c, n);
+  const real = P.real && C.real && round.num;
+  const fmt = real ? C.real.fmt : C.display;
+  const parts = fmt.split(/(\{code\}|\{x\}|\{n\})/).map(p =>
+    p === "{code}" ? digits
+    : p === "{x}" ? `<span class="num">${round.num.x}</span>`
+    : p === "{n}" ? `<span class="num">${esc(round.num.n)}</span>`
+    : p ? `<span class="deco">${esc(p)}</span>` : "").join("");
+  $("#code").innerHTML = parts;
+  $("#code").classList.toggle("long", !!real);
+}
 
 function activeCodes(){
   const g = P.groups[C.iso] || [];
@@ -536,17 +697,19 @@ function stepScope(){
   const tg = round.target;
   const subKnown = hasSub() && step() === "c";
   const cands = subKnown ? codesOfSub(tg.sub) : codesOfGroup(tg.group);
-  return {cands, box: subKnown ? C.S[tg.sub].bbox : C.G[tg.group].bbox,
-          ctx: subKnown ? `${C.sub_label[P.lang]} ${dispText(tg.sub).replace(/[()\-]/g, "")}` : groupCtx(tg.group)};
+  return {cands, box: subKnown ? subBox(tg.sub) : groupBox(tg.group),
+          ctx: subKnown ? `${C.sub_label[P.lang]} ${tg.sub}` : groupCtx(tg.group)};
 }
 function newRound(){
   clearTimeout(timer);
   const list = activeCodes();
-  let c = list[(Math.random()*list.length) | 0];
-  if(round && list.length > 1) for(let i = 0; i < 5 && c.code === round.target.code; i++) c = list[(Math.random()*list.length) | 0];
+  if(SES.replay && !SES.miss.size) SES.replay = false;
+  const pool = SES.replay ? [...SES.miss.values()] : list;
+  let c = pool[(Math.random()*pool.length) | 0];
+  if(round && pool.length > 1) for(let i = 0; i < 5 && c.code === round.target.code; i++) c = pool[(Math.random()*pool.length) | 0];
   sel = null; locked = false;
-  round = {target:c, steps: currentLevel()[1], i:0};
-  $("#code").innerHTML = `<span class="deco">${disp(c.code)}</span>`;
+  round = {target:c, steps: inverse() ? ["i"] : currentLevel()[1], i:0, num: newNumber(c)};
+  $("#inv").value = ""; $("#inv").classList.toggle("on", inverse());
   $("#msg").className = "";
   $("#btn-next").classList.remove("on");
   $("#play-fiche").classList.remove("on");
@@ -556,6 +719,7 @@ function newRound(){
 /* a step with a single possible answer is not asked */
 function trivial(){
   const tg = round.target, s = step();
+  if(s === "i") return false;
   if(s === "g") return C.groups.length < 2;
   if(s === "s") return new Set(codesOfGroup(tg.group).map(c => c.sub)).size < 2;
   if(s === "c") return new Set(stepScope().cands.map(c => c.code)).size < 2;
@@ -565,19 +729,26 @@ function skipTrivial(){ while(round.i < round.steps.length - 1 && trivial()) rou
 
 function askText(){
   const tg = round.target, s = step();
+  if(s === "i"){
+    const a = C.admin[tg.admin], place = C.unit_labels ? a.name : a.name && a.name !== tg.city ? `${tg.city} · ${a.name}` : tg.city;
+    return t("inv_ask", {place});
+  }
   if(s === "g") return C.group_q ? C.group_q[P.lang] : t("ask_g");
   if(s === "s") return t("ask_s", {id: tg.group});
   return t("ask_c", {ctx: C.groups.length < 2 ? C.name[P.lang] : stepScope().ctx});
 }
 function paintStep(){
+  renderCode();
   $("#ask").textContent = askText();
-  $("#msg").textContent = t("click_map");
+  $("#msg").textContent = inverse() ? t("inv_hint") : t("click_map");
+  if(SES.replay){ $("#msg").textContent = t("replay_on", {n: SES.miss.size}); }
   $("#btn-ok").classList.remove("on");
-  if(step() === "g") PV.goHome(); else PV.frame(stepScope().box, 1.2);
+  if(inverse() || step() === "g") PV.goHome(); else PV.frame(stepScope().box, 1.2);
   drawPlay();
+  if(inverse()) setTimeout(() => $("#inv").focus({preventScroll:true}), 0);
 }
 function playClick(lon, lat){
-  if(!round || locked) return;
+  if(!round || locked || inverse()) return;
   const tg = round.target, s = step();
   if(s === "g"){
     const gs = groupsAt(PV, lon, lat);
@@ -597,6 +768,10 @@ function playClick(lon, lat){
 function finish(ok, html, fiche){
   locked = true;
   SES.seen++; if(ok){ SES.right++; SES.streak++; } else SES.streak = 0;
+  const key = round.target.code + "|" + round.target.city;
+  if(!ok) SES.miss.set(key, round.target);
+  else if(SES.replay){ SES.miss.delete(key); if(!SES.miss.size){ SES.replay = false; html += " " + t("replay_done"); } }
+  renderCode();
   $("#msg").innerHTML = html; $("#msg").className = ok ? "good" : "bad";
   $("#btn-ok").classList.remove("on");
   const f = $("#play-fiche");
@@ -605,7 +780,22 @@ function finish(ok, html, fiche){
   if(P.adv === "manual") $("#btn-next").classList.add("on");
   else timer = setTimeout(newRound, ok ? 2200 : 4500);
 }
+function answerInverse(){
+  const tg = round.target, raw = $("#inv").value.replace(/\D/g, "");
+  if(!raw) return;
+  const z = x => x.replace(/^0+/, "");
+  const hit = C.codes.filter(c => z(c.code) === z(raw));
+  const v = {code: esc(dispText(tg.code)), city: esc(tg.city), typed: esc(raw)};
+  const ok = hit.some(c => sameCode(c.code, tg.code)
+    || (C.match === "admin" && hostsOf(c.code).some(k => hostsOf(tg.code).includes(k)) && hostsOf(c.code).includes(tg.admin)));
+  sel = hit.length ? (hit.find(c => sameCode(c.code, tg.code)) || hit[0]) : null;
+  if(ok){ v.code = esc(dispText(sel.code)); finish(true, t("inv_ok", v), ficheHTML(tg)); return; }
+  if(!sel){ finish(false, t("inv_unknown", v), ficheHTML(tg)); return; }
+  v.scity = esc(sel.city); v.km = Math.round(haversine(sel.lat, sel.lon, tg.lat, tg.lon));
+  finish(false, t("inv_bad", v), ficheHTML(tg));
+}
 function answer(){
+  if(round && !locked && inverse()){ answerInverse(); return; }
   if(!round || locked || !sel) return;
   const tg = round.target, s = step(), last = round.i === round.steps.length - 1;
   const v = {code: esc(dispText(tg.code)), city: esc(tg.city), gname: esc(gname(tg.group))};
@@ -633,9 +823,31 @@ function answer(){
   finish(ok, ok ? t("code_ok", v) : t("code_bad", {...v, sel: esc(dispText(sel.code)), scity: esc(sel.city), km}), ficheHTML(tg));
 }
 
+/* reverse mode: the place is lit, the code is typed */
+function cellOf(c){
+  if(C.match === "admin") return C.unit_labels || locked ? hostsOf(c.code).map(k => PATH[k]).join("") : PATH[c.admin];
+  const cell = shapesOf(codesOfGroup(c.group)).find(x => x.c === c);
+  return cell ? cell.d : "";
+}
+function drawInverse(){
+  const V = PV, tg = round.target, fs = fsOf(V);
+  let h = landHTML(() => true);
+  const paint = (c, fill, op, id) => {
+    const d = cellOf(c); if(!d) return "";
+    return clipOpen(id, c.group) + `<path d="${d}" fill="${fill}" fill-opacity="${op}" stroke="#fff" stroke-width="1.6" vector-effect="non-scaling-stroke"/></g>`;
+  };
+  const wrong = locked && sel && !sameCode(sel.code, tg.code) && sel.admin !== tg.admin;
+  if(wrong) h += paint(sel, "#E05A48", .8, "iw");
+  h += paint(tg, locked ? "#3FBF85" : "var(--amber)", locked ? .85 : .75, "it");
+  const list = wrong ? [tg, sel] : [tg];
+  h += labelsHTML(V, list, fs*0.9, c => (locked ? c.code + " " : "") + c.city + (locked && c.local ? " · " + c.local : ""), locked);
+  V.svg.innerHTML = h;
+}
+const withLocal = (c, on) => on && c.local && c.local !== c.city ? " · " + c.local : "";
 function drawPlay(){
   if(!round) return;
   const V = PV, tg = round.target, s = step(), fs = fsOf(V);
+  if(s === "i"){ drawInverse(); return; }
   let h = "";
   if(s === "g"){
     for(const k in C.admin){
@@ -695,7 +907,7 @@ function drawPlay(){
     h += `</g>`;
     /* city names while asking, codes on reveal: the names are the bridge you
        are building, and anonymous click feedback stops probing */
-    h += labelsHTML(V, cands, fs*0.8, c => (locked ? c.code + " " : "") + c.city, locked);
+    h += labelsHTML(V, cands, fs*0.8, c => (locked ? c.code + " " : "") + c.city + withLocal(c, locked && isT(c)), locked);
   }
   V.svg.innerHTML = h;
 }
@@ -732,11 +944,12 @@ const tipHTML = tp => `<div class="tip"><b>${esc(tp.title)}</b>${esc(tp[P.lang])
 function ficheHTML(c){
   const same = (C.byCode[c.code] || []).filter(o => o !== c);
   const a = C.admin[c.admin];
-  let h = `<h3><span class="c">${esc(dispText(c.code))}</span>${esc(c.city)}${c.local ? `<span class="loc">${esc(c.local)}</span>` : ""}</h3>`;
-  const where = [a.name !== c.city ? a.name : "", a.local || "", a.region || ""].filter(Boolean).join(" · ");
+  let h = `<h3><span class="c">${esc(dispText(c.code))}</span>${esc(c.city)}${c.local ? `<span class="script">${esc(c.local)}</span>` : ""}</h3>`;
+  const aLoc = a.local && a.local !== c.local ? `<span class="script">${esc(a.local)}</span>` : "";
+  const where = [a.name !== c.city ? esc(a.name) : "", aLoc, esc(a.region || "")].filter(Boolean).join(" · ");
   let path = `${C.group_label[P.lang]} ${c.group} : ${gname(c.group)}`;
   if(c.sub) path += ` · ${C.sub_label[P.lang]} ${c.sub}`;
-  h += `<div class="meta">${where ? esc(where) + " — " : ""}${esc(path)}</div>`;
+  h += `<div class="meta">${where ? where + " — " : ""}${esc(path)}</div>`;
   const cities = [...same.map(o => o.city), ...(c.cities || [])];
   if(cities.length) h += `<div class="cities">${esc(t("cities"))} : ${cities.map(esc).join(", ")}</div>`;
   tipsFor(c.code).forEach(tp => h += tipHTML(tp));
@@ -772,24 +985,25 @@ function exClick(lon, lat){
 }
 function exSelect(c){
   exSel = c;
-  if(exGroup !== c.group){ exGroup = c.group; exSub = null; EV.frame(C.G[c.group].bbox, 1.2); }
-  else if(exSub && exSub !== c.sub){ exSub = null; EV.frame(C.G[c.group].bbox, 1.2); }
+  if(exGroup !== c.group){ exGroup = c.group; exSub = null; EV.frame(groupBox(c.group), 1.2); }
+  else if(exSub && exSub !== c.sub){ exSub = null; EV.frame(groupBox(c.group), 1.2); }
   paintExplore();
 }
 function setExGroup(id){
   exGroup = id; exSub = null;
-  if(id) EV.frame(C.G[id].bbox, 1.2); else EV.goHome();
+  if(id) EV.frame(groupBox(id), 1.2); else EV.goHome();
   paintExplore();
 }
 function setExSub(id){
   exSub = id;
-  EV.frame(id ? C.S[id].bbox : C.G[exGroup].bbox, 1.2);
+  EV.frame(id ? subBox(id) : groupBox(exGroup), 1.2);
   paintExplore();
 }
 function paintExplore(){
   $("#ex-groups").innerHTML = `<button class="chip" data-g="" aria-pressed="${!exGroup}">${esc(t("all"))}</button>` +
     C.groups.map(g => `<button class="chip" data-g="${esc(g.id)}" aria-pressed="${exGroup === g.id}" title="${esc(g.name[P.lang])}">
-      <span class="sw" style="background:${g.color}"></span>${esc(g.id)}</button>`).join("");
+      <span class="sw" style="background:${g.color}"></span>${esc(g.id)}</button>`).join("") +
+    (C.unit_labels ? "" : `<button class="chip tog" data-path="1" aria-pressed="${P.path}">⤳ ${esc(t("path"))}</button>`);
   const subs = exGroup && hasSub() ? C.subs.filter(s => s.group === exGroup) : [];
   $("#ex-subs").style.display = subs.length > 1 ? "" : "none";
   $("#ex-subs").innerHTML = subs.length > 1 ? subs.map(s => `<button class="chip" data-s="${esc(s.id)}" aria-pressed="${exSub === s.id}" title="${esc(s.regions.join(", "))}">
@@ -804,7 +1018,7 @@ const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
 function paintList(){
   const q = norm($("#search").value.trim()), qd = q.replace(/[^0-9]/g, "");
   const match = c => !q || (qd && c.code.startsWith(qd)) || norm(c.city).includes(q)
-    || (c.local || "").includes(q) || norm(C.admin[c.admin].name).includes(q) || norm(C.admin[c.admin].region || "").includes(q)
+    || norm(c.local || "").includes(q) || norm(C.admin[c.admin].local || "").includes(q) || norm(C.admin[c.admin].name).includes(q) || norm(C.admin[c.admin].region || "").includes(q)
     || (c.cities || []).some(x => norm(x).includes(q));
   let h = "";
   C.groups.forEach(g => {
@@ -830,8 +1044,11 @@ function drawExplore(){
       h += `<path d="${PATH[k]}" fill="${fillOf(a)}" fill-opacity=".45" stroke="rgba(0,0,0,${thin() ? .25 : .5})" stroke-width="${thin() ? .4 : .7}" vector-effect="non-scaling-stroke"/>`;
     }
     /* whole country: every code if they fit, otherwise the anchors */
-    const list = C.codes.length > 90 ? (C.anchors || []).flatMap(code => C.byCode[code] || []) : C.codes;
-    h += labelsHTML(V, list, fs*0.8, c => C.codes.length > 90 ? c.code + " " + c.city : c.code, true);
+    /* whole country: anchors first, with their city; the other codes fill the gaps when zoomed in */
+    const anc = new Set(C.anchors || []), big = C.codes.length > 90;
+    const list = big ? (C.anchors || []).flatMap(code => C.byCode[code] || []) : C.codes;
+    h += labelsHTML(V, list, fs*0.8, c => big || anc.has(c.code) ? c.code + " " + c.city : c.code, true, c => anc.has(c.code) ? 1 : 0);
+    h += pathHTML(V, fs, null);
   } else {
     const g = C.G[exGroup];
     h += landHTML(k => g.admins.includes(k));
@@ -849,9 +1066,42 @@ function drawExplore(){
     const list = exSub ? all.filter(c => c.sub === exSub)
       : hasSub() && all.length > 25 ? C.subs.filter(x => x.group === exGroup).map(x => C.byCode[x.rep][0]) : all;
     h += labelsHTML(V, list, fs*0.8, c => (exSub || !hasSub() || all.length <= 25 ? c.code : c.sub + "…") + " " + c.city, true);
+    h += pathHTML(V, fs, exGroup);
   }
   if(exSel) h += `<circle cx="${exSel.lon*K}" cy="${-exSel.lat}" r="${V.w/140}" fill="none" stroke="#fff" stroke-width="2" vector-effect="non-scaling-stroke"/>`;
   V.svg.innerHTML = h;
+}
+
+/* "number order": a dashed line through the blocks, sub-blocks or codes in
+   numeric order, with small arrows; it shows which way the numbering runs */
+const numSort = (a, b) => a.replace(/^0+/, "").localeCompare(b.replace(/^0+/, ""), undefined, {numeric:true}) || a.length - b.length;
+function pathPoints(gid){
+  const firstOf = list => { const anc = list.filter(c => (C.anchors || []).includes(c.code)).sort((a, b) => numSort(a.code, b.code));
+    return anc[0] || [...list].sort((a, b) => numSort(a.code, b.code))[0]; };
+  if(!gid){
+    if(hasSub() || C.groups.length < 3 || !C.groups.every(g => /^\d+$/.test(g.id))) return [];
+    return [...C.groups].sort((a, b) => numSort(a.id, b.id)).map(g => firstOf(codesOfGroup(g.id)));
+  }
+  if(hasSub() && !exSub){
+    const subs = C.subs.filter(x => x.group === gid).sort((a, b) => numSort(a.id, b.id));
+    return subs.length > 2 ? subs.map(x => C.byCode[x.rep][0]) : [];
+  }
+  const seen = new Set(), list = (exSub ? codesOfSub(exSub) : codesOfGroup(gid)).filter(c => !seen.has(c.code) && seen.add(c.code));
+  return list.length > 2 && list.length <= 20 ? list.sort((a, b) => numSort(a.code, b.code)) : [];
+}
+function pathHTML(V, fs, gid){
+  if(!P.path || C.unit_labels) return "";
+  const pts = pathPoints(gid).map(c => [c.lon*K, -c.lat]);
+  if(pts.length < 3) return "";
+  let h = `<polyline points="${pts.map(p => p.join(",")).join(" ")}" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="1.3" stroke-dasharray="5 4" vector-effect="non-scaling-stroke" pointer-events="none"/>`;
+  const a = fs*0.45;
+  for(let i = 1; i < pts.length; i++){
+    const [x0, y0] = pts[i-1], [x1, y1] = pts[i], L = Math.hypot(x1-x0, y1-y0);
+    if(L < a*3) continue;
+    const ux = (x1-x0)/L, uy = (y1-y0)/L, mx = (x0+x1)/2, my = (y0+y1)/2;
+    h += `<path d="M${mx+ux*a} ${my+uy*a}L${mx-ux*a-uy*a*.7} ${my-uy*a+ux*a*.7}L${mx-ux*a+uy*a*.7} ${my-uy*a-ux*a*.7}Z" fill="#fff" fill-opacity=".75" pointer-events="none"/>`;
+  }
+  return h;
 }
 
 /* ============================================================
@@ -869,12 +1119,22 @@ function paintStatic(){
 function paintRail(){
   $("#s-acc").textContent = SES.seen ? Math.round(100*SES.right/SES.seen) + "%" : "—";
   $("#s-streak").textContent = SES.streak;
-  $("#stat-acc").style.display = $("#stat-streak").style.display = P.mode === "play" ? "" : "none";
+  $("#stat-acc").style.display = $("#stat-streak").style.display = P.mode !== "explore" ? "" : "none";
+  const m = $("#btn-miss");
+  m.style.display = SES.miss.size && P.mode !== "explore" ? "" : "none";
+  m.textContent = t("miss_btn", {n: SES.miss.size});
+}
+function paintMisses(){
+  $("#miss-list").innerHTML = [...SES.miss.values()].map(c => `<div><span class="c">${esc(dispText(c.code))}</span>
+    <span>${esc(c.city)} <span class="loc">${esc(c.local || C.admin[c.admin].name)}</span></span></div>`).join("");
 }
 function paintSettings(){
   const cur = currentLevel()[0];
   $("#lvl-chips").innerHTML = levelOptions().map(([k, , label]) => `<button class="chip" data-lvl="${k}" aria-pressed="${k === cur}">${esc(label)}</button>`).join("");
   document.querySelectorAll("#adv-chips .chip").forEach(b => b.setAttribute("aria-pressed", b.dataset.adv === P.adv));
+  document.querySelectorAll("#rev-chips .chip").forEach(b => b.setAttribute("aria-pressed", (b.dataset.rev === "1") === P.reveal));
+  document.querySelectorAll("#real-chips .chip").forEach(b => b.setAttribute("aria-pressed", (b.dataset.real === "1") === P.real));
+  $("#rev-note").textContent = C.revealable ? t("reveal_note_ok") : t("reveal_note_no");
   $("#groups-legend").textContent = t("groups");
   const on = P.groups[C.iso] || [];
   $("#grp-chips").innerHTML = C.groups.map(g => `<button class="chip" data-g="${esc(g.id)}" aria-pressed="${on.includes(g.id)}">
@@ -882,11 +1142,11 @@ function paintSettings(){
 }
 function setMode(m){
   P.mode = m; saveP();
-  $("#play").style.display = m === "play" ? "flex" : "none";
+  $("#play").style.display = m !== "explore" ? "flex" : "none";
   $("#explore").style.display = m === "explore" ? "flex" : "none";
   paintStatic(); paintRail();
   requestAnimationFrame(() => {
-    if(m === "play"){ PV.setHome(); newRound(); }
+    if(m !== "explore"){ PV.setHome(); newRound(); }
     else { EV.setHome(); exSel = null; setExGroup(exGroup && C.G[exGroup] ? exGroup : null); }
   });
 }
@@ -904,7 +1164,7 @@ async function selectCountry(iso){
   history.replaceState(null, "", "#" + C.iso.toLowerCase());
   $("#loading").style.display = "none";
   round = null; exGroup = null; exSub = null; exSel = null;
-  SES.seen = SES.right = SES.streak = 0;
+  SES.seen = SES.right = SES.streak = 0; SES.miss.clear(); SES.replay = false;
   setMode(P.mode);
 }
 
@@ -914,18 +1174,29 @@ async function init(){
   $("#btn-ok").onclick = answer;
   $("#btn-next").onclick = newRound;
   document.addEventListener("keydown", e => {
-    if(e.target.tagName === "INPUT" || P.mode !== "play") return;
+    if(e.target.tagName === "INPUT" || P.mode === "explore") return;
     if(e.key === "Enter" || e.key === " "){ e.preventDefault(); if(locked) newRound(); else answer(); }
   });
   $("#country").onchange = e => selectCountry(e.target.value);
   document.querySelectorAll("#mode-seg button").forEach(b => b.onclick = () => setMode(b.dataset.mode));
   document.querySelectorAll("#lang-seg button").forEach(b => b.onclick = () => {
     P.lang = b.dataset.lang; saveP(); paintStatic();
-    if(P.mode === "play" && round){ if(locked) newRound(); else $("#ask").textContent = askText(); }
+    if(P.mode !== "explore" && round){ if(locked) newRound(); else $("#ask").textContent = askText(); paintRail(); }
     else if(C) paintExplore();
   });
   $("#btn-settings").onclick = () => $("#ov-settings").classList.add("open");
-  $("#btn-close").onclick = () => { $("#ov-settings").classList.remove("open"); if(P.mode === "play") newRound(); };
+  $("#btn-close").onclick = () => { $("#ov-settings").classList.remove("open"); if(P.mode !== "explore") newRound(); };
+  $("#rev-chips").onclick = e => { const b = e.target.closest("[data-rev]"); if(!b) return; P.reveal = b.dataset.rev === "1"; saveP(); paintSettings(); };
+  $("#real-chips").onclick = e => { const b = e.target.closest("[data-real]"); if(!b) return; P.real = b.dataset.real === "1"; saveP(); paintSettings(); };
+  $("#inv").addEventListener("keydown", e => {
+    if(e.key !== "Enter") return;
+    e.preventDefault(); if(locked) newRound(); else answer();
+  });
+  $("#inv").addEventListener("input", () => $("#btn-ok").classList.toggle("on", !locked && !!$("#inv").value.trim()));
+  $("#btn-miss").onclick = () => { paintMisses(); $("#ov-miss").classList.add("open"); };
+  $("#btn-miss-close").onclick = () => $("#ov-miss").classList.remove("open");
+  $("#btn-replay").onclick = () => { if(!SES.miss.size) return; SES.replay = true; $("#ov-miss").classList.remove("open"); newRound(); };
+  $("#btn-miss-clear").onclick = () => { SES.miss.clear(); SES.replay = false; $("#ov-miss").classList.remove("open"); paintRail(); };
   $("#lvl-chips").onclick = e => { const b = e.target.closest("[data-lvl]"); if(!b) return; P.lvls[C.iso] = b.dataset.lvl; saveP(); paintSettings(); };
   $("#adv-chips").onclick = e => { const b = e.target.closest("[data-adv]"); if(!b) return; P.adv = b.dataset.adv; saveP(); paintSettings(); };
   $("#grp-chips").onclick = e => {
@@ -934,13 +1205,15 @@ async function init(){
     cur.has(b.dataset.g) ? cur.delete(b.dataset.g) : cur.add(b.dataset.g);
     P.groups[C.iso] = [...cur]; saveP(); paintSettings();
   };
-  $("#ex-groups").onclick = e => { const b = e.target.closest("[data-g]"); if(!b) return; exSel = null; setExGroup(b.dataset.g || null); };
+  $("#ex-groups").onclick = e => {
+    if(e.target.closest("[data-path]")){ P.path = !P.path; saveP(); paintExplore(); return; }
+    const b = e.target.closest("[data-g]"); if(!b) return; exSel = null; setExGroup(b.dataset.g || null); };
   $("#ex-subs").onclick = e => { const b = e.target.closest("[data-s]"); if(!b) return; exSel = null; setExSub(exSub === b.dataset.s ? null : b.dataset.s); };
   $("#list").onclick = e => { const b = e.target.closest("[data-i]"); if(!b) return; exSelect(C.codes[+b.dataset.i]); };
   $("#search").oninput = paintList;
   window.addEventListener("resize", () => {
     if(!C) return;
-    if(P.mode === "play"){ PV.clamp(); PV.apply(); drawPlay(); } else { EV.clamp(); EV.apply(); drawExplore(); }
+    if(P.mode !== "explore"){ PV.clamp(); PV.apply(); drawPlay(); } else { EV.clamp(); EV.apply(); drawExplore(); }
   });
 
   try {
@@ -950,7 +1223,13 @@ async function init(){
   } catch(e){ $("#loading").textContent = T[P.lang].load_err; return; }
   /* #au opens Australia; aliases let #ca open the shared US + Canada map */
   const resolve = x => x && (INDEX.find(c => c.iso === x) || INDEX.find(c => (c.aliases || []).includes(x)) || {}).iso;
-  const iso = resolve(location.hash.slice(1).toUpperCase()) || resolve(P.iso) || INDEX[0].iso;
+  const fromHash = resolve(location.hash.slice(1).toUpperCase());
+  const iso = fromHash || resolve(P.iso) || INDEX[0].iso;
+  if(fromHash) P.mode = "explore";          // a link to a country (#ph, from the Atlas) opens on its study map
+  window.addEventListener("hashchange", () => {
+    const h = resolve(location.hash.slice(1).toUpperCase());
+    if(h && (!C || h !== C.iso)){ P.mode = "explore"; selectCountry(h); }
+  });
   paintStatic();
   selectCountry(iso);
 }

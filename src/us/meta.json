@@ -111,5 +111,12 @@
   "group_q": {
     "fr": "Dans quelle région ?",
     "en": "Which region?"
+  },
+  "real": {
+    "fmt": "({code}) {n}",
+    "total": 10,
+    "chunks": {
+      "7": "3-4"
+    }
   }
 }

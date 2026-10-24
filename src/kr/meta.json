@@ -95,5 +95,13 @@
       "fr": "Les codes ne suivent pas tout à fait les provinces : Gwacheon et Gwangmyeong (Gyeonggi) sont en 02, Bucheon en 032, Gyeryong (Chungnam) en 042, Gyeongsan (Gyeongbuk) en 053 et Gunwi (Daegu) en 054. Ici on suit les provinces.",
       "en": "Codes do not quite follow the provinces: Gwacheon and Gwangmyeong (Gyeonggi) are 02, Bucheon 032, Gyeryong (Chungnam) 042, Gyeongsan (Gyeongbuk) 053 and Gunwi (Daegu) 054. Here the provinces are used."
     }
-  ]
+  ],
+  "real": {
+    "fmt": "{code}-{n}",
+    "total": 10,
+    "chunks": {
+      "8": "4-4",
+      "7": "3-4"
+    }
+  }
 }

@@ -80,5 +80,13 @@
       "fr": "09x est un portable : il ne dit rien du lieu.",
       "en": "09x is a mobile: it says nothing about the place."
     }
-  ]
+  ],
+  "real": {
+    "fmt": "{code} {n}",
+    "total": 9,
+    "chunks": {
+      "7": "3 4",
+      "6": "3 3"
+    }
+  }
 }

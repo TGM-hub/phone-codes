@@ -54,5 +54,13 @@
       "fr": "Zones reconstruites par Kreis, en rattachant chacun à la ville repère la plus proche : les limites entre premiers chiffres sont approximatives.",
       "en": "Areas rebuilt per Kreis, attaching each to the nearest reference city: borders between first digits are approximate."
     }
-  ]
+  ],
+  "real": {
+    "fmt": "{code}{x} {n}",
+    "ext": 2,
+    "total": 11,
+    "chunks": {
+      "7": "7"
+    }
+  }
 }

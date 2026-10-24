@@ -123,5 +123,12 @@
       "fr": "Juazeiro (74, Bahia) et Petrolina (87, Pernambuco) se font face de part et d'autre du São Francisco, à 3 km : les deux réponses sont acceptées.",
       "en": "Juazeiro (74, Bahia) and Petrolina (87, Pernambuco) face each other across the São Francisco, 3 km apart: both answers are accepted."
     }
-  ]
+  ],
+  "real": {
+    "fmt": "({code}) {n}",
+    "total": 10,
+    "chunks": {
+      "8": "4-4"
+    }
+  }
 }

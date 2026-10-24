@@ -1,0 +1,173 @@
+kind,key,local
+code,877,Майкоп
+code,385,Барнаул
+code,388,Горно-Алтайск
+code,416,Благовещенск
+code,818,Архангельск
+code,851,Астрахань
+code,347,Уфа
+code,472,Белгород
+code,483,Брянск
+code,301,Улан-Удэ
+code,492,Владимир
+code,844,Волгоград
+code,817,Вологда
+code,820,Череповец
+code,473,Воронеж
+code,872,Махачкала
+code,426,Биробиджан
+code,343,Екатеринбург
+code,493,Иваново
+code,873,Магас
+code,395,Иркутск
+code,866,Нальчик
+code,401,Калининград
+code,847,Элиста
+code,484,Калуга
+code,415,Петропавловск-Камчатский
+code,878,Черкесск
+code,814,Петрозаводск
+code,384,Кемерово
+code,833,Киров
+code,821,Сыктывкар
+code,494,Кострома
+code,861,Краснодар
+code,862,Сочи
+code,391,Красноярск
+code,352,Курган
+code,471,Курск
+code,813,Ленинградская область
+code,474,Липецк
+code,413,Магадан
+code,836,Йошкар-Ола
+code,834,Саранск
+code,495,Москва
+code,499,Москва
+code,496,Московская область
+code,498,Московская область
+code,815,Мурманск
+code,831,Нижний Новгород
+code,816,Великий Новгород
+code,383,Новосибирск
+code,381,Омск
+code,353,Оренбург
+code,486,Орёл
+code,841,Пенза
+code,342,Пермь
+code,423,Владивосток
+code,811,Псков
+code,863,Ростов-на-Дону
+code,491,Рязань
+code,846,Самара
+code,848,Тольятти
+code,812,Санкт-Петербург
+code,845,Саратов
+code,424,Южно-Сахалинск
+code,867,Владикавказ
+code,481,Смоленск
+code,865,Ставрополь
+code,879,Минеральные Воды
+code,475,Тамбов
+code,843,Казань
+code,855,Набережные Челны
+code,482,Тверь
+code,382,Томск
+code,487,Тула
+code,394,Кызыл
+code,345,Тюмень
+code,341,Ижевск
+code,842,Ульяновск
+code,421,Хабаровск
+code,390,Абакан
+code,346,Ханты-Мансийск
+code,351,Челябинск
+code,871,Грозный
+code,302,Чита
+code,835,Чебоксары
+code,427,Анадырь
+code,411,Якутск
+code,349,Салехард
+code,485,Ярославль
+admin,Altai Krai,Алтайский край
+admin,Mordovia,Мордовия
+admin,Tula Oblast,Тульская область
+admin,Kurgan Oblast,Курганская область
+admin,Ingushetia,Ингушетия
+admin,Khanty-Mansi AO,Ханты-Мансийский АО — Югра
+admin,Kirov Oblast,Кировская область
+admin,Komi,Республика Коми
+admin,Kostroma Oblast,Костромская область
+admin,Krasnoyarsk Krai,Красноярский край
+admin,Zabaykalsky Krai,Забайкальский край
+admin,Sverdlovsk Oblast,Свердловская область
+admin,Volgograd Oblast,Волгоградская область
+admin,Irkutsk Oblast,Иркутская область
+admin,Perm Krai,Пермский край
+admin,Pskov Oblast,Псковская область
+admin,Rostov Oblast,Ростовская область
+admin,Ryazan Oblast,Рязанская область
+admin,Adygea,Адыгея
+admin,Samara Oblast,Самарская область
+admin,Khakassia,Хакасия
+admin,Tambov Oblast,Тамбовская область
+admin,Tatarstan,Татарстан
+admin,Tomsk Oblast,Томская область
+admin,Nizhny Novgorod Oblast,Нижегородская область
+admin,Karelia,Карелия
+admin,Arkhangelsk Oblast,Архангельская область
+admin,Astrakhan Oblast,Астраханская область
+admin,Belgorod Oblast,Белгородская область
+admin,Bryansk Oblast,Брянская область
+admin,Buryatia,Бурятия
+admin,Chechnya,Чечня
+admin,Chelyabinsk Oblast,Челябинская область
+admin,Chuvashia,Чувашия
+admin,Tyumen Oblast,Тюменская область
+admin,North Ossetia–Alania,Северная Осетия — Алания
+admin,Penza Oblast,Пензенская область
+admin,Amur Oblast,Амурская область
+admin,Kabardino-Balkaria,Кабардино-Балкария
+admin,Krasnodar Krai,Краснодарский край
+admin,Kursk Oblast,Курская область
+admin,Leningrad Oblast,Ленинградская область
+admin,Mari El,Марий Эл
+admin,Moscow,Москва
+admin,Moscow Oblast,Московская область
+admin,Murmansk Oblast,Мурманская область
+admin,Nenets AO,Ненецкий АО
+admin,Novgorod Oblast,Новгородская область
+admin,Novosibirsk Oblast,Новосибирская область
+admin,Omsk Oblast,Омская область
+admin,Oryol Oblast,Орловская область
+admin,Saint Petersburg,Санкт-Петербург
+admin,Sakhalin Oblast,Сахалинская область
+admin,Sakha (Yakutia),Республика Саха (Якутия)
+admin,Saratov Oblast,Саратовская область
+admin,Smolensk Oblast,Смоленская область
+admin,Stavropol Krai,Ставропольский край
+admin,Tuva,Тыва
+admin,Tver Oblast,Тверская область
+admin,Udmurtia,Удмуртия
+admin,Kaluga Oblast,Калужская область
+admin,Lipetsk Oblast,Липецкая область
+admin,Magadan Oblast,Магаданская область
+admin,Ulyanovsk Oblast,Ульяновская область
+admin,Vladimir Oblast,Владимирская область
+admin,Vologda Oblast,Вологодская область
+admin,Yaroslavl Oblast,Ярославская область
+admin,Voronezh Oblast,Воронежская область
+admin,Yamalo-Nenets AO,Ямало-Ненецкий АО
+admin,Altai Republic,Республика Алтай
+admin,Ivanovo Oblast,Ивановская область
+admin,Jewish AO,Еврейская АО
+admin,Kalmykia,Калмыкия
+admin,Kamchatka Krai,Камчатский край
+admin,Karachay-Cherkessia,Карачаево-Черкесия
+admin,Kemerovo Oblast,Кемеровская область
+admin,Khabarovsk Krai,Хабаровский край
+admin,Chukotka,Чукотский АО
+admin,Dagestan,Дагестан
+admin,Kaliningrad Oblast,Калининградская область
+admin,Orenburg Oblast,Оренбургская область
+admin,Primorsky Krai,Приморский край
+admin,Bashkortostan,Башкортостан

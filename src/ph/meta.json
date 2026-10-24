@@ -1,39 +1,149 @@
 {
   "iso": "PH",
-  "name": {"fr": "Philippines", "en": "Philippines"},
+  "name": {
+    "fr": "Philippines",
+    "en": "Philippines"
+  },
   "display": "({code})",
-  "system": {"fr": "Area code", "en": "Area code"},
-  "group_label": {"fr": "Bloc", "en": "Block"},
+  "system": {
+    "fr": "Area code",
+    "en": "Area code"
+  },
+  "group_label": {
+    "fr": "Bloc",
+    "en": "Block"
+  },
   "match": "admin",
   "groups": [
-    {"id": "2", "name": {"fr": "Manille (Metro Manila, Rizal)", "en": "Manila (Metro Manila, Rizal)"}, "color": "#EE7A6A"},
-    {"id": "3", "name": {"fr": "Visayas ouest et centre (Panay, Negros, Cebu, Bohol)", "en": "Western & Central Visayas (Panay, Negros, Cebu, Bohol)"}, "color": "#5CC9C4"},
-    {"id": "4", "name": {"fr": "Luzon centre et sud, Mindoro, Palawan", "en": "Central & southern Luzon, Mindoro, Palawan"}, "color": "#EFE04A"},
-    {"id": "5", "name": {"fr": "Bicol, Samar, Leyte, Masbate", "en": "Bicol, Samar, Leyte, Masbate"}, "color": "#F0A0DC"},
-    {"id": "6", "name": {"fr": "Mindanao ouest et Sulu (Zamboanga, Lanao, Cotabato)", "en": "Western Mindanao & Sulu (Zamboanga, Lanao, Cotabato)"}, "color": "#F0A860"},
-    {"id": "7", "name": {"fr": "Luzon nord (Ilocos, Cordillera, Cagayan)", "en": "Northern Luzon (Ilocos, Cordillera, Cagayan)"}, "color": "#57D06A"},
-    {"id": "8", "name": {"fr": "Mindanao nord et est (Davao, Cagayan de Oro, Caraga)", "en": "Northern & eastern Mindanao (Davao, Cagayan de Oro, Caraga)"}, "color": "#C9A9E0"}
+    {
+      "id": "2",
+      "name": {
+        "fr": "Manille (Metro Manila, Rizal)",
+        "en": "Manila (Metro Manila, Rizal)"
+      },
+      "color": "#EE7A6A"
+    },
+    {
+      "id": "3",
+      "name": {
+        "fr": "Visayas ouest et centre (Panay, Negros, Cebu, Bohol)",
+        "en": "Western & Central Visayas (Panay, Negros, Cebu, Bohol)"
+      },
+      "color": "#5CC9C4"
+    },
+    {
+      "id": "4",
+      "name": {
+        "fr": "Luzon centre et sud, Mindoro, Palawan",
+        "en": "Central & southern Luzon, Mindoro, Palawan"
+      },
+      "color": "#EFE04A"
+    },
+    {
+      "id": "5",
+      "name": {
+        "fr": "Bicol, Samar, Leyte, Masbate",
+        "en": "Bicol, Samar, Leyte, Masbate"
+      },
+      "color": "#F0A0DC"
+    },
+    {
+      "id": "6",
+      "name": {
+        "fr": "Mindanao ouest et Sulu (Zamboanga, Lanao, Cotabato)",
+        "en": "Western Mindanao & Sulu (Zamboanga, Lanao, Cotabato)"
+      },
+      "color": "#F0A860"
+    },
+    {
+      "id": "7",
+      "name": {
+        "fr": "Luzon nord (Ilocos, Cordillera, Cagayan)",
+        "en": "Northern Luzon (Ilocos, Cordillera, Cagayan)"
+      },
+      "color": "#57D06A"
+    },
+    {
+      "id": "8",
+      "name": {
+        "fr": "Mindanao nord et est (Davao, Cagayan de Oro, Caraga)",
+        "en": "Northern & eastern Mindanao (Davao, Cagayan de Oro, Caraga)"
+      },
+      "color": "#C9A9E0"
+    }
   ],
-  "anchors": ["02", "032", "033", "034", "043", "044", "048", "052", "053", "062", "074", "077", "078", "082", "088"],
+  "anchors": [
+    "02",
+    "032",
+    "033",
+    "034",
+    "043",
+    "044",
+    "048",
+    "052",
+    "053",
+    "062",
+    "074",
+    "077",
+    "078",
+    "082",
+    "088"
+  ],
   "twins": [],
   "tips": [
-    {"title": "0X", "codes": [],
-     "fr": "Le chiffre après le 0 suit les grandes régions : 7 nord de Luzon, 4 centre et sud de Luzon (plus Mindoro et Palawan), 2 Manille, 5 Bicol et Samar-Leyte, 3 Visayas ouest et centre, 6 ouest de Mindanao, 8 nord et est de Mindanao.",
-     "en": "The digit after the 0 follows the big regions: 7 northern Luzon, 4 central and southern Luzon (plus Mindoro and Palawan), 2 Manila, 5 Bicol and Samar-Leyte, 3 Western and Central Visayas, 6 western Mindanao, 8 northern and eastern Mindanao."},
-    {"title": "09xx", "codes": [],
-     "fr": "09xx est un numéro de portable : il ne dit rien du lieu.",
-     "en": "09xx is a mobile number: it says nothing about the place."},
-    {"title": "02", "codes": ["02"],
-     "fr": "Metro Manila et Rizal, plus Bacoor (Cavite) et San Pedro (Laguna). Numéros à 8 chiffres depuis 2019 (8xxx-xxxx). Ici Cavite compte comme 046 et Laguna comme 049.",
-     "en": "Metro Manila and Rizal, plus Bacoor (Cavite) and San Pedro (Laguna). Eight-digit numbers since 2019 (8xxx-xxxx). Here Cavite counts as 046 and Laguna as 049."},
-    {"title": "033 / 036", "codes": ["033", "036"],
-     "fr": "Panay est coupée en deux : Iloilo (et Guimaras) en 033, les trois autres provinces (Aklan, Antique, Capiz) en 036.",
-     "en": "Panay is split in two: Iloilo (and Guimaras) on 033, the three other provinces (Aklan, Antique, Capiz) on 036."},
-    {"title": "074", "codes": ["074"],
-     "fr": "Toute la Cordillera (Benguet, Ifugao, Mountain Province, Kalinga, Abra, Apayao) autour de Baguio.",
-     "en": "The whole Cordillera (Benguet, Ifugao, Mountain Province, Kalinga, Abra, Apayao), around Baguio."},
-    {"title": "045 / 072", "codes": ["045", "072"],
-     "fr": "Deux San Fernando : celle de Pampanga (045) et celle de La Union (072).",
-     "en": "Two San Fernandos: Pampanga's (045) and La Union's (072)."}
-  ]
+    {
+      "title": "0X",
+      "codes": [],
+      "fr": "Le chiffre après le 0 suit les grandes régions : 7 nord de Luzon, 4 centre et sud de Luzon (plus Mindoro et Palawan), 2 Manille, 5 Bicol et Samar-Leyte, 3 Visayas ouest et centre, 6 ouest de Mindanao, 8 nord et est de Mindanao.",
+      "en": "The digit after the 0 follows the big regions: 7 northern Luzon, 4 central and southern Luzon (plus Mindoro and Palawan), 2 Manila, 5 Bicol and Samar-Leyte, 3 Western and Central Visayas, 6 western Mindanao, 8 northern and eastern Mindanao."
+    },
+    {
+      "title": "09xx",
+      "codes": [],
+      "fr": "09xx est un numéro de portable : il ne dit rien du lieu.",
+      "en": "09xx is a mobile number: it says nothing about the place."
+    },
+    {
+      "title": "02",
+      "codes": [
+        "02"
+      ],
+      "fr": "Metro Manila et Rizal, plus Bacoor (Cavite) et San Pedro (Laguna). Numéros à 8 chiffres depuis 2019 (8xxx-xxxx). Ici Cavite compte comme 046 et Laguna comme 049.",
+      "en": "Metro Manila and Rizal, plus Bacoor (Cavite) and San Pedro (Laguna). Eight-digit numbers since 2019 (8xxx-xxxx). Here Cavite counts as 046 and Laguna as 049."
+    },
+    {
+      "title": "033 / 036",
+      "codes": [
+        "033",
+        "036"
+      ],
+      "fr": "Panay est coupée en deux : Iloilo (et Guimaras) en 033, les trois autres provinces (Aklan, Antique, Capiz) en 036.",
+      "en": "Panay is split in two: Iloilo (and Guimaras) on 033, the three other provinces (Aklan, Antique, Capiz) on 036."
+    },
+    {
+      "title": "074",
+      "codes": [
+        "074"
+      ],
+      "fr": "Toute la Cordillera (Benguet, Ifugao, Mountain Province, Kalinga, Abra, Apayao) autour de Baguio.",
+      "en": "The whole Cordillera (Benguet, Ifugao, Mountain Province, Kalinga, Abra, Apayao), around Baguio."
+    },
+    {
+      "title": "045 / 072",
+      "codes": [
+        "045",
+        "072"
+      ],
+      "fr": "Deux San Fernando : celle de Pampanga (045) et celle de La Union (072).",
+      "en": "Two San Fernandos: Pampanga's (045) and La Union's (072)."
+    }
+  ],
+  "real": {
+    "fmt": "({code}) {n}",
+    "total": 10,
+    "chunks": {
+      "8": "4-4",
+      "7": "3-4"
+    }
+  }
 }

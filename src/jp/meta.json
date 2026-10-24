@@ -160,5 +160,15 @@
       "fr": "À trois chiffres ces aires se télescopent avec leurs voisines : Fukui se distingue d'Ōtsu (077), Saga de Nagasaki (095), Miyazaki d'Okinawa (098). Il faut le quatrième chiffre.",
       "en": "At three digits these areas collide with their neighbours: Fukui vs Ōtsu (077), Saga vs Nagasaki (095), Miyazaki vs Okinawa (098). You need the fourth digit."
     }
-  ]
+  ],
+  "real": {
+    "fmt": "{code}-{n}",
+    "total": 10,
+    "chunks": {
+      "8": "4-4",
+      "7": "3-4",
+      "6": "2-4",
+      "5": "1-4"
+    }
+  }
 }
