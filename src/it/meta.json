@@ -1,0 +1,30 @@
+{
+  "iso": "IT",
+  "name": {"fr": "Italie", "en": "Italy"},
+  "display": "{code}",
+  "system": {"fr": "Prefisso", "en": "Prefisso"},
+  "group_label": {"fr": "Bloc", "en": "Block"},
+  "sub_label": {"fr": "Sous-bloc", "en": "Sub-block"},
+  "sub_len": 3,
+  "match": "admin",
+  "groups": [
+    {"id": "1", "name": {"fr": "Nord-Ouest : Piémont, Ligurie, Val d'Aoste", "en": "North-west: Piedmont, Liguria, Aosta Valley"}, "color": "#5CC9C4"},
+    {"id": "2", "name": {"fr": "Milan", "en": "Milan"}, "color": "#C9A9E0"},
+    {"id": "3", "name": {"fr": "Lombardie (hors Milan)", "en": "Lombardy (outside Milan)"}, "color": "#8FE0BC"},
+    {"id": "4", "name": {"fr": "Nord-Est : Vénétie, Frioul, Trentin-Haut-Adige", "en": "North-east: Veneto, Friuli, Trentino-South Tyrol"}, "color": "#57D06A"},
+    {"id": "5", "name": {"fr": "Émilie-Romagne et Toscane", "en": "Emilia-Romagna and Tuscany"}, "color": "#EFE04A"},
+    {"id": "6", "name": {"fr": "Rome", "en": "Rome"}, "color": "#F0A0DC"},
+    {"id": "7", "name": {"fr": "Centre : Marches, Ombrie, Latium, Sardaigne", "en": "Centre: Marche, Umbria, Lazio, Sardinia"}, "color": "#F0A860"},
+    {"id": "8", "name": {"fr": "Sud : Campanie, Pouilles, Abruzzes, Molise, Basilicate", "en": "South: Campania, Apulia, Abruzzo, Molise, Basilicata"}, "color": "#EE7A6A"},
+    {"id": "9", "name": {"fr": "Sicile, Calabre, Basilicate, Tarente", "en": "Sicily, Calabria, Basilicata, Taranto"}, "color": "#DCD39A"}
+  ],
+  "anchors": ["010", "011", "0165", "019", "02", "030", "031", "035", "040", "041", "045", "049", "0461", "0471", "0432", "050", "051", "055", "059", "0521", "06", "070", "071", "075", "079", "080", "081", "085", "089", "0832", "090", "091", "095", "0965", "0984", "099"],
+  "twins": [],
+  "tips": [
+    {"title": "0X", "codes": [],
+     "fr": "Le préfixe fait partie du numéro (on compose toujours le 0). Le chiffre après le 0 descend du nord au sud : 01 Piémont-Ligurie, 02 Milan, 03 Lombardie, 04 Nord-Est, 05 Émilie-Romagne et Toscane, 06 Rome, 07 Marches, Ombrie, Latium et Sardaigne, 08 Sud continental, 09 Sicile et Calabre. Les grandes villes ont les préfixes les plus courts (02, 06, 010 Gênes, 011 Turin, 041 Venise, 051 Bologne, 055 Florence, 081 Naples, 091 Palerme). 3xx = portable.",
+     "en": "The prefix is part of the number (the 0 is always dialled). The digit after the 0 runs north to south: 01 Piedmont-Liguria, 02 Milan, 03 Lombardy, 04 North-east, 05 Emilia-Romagna and Tuscany, 06 Rome, 07 Marche, Umbria, Lazio and Sardinia, 08 mainland South, 09 Sicily and Calabria. Big cities have the shortest prefixes (02, 06, 010 Genoa, 011 Turin, 041 Venice, 051 Bologna, 055 Florence, 081 Naples, 091 Palermo). 3xx = mobile."},
+    {"title": "07 · Sardaigne", "codes": ["070", "079", "0789", "0783", "0784"], "fr": "La Sardaigne est dans le bloc 07 : 070 Cagliari, 079 Sassari, 0789 Olbia, 0783 Oristano, 0784 Nuoro.", "en": "Sardinia sits in block 07: 070 Cagliari, 079 Sassari, 0789 Olbia, 0783 Oristano, 0784 Nuoro."}
+  ],
+  "real": {"fmt": "{code} {n}", "total": 10, "chunks": {"8": "4 4", "7": "7", "6": "6"}}
+}

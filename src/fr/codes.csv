@@ -1,6 +1,225 @@
 code,group,city,local,admin,lat,lon,cities
-01,0,Paris,,Paris,48.858,2.343,Versailles;Créteil;Cergy
-02,0,Nantes,,Loire-Atlantique,47.363,-1.68,Rennes;Caen;Rouen;Orléans
-03,0,Lille,,Nord,50.45,3.212,Strasbourg;Reims;Dijon;Besançon
-04,0,Lyon,,Rhône,45.87,4.642,Marseille;Nice;Montpellier;Clermont-Ferrand
-05,0,Bordeaux,,Gironde,44.839,-0.585,Toulouse;Limoges;Poitiers;Pau
+0130,1,Yvelines · Val-d'Oise,,Yvelines,48.796,1.81,Val-d'Oise; Yvelines
+0134,1,Yvelines · Val-d'Oise,,Yvelines,48.796,1.81,Val-d'Oise; Yvelines
+0139,1,Yvelines · Val-d'Oise,,Yvelines,48.796,1.81,Val-d'Oise; Yvelines
+0140,1,Paris,,Paris,48.852,2.38,
+0141,1,Hauts-de-Seine · Val-d'Oise,,Hauts-de-Seine,48.839,2.26,Hauts-de-Seine; Val-d'Oise
+0142,1,Hauts-de-Seine · Paris · Seine-Saint-Denis · Val-de-Marne,,Hauts-de-Seine,48.839,2.26,Hauts-de-Seine; Paris; Seine-Saint-Denis; Val-de-Marne
+0143,1,Paris · Seine-Saint-Denis · Val-de-Marne,,Paris,48.852,2.38,Paris; Seine-Saint-Denis; Val-de-Marne
+0144,1,Paris,,Paris,48.852,2.38,
+0145,1,Paris,,Paris,48.852,2.38,Paris; Val-de-Marne
+0146,1,Essonne · Hauts-de-Seine · Paris,,Essonne,48.51,2.243,Essonne; Hauts-de-Seine; Paris
+0147,1,Paris,,Paris,48.852,2.38,Hauts-de-Seine; Paris; Val-de-Marne
+0148,1,Paris · Seine-Saint-Denis · Val-d'Oise · Val-de-Marne,,Paris,48.852,2.38,Paris; Seine-Saint-Denis; Val-d'Oise; Val-de-Marne
+0149,1,Paris,,Paris,48.852,2.38,Hauts-de-Seine; Paris; Val-de-Marne
+0153,1,Paris,,Paris,48.852,2.38,
+0155,1,Hauts-de-Seine · Paris,,Hauts-de-Seine,48.839,2.26,Hauts-de-Seine; Paris
+0156,1,Paris · Val-de-Marne,,Paris,48.852,2.38,Paris; Val-de-Marne
+0158,1,Paris,,Paris,48.852,2.38,
+0160,1,Seine-et-Marne · Essonne,,Seine-et-Marne,48.636,2.958,Essonne; Seine-et-Marne
+0164,1,Seine-et-Marne · Essonne,,Seine-et-Marne,48.636,2.958,Essonne; Seine-et-Marne
+0169,1,Essonne · Seine-et-Marne,,Essonne,48.51,2.243,Essonne; Seine-et-Marne
+0170,1,Paris,,Paris,48.852,2.38,
+0172,1,Paris · Seine-Saint-Denis,,Paris,48.852,2.38,Paris; Seine-Saint-Denis
+0173,1,Paris,,Paris,48.852,2.38,
+0174,1,Paris,,Paris,48.852,2.38,
+0175,1,Paris,,Paris,48.852,2.38,
+0176,1,Hauts-de-Seine · Paris,,Hauts-de-Seine,48.839,2.26,Hauts-de-Seine; Paris
+0177,1,Paris,,Paris,48.852,2.38,
+0178,1,Hauts-de-Seine · Paris,,Hauts-de-Seine,48.839,2.26,Hauts-de-Seine; Paris
+0179,1,Paris,,Paris,48.852,2.38,
+0180,1,Paris,,Paris,48.852,2.38,
+0181,1,Paris,,Paris,48.852,2.38,
+0182,1,Paris,,Paris,48.852,2.38,
+0183,1,Paris,,Paris,48.852,2.38,
+0188,1,Essonne · Hauts-de-Seine · Paris · Seine-Saint-Denis · Seine-et-Marne · Val-d'Oise · Val-de-Marne · Yvelines,,Essonne,48.51,2.243,Essonne; Hauts-de-Seine; Paris; Seine-Saint-Denis; Seine-et-Marne; Val-d'Oise; Val-de-Marne; Yvelines
+0214,2,Basse-Normandie,,Calvados,49.072,-0.389,Calvados; Manche; Orne
+0218,2,Centre,,Cher,47.031,2.378,Cher; Eure-et-Loir; Indre; Indre-et-Loire; Loir-et-Cher; Loiret
+0219,2,Centre,,Cher,47.031,2.378,Cher; Eure-et-Loir; Indre; Indre-et-Loire; Loir-et-Cher; Loiret
+0221,2,Bretagne,,Côtes d'Armor,48.507,-2.835,Côtes d'Armor; Finistère; Ille-et-Vilaine; Morbihan
+0222,2,Bretagne,,Côtes d'Armor,48.507,-2.835,Côtes d'Armor; Finistère; Ille-et-Vilaine; Morbihan
+0223,2,Ille-et-Vilaine,,Ille-et-Vilaine,48.204,-1.768,
+0228,2,Loire-Atlantique · Vendée,,Loire-Atlantique,47.32,-1.727,Loire-Atlantique; Vendée
+0229,2,Finistère,,Finistère,48.255,-4.138,
+0230,2,Bretagne,,Côtes d'Armor,48.507,-2.835,Côtes d'Armor; Finistère; Ille-et-Vilaine; Morbihan
+0231,2,Caen,,Calvados,49.072,-0.389,
+0232,2,Évreux,,Eure,49.145,0.979,Eure; Eure-et-Loir
+0233,2,Cherbourg · Alençon,,Manche,49.076,-1.335,Manche; Orne
+0234,2,Centre,,Cher,47.031,2.378,Cher; Eure-et-Loir; Indre; Indre-et-Loire; Loir-et-Cher; Loiret
+0235,2,Rouen,,Seine-Maritime,49.534,1.102,
+0236,2,Centre,,Cher,47.031,2.378,Cher; Eure-et-Loir; Indre; Indre-et-Loire; Loir-et-Cher; Loiret
+0237,2,Chartres,,Eure-et-Loir,48.412,1.383,Eure; Eure-et-Loir
+0238,2,Orléans,,Loiret,47.928,2.323,
+0240,2,Nantes,,Loire-Atlantique,47.32,-1.727,
+0241,2,Angers,,Maine-et-Loire,47.421,-0.557,
+0243,2,Le Mans · Laval,,Sarthe,48.005,0.214,Mayenne; Sarthe
+0244,2,Pays de la Loire,,Loire-Atlantique,47.32,-1.727,Loire-Atlantique; Maine-et-Loire; Mayenne; Sarthe; Vendée
+0245,2,Centre,,Cher,47.031,2.378,Cher; Eure-et-Loir; Indre; Indre-et-Loire; Loir-et-Cher; Loiret
+0246,2,Cher · Eure-et-Loir · Indre · Indre-et-Loire · Loir-et-Cher,,Cher,47.031,2.378,Cher; Eure-et-Loir; Indre; Indre-et-Loire; Loir-et-Cher
+0247,2,Tours,,Indre-et-Loire ,47.241,0.701,
+0248,2,Bourges,,Cher,47.031,2.378,
+0249,2,Pays de la Loire,,Loire-Atlantique,47.32,-1.727,Loire-Atlantique; Maine-et-Loire; Mayenne; Sarthe; Vendée
+0250,2,Basse-Normandie,,Calvados,49.072,-0.389,Calvados; Manche; Orne
+0251,2,La Roche-sur-Yon,,Vendée,46.667,-1.229,Loire-Atlantique; Vendée
+0252,2,Pays de la Loire,,Loire-Atlantique,47.32,-1.727,Loire-Atlantique; Maine-et-Loire; Mayenne; Sarthe; Vendée
+0253,2,Pays de la Loire,,Loire-Atlantique,47.32,-1.727,Loire-Atlantique; Maine-et-Loire; Mayenne; Sarthe; Vendée
+0254,2,Blois · Châteauroux,,Loir-et-Cher,47.645,1.397,Indre; Loir-et-Cher
+0255,2,Pays de la Loire,,Loire-Atlantique,47.32,-1.727,Loire-Atlantique; Maine-et-Loire; Mayenne; Sarthe; Vendée
+0256,2,Bretagne,,Côtes d'Armor,48.507,-2.835,Côtes d'Armor; Finistère; Ille-et-Vilaine; Morbihan
+0257,2,Bretagne,,Côtes d'Armor,48.507,-2.835,Côtes d'Armor; Finistère; Ille-et-Vilaine; Morbihan
+0258,2,Basse-Normandie,,Calvados,49.072,-0.389,Calvados; Manche; Orne
+0261,2,Basse-Normandie,,Calvados,49.072,-0.389,Calvados; Manche; Orne
+0272,2,Pays de la Loire,,Loire-Atlantique,47.32,-1.727,Loire-Atlantique; Maine-et-Loire; Mayenne; Sarthe; Vendée
+0276,2,Haute-Normandie,,Eure,49.145,0.979,Eure; Seine-Maritime
+0277,2,Haute-Normandie,,Eure,49.145,0.979,Eure; Seine-Maritime
+0278,2,Haute-Normandie,,Eure,49.145,0.979,Eure; Seine-Maritime
+0279,2,Haute-Normandie,,Eure,49.145,0.979,Eure; Seine-Maritime
+0285,2,Pays de la Loire,,Loire-Atlantique,47.32,-1.727,Loire-Atlantique; Maine-et-Loire; Mayenne; Sarthe; Vendée
+0290,2,Bretagne,,Côtes d'Armor,48.507,-2.835,Côtes d'Armor; Finistère; Ille-et-Vilaine; Morbihan
+0296,2,Saint-Brieuc,,Côtes d'Armor,48.507,-2.835,
+0297,2,Vannes,,Morbihan,47.77,-2.868,
+0298,2,Brest · Quimper,,Finistère,48.255,-4.138,
+0299,2,Rennes,,Ille-et-Vilaine,48.204,-1.768,
+0310,3,Champagne-Ardenne,,Ardennes,49.624,4.721,Ardennes; Aube; Haute-Marne; Marne
+0320,3,Lille,,Nord,50.449,3.198,
+0321,3,Arras · Calais,,Pas-de-Calais,50.394,2.516,
+0322,3,Amiens,,Somme,49.959,2.434,
+0323,3,Laon · Saint-Quentin,,Aisne,49.443,3.47,
+0324,3,Charleville-Mézières,,Ardennes,49.624,4.721,
+0325,3,Troyes · Chaumont,,Aube,48.29,4.112,Aube; Haute-Marne
+0326,3,Reims,,Marne,48.925,4.216,
+0327,3,Valenciennes,,Nord,50.449,3.198,
+0328,3,Dunkerque,,Nord,50.449,3.198,
+0329,3,Épinal · Verdun,,Vosges,48.237,6.187,Meuse; Vosges
+0339,3,Franche-Comté,,Doubs,47.189,6.312,Doubs; Haute-Saône; Jura; Territoire de Belfort
+0344,3,Beauvais,,Oise,49.407,2.523,
+0345,3,Bourgogne,,Côte-d'Or,47.447,4.805,Côte-d'Or; Nièvre; Saône-et-Loire; Yonne
+0351,3,Champagne-Ardenne,,Ardennes,49.624,4.721,Ardennes; Aube; Haute-Marne; Marne
+0352,3,Champagne-Ardenne,,Ardennes,49.624,4.721,Ardennes; Aube; Haute-Marne; Marne
+0353,3,Champagne-Ardenne,,Ardennes,49.624,4.721,Ardennes; Aube; Haute-Marne; Marne
+0354,3,Lorraine,,Meurthe-et-Moselle,48.891,6.088,Meurthe-et-Moselle; Meuse; Moselle; Vosges
+0355,3,Lorraine,,Meurthe-et-Moselle,48.891,6.088,Meurthe-et-Moselle; Meuse; Moselle; Vosges
+0356,3,Lorraine,,Meurthe-et-Moselle,48.891,6.088,Meurthe-et-Moselle; Meuse; Moselle; Vosges
+0357,3,Lorraine,,Meurthe-et-Moselle,48.891,6.088,Meurthe-et-Moselle; Meuse; Moselle; Vosges
+0358,3,Bourgogne,,Côte-d'Or,47.447,4.805,Côte-d'Or; Nièvre; Saône-et-Loire; Yonne
+0359,3,Nord-Pas-de-Calais,,Nord,50.449,3.198,Nord; Pas-de-Calais
+0360,3,Picardie,,Aisne,49.443,3.47,Aisne; Oise; Somme
+0361,3,Nord-Pas-de-Calais,,Nord,50.449,3.198,Nord; Pas-de-Calais
+0362,3,Nord-Pas-de-Calais,,Nord,50.449,3.198,Nord; Pas-de-Calais
+0363,3,Franche-Comté,,Doubs,47.189,6.312,Doubs; Haute-Saône; Jura; Territoire de Belfort
+0364,3,Picardie,,Aisne,49.443,3.47,Aisne; Oise; Somme
+0365,3,Picardie,,Aisne,49.443,3.47,Aisne; Oise; Somme
+0366,3,Nord-Pas-de-Calais,,Nord,50.449,3.198,Nord; Pas-de-Calais
+0367,3,Alsace,,Bas-Rhin,48.682,7.392,Bas-Rhin; Haut-Rhin
+0368,3,Alsace,,Bas-Rhin,48.682,7.392,Bas-Rhin; Haut-Rhin
+0369,3,Alsace,,Bas-Rhin,48.682,7.392,Bas-Rhin; Haut-Rhin
+0370,3,Franche-Comté,,Doubs,47.189,6.312,Doubs; Haute-Saône; Jura; Territoire de Belfort
+0371,3,Bourgogne,,Côte-d'Or,47.447,4.805,Côte-d'Or; Nièvre; Saône-et-Loire; Yonne
+0372,3,Lorraine,,Meurthe-et-Moselle,48.891,6.088,Meurthe-et-Moselle; Meuse; Moselle; Vosges
+0373,3,Bourgogne,,Côte-d'Or,47.447,4.805,Côte-d'Or; Nièvre; Saône-et-Loire; Yonne
+0375,3,Picardie,,Aisne,49.443,3.47,Aisne; Oise; Somme
+0376,3,Nord-Pas-de-Calais,,Nord,50.449,3.198,Nord; Pas-de-Calais
+0379,3,Bourgogne,,Côte-d'Or,47.447,4.805,Côte-d'Or; Nièvre; Saône-et-Loire; Yonne
+0380,3,Dijon,,Côte-d'Or,47.447,4.805,
+0381,3,Besançon,,Doubs,47.189,6.312,
+0382,3,Thionville,,Moselle,49.028,6.732,Meurthe-et-Moselle; Moselle
+0383,3,Nancy,,Meurthe-et-Moselle,48.891,6.088,
+0384,3,Lons-le-Saunier · Vesoul · Belfort,,Jura,46.78,5.62,Haute-Saône; Jura; Territoire de Belfort
+0385,3,Mâcon · Chalon,,Saône-et-Loire,46.643,4.544,Ain; Saône-et-Loire
+0386,3,Auxerre · Nevers,,Yonne,47.82,3.618,Nièvre; Yonne
+0387,3,Metz,,Moselle,49.028,6.732,
+0388,3,Strasbourg,,Bas-Rhin,48.682,7.392,
+0389,3,Mulhouse · Colmar,,Haut-Rhin,47.806,7.27,
+0390,3,Alsace,,Bas-Rhin,48.682,7.392,Bas-Rhin; Haut-Rhin
+0392,3,Bas-Rhin,,Bas-Rhin,48.682,7.392,
+0411,4,Languedoc-Roussillon,,Aude,43.137,2.31,Aude; Gard; Hérault; Lozère; Pyrénées-Orientales
+0413,4,Provence,,Alpes-de-Haute-Provence,44.153,6.267,Alpes-de-Haute-Provence; Bouches-du-Rhône; Hautes-Alpes; Vaucluse
+0415,4,Auvergne,,Allier,46.385,3.168,Allier; Cantal; Haute-Loire; Puy-de-Dôme
+0420,4,Corse,,Corse-du-Sud,41.847,8.919,Corse-du-Sud; Haute-Corse
+0422,4,Côte d'Azur,,Alpes-Maritimes,43.869,7.122,Alpes-Maritimes; Var
+0423,4,Côte d'Azur,,Alpes-Maritimes,43.869,7.122,Alpes-Maritimes; Var
+0426,4,Rhône-Alpes ouest + Allier,,Ain,46.089,5.411,Ain; Allier; Ardèche; Drôme; Loire; Rhône
+0427,4,Rhône-Alpes ouest,,Ain,46.089,5.411,Ain; Ardèche; Drôme; Loire; Rhône
+0430,4,Languedoc-Roussillon,,Aude,43.137,2.31,Aude; Gard; Hérault; Lozère; Pyrénées-Orientales
+0432,4,Bouches-du-Rhône · Vaucluse,,Bouches-du-Rhône,43.507,5.098,Bouches-du-Rhône; Vaucluse
+0434,4,Languedoc-Roussillon,,Aude,43.137,2.31,Aude; Gard; Hérault; Lozère; Pyrénées-Orientales
+0437,4,Rhône,,Rhône,45.909,4.658,
+0438,4,Isère,,Isère,45.267,5.571,
+0442,4,Aix-en-Provence,,Bouches-du-Rhône,43.507,5.098,
+0443,4,Auvergne,,Allier,46.385,3.168,Allier; Cantal; Haute-Loire; Puy-de-Dôme
+0444,4,Auvergne,,Allier,46.385,3.168,Allier; Cantal; Haute-Loire; Puy-de-Dôme
+0448,4,Languedoc-Roussillon,,Aude,43.137,2.31,Aude; Gard; Hérault; Lozère; Pyrénées-Orientales
+0450,4,Annecy,,Haute-Savoie,45.97,6.418,Ain; Haute-Savoie
+0456,4,Alpes du Nord,,Haute-Savoie,45.97,6.418,Haute-Savoie; Isère; Savoie
+0457,4,Alpes du Nord,,Haute-Savoie,45.97,6.418,Haute-Savoie; Isère; Savoie
+0458,4,Alpes du Nord,,Haute-Savoie,45.97,6.418,Haute-Savoie; Isère; Savoie
+0463,4,Auvergne,,Allier,46.385,3.168,Allier; Cantal; Haute-Loire; Puy-de-Dôme
+0465,4,Provence,,Alpes-de-Haute-Provence,44.153,6.267,Alpes-de-Haute-Provence; Bouches-du-Rhône; Hautes-Alpes; Vaucluse
+0466,4,Nîmes,,Gard,43.993,4.058,Gard; Lozère
+0467,4,Montpellier,,Hérault,43.6,3.297,Gard; Hérault
+0468,4,Perpignan · Carcassonne,,Pyrénées-Orientales,42.561,2.517,Aude; Pyrénées-Orientales
+0469,4,Rhône-Alpes ouest,,Ain,46.089,5.411,Ain; Ardèche; Drôme; Loire; Rhône
+0470,4,Moulins · Vichy,,Allier,46.385,3.168,
+0471,4,Le Puy · Aurillac,,Haute-Loire,45.151,3.812,Cantal; Haute-Loire
+0472,4,Lyon,,Rhône,45.909,4.658,Ain; Isère; Rhône
+0473,4,Clermont-Ferrand,,Puy-de-Dôme,45.734,3.091,
+0474,4,Bourg-en-Bresse,,Ain,46.089,5.411,Ain; Isère; Rhône
+0475,4,Valence,,Drôme,44.643,5.29,Ardèche; Drôme
+0476,4,Grenoble,,Isère,45.267,5.571,
+0477,4,Saint-Étienne,,Loire,45.764,4.219,
+0478,4,Lyon,,Rhône,45.909,4.658,Ain; Rhône
+0479,4,Chambéry,,Savoie,45.512,6.385,Ain; Savoie
+0480,4,Alpes du Nord,,Haute-Savoie,45.97,6.418,Haute-Savoie; Isère; Savoie
+0481,4,Rhône-Alpes ouest,,Ain,46.089,5.411,Ain; Ardèche; Drôme; Loire; Rhône
+0482,4,Rhône-Alpes ouest,,Ain,46.089,5.411,Ain; Ardèche; Drôme; Loire; Rhône
+0483,4,Côte d'Azur,,Alpes-Maritimes,43.869,7.122,Alpes-Maritimes; Var
+0484,4,Provence,,Alpes-de-Haute-Provence,44.153,6.267,Alpes-de-Haute-Provence; Bouches-du-Rhône; Hautes-Alpes; Vaucluse
+0485,4,Ain · Haute-Savoie · Isère · Savoie,,Ain,46.089,5.411,Ain; Haute-Savoie; Isère; Savoie
+0486,4,Provence,,Alpes-de-Haute-Provence,44.153,6.267,Alpes-de-Haute-Provence; Bouches-du-Rhône; Hautes-Alpes; Vaucluse
+0487,4,Rhône-Alpes ouest,,Ain,46.089,5.411,Ain; Ardèche; Drôme; Loire; Rhône
+0488,4,Provence,,Alpes-de-Haute-Provence,44.153,6.267,Alpes-de-Haute-Provence; Bouches-du-Rhône; Hautes-Alpes; Vaucluse
+0489,4,Provence-Côte d'Azur,,Alpes-Maritimes,43.869,7.122,Alpes-Maritimes; Bouches-du-Rhône; Var
+0490,4,Avignon,,Vaucluse,44.048,5.157,Bouches-du-Rhône; Vaucluse
+0491,4,Marseille,,Bouches-du-Rhône,43.507,5.098,
+0492,4,Gap · Digne,,Hautes-Alpes,44.644,6.159,Alpes-Maritimes; Alpes-de-Haute-Provence; Hautes-Alpes
+0493,4,Nice,,Alpes-Maritimes,43.869,7.122,
+0494,4,Toulon,,Var,43.376,6.198,
+0495,4,Ajaccio · Bastia,,Corse-du-Sud,41.847,8.919,Corse-du-Sud; Haute-Corse
+0496,4,Marseille,,Bouches-du-Rhône,43.507,5.098,
+0497,4,Alpes-Maritimes,,Alpes-Maritimes,43.869,7.122,
+0498,4,Var,,Var,43.376,6.198,
+0499,4,Hérault,,Hérault,43.6,3.297,
+0516,5,Poitou-Charentes,,Charente,45.748,0.178,Charente; Charente-Maritime; Deux-Sèvres; Vienne
+0517,5,Poitou-Charentes,,Charente,45.748,0.178,Charente; Charente-Maritime; Deux-Sèvres; Vienne
+0518,5,Limousin,,Corrèze,45.405,1.892,Corrèze; Creuse; Haute-Vienne
+0519,5,Limousin,,Corrèze,45.405,1.892,Corrèze; Creuse; Haute-Vienne
+0524,5,Aquitaine,,Dordogne,45.115,0.775,Dordogne; Gironde; Landes; Lot-et-Garonne; Pyrénées-Atlantiques
+0531,5,Midi-Pyrénées,,Ariège,42.988,1.529,Ariège; Aveyron; Gers; Haute-Garonne; Hautes-Pyrénées; Lot; Tarn; Tarn-et-Garonne
+0532,5,Midi-Pyrénées,,Ariège,42.988,1.529,Ariège; Aveyron; Gers; Haute-Garonne; Hautes-Pyrénées; Lot; Tarn; Tarn-et-Garonne
+0533,5,Aquitaine,,Dordogne,45.115,0.775,Dordogne; Gironde; Landes; Lot-et-Garonne; Pyrénées-Atlantiques
+0534,5,Toulouse,,Haute-Garonne,43.353,1.181,
+0535,5,Aquitaine,,Dordogne,45.115,0.775,Dordogne; Gironde; Landes; Lot-et-Garonne; Pyrénées-Atlantiques
+0536,5,Midi-Pyrénées,,Ariège,42.988,1.529,Ariège; Aveyron; Gers; Haute-Garonne; Hautes-Pyrénées; Lot; Tarn; Tarn-et-Garonne
+0540,5,Aquitaine,,Dordogne,45.115,0.775,Dordogne; Gironde; Landes; Lot-et-Garonne; Pyrénées-Atlantiques
+0545,5,Angoulême,,Charente,45.748,0.178,
+0546,5,La Rochelle,,Charente-Maritime,45.763,-0.568,
+0547,5,Aquitaine,,Dordogne,45.115,0.775,Dordogne; Gironde; Landes; Lot-et-Garonne; Pyrénées-Atlantiques
+0549,5,Poitiers · Niort,,Vienne,46.612,0.402,Deux-Sèvres; Vienne
+0553,5,Périgueux · Agen,,Dordogne,45.115,0.775,Dordogne; Lot-et-Garonne
+0554,5,Aquitaine,,Dordogne,45.115,0.775,Dordogne; Gironde; Landes; Lot-et-Garonne; Pyrénées-Atlantiques
+0555,5,Limoges,,Haute-Vienne,45.91,1.268,Corrèze; Creuse; Haute-Vienne
+0556,5,Bordeaux,,Gironde,44.739,-0.345,
+0557,5,Libourne · Blaye,,Gironde,44.739,-0.345,
+0558,5,Mont-de-Marsan,,Landes,43.881,-0.528,
+0559,5,Pau · Bayonne,,Pyrénées-Atlantiques,43.276,-0.735,
+0561,5,Toulouse,,Haute-Garonne,43.353,1.181,Ariège; Haute-Garonne
+0562,5,Tarbes · Auch,,Hautes-Pyrénées,43.159,0.172,Gers; Haute-Garonne; Hautes-Pyrénées
+0563,5,Albi · Montauban,,Tarn,43.826,2.111,Tarn; Tarn-et-Garonne
+0564,5,Aquitaine,,Dordogne,45.115,0.775,Dordogne; Gironde; Landes; Lot-et-Garonne; Pyrénées-Atlantiques
+0565,5,Rodez · Cahors,,Aveyron,44.283,2.604,Aveyron; Lot
+0567,5,Midi-Pyrénées,,Ariège,42.988,1.529,Ariège; Aveyron; Gers; Haute-Garonne; Hautes-Pyrénées; Lot; Tarn; Tarn-et-Garonne
+0579,5,Poitou-Charentes,,Charente,45.748,0.178,Charente; Charente-Maritime; Deux-Sèvres; Vienne
+0581,5,Midi-Pyrénées,,Ariège,42.988,1.529,Ariège; Aveyron; Gers; Haute-Garonne; Hautes-Pyrénées; Lot; Tarn; Tarn-et-Garonne
+0582,5,Midi-Pyrénées,,Ariège,42.988,1.529,Ariège; Aveyron; Gers; Haute-Garonne; Hautes-Pyrénées; Lot; Tarn; Tarn-et-Garonne
+0586,5,Poitou-Charentes,,Charente,45.748,0.178,Charente; Charente-Maritime; Deux-Sèvres; Vienne
+0587,5,Limousin,,Corrèze,45.405,1.892,Corrèze; Creuse; Haute-Vienne

@@ -1,0 +1,13 @@
+code,group,city,admin,lat,lon,cities
+02,2,Taipei,Taipei,25.04,121.56,New Taipei;Keelung
+03,3,Taoyuan,Taoyuan,24.99,121.3,Hsinchu;Yilan;Hualien
+037,3,Miaoli,Miaoli County,24.56,120.82,
+04,4,Taichung,Taichung,24.15,120.67,Changhua
+049,4,Nantou,Nantou County,23.91,120.69,Puli
+05,5,Chiayi,Chiayi,23.48,120.45,Yunlin;Douliu
+06,6,Tainan,Tainan,22.99,120.2,Penghu
+07,7,Kaohsiung,Kaohsiung,22.63,120.3,
+08,8,Pingtung,Pingtung County,22.67,120.49,Kenting
+089,8,Taitung,Taitung County,22.76,121.14,
+082,8,Kinmen,Kinmen,24.43,118.32,
+0836,8,Matsu,Matsu Islands,26.16,119.95,Nangan

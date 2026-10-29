@@ -6,30 +6,72 @@
   },
   "display": "{code}",
   "system": {
-    "fr": "Indicatif",
-    "en": "Indicatif"
+    "fr": "Indicatif 0Z AB",
+    "en": "0Z AB codes"
   },
   "group_label": {
-    "fr": "Bloc",
-    "en": "Block"
+    "fr": "Zone",
+    "en": "Zone"
   },
   "match": "admin",
   "groups": [
     {
-      "id": "0",
+      "id": "1",
       "name": {
-        "fr": "Fixes (01-05)",
-        "en": "Landlines (01-05)"
+        "fr": "Île-de-France",
+        "en": "Île-de-France"
+      },
+      "color": "#C9A9E0"
+    },
+    {
+      "id": "2",
+      "name": {
+        "fr": "Nord-Ouest : Normandie, Bretagne, Pays de la Loire, Centre",
+        "en": "North-west: Normandy, Brittany, Pays de la Loire, Centre"
       },
       "color": "#5CC9C4"
+    },
+    {
+      "id": "3",
+      "name": {
+        "fr": "Nord-Est : Hauts-de-France, Grand Est, Bourgogne-Franche-Comté",
+        "en": "North-east: Hauts-de-France, Grand Est, Burgundy-Franche-Comté"
+      },
+      "color": "#57D06A"
+    },
+    {
+      "id": "4",
+      "name": {
+        "fr": "Sud-Est : Rhône-Alpes, Auvergne, PACA, Languedoc, Corse",
+        "en": "South-east: Rhône-Alpes, Auvergne, PACA, Languedoc, Corsica"
+      },
+      "color": "#EE7A6A"
+    },
+    {
+      "id": "5",
+      "name": {
+        "fr": "Sud-Ouest : Aquitaine, Midi-Pyrénées, Limousin, Poitou-Charentes",
+        "en": "South-west: Aquitaine, Midi-Pyrénées, Limousin, Poitou-Charentes"
+      },
+      "color": "#EFE04A"
     }
   ],
   "anchors": [
-    "01",
-    "02",
-    "03",
-    "04",
-    "05"
+    "0140",
+    "0231",
+    "0235",
+    "0240",
+    "0299",
+    "0320",
+    "0388",
+    "0380",
+    "0472",
+    "0491",
+    "0493",
+    "0473",
+    "0556",
+    "0561",
+    "0555"
   ],
   "twins": [],
   "tips": [
@@ -38,6 +80,46 @@
       "codes": [],
       "fr": "Cinq zones : 01 Île-de-France, 02 nord-ouest, 03 nord-est, 04 sud-est (avec la Corse), 05 sud-ouest. Les limites suivent les anciennes régions (avant 2016) : l'Auvergne est en 04, le Limousin et Poitou-Charentes en 05, la Bourgogne et la Franche-Comté en 03, le Centre en 02.",
       "en": "Five zones: 01 Île-de-France, 02 north-west, 03 north-east, 04 south-east (with Corsica), 05 south-west. Borders follow the old regions (before 2016): Auvergne is 04, Limousin and Poitou-Charentes 05, Burgundy and Franche-Comté 03, Centre 02."
+    },
+    {
+      "title": "0Z AB",
+      "codes": [],
+      "fr": "Après la zone, les deux chiffres AB situent le département. Les codes d'avant 1996 sont presque tous départementaux : 02 31 Calvados, 02 35 Seine-Maritime, 03 88 Bas-Rhin, 04 91 Marseille, 05 56 Gironde. Les codes plus récents couvrent souvent toute une ancienne région : 02 14, 02 50, 02 58, 02 61 = Basse-Normandie ; 05 24, 05 33… = Aquitaine. Depuis 2023, un nouveau numéro peut être attribué hors de sa zone, mais les numéros fixes existants gardent leur indicatif.",
+      "en": "After the zone, the two AB digits place the département. Codes from before 1996 are nearly all departmental: 02 31 Calvados, 02 35 Seine-Maritime, 03 88 Bas-Rhin, 04 91 Marseille, 05 56 Gironde. Newer codes often cover a whole old region: 02 14, 02 50, 02 58, 02 61 = Lower Normandy; 05 24, 05 33… = Aquitaine. Since 2023 a new number may be given outside its area, but existing landlines keep their code."
+    },
+    {
+      "title": "01 4x",
+      "codes": [
+        "0140",
+        "0142",
+        "0143",
+        "0144",
+        "0145",
+        "0146",
+        "0147",
+        "0148",
+        "0149"
+      ],
+      "fr": "01 4x : Paris et la petite couronne. La grande couronne a ses propres blocs : 01 30 / 34 / 39 Yvelines et Val-d'Oise, 01 60 / 64 / 69 Seine-et-Marne et Essonne.",
+      "en": "01 4x: Paris and the inner suburbs. The outer ring has its own blocks: 01 30 / 34 / 39 Yvelines and Val-d'Oise, 01 60 / 64 / 69 Seine-et-Marne and Essonne."
+    },
+    {
+      "title": "04 72 / 04 78",
+      "codes": [
+        "0472",
+        "0478"
+      ],
+      "fr": "Lyon. 04 74 = le reste du Rhône, l'Ain et le nord de l'Isère.",
+      "en": "Lyon. 04 74 = the rest of Rhône, Ain and northern Isère."
+    },
+    {
+      "title": "04 91 / 04 96",
+      "codes": [
+        "0491",
+        "0496"
+      ],
+      "fr": "Marseille ; 04 42 = le reste des Bouches-du-Rhône (Aix), 04 90 = l'ouest (Arles) et le Vaucluse.",
+      "en": "Marseille; 04 42 = the rest of Bouches-du-Rhône (Aix), 04 90 = the west (Arles) and Vaucluse."
     },
     {
       "title": "06 · 07 · Outre-mer",
@@ -50,7 +132,13 @@
     "fmt": "{code} {n}",
     "total": 10,
     "chunks": {
-      "8": "2 2 2 2"
+      "6": "2 2 2"
     }
-  }
+  },
+  "code_fmt": "2 2",
+  "group_q": {
+    "fr": "Dans quelle zone ?",
+    "en": "Which zone?"
+  },
+  "unit_labels": true
 }

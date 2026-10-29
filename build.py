@@ -127,8 +127,11 @@ def build_country(d):
                     if not k: err(iso, f"local.csv line {n}: unknown admin {key!r}"); continue
                     admin[k]["local"] = loc; seen_a.add(k)
                 else: err(iso, f"local.csv line {n}: kind must be code or admin")
-        for code in sorted(known - seen_c): warn(iso, f"local.csv: no local name for code {code}")
-        for k in sorted(set(admin) - seen_a): warn(iso, f"local.csv: no local name for admin {k}")
+        if known - seen_c and len(known - seen_c) <= len(known) // 5:
+            for code in sorted(known - seen_c): warn(iso, f"local.csv: no local name for code {code}")
+        elif known - seen_c: print(f"note: [{iso}] local names for {len(seen_c)} of {len(known)} codes")
+        if seen_a:
+            for k in sorted(set(admin) - seen_a): warn(iso, f"local.csv: no local name for admin {k}")
     if "real" in meta:
         rl = meta["real"]
         if "{code}" not in rl.get("fmt", "") or "{n}" not in rl.get("fmt", ""): err(iso, "real.fmt needs {code} and {n}")

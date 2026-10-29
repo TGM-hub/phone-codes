@@ -1,0 +1,25 @@
+{
+  "iso": "TW",
+  "name": {"fr": "Taïwan", "en": "Taiwan"},
+  "display": "({code})",
+  "system": {"fr": "區碼", "en": "區碼"},
+  "group_label": {"fr": "Bloc", "en": "Block"},
+  "match": "admin",
+  "groups": [
+    {"id": "2", "name": {"fr": "Taipei, New Taipei, Keelung", "en": "Taipei, New Taipei, Keelung"}, "color": "#C9A9E0"},
+    {"id": "3", "name": {"fr": "Nord et côte est : Taoyuan, Hsinchu, Miaoli, Yilan, Hualien", "en": "North and east coast: Taoyuan, Hsinchu, Miaoli, Yilan, Hualien"}, "color": "#5CC9C4"},
+    {"id": "4", "name": {"fr": "Centre : Taichung, Changhua, Nantou", "en": "Centre: Taichung, Changhua, Nantou"}, "color": "#57D06A"},
+    {"id": "5", "name": {"fr": "Chiayi, Yunlin", "en": "Chiayi, Yunlin"}, "color": "#EFE04A"},
+    {"id": "6", "name": {"fr": "Tainan, Penghu", "en": "Tainan, Penghu"}, "color": "#F0A860"},
+    {"id": "7", "name": {"fr": "Kaohsiung", "en": "Kaohsiung"}, "color": "#EE7A6A"},
+    {"id": "8", "name": {"fr": "Sud et îles : Pingtung, Taitung, Kinmen, Matsu", "en": "South and islands: Pingtung, Taitung, Kinmen, Matsu"}, "color": "#F0A0DC"}
+  ],
+  "anchors": ["02", "03", "037", "04", "049", "05", "06", "07", "08", "089", "082", "0836"],
+  "twins": [],
+  "tips": [
+    {"title": "02 → 08", "codes": [],
+     "fr": "Le chiffre après le 0 descend du nord au sud : 02 Taipei, 03 Taoyuan-Hsinchu et la côte est (Yilan, Hualien), 04 Taichung, 05 Chiayi, 06 Tainan, 07 Kaohsiung, 08 Pingtung. Les exceptions à trois chiffres : 037 Miaoli, 049 Nantou, 089 Taitung, 082 Kinmen, 0836 Matsu. 09 = portable.",
+     "en": "The digit after the 0 runs north to south: 02 Taipei, 03 Taoyuan-Hsinchu and the east coast (Yilan, Hualien), 04 Taichung, 05 Chiayi, 06 Tainan, 07 Kaohsiung, 08 Pingtung. Three-digit exceptions: 037 Miaoli, 049 Nantou, 089 Taitung, 082 Kinmen, 0836 Matsu. 09 = mobile."}
+  ],
+  "real": {"fmt": "({code}) {n}", "total": 9, "lens": {"02": 8, "04": 8, "049": 7, "037": 6, "089": 6, "082": 6, "0836": 5}, "chunks": {"8": "4-4", "7": "3-4", "6": "3-3", "5": "2-3"}}
+}

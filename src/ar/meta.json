@@ -1,0 +1,33 @@
+{
+  "iso": "AR",
+  "name": {"fr": "Argentine", "en": "Argentina"},
+  "display": "(0{code})",
+  "system": {"fr": "Característica", "en": "Característica"},
+  "group_label": {"fr": "Bloc", "en": "Block"},
+  "sub_label": {"fr": "Sous-bloc", "en": "Sub-block"},
+  "sub_len": 2,
+  "match": "admin",
+  "groups": [
+    {"id": "1", "name": {"fr": "Buenos Aires (capitale et Grand Buenos Aires)", "en": "Buenos Aires (city and Greater Buenos Aires)"}, "color": "#C9A9E0"},
+    {"id": "2", "name": {"fr": "Province de Buenos Aires, La Pampa, Cuyo, Patagonie", "en": "Buenos Aires Province, La Pampa, Cuyo, Patagonia"}, "color": "#5CC9C4"},
+    {"id": "3", "name": {"fr": "Santa Fe, Entre Ríos, Córdoba, Nord-Est et Nord-Ouest", "en": "Santa Fe, Entre Ríos, Córdoba, North-East and North-West"}, "color": "#EE7A6A"}
+  ],
+  "anchors": ["11", "221", "223", "291", "261", "264", "266", "299", "280", "2966", "2901", "341", "342", "351", "343", "362", "376", "379", "381", "387", "388", "385", "3834", "380"],
+  "twins": [],
+  "tips": [
+    {"title": "(0XX) XXXX-XXXX", "codes": [],
+     "fr": "Un fixe argentin s'écrit (0 + característica) + numéro, 10 chiffres en tout : (011) 4123-4567, (0351) 412-3456, (02966) 42-3456. Plus l'indicatif est court, plus la ville est grande. « 15 » après l'indicatif = portable.",
+     "en": "An Argentine landline is (0 + característica) + number, 10 digits in all: (011) 4123-4567, (0351) 412-3456, (02966) 42-3456. The shorter the code, the bigger the city. \"15\" after the code = mobile."},
+    {"title": "1 · 2 · 3", "codes": [],
+     "fr": "11 : Buenos Aires. 2 : le sud et l'ouest (province de Buenos Aires, La Pampa, Cuyo en 26, Patagonie en 29). 3 : le nord (Santa Fe et Entre Ríos en 34, Córdoba en 35, Chaco en 36, Nord-Est en 37, Nord-Ouest en 38).",
+     "en": "11: Buenos Aires. 2: the south and west (Buenos Aires Province, La Pampa, Cuyo in 26, Patagonia in 29). 3: the north (Santa Fe and Entre Ríos in 34, Córdoba in 35, Chaco in 36, North-East in 37, North-West in 38)."},
+    {"title": "22 · 23 · 24", "codes": [],
+     "fr": "Province de Buenos Aires : 22 = l'est et la côte (221 La Plata, 223 Mar del Plata), 23 = l'ouest et La Pampa (236 Junín, 2302 General Pico), 24 = le centre-nord (249 Tandil, 2477 Pergamino). 291 Bahía Blanca est dans le bloc patagonien 29.",
+     "en": "Buenos Aires Province: 22 = the east and the coast (221 La Plata, 223 Mar del Plata), 23 = the west and La Pampa (236 Junín, 2302 General Pico), 24 = the centre-north (249 Tandil, 2477 Pergamino). 291 Bahía Blanca sits in the Patagonian block 29."},
+    {"title": "26 Cuyo", "codes": ["261", "264", "266", "260"], "fr": "261 Mendoza, 260 San Rafael, 264 San Juan, 266 San Luis.", "en": "261 Mendoza, 260 San Rafael, 264 San Juan, 266 San Luis."},
+    {"title": "29 Patagonie", "codes": ["299", "2920", "2944", "2966", "2901", "297"], "fr": "299 Neuquén, 2944 Bariloche, 2920 Viedma, 297 Comodoro Rivadavia, 2966 Río Gallegos, 2901 Ushuaia ; 280 Trelew est à part.", "en": "299 Neuquén, 2944 Bariloche, 2920 Viedma, 297 Comodoro Rivadavia, 2966 Río Gallegos, 2901 Ushuaia; 280 Trelew stands apart."},
+    {"title": "38 Nord-Ouest", "codes": ["381", "387", "388", "385", "3834", "380"], "fr": "381 Tucumán, 387 Salta, 388 Jujuy, 385 Santiago del Estero, 3834 Catamarca, 380 La Rioja.", "en": "381 Tucumán, 387 Salta, 388 Jujuy, 385 Santiago del Estero, 3834 Catamarca, 380 La Rioja."},
+    {"title": "37 Nord-Est", "codes": ["376", "379", "370", "3757"], "fr": "376 Posadas, 3757 Puerto Iguazú (Misiones), 379 Corrientes, 370 Formosa ; le Chaco est en 36 (362 Resistencia).", "en": "376 Posadas, 3757 Puerto Iguazú (Misiones), 379 Corrientes, 370 Formosa; Chaco is 36 (362 Resistencia)."}
+  ],
+  "real": {"fmt": "(0{code}) {n}", "total": 10, "chunks": {"8": "4-4", "7": "3-4", "6": "2-4"}}
+}

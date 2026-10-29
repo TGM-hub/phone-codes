@@ -1,0 +1,27 @@
+{
+  "iso": "PT",
+  "name": {"fr": "Portugal", "en": "Portugal"},
+  "display": "{code}",
+  "system": {"fr": "Indicativo", "en": "Indicativo"},
+  "group_label": {"fr": "Bloc", "en": "Block"},
+  "group_q": {"fr": "Dans quel bloc (2x) ?", "en": "Which block (2x)?"},
+  "match": "admin",
+  "groups": [
+    {"id": "21", "name": {"fr": "Lisbonne", "en": "Lisbon"}, "color": "#C9A9E0"},
+    {"id": "22", "name": {"fr": "Porto", "en": "Porto"}, "color": "#F0A0DC"},
+    {"id": "23", "name": {"fr": "Centre-Ouest : Coimbra, Aveiro, Viseu", "en": "Centre-west: Coimbra, Aveiro, Viseu"}, "color": "#57D06A"},
+    {"id": "24", "name": {"fr": "Centre : Leiria, Santarém, Portalegre", "en": "Centre: Leiria, Santarém, Portalegre"}, "color": "#EFE04A"},
+    {"id": "25", "name": {"fr": "Nord : Braga, Viana, Vila Real", "en": "North: Braga, Viana, Vila Real"}, "color": "#5CC9C4"},
+    {"id": "26", "name": {"fr": "Autour de Lisbonne et Alentejo : Setúbal, Évora", "en": "Around Lisbon and Alentejo: Setúbal, Évora"}, "color": "#F0A860"},
+    {"id": "27", "name": {"fr": "Intérieur : Guarda, Castelo Branco, Bragança", "en": "Interior: Guarda, Castelo Branco, Bragança"}, "color": "#8FE0BC"},
+    {"id": "28", "name": {"fr": "Sud : Algarve et Baixo Alentejo", "en": "South: Algarve and Baixo Alentejo"}, "color": "#EE7A6A"}
+  ],
+  "anchors": ["21", "22", "239", "234", "232", "244", "243", "253", "258", "259", "265", "266", "271", "272", "273", "289", "282", "284"],
+  "twins": [],
+  "tips": [
+    {"title": "2x", "codes": [],
+     "fr": "Tous les fixes commencent par 2 et ont 9 chiffres. Le 2e chiffre donne la région : 21 Lisbonne, 22 Porto, 23 centre-ouest (Coimbra, Aveiro, Viseu), 24 centre (Leiria, Santarém), 25 nord (Braga, Viana do Castelo, Vila Real), 26 autour de Lisbonne et Alentejo (Setúbal, Évora, Torres Vedras), 27 intérieur (Guarda, Castelo Branco, Bragança), 28 sud (Faro, Portimão, Beja). 291 Madère et 292-296 Açores (hors carte). 9x = portable.",
+     "en": "All landlines start with 2 and have 9 digits. The 2nd digit gives the region: 21 Lisbon, 22 Porto, 23 centre-west (Coimbra, Aveiro, Viseu), 24 centre (Leiria, Santarém), 25 north (Braga, Viana do Castelo, Vila Real), 26 around Lisbon and Alentejo (Setúbal, Évora, Torres Vedras), 27 interior (Guarda, Castelo Branco, Bragança), 28 south (Faro, Portimão, Beja). 291 Madeira and 292-296 Azores (off the map). 9x = mobile."}
+  ],
+  "real": {"fmt": "{code} {n}", "total": 9, "chunks": {"7": "3 4", "6": "3 3"}}
+}

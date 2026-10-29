@@ -1,0 +1,232 @@
+code,group,city,local,admin,lat,lon,cities
+010,1,Genova,,010,44.449,8.894,Arenzano;Busalla
+011,1,Torino,,011,45.075,7.688,Avigliana;Carmagnola;Caselle Torinese;Chieri;Chivasso;Cirié;Gassino Torinese;Orbassano;Rivoli;Vinovo;Volpiano
+0121,1,Pinerolo,,0121,44.91,7.321,
+0122,1,Susa,,0122,45.135,7.071,
+0123,1,Lanzo Torinese,,0123,45.272,7.483,
+0124,1,Rivarolo Canavese,,0124,45.303,7.719,
+0125,1,Ivrea,,0125,45.451,7.893,Pont-Saint-Martin
+0131,1,Alessandria,,0131,44.917,8.657,Tortona
+0141,1,Asti,,0141,44.918,8.209,Canelli;Montechiaro d'Asti;Nizza Monferrato;Villafranca d'Asti
+0142,1,Casale Monferrato,,0142,45.109,8.472,
+0143,1,Novi Ligure,,0143,44.762,8.798,Ovada
+0144,1,Acqui Terme,,0144,44.674,8.473,
+015,1,Biella,,015,45.592,8.022,Valle Mosso
+0161,1,Vercelli,,0161,45.326,8.394,Cigliano;Santhià
+0163,1,Borgosesia,,0163,45.735,8.261,Gattinara;Varallo
+0165,1,Aosta,,0165,45.749,7.306,Courmayeur;Quart;Villeneuve
+0166,1,Saint-Vincent,,0166,45.759,7.673,
+0171,1,Cuneo,,0171,44.418,7.56,Busca;Limone Piemonte
+0172,1,Savigliano,,0172,44.614,7.642,Bra;Fossano;Racconigi
+0173,1,Alba,,0173,44.687,8.031,
+0174,1,Mondovì,,0174,44.409,7.808,Ceva
+0175,1,Saluzzo,,0175,44.683,7.495,Barge
+0182,1,Albenga,,0182,44.066,8.186,Alassio;Ceriale
+0183,1,Imperia,,0183,43.902,8.01,
+0184,1,Sanremo,,0184,43.835,7.777,Taggia;Ventimiglia
+0185,1,Rapallo,,0185,44.364,9.22,Chiavari;Recco
+0187,1,La Spezia,,0187,44.108,9.801,Aulla;Levanto;Sarzana
+019,1,Savona,,019,44.333,8.433,Carcare;Finale Ligure;Varazze
+02,2,Milano,,02,45.462,9.172,Abbiategrasso;Binasco;Cernusco sul Naviglio;Gorgonzola;Locate di Triulzi;Magenta;Melegnano;Paullo;Rho;Saronno;Sedriano;Senago;Trezzo sull'Adda
+030,3,Brescia,,030,45.533,10.232,Chiari;Desenzano del Garda;Gottolengo;Iseo;Leno;Montichiari;Palazzolo sull'Oglio;Rovato;Sarezzo;Verolanuova
+031,3,Como,,031,45.801,9.093,Appiano Gentile;Asso;Cantù;Erba;Mariano Comense;Molteno;Solbiate;Carugo
+0321,3,Novara,,0321,45.444,8.635,Oleggio;Trecate
+0322,3,Arona,,0322,45.755,8.558,Borgomanero
+0323,3,Baveno,,0323,45.913,8.494,Verbania
+0324,3,Domodossola,,0324,46.13,8.241,
+0331,3,Busto Arsizio,,0331,45.605,8.84,Gallarate;Legnano
+0332,3,Varese,,0332,45.831,8.829,Besozzo;Cunardo;Laveno-Mombello;Luino
+0341,3,Lecco,,0341,45.858,9.425,Barzio;Bellano;Calolziocorte
+0342,3,Sondrio,,0342,46.183,9.851,Morbegno;Tirano
+0343,3,Chiavenna,,0343,46.33,9.403,
+0344,3,Menaggio,,0344,46.025,9.241,
+0345,3,San Pellegrino Terme,,0345,45.841,9.66,
+0346,3,Clusone,,0346,45.875,9.934,
+035,3,Bergamo,,035,45.693,9.669,Albino;Bonate Sotto;Cisano Bergamasco;Fiorano al Serio;Grumello del Monte;Lovere;Sarnico;Verdellino
+0362,3,Seregno,,0362,45.65,9.207,Carate Brianza;Cesano Maderno;Giussano
+0363,3,Treviglio,,0363,45.534,9.598,Romano di Lombardia
+0364,3,Breno,,0364,45.941,10.446,Darfo Boario Terme;Edolo
+0365,3,Salò,,0365,45.614,10.539,Vestone
+0371,3,Lodi,,0371,45.315,9.495,
+0372,3,Cremona,,0372,45.137,10.033,Vescovato
+0373,3,Crema,,0373,45.364,9.686,
+0374,3,Soresina,,0374,45.292,9.851,
+0375,3,Casalmaggiore,,0375,44.99,10.423,
+0376,3,Mantova,,0376,45.144,10.801,Asola;Bozzolo;Guidizzolo;Suzzara;Casalmoro
+0377,3,Codogno,,0377,45.167,9.695,
+0381,3,Vigevano,,0381,45.307,8.866,
+0382,3,Pavia,,0382,45.195,9.168,Garlasco;Santa Cristina e Bissone
+0383,3,Voghera,,0383,45.017,9.018,Casteggio;Varzi
+0384,3,Mortara,,0384,45.247,8.748,Mede
+0385,3,Stradella,,0385,45.082,9.306,
+0386,3,Ostiglia,,0386,45.085,11.152,
+039,3,Monza,,039,45.593,9.274,Merate;Vimercate
+040,4,Trieste,,040,45.677,13.8,
+041,4,Venezia,,041,45.405,12.311,Chioggia;Dolo;Mirano;Mogliano Veneto;Noale;Scorzè;Spinea
+0421,4,San Donà di Piave,,0421,45.626,12.603,Jesolo;Portogruaro
+0422,4,Treviso,,0422,45.661,12.236,Oderzo;Roncade
+0423,4,Montebelluna,,0423,45.768,12.046,Castelfranco Veneto
+0424,4,Bassano del Grappa,,0424,45.773,11.719,Asiago;Marostica
+0425,4,Rovigo,,0425,45.071,11.792,Badia Polesine;Lendinara
+0426,4,Adria,,0426,45.057,12.054,Porto Viro
+0427,4,Spilimbergo,,0427,46.11,12.874,
+0428,4,Tarvisio,,0428,46.471,13.596,
+0429,4,Este,,0429,45.222,11.658,Monselice;Montagnana
+0431,4,Cervignano del Friuli,,0431,45.83,13.332,Latisana;Lignano Sabbiadoro;San Michele al Tagliamento
+0432,4,Udine,,0432,46.059,13.24,Cividale del Friuli;Codroipo;Gemona del Friuli;Palmanova
+0433,4,Tolmezzo,,0433,46.421,13.033,Comeglians
+0434,4,Pordenone,,0434,45.954,12.672,Prata di Pordenone;Sacile;San Vito al Tagliamento
+0435,4,Pieve di Cadore,,0435,46.413,12.397,
+0436,4,Cortina d'Ampezzo,,0436,46.57,12.132,
+0437,4,Belluno,,0437,46.134,12.2,Agordo;Sedico
+0438,4,Conegliano,,0438,45.903,12.269,Pieve di Soligo;Vittorio Veneto
+0439,4,Feltre,,0439,46.047,11.933,Fiera di Primiero
+0442,4,Legnago,,0442,45.154,11.3,Cerea
+0444,4,Vicenza,,0444,45.546,11.556,Arzignano;Montecchio Maggiore;Sossano
+0445,4,Schio,,0445,45.724,11.355,Thiene;Valdagno
+045,4,Verona,,045,45.447,10.983,Bovolone;Bussolengo;Costermano sul Garda;Isola della Scala;Peschiera del Garda;San Bonifacio;San Pietro in Cariano;Tregnago;Villafranca di Verona
+0461,4,Trento,,0461,46.061,11.109,Mezzolombardo;Pergine Valsugana
+0462,4,Cavalese,,0462,46.249,11.471,
+0463,4,Cles,,0463,46.335,10.947,
+0464,4,Rovereto,,0464,45.857,11.029,Riva del Garda
+0465,4,Tione di Trento,,0465,46.039,10.699,
+0471,4,Bolzano,,0471,46.486,11.344,Egna;Ortisei
+0472,4,Bressanone,,0472,46.703,11.664,
+0473,4,Merano,,0473,46.656,11.179,Silandro
+0474,4,Brunico,,0474,46.793,11.939,
+0481,4,Gorizia,,0481,45.946,13.596,Monfalcone
+049,4,Padova,,049,45.4,11.896,Camposampiero;Cittadella;Conselve;Piove di Sacco;Teolo
+050,5,Pisa,,050,43.666,10.357,Cascina
+051,5,Bologna,,051,44.489,11.361,Bazzano;Budrio;Castel San Pietro Terme;Cento;Malalbergo;San Giorgio di Piano;San Giovanni in Persiceto;Sasso Marconi
+0521,5,Parma,,0521,44.78,10.33,Collecchio;Langhirano;San Secondo Parmense
+0522,5,Reggio Emilia,,0522,44.699,10.643,Castelnovo ne' Monti;Guastalla
+0523,5,Piacenza,,0523,45.054,9.726,Bettola;Castel San Giovanni;Fiorenzuola d'Arda;Monticelli d'Ongina
+0524,5,Fidenza,,0524,44.856,10.045,
+0525,5,Fornovo di Taro,,0525,44.67,10.118,Borgo Val di Taro
+0532,5,Ferrara,,0532,44.806,11.656,Argenta;Bondeno;Copparo
+0533,5,Comacchio,,0533,44.684,12.174,
+0534,5,Alto Reno Terme,,0534,44.125,10.939,Porretta Terme
+0535,5,Mirandola,,0535,44.903,11.135,
+0536,5,Sassuolo,,0536,44.544,10.785,Maranello;Pievepelago
+0541,5,Rimini,,0541,44.043,12.548,Cattolica;Savignano sul Rubicone
+0542,5,Imola,,0542,44.428,11.731,
+0543,5,Forlì,,0543,44.227,12.062,
+0544,5,Ravenna,,0544,44.42,12.171,Cervia
+0545,5,Lugo,,0545,44.476,11.897,Bagnacavallo
+0546,5,Faenza,,0546,44.295,11.893,
+0547,5,Cesena,,0547,44.127,12.252,Cesenatico
+055,5,Firenze,,055,43.78,11.244,Borgo San Lorenzo;Pontassieve;San Giovanni Valdarno;Signa
+0564,5,Grosseto,,0564,42.773,11.068,Arcidosso;Orbetello;Roccastrada
+0565,5,Piombino,,0565,42.975,10.612,Portoferraio
+0566,5,Follonica,,0566,42.963,10.763,
+0571,5,Empoli,,0571,43.696,10.946,San Miniato
+0572,5,Montecatini Terme,,0572,43.891,10.775,
+0573,5,Pistoia,,0573,43.987,10.912,
+0574,5,Prato,,0574,43.883,11.077,
+0575,5,Arezzo,,0575,43.443,11.912,Cortona;Sansepolcro
+0577,5,Siena,,0577,43.305,11.324,Abbadia San Salvatore;Poggibonsi;Sinalunga
+0578,5,Chianciano Terme,,0578,43.036,11.829,Chiusi
+0583,5,Lucca,,0583,43.858,10.463,Altopascio;Barga;Castelnuovo di Garfagnana
+0584,5,Viareggio,,0584,43.857,10.268,Pietrasanta
+0585,5,Massa,,0585,44.051,10.16,
+0586,5,Livorno,,0586,43.522,10.364,Cecina;Rosignano Marittimo
+0587,5,Pontedera,,0587,43.645,10.609,
+0588,5,Volterra,,0588,43.399,10.896,
+059,5,Modena,,059,44.646,10.889,Carpi;Castelfranco Emilia;Vignola
+06,6,Roma,,06,41.88,12.471,Albano Laziale;Anzio;Bracciano;Castelnuovo di Porto;Colleferro;Frascati;Ladispoli;Monterotondo;Palestrina;Pomezia;Velletri
+070,7,Cagliari,,070,39.22,9.094,Decimomannu;Sanluri;Senorbì
+071,7,Ancona,,071,43.57,13.484,Loreto;Osimo;Senigallia
+0721,7,Pesaro,,0721,43.866,12.874,Cagli;Fano;Mondolfo
+0722,7,Urbino,,0722,43.749,12.632,
+0731,7,Jesi,,0731,43.523,13.256,
+0732,7,Fabriano,,0732,43.321,12.882,
+0733,7,Macerata,,0733,43.305,13.462,Civitanova Marche;Tolentino
+0734,7,Fermo,,0734,43.17,13.704,Sant'Elpidio a Mare
+0735,7,San Benedetto del Tronto,,0735,42.928,13.879,
+0736,7,Ascoli Piceno,,0736,42.852,13.62,Castel di Lama
+0737,7,Camerino,,0737,43.132,13.075,
+0742,7,Foligno,,0742,42.99,12.804,
+0743,7,Spoleto,,0743,42.719,12.718,
+0744,7,Terni,,0744,42.588,12.654,Amelia;Narni
+0746,7,Rieti,,0746,42.395,12.847,Amatrice;Borgorose
+075,7,Perugia,,075,43.14,12.435,Assisi;Città di Castello;Gubbio;Magione;Marsciano;Todi
+0761,7,Viterbo,,0761,42.445,12.049,Civita Castellana;Montefiascone;Ronciglione;Soriano nel Cimino;Valentano
+0763,7,Orvieto,,0763,42.722,12.135,
+0765,7,Poggio Mirteto,,0765,42.267,12.663,Poggio Moiano
+0766,7,Civitavecchia,,0766,42.111,11.82,Tarquinia
+0771,7,Formia,,0771,41.29,13.636,Fondi;Minturno
+0773,7,Latina,,0773,41.471,12.87,Priverno;Sabaudia;Terracina
+0774,7,Tivoli,,0774,41.961,12.794,Subiaco
+0775,7,Frosinone,,0775,41.637,13.326,Ceccano;Fiuggi
+0776,7,Cassino,,0776,41.48,13.826,Atina;Pontecorvo;Sora
+0781,7,Iglesias,,0781,39.297,8.547,Carbonia;Narcao
+0782,7,Lanusei,,0782,39.62,9.627,
+0783,7,Oristano,,0783,39.915,8.611,Terralba;Masullas
+0784,7,Nuoro,,0784,40.332,9.311,Siniscola;Sorgono
+0785,7,Macomer,,0785,40.308,8.745,
+0789,7,Olbia,,0789,40.954,9.476,Palau
+079,7,Sassari,,079,40.761,8.377,Alghero;Ozieri;Tempio Pausania;Thiesi
+080,8,Bari,,080,41.092,16.876,Acquaviva delle Fonti;Alberobello;Altamura;Bitetto;Bitonto;Casamassima;Fasano;Gioia del Colle;Martina Franca;Molfetta;Monopoli;Palo del Colle;Putignano;Rutigliano;Ruvo di Puglia;Triggiano
+081,8,Napoli,,081,40.854,14.241,Afragola;Aversa;Capri;Casal di Principe;Castellammare di Stabia;Crispano;Caivano;Frattamaggiore;Giugliano in Campania;Ischia;Nocera Inferiore;Nola;Ottaviano;Pomigliano d'Arco;Pozzuoli;Sant'Anastasia;San Giuseppe Vesuviano;Sorrento;Torre Annunziata;Torre del Greco
+0823,8,Caserta,,0823,41.087,14.364,Piedimonte Matese;Santa Maria Capua Vetere;Sessa Aurunca;Teano
+0824,8,Benevento,,0824,41.159,14.783,Cerreto Sannita;Foiano di Val Fortore;Telese Terme
+0825,8,Avellino,,0825,40.912,14.788,Ariano Irpino;Prata di Principato Ultra;Solofra
+0827,8,Sant'Angelo dei Lombardi,,0827,40.932,15.181,Montella;Vallata
+0828,8,Battipaglia,,0828,40.595,14.962,Capaccio Paestum;Contursi Terme
+0831,8,Brindisi,,0831,40.594,17.931,Francavilla Fontana;Mesagne;Ostuni;San Pietro Vernotico;San Vito dei Normanni
+0832,8,Lecce,,0832,40.41,18.212,Campi Salentina;Vernole
+0833,8,Gallipoli,,0833,40.042,18.024,Alessano;Nardò;Parabita
+0835,8,Matera,,0835,40.665,16.571,Ferrandina;Grassano;Pisticci;Scanzano Jonico
+0836,8,Maglie,,0836,40.116,18.295,Galatina;Poggiardo
+085,8,Pescara,,085,42.454,14.216,Giulianova;Penne;Scafa;Silvi;Torre de' Passeri
+0861,8,Teramo,,0861,42.654,13.73,Alba Adriatica;Bisenti;Nereto
+0862,8,L'Aquila,,0862,42.387,13.414,San Demetrio ne' Vestini
+0863,8,Avezzano,,0863,42.04,13.453,Pescina;Tagliacozzo
+0864,8,Sulmona,,0864,42.067,13.928,Roccaraso
+0865,8,Isernia,,0865,41.613,14.22,Agnone;Venafro
+0871,8,Chieti,,0871,42.368,14.173,Guardiagrele
+0872,8,Lanciano,,0872,42.212,14.391,Atessa
+0873,8,Vasto,,0873,42.113,14.697,Casalbordino
+0874,8,Campobasso,,0874,41.565,14.66,Bojano;Larino;Trivento
+0875,8,Termoli,,0875,41.974,14.998,
+0881,8,Foggia,,0881,41.471,15.586,Bovino;Lucera;Motta Montecorvino
+0882,8,San Severo,,0882,41.663,15.422,San Marco in Lamis;San Nicandro Garganico
+0883,8,Andria,,0883,41.14,16.23,Canosa di Puglia;Trinitapoli
+0884,8,Manfredonia,,0884,41.547,15.817,Vico del Gargano
+0885,8,Cerignola,,0885,41.297,15.905,Ascoli Satriano;Candela;Carapelle;Ordona;Orta Nova;Rocchetta Sant'Antonio;Stornara;Stornarella
+089,8,Salerno,,089,40.677,14.807,Amalfi;Baronissi
+090,9,Messina,,090,38.177,15.517,Barcellona Pozzo di Gotto;Milazzo;Spadafora
+091,9,Palermo,,091,38.137,13.31,Bagheria;Carini;Lercara Friddi;Misilmeri;Partinico;Termini Imerese;Villafrati
+0921,9,Cefalù,,0921,37.992,14.041,Petralia Sottana;Santo Stefano di Camastra
+0922,9,Agrigento,,0922,37.318,13.585,Alessandria della Rocca;Canicattì;Casteltermini;Licata;Palma di Montechiaro
+0923,9,Trapani,,0923,37.9,12.711,Marsala;Mazara del Vallo
+0924,9,Alcamo,,0924,37.969,12.971,Castelvetrano;Salemi
+0925,9,Sciacca,,0925,37.55,13.09,Menfi
+0931,9,Siracusa,,0931,37.031,15.213,Augusta;Avola;Floridia;Palazzolo Acreide
+0932,9,Ragusa,,0932,36.908,14.664,Comiso;Modica;Pozzallo;Scicli;Vittoria
+0933,9,Caltagirone,,0933,37.18,14.549,Gela;Grammichele
+0934,9,Caltanissetta,,0934,37.465,14.014,Barrafranca;Mussomeli;Pietraperzia
+0935,9,Enna,,0935,37.523,14.254,Leonforte;Piazza Armerina;Regalbuto
+0941,9,Patti,,0941,38.115,14.995,Capo d'Orlando;Furnari;Sant'Agata di Militello
+0942,9,Taormina,,0942,37.848,15.277,
+095,9,Catania,,095,37.462,15.05,Acireale;Adrano;Bronte;Giarre;Lentini;Nicolosi;Palagonia;Paternò
+0961,9,Catanzaro,,0961,38.893,16.6,Cropani;Tiriolo
+0962,9,Crotone,,0962,39.105,17.079,Cirò Marina;Petilia Policastro
+0963,9,Vibo Valentia,,0963,38.679,16.088,Soriano Calabro;Tropea
+0964,9,Locri,,0964,38.235,16.236,Bianco;Gioiosa Ionica
+0965,9,Reggio Calabria,,0965,38.099,15.704,Melito di Porto Salvo
+0966,9,Palmi,,0966,38.379,15.88,Polistena;Taurianova
+0967,9,Soverato,,0967,38.692,16.531,Badolato;Chiaravalle Centrale
+0968,9,Lamezia Terme,,0968,38.936,16.285,Maida;Nocera Terinese
+0971,9,Potenza,,0971,40.66,15.794,Avigliano;Laurenzana
+0972,9,Melfi,,0972,41.022,15.647,Venosa
+0973,9,Lagonegro,,0973,40.16,15.781,Chiaromonte;Sapri;Lauria
+0974,9,Vallo della Lucania,,0974,40.229,15.248,Roccagloriosa;Torchiara
+0975,9,Sala Consilina,,0975,40.4,15.606,Polla;Viggiano
+0976,9,Muro Lucano,,0976,40.738,15.452,
+0981,9,Castrovillari,,0981,39.809,16.236,Cassano all'Ionio;Trebisacce
+0982,9,Paola,,0982,39.358,16.062,
+0983,9,Rossano,,0983,39.606,16.621,Cariati;Corigliano Calabro
+0984,9,Cosenza,,0984,39.282,16.263,Bisignano;San Giovanni in Fiore;San Marco Argentano;Mendicino
+0985,9,Scalea,,0985,39.802,15.805,
+099,9,Taranto,,099,40.468,17.288,Fragagnano;Ginosa;Grottaglie;Manduria;Massafra

@@ -368,8 +368,10 @@ function cityBox(list, bbox){
 }
 const groupBox = id => cityBox(codesOfGroup(id), C.G[id].bbox);
 const subBox = id => cityBox(codesOfSub(id), C.S[id].bbox);
-const disp = code => esc(C.display).replace("{code}", `</span>${esc(code)}<span class="deco">`);
-const dispText = code => C.display.replace("{code}", code);
+const disp = code => esc(C.display).replace("{code}", `</span>${esc(fmtCode(code))}<span class="deco">`);
+/* code_fmt (meta.json) spaces the digits of a code: "2 2" writes 0231 as 02 31 */
+const fmtCode = code => C.code_fmt ? chunk(code, C.code_fmt).trim() : code;
+const dispText = code => C.display.replace("{code}", fmtCode(code));
 const gname = id => C.G[id].name[P.lang];
 const rname = id => C.S[id].regions.join(", ");
 const codesOfGroup = id => C.codes.filter(c => c.group === id);
@@ -649,7 +651,10 @@ function codeDigitsHTML(c, n){
   const z = c.code.length - c.code.replace(/^0+/, "").length, gEnd = z + c.group.length;
   const sEnd = hasSub() ? C.sub_len : gEnd;
   let h = "";
+  const gaps = new Set();
+  if(C.code_fmt){ let k = 0; for(const m of C.code_fmt.matchAll(/(\d+)\D+/g)){ k += +m[1]; gaps.add(k); } }
   [...c.code].forEach((d, i) => {
+    if(gaps.has(i)) h += " ";
     if(i >= n){ h += `<span class="hid">x</span>`; return; }
     let col = "";
     if(C.revealable && P.reveal && !inverse()){
@@ -815,7 +820,9 @@ function answer(){
   const ok = sameCode(sel.code, tg.code);
   const km = Math.round(haversine(sel.lat, sel.lon, tg.lat, tg.lon));
   if(C.unit_labels){                       // the answer is a state: name states, not codes
-    const st = c => C.admin[c.admin].name;
+    /* a code can cover several units (02 14: Calvados, Manche, Orne): name them all */
+    const names = c => { const n = hostsOf(c.code).map(k => C.admin[k].name.trim()); return n.length > 4 ? n.slice(0, 4).join(", ") + "…" : n.join(", "); };
+    const st = c => names(c);
     v.city = esc(st(tg) === tg.city ? st(tg) : `${st(tg)} (${tg.city})`);
     finish(ok, ok ? t("code_ok", v) : t("code_bad", {...v, sel: "", scity: esc(st(sel)), km}), ficheHTML(tg));
     return;
@@ -840,7 +847,7 @@ function drawInverse(){
   if(wrong) h += paint(sel, "#E05A48", .8, "iw");
   h += paint(tg, locked ? "#3FBF85" : "var(--amber)", locked ? .85 : .75, "it");
   const list = wrong ? [tg, sel] : [tg];
-  h += labelsHTML(V, list, fs*0.9, c => (locked ? c.code + " " : "") + c.city + (locked && c.local ? " · " + c.local : ""), locked);
+  h += labelsHTML(V, list, fs*0.9, c => (locked ? fmtCode(c.code) + " " : "") + c.city + (locked && c.local ? " · " + c.local : ""), locked);
   V.svg.innerHTML = h;
 }
 const withLocal = (c, on) => on && c.local && c.local !== c.city ? " · " + c.local : "";
@@ -868,7 +875,7 @@ function drawPlay(){
     } else if(sel) h += outline(sel, "#fff", .8);
     /* anchors carry the system: names while asking, codes on reveal */
     const anchors = (C.anchors || []).flatMap(code => C.byCode[code] || []);
-    h += labelsHTML(V, anchors, fs*0.85, c => (locked ? c.code + " " : "") + c.city, locked);
+    h += labelsHTML(V, anchors, fs*0.85, c => (locked ? fmtCode(c.code) + " " : "") + c.city, locked);
   } else if(s === "s"){
     const gid = tg.group, list = codesOfGroup(gid);
     h += landHTML(k => C.G[gid].admins.includes(k));
@@ -907,7 +914,7 @@ function drawPlay(){
     h += `</g>`;
     /* city names while asking, codes on reveal: the names are the bridge you
        are building, and anonymous click feedback stops probing */
-    h += labelsHTML(V, cands, fs*0.8, c => (locked ? c.code + " " : "") + c.city + withLocal(c, locked && isT(c)), locked);
+    h += labelsHTML(V, cands, fs*0.8, c => (locked ? fmtCode(c.code) + " " : "") + c.city + withLocal(c, locked && isT(c)), locked);
   }
   V.svg.innerHTML = h;
 }
@@ -930,7 +937,7 @@ function unitsHTML(V, cands, tg, picked, fs, shownSel){
     h += `<path d="${PATH[k]}" fill="${fill}" fill-opacity="${op}" stroke="${stroke}" stroke-width="${sw}" vector-effect="non-scaling-stroke"/>`;
   });
   const items = units.map(k => { const a = C.admin[k];
-    return {x: a.label[0]*K, y: -a.label[1], text: (locked && !shownSel && tgU.includes(k) ? tg.code + " " : "") + a.name}; })
+    return {x: a.label[0]*K, y: -a.label[1], text: (locked && !shownSel && tgU.includes(k) ? fmtCode(tg.code) + " " : "") + a.name}; })
     .filter(it => inView(V, it.x, it.y));
   placeLabels(items, fs*0.8).forEach(it => h += `<text class="lbl" x="${it.x}" y="${it.y}" font-size="${fs*0.8}" text-anchor="middle">${esc(it.text)}</text>`);
   return h;
@@ -1027,7 +1034,7 @@ function paintList(){
     if(!list.length) return;
     h += `<div class="gh"><span class="sw" style="background:${g.color}"></span>${esc(C.group_label[P.lang])} ${esc(g.id)} · ${esc(g.name[P.lang])}</div>`;
     list.forEach(c => h += `<button data-i="${C.codes.indexOf(c)}" class="${c === exSel ? "sel" : ""}">
-      <span class="c">${esc(c.code)}</span><span>${esc(c.city)} <span class="loc">${esc(c.local || C.admin[c.admin].region || "")}</span></span></button>`);
+      <span class="c">${esc(fmtCode(c.code))}</span><span>${esc(c.city)} <span class="loc">${esc(c.local || C.admin[c.admin].region || "")}</span></span></button>`);
   });
   $("#list").innerHTML = h;
 }
@@ -1047,7 +1054,7 @@ function drawExplore(){
     /* whole country: anchors first, with their city; the other codes fill the gaps when zoomed in */
     const anc = new Set(C.anchors || []), big = C.codes.length > 90;
     const list = big ? (C.anchors || []).flatMap(code => C.byCode[code] || []) : C.codes;
-    h += labelsHTML(V, list, fs*0.8, c => big || anc.has(c.code) ? c.code + " " + c.city : c.code, true, c => anc.has(c.code) ? 1 : 0);
+    h += labelsHTML(V, list, fs*0.8, c => big || anc.has(c.code) ? fmtCode(c.code) + " " + c.city : fmtCode(c.code), true, c => anc.has(c.code) ? 1 : 0);
     h += pathHTML(V, fs, null);
   } else {
     const g = C.G[exGroup];
@@ -1065,7 +1072,7 @@ function drawExplore(){
     const all = codesOfGroup(exGroup);
     const list = exSub ? all.filter(c => c.sub === exSub)
       : hasSub() && all.length > 25 ? C.subs.filter(x => x.group === exGroup).map(x => C.byCode[x.rep][0]) : all;
-    h += labelsHTML(V, list, fs*0.8, c => (exSub || !hasSub() || all.length <= 25 ? c.code : c.sub + "…") + " " + c.city, true);
+    h += labelsHTML(V, list, fs*0.8, c => (exSub || !hasSub() || all.length <= 25 ? fmtCode(c.code) : c.sub + "…") + " " + c.city, true);
     h += pathHTML(V, fs, exGroup);
   }
   if(exSel) h += `<circle cx="${exSel.lon*K}" cy="${-exSel.lat}" r="${V.w/140}" fill="none" stroke="#fff" stroke-width="2" vector-effect="non-scaling-stroke"/>`;
@@ -1080,7 +1087,10 @@ function pathPoints(gid){
     return anc[0] || [...list].sort((a, b) => numSort(a.code, b.code))[0]; };
   if(!gid){
     if(hasSub() || C.groups.length < 3 || !C.groups.every(g => /^\d+$/.test(g.id))) return [];
-    return [...C.groups].sort((a, b) => numSort(a.id, b.id)).map(g => firstOf(codesOfGroup(g.id)));
+    /* one-code blocks that are just a big city (VN 024 Hanoi, 028 HCMC; PT 21, 22) would zigzag the line */
+    const gs = [...C.groups].sort((a, b) => numSort(a.id, b.id));
+    const multi = gs.filter(g => new Set(codesOfGroup(g.id).map(c => c.code)).size > 1);
+    return (multi.length >= 3 ? multi : gs).map(g => firstOf(codesOfGroup(g.id)));
   }
   if(hasSub() && !exSub){
     const subs = C.subs.filter(x => x.group === gid).sort((a, b) => numSort(a.id, b.id));

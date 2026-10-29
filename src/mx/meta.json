@@ -1,0 +1,31 @@
+{
+  "iso": "MX",
+  "name": {"fr": "Mexique", "en": "Mexico"},
+  "display": "({code})",
+  "system": {"fr": "Clave LADA", "en": "Clave LADA"},
+  "group_label": {"fr": "Bloc", "en": "Block"},
+  "match": "admin",
+  "unit_labels": true,
+  "groups": [
+    {"id": "2", "name": {"fr": "Puebla, Tlaxcala, Veracruz, nord de l'Oaxaca", "en": "Puebla, Tlaxcala, Veracruz, northern Oaxaca"}, "color": "#EFE04A"},
+    {"id": "3", "name": {"fr": "Ouest : Jalisco, Colima, Nayarit, ouest du Michoacán", "en": "West: Jalisco, Colima, Nayarit, western Michoacán"}, "color": "#57D06A"},
+    {"id": "4", "name": {"fr": "Bajío : Guanajuato, Querétaro, Aguascalientes, Zacatecas, San Luis Potosí, Michoacán", "en": "Bajío: Guanajuato, Querétaro, Aguascalientes, Zacatecas, San Luis Potosí, Michoacán"}, "color": "#F0A860"},
+    {"id": "5", "name": {"fr": "Mexico et sa banlieue", "en": "Mexico City and its suburbs"}, "color": "#C9A9E0"},
+    {"id": "6", "name": {"fr": "Nord-Ouest : Basse-Californie, Sonora, Chihuahua, Sinaloa, Durango", "en": "North-west: Baja California, Sonora, Chihuahua, Sinaloa, Durango"}, "color": "#5CC9C4"},
+    {"id": "7", "name": {"fr": "Centre-Sud : État de Mexico, Morelos, Guerrero, Hidalgo", "en": "Centre-south: State of Mexico, Morelos, Guerrero, Hidalgo"}, "color": "#F0A0DC"},
+    {"id": "8", "name": {"fr": "Nord-Est : Nuevo León, Tamaulipas, Coahuila", "en": "North-east: Nuevo León, Tamaulipas, Coahuila"}, "color": "#EE7A6A"},
+    {"id": "9", "name": {"fr": "Sud-Est : Chiapas, Tabasco, péninsule du Yucatán", "en": "South-east: Chiapas, Tabasco, Yucatán Peninsula"}, "color": "#8FE0BC"}
+  ],
+  "anchors": ["55", "33", "81", "222", "229", "228", "951", "312", "311", "443", "477", "442", "449", "444", "492", "664", "686", "662", "614", "656", "667", "618", "722", "777", "744", "771", "844", "834", "899", "961", "993", "999", "998", "981", "983"],
+  "twins": [],
+  "tips": [
+    {"title": "(XX) XXXX XXXX", "codes": [],
+     "fr": "Depuis 2019 tous les numéros mexicains ont 10 chiffres : clave LADA + numéro. Les trois grandes villes ont une clave à 2 chiffres (55 Mexico, 33 Guadalajara, 81 Monterrey), toutes les autres à 3 chiffres. Un portable a la même clave que sa ville : un numéro de 10 chiffres dit toujours d'où il vient.",
+     "en": "Since 2019 every Mexican number has 10 digits: LADA code + number. The three big cities have 2-digit codes (55 Mexico City, 33 Guadalajara, 81 Monterrey), all others 3 digits. Mobiles share their city's code: a 10-digit number always tells where it comes from."},
+    {"title": "2 → 9", "codes": [],
+     "fr": "2 : Puebla, Veracruz, Tlaxcala. 3 : l'ouest autour de Guadalajara. 4 : le Bajío (León, Querétaro, Morelia, Aguascalientes, Zacatecas, San Luis Potosí). 5 : Mexico. 6 : le nord-ouest (Tijuana, Hermosillo, Chihuahua, Culiacán). 7 : le centre-sud (Toluca, Cuernavaca, Acapulco, Pachuca). 8 : le nord-est (Monterrey, Saltillo, Tamaulipas). 9 : le sud-est (Oaxaca, Chiapas, Tabasco, Yucatán, Cancún).",
+     "en": "2: Puebla, Veracruz, Tlaxcala. 3: the west around Guadalajara. 4: the Bajío (León, Querétaro, Morelia, Aguascalientes, Zacatecas, San Luis Potosí). 5: Mexico City. 6: the north-west (Tijuana, Hermosillo, Chihuahua, Culiacán). 7: the centre-south (Toluca, Cuernavaca, Acapulco, Pachuca). 8: the north-east (Monterrey, Saltillo, Tamaulipas). 9: the south-east (Oaxaca, Chiapas, Tabasco, Yucatán, Cancún)."},
+    {"title": "66x · 99x", "codes": ["664", "999", "998"], "fr": "664 Tijuana, 686 Mexicali ; 999 Mérida, 998 Cancún, 984 Playa del Carmen.", "en": "664 Tijuana, 686 Mexicali; 999 Mérida, 998 Cancún, 984 Playa del Carmen."}
+  ],
+  "real": {"fmt": "({code}) {n}", "total": 10, "chunks": {"8": "4 4", "7": "3 4"}}
+}

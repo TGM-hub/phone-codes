@@ -1,5 +1,19 @@
 [
  {
+  "iso": "AR",
+  "name": {
+   "fr": "Argentine",
+   "en": "Argentina"
+  },
+  "system": {
+   "fr": "Característica",
+   "en": "Característica"
+  },
+  "aliases": [],
+  "codes": 300,
+  "groups": 3
+ },
+ {
   "iso": "AU",
   "name": {
    "fr": "Australie",
@@ -11,6 +25,20 @@
   },
   "aliases": [],
   "codes": 4,
+  "groups": 1
+ },
+ {
+  "iso": "BO",
+  "name": {
+   "fr": "Bolivie",
+   "en": "Bolivia"
+  },
+  "system": {
+   "fr": "Código de área",
+   "en": "Código de área"
+  },
+  "aliases": [],
+  "codes": 3,
   "groups": 1
  },
  {
@@ -26,6 +54,20 @@
   "aliases": [],
   "codes": 67,
   "groups": 9
+ },
+ {
+  "iso": "BG",
+  "name": {
+   "fr": "Bulgarie",
+   "en": "Bulgaria"
+  },
+  "system": {
+   "fr": "Телефонен код",
+   "en": "Телефонен код"
+  },
+  "aliases": [],
+  "codes": 109,
+  "groups": 8
  },
  {
   "iso": "CO",
@@ -56,18 +98,32 @@
   "groups": 5
  },
  {
+  "iso": "EC",
+  "name": {
+   "fr": "Équateur",
+   "en": "Ecuador"
+  },
+  "system": {
+   "fr": "Código de área",
+   "en": "Código de área"
+  },
+  "aliases": [],
+  "codes": 6,
+  "groups": 1
+ },
+ {
   "iso": "FR",
   "name": {
    "fr": "France",
    "en": "France"
   },
   "system": {
-   "fr": "Indicatif",
-   "en": "Indicatif"
+   "fr": "Indicatif 0Z AB",
+   "en": "0Z AB codes"
   },
   "aliases": [],
-  "codes": 5,
-  "groups": 1
+  "codes": 224,
+  "groups": 5
  },
  {
   "iso": "DE",
@@ -126,6 +182,20 @@
   "groups": 7
  },
  {
+  "iso": "IT",
+  "name": {
+   "fr": "Italie",
+   "en": "Italy"
+  },
+  "system": {
+   "fr": "Prefisso",
+   "en": "Prefisso"
+  },
+  "aliases": [],
+  "codes": 231,
+  "groups": 9
+ },
+ {
   "iso": "JP",
   "name": {
    "fr": "Japon",
@@ -152,6 +222,20 @@
   "aliases": [],
   "codes": 14,
   "groups": 7
+ },
+ {
+  "iso": "MX",
+  "name": {
+   "fr": "Mexique",
+   "en": "Mexico"
+  },
+  "system": {
+   "fr": "Clave LADA",
+   "en": "Clave LADA"
+  },
+  "aliases": [],
+  "codes": 382,
+  "groups": 8
  },
  {
   "iso": "NZ",
@@ -210,6 +294,20 @@
   "groups": 9
  },
  {
+  "iso": "PT",
+  "name": {
+   "fr": "Portugal",
+   "en": "Portugal"
+  },
+  "system": {
+   "fr": "Indicativo",
+   "en": "Indicativo"
+  },
+  "aliases": [],
+  "codes": 48,
+  "groups": 8
+ },
+ {
   "iso": "RO",
   "name": {
    "fr": "Roumanie",
@@ -235,6 +333,20 @@
   },
   "aliases": [],
   "codes": 89,
+  "groups": 3
+ },
+ {
+  "iso": "RS",
+  "name": {
+   "fr": "Serbie",
+   "en": "Serbia"
+  },
+  "system": {
+   "fr": "Pozivni broj",
+   "en": "Pozivni broj"
+  },
+  "aliases": [],
+  "codes": 27,
   "groups": 3
  },
  {
@@ -278,6 +390,20 @@
   "aliases": [],
   "codes": 58,
   "groups": 8
+ },
+ {
+  "iso": "TW",
+  "name": {
+   "fr": "Taïwan",
+   "en": "Taiwan"
+  },
+  "system": {
+   "fr": "區碼",
+   "en": "區碼"
+  },
+  "aliases": [],
+  "codes": 12,
+  "groups": 7
  },
  {
   "iso": "TH",
@@ -337,5 +463,33 @@
   ],
   "codes": 427,
   "groups": 5
+ },
+ {
+  "iso": "UY",
+  "name": {
+   "fr": "Uruguay",
+   "en": "Uruguay"
+  },
+  "system": {
+   "fr": "Indicativo",
+   "en": "Indicativo"
+  },
+  "aliases": [],
+  "codes": 19,
+  "groups": 2
+ },
+ {
+  "iso": "VN",
+  "name": {
+   "fr": "Vietnam",
+   "en": "Vietnam"
+  },
+  "system": {
+   "fr": "Mã vùng",
+   "en": "Mã vùng"
+  },
+  "aliases": [],
+  "codes": 63,
+  "groups": 10
  }
 ]

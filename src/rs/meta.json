@@ -1,0 +1,21 @@
+{
+  "iso": "RS",
+  "name": {"fr": "Serbie", "en": "Serbia"},
+  "display": "0{code}",
+  "system": {"fr": "Pozivni broj", "en": "Pozivni broj"},
+  "group_label": {"fr": "Bloc", "en": "Block"},
+  "match": "admin",
+  "groups": [
+    {"id": "1", "name": {"fr": "Belgrade, Est et Sud (Niš, Leskovac, Vranje, Pirot)", "en": "Belgrade, east and south (Niš, Leskovac, Vranje, Pirot)"}, "color": "#C9A9E0"},
+    {"id": "2", "name": {"fr": "Voïvodine, Smederevo, Prokuplje, Novi Pazar", "en": "Vojvodina, Smederevo, Prokuplje, Novi Pazar"}, "color": "#EFE04A"},
+    {"id": "3", "name": {"fr": "Centre et ouest (Kragujevac, Čačak, Kraljevo, Užice, Bor)", "en": "Centre and west (Kragujevac, Čačak, Kraljevo, Užice, Bor)"}, "color": "#57D06A"}
+  ],
+  "anchors": ["11", "21", "18", "34", "24", "23", "13", "16", "17", "31", "32", "36", "37", "20", "19", "10", "15", "14", "12", "22", "25", "230", "26", "27", "30", "33", "35"],
+  "twins": [],
+  "tips": [
+    {"title": "011 · 021 · 018", "codes": [],
+     "fr": "Indicatifs à deux chiffres après le 0, un par grande ville : 011 Belgrade, 021 Novi Sad, 018 Niš, 034 Kragujevac. Le 2x couvre la Voïvodine (021-025, 0230 Kikinda) mais aussi 020 Novi Pazar, 026 Smederevo et 027 Prokuplje ; le 3x le centre et l'ouest. 028, 029, 038, 039 sont les anciens codes du Kosovo (absent de la carte). 06x = portable.",
+     "en": "Two-digit codes after the 0, one per big town: 011 Belgrade, 021 Novi Sad, 018 Niš, 034 Kragujevac. 2x covers Vojvodina (021-025, 0230 Kikinda) but also 020 Novi Pazar, 026 Smederevo and 027 Prokuplje; 3x the centre and west. 028, 029, 038, 039 are Kosovo's old codes (not on the map). 06x = mobile."}
+  ],
+  "real": {"fmt": "0{code} {n}", "total": 9, "chunks": {"7": "3 4", "6": "3 3"}}
+}

@@ -1,0 +1,22 @@
+{
+  "iso": "UY",
+  "name": {"fr": "Uruguay", "en": "Uruguay"},
+  "display": "{code}…",
+  "system": {"fr": "Indicativo", "en": "Indicativo"},
+  "group_label": {"fr": "Bloc", "en": "Block"},
+  "sub_label": {"fr": "Sous-bloc", "en": "Sub-block"},
+  "sub_len": 2,
+  "match": "admin",
+  "groups": [
+    {"id": "2", "name": {"fr": "Montevideo", "en": "Montevideo"}, "color": "#C9A9E0"},
+    {"id": "4", "name": {"fr": "Intérieur", "en": "Interior"}, "color": "#5CC9C4"}
+  ],
+  "anchors": ["2", "42", "433", "447", "452", "462", "472", "473"],
+  "twins": [],
+  "tips": [
+    {"title": "2 · 4", "codes": [],
+     "fr": "Tous les fixes ont 8 chiffres. 2 = Montevideo (et sa banlieue). 4 = l'intérieur, suivi de l'ancien indicatif du département : 42 Maldonado, 43x le sud-centre (433 Canelones, 434 San José, 435 Florida, 436 Durazno), 44x l'est (444 Minas, 445 Treinta y Tres, 447 Rocha), 45x l'ouest (452 Colonia, 453 Mercedes, 456 Fray Bentos), 46x le nord-est (462 Rivera, 463 Tacuarembó, 464 Melo), 47x le nord-ouest (472 Paysandú, 473 Salto, 477 Artigas). 09 = portable.",
+     "en": "All landlines have 8 digits. 2 = Montevideo (and suburbs). 4 = the interior, followed by the department's old code: 42 Maldonado, 43x the south-centre (433 Canelones, 434 San José, 435 Florida, 436 Durazno), 44x the east (444 Minas, 445 Treinta y Tres, 447 Rocha), 45x the west (452 Colonia, 453 Mercedes, 456 Fray Bentos), 46x the north-east (462 Rivera, 463 Tacuarembó, 464 Melo), 47x the north-west (472 Paysandú, 473 Salto, 477 Artigas). 09 = mobile."}
+  ],
+  "real": {"fmt": "{code}{n}", "total": 8, "chunks": {"7": "3 4", "6": "2 4", "5": "1 4", "4": "0 4"}}
+}

@@ -1,0 +1,29 @@
+{
+  "iso": "VN",
+  "name": {"fr": "Vietnam", "en": "Vietnam"},
+  "display": "(0{code})",
+  "system": {"fr": "Mã vùng", "en": "Mã vùng"},
+  "group_label": {"fr": "Bloc", "en": "Block"},
+  "group_q": {"fr": "Dans quel bloc (2x) ?", "en": "Which block (2x)?"},
+  "match": "admin",
+  "groups": [
+    {"id": "20", "name": {"fr": "Nord-Est montagneux (Quảng Ninh, Lạng Sơn, Cao Bằng…)", "en": "Mountainous north-east (Quảng Ninh, Lạng Sơn, Cao Bằng…)"}, "color": "#57D06A"},
+    {"id": "21", "name": {"fr": "Nord-Ouest montagneux (Phú Thọ, Sơn La, Lào Cai, Hà Giang…)", "en": "Mountainous north-west (Phú Thọ, Sơn La, Lào Cai, Hà Giang…)"}, "color": "#8FE0BC"},
+    {"id": "22", "name": {"fr": "Delta du fleuve Rouge (Hải Phòng, Nam Định, Ninh Bình…)", "en": "Red River Delta (Hải Phòng, Nam Định, Ninh Bình…)"}, "color": "#EFE04A"},
+    {"id": "23", "name": {"fr": "Centre-Nord et centre (Thanh Hóa, Nghệ An, Huế, Đà Nẵng)", "en": "North-central and central coast (Thanh Hóa, Nghệ An, Huế, Đà Nẵng)"}, "color": "#F0A860"},
+    {"id": "24", "name": {"fr": "Hanoï", "en": "Hanoi"}, "color": "#C9A9E0"},
+    {"id": "25", "name": {"fr": "Côte centre-sud et Đồng Nai (Nha Trang, Quy Nhơn, Vũng Tàu)", "en": "South-central coast and Đồng Nai (Nha Trang, Quy Nhơn, Vũng Tàu)"}, "color": "#5CC9C4"},
+    {"id": "26", "name": {"fr": "Hauts plateaux (Đắk Lắk, Gia Lai, Lâm Đồng, Kon Tum)", "en": "Central Highlands (Đắk Lắk, Gia Lai, Lâm Đồng, Kon Tum)"}, "color": "#EE7A6A"},
+    {"id": "27", "name": {"fr": "Sud-Est et nord du delta du Mékong", "en": "South-east and northern Mekong Delta"}, "color": "#F0A0DC"},
+    {"id": "28", "name": {"fr": "Hô Chi Minh-Ville", "en": "Ho Chi Minh City"}, "color": "#DCD39A"},
+    {"id": "29", "name": {"fr": "Delta du Mékong (Cần Thơ, An Giang, Cà Mau…)", "en": "Mekong Delta (Cần Thơ, An Giang, Cà Mau…)"}, "color": "#9FD356"}
+  ],
+  "anchors": ["24", "28", "236", "225", "292", "203", "214", "237", "234", "258", "256", "262", "263", "254", "251", "296", "290"],
+  "twins": [],
+  "tips": [
+    {"title": "(024) · (028) · (02xx)", "codes": [],
+     "fr": "Depuis 2017 tous les indicatifs commencent par 02. 024 Hanoï et 028 Hô Chi Minh-Ville ; ailleurs 02 + deux chiffres, et le 3e chiffre suit le pays du nord au sud : 020-021 montagnes du nord, 022 delta du fleuve Rouge, 023 centre (Thanh Hóa → Đà Nẵng), 025 côte centre-sud, 026 hauts plateaux, 027 sud-est et nord du Mékong, 029 delta du Mékong. Carte : les 63 provinces d'avant la fusion de 2025.",
+     "en": "Since 2017 every code starts with 02. 024 Hanoi and 028 Ho Chi Minh City; elsewhere 02 + two digits, and the 3rd digit runs north to south: 020-021 northern mountains, 022 Red River Delta, 023 centre (Thanh Hóa → Đà Nẵng), 025 south-central coast, 026 Central Highlands, 027 south-east and northern Mekong, 029 Mekong Delta. Map: the 63 provinces from before the 2025 merger."}
+  ],
+  "real": {"fmt": "(0{code}) {n}", "total": 10, "chunks": {"8": "4 4", "7": "3 4"}}
+}

@@ -1,0 +1,17 @@
+{
+  "iso": "BO",
+  "name": {"fr": "Bolivie", "en": "Bolivia"},
+  "display": "({code})",
+  "system": {"fr": "Código de área", "en": "Código de área"},
+  "group_label": {"fr": "Bloc", "en": "Block"},
+  "match": "admin",
+  "groups": [{"id": "0", "name": {"fr": "Fixes (2-4)", "en": "Landlines (2-4)"}, "color": "#57D06A"}],
+  "anchors": ["2", "3", "4"],
+  "twins": [],
+  "tips": [
+    {"title": "2 · 3 · 4", "codes": [],
+     "fr": "Trois zones, un chiffre suivi de 7 chiffres : 2 l'Altiplano (La Paz, El Alto, Oruro, Potosí), 3 les basses terres de l'est et du nord (Santa Cruz, Beni, Pando), 4 les vallées (Cochabamba, Sucre, Tarija). Un numéro à 8 chiffres qui commence par 6 ou 7 est un portable.",
+     "en": "Three zones, one digit then 7 digits: 2 the Altiplano (La Paz, El Alto, Oruro, Potosí), 3 the eastern and northern lowlands (Santa Cruz, Beni, Pando), 4 the valleys (Cochabamba, Sucre, Tarija). An 8-digit number starting with 6 or 7 is a mobile."}
+  ],
+  "real": {"fmt": "({code}) {n}", "total": 8, "chunks": {"7": "3-4"}}
+}

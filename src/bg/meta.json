@@ -1,0 +1,28 @@
+{
+  "iso": "BG",
+  "name": {"fr": "Bulgarie", "en": "Bulgaria"},
+  "display": "0{code}",
+  "system": {"fr": "Телефонен код", "en": "Телефонен код"},
+  "group_label": {"fr": "Bloc", "en": "Block"},
+  "sub_label": {"fr": "Sous-bloc", "en": "Sub-block"},
+  "sub_len": 2,
+  "match": "admin",
+  "groups": [
+    {"id": "2", "name": {"fr": "Sofia", "en": "Sofia"}, "color": "#C9A9E0"},
+    {"id": "3", "name": {"fr": "Thrace de l'Ouest et Rhodopes : Plovdiv, Pazardzhik, Haskovo, Kardzhali, Smolyan", "en": "Western Thrace and Rhodopes: Plovdiv, Pazardzhik, Haskovo, Kardzhali, Smolyan"}, "color": "#57D06A"},
+    {"id": "4", "name": {"fr": "Thrace de l'Est : Stara Zagora, Sliven, Yambol", "en": "Eastern Thrace: Stara Zagora, Sliven, Yambol"}, "color": "#EFE04A"},
+    {"id": "5", "name": {"fr": "Mer Noire : Varna, Burgas, Shumen, Dobrich", "en": "Black Sea: Varna, Burgas, Shumen, Dobrich"}, "color": "#5CC9C4"},
+    {"id": "6", "name": {"fr": "Centre-Nord : Veliko Tarnovo, Pleven, Gabrovo, Lovech, Targovishte", "en": "North-centre: Veliko Tarnovo, Pleven, Gabrovo, Lovech, Targovishte"}, "color": "#F0A860"},
+    {"id": "7", "name": {"fr": "Sud-Ouest : Blagoevgrad, Pernik, Kyustendil, province de Sofia", "en": "South-west: Blagoevgrad, Pernik, Kyustendil, Sofia Province"}, "color": "#EE7A6A"},
+    {"id": "8", "name": {"fr": "Nord-Est : Ruse, Razgrad, Silistra", "en": "North-east: Ruse, Razgrad, Silistra"}, "color": "#F0A0DC"},
+    {"id": "9", "name": {"fr": "Nord-Ouest : Vratsa, Vidin, Montana", "en": "North-west: Vratsa, Vidin, Montana"}, "color": "#8FE0BC"}
+  ],
+  "anchors": ["2", "32", "34", "38", "42", "44", "46", "52", "54", "56", "58", "62", "64", "66", "68", "73", "76", "78", "82", "84", "86", "92", "94", "96", "301", "361", "601"],
+  "twins": [],
+  "tips": [
+    {"title": "02 → 09", "codes": [],
+     "fr": "02 Sofia. Les capitales de province ont deux chiffres en 0X2/0X4/0X6/0X8 : 032 Plovdiv, 042 Stara Zagora, 052 Varna, 056 Burgas, 062 Veliko Tarnovo, 064 Pleven, 073 Blagoevgrad, 082 Ruse, 092 Vratsa, 094 Vidin. Le premier chiffre suit la région : 3 Plovdiv-Rhodopes, 4 Thrace de l'Est, 5 mer Noire, 6 centre-nord, 7 sud-ouest, 8 nord-est, 9 nord-ouest. Les villes moyennes ont trois chiffres (0431 Kazanlak, 0749 Bansko). 08x/09x à 9 chiffres = portable.",
+     "en": "02 Sofia. Province capitals have two digits ending 2/4/6/8: 032 Plovdiv, 042 Stara Zagora, 052 Varna, 056 Burgas, 062 Veliko Tarnovo, 064 Pleven, 073 Blagoevgrad, 082 Ruse, 092 Vratsa, 094 Vidin. The first digit follows the region: 3 Plovdiv-Rhodopes, 4 eastern Thrace, 5 Black Sea, 6 north-centre, 7 south-west, 8 north-east, 9 north-west. Mid-sized towns have three digits (0431 Kazanlak, 0749 Bansko). 08x/09x with 9 digits = mobile."}
+  ],
+  "real": {"fmt": "0{code} {n}", "total": 8, "lens": {"2": 7}, "chunks": {"7": "3 4", "6": "3 3", "5": "2 3"}}
+}

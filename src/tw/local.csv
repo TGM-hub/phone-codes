@@ -1,0 +1,35 @@
+kind,key,local
+code,02,臺北
+code,03,桃園
+code,037,苗栗
+code,04,臺中
+code,049,南投
+code,05,嘉義
+code,06,臺南
+code,07,高雄
+code,08,屏東
+code,089,臺東
+code,082,金門
+code,0836,馬祖
+admin,Taipei,臺北市
+admin,New Taipei,新北市
+admin,Keelung,基隆市
+admin,Taoyuan,桃園市
+admin,Hsinchu,新竹市
+admin,Hsinchu County,新竹縣
+admin,Yilan County,宜蘭縣
+admin,Hualien County,花蓮縣
+admin,Miaoli County,苗栗縣
+admin,Taichung,臺中市
+admin,Changhua County,彰化縣
+admin,Nantou County,南投縣
+admin,Chiayi,嘉義市
+admin,Chiayi County,嘉義縣
+admin,Yunlin County,雲林縣
+admin,Tainan,臺南市
+admin,Penghu,澎湖縣
+admin,Kaohsiung,高雄市
+admin,Pingtung County,屏東縣
+admin,Taitung County,臺東縣
+admin,Kinmen,金門縣
+admin,Matsu Islands,連江縣

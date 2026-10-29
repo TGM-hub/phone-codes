@@ -1,0 +1,97 @@
+dept,zone,ab
+Ain,4,26 27 50 69 72 74 78 79 81 82 85 87;3:85
+Aisne,3,23 60 64 65 75
+Allier,4,15 26 43 44 63 70
+Alpes-de-Haute-Provence,4,13 65 84 86 88 92
+Hautes-Alpes,4,13 65 84 86 88 92
+Alpes-Maritimes,4,22 23 83 89 92 93 97
+Ardèche,4,26 27 69 75 81 82 87
+Ardennes,3,10 24 51 52 53
+Ariège,5,31 32 36 61 67 81 82
+Aube,3,10 25 51 52 53
+Aude,4,11 30 34 48 68
+Aveyron,5,31 32 36 65 67 81 82
+Bouches-du-Rhône,4,13 32 42 65 84 86 88 89 90 91 96
+Calvados,2,14 31 50 58 61
+Cantal,4,15 43 44 63 71
+Charente,5,16 17 45 79 86
+Charente-Maritime,5,16 17 46 79 86
+Cher,2,18 19 34 36 45 46 48
+Corrèze,5,18 19 55 87
+Corse-du-Sud,4,20 95
+Haute-Corse,4,20 95
+Côte-d'Or,3,45 58 71 73 79 80
+Côtes d'Armor,2,21 22 30 56 57 90 96
+Creuse,5,18 19 55 87
+Dordogne,5,24 33 35 40 47 53 54 64
+Doubs,3,39 63 70 81
+Drôme,4,26 27 69 75 81 82 87
+Eure,2,32 37 76 77 78 79
+Eure-et-Loir,2,18 32 19 34 36 37 45 46
+Finistère,2,21 22 29 30 56 57 90 98
+Gard,4,11 30 34 48 66 67
+Haute-Garonne,5,31 32 34 36 61 62 67 81 82
+Gers,5,31 32 36 62 67 81 82
+Gironde,5,24 33 35 40 47 54 56 57 64
+Hérault,4,11 30 34 48 67 99
+Ille-et-Vilaine,2,21 22 23 30 56 57 90 99
+Indre,2,18 19 34 36 45 46 54
+Indre-et-Loire,2,18 19 34 36 45 46 47
+Isère,4,38 56 57 58 72 74 76 80 85
+Jura,3,39 63 70 84
+Landes,5,24 33 35 40 47 54 58 64
+Loir-et-Cher,2,18 19 34 36 45 46 54
+Loire,4,26 27 69 77 81 82 87
+Haute-Loire,4,15 43 44 63 71
+Loire-Atlantique,2,28 40 44 49 51 52 53 55 72 85
+Loiret,2,18 19 34 36 38 45
+Lot,5,31 32 36 65 67 81 82
+Lot-et-Garonne,5,24 33 35 40 47 53 54 64
+Lozère,4,11 30 34 48 66
+Maine-et-Loire,2,41 44 49 52 53 55 72 85
+Manche,2,14 33 50 58 61
+Marne,3,10 26 51 52 53
+Haute-Marne,3,10 25 51 52 53
+Mayenne,2,43 44 49 52 53 55 72 85
+Meurthe-et-Moselle,3,54 55 56 57 72 82 83
+Meuse,3,29 54 55 56 57 72
+Morbihan,2,21 22 30 56 57 90 97
+Moselle,3,54 55 56 57 72 82 87
+Nièvre,3,45 58 71 73 79 86
+Nord,3,20 27 28 59 61 62 66 76
+Oise,3,44 60 64 65 75
+Orne,2,14 33 50 58 61
+Pas-de-Calais,3,21 59 61 62 66 76
+Puy-de-Dôme,4,15 43 44 63 73
+Pyrénées-Atlantiques,5,24 33 35 40 47 54 59 64
+Hautes-Pyrénées,5,31 32 36 62 67 81 82
+Pyrénées-Orientales,4,11 30 34 48 68
+Bas-Rhin,3,67 68 69 88 90 92
+Haut-Rhin,3,67 68 69 89 90
+Rhône,4,26 27 37 69 72 74 78 81 82 87
+Haute-Saône,3,39 63 70 84
+Saône-et-Loire,3,45 58 71 73 79 85
+Sarthe,2,43 44 49 52 53 55 72 85
+Savoie,4,56 57 58 79 80 85
+Haute-Savoie,4,50 56 57 58 80 85
+Paris,1,40 42 43 44 45 46 47 48 49 53 55 56 58 70 72 73 74 75 76 77 78 79 80 81 82 83 88
+Seine-Maritime,2,35 76 77 78 79
+Seine-et-Marne,1,60 64 69 88
+Yvelines,1,30 34 39 88
+Deux-Sèvres,5,16 17 49 79 86
+Somme,3,22 60 64 65 75
+Tarn,5,31 32 36 63 67 81 82
+Tarn-et-Garonne,5,31 32 36 63 67 81 82
+Var,4,22 23 83 89 94 98
+Vaucluse,4,13 32 65 84 86 88 90
+Vendée,2,44 49 51 52 53 55 72 85 28
+Vienne,5,16 17 49 79 86
+Haute-Vienne,5,18 19 55 87
+Vosges,3,29 54 55 56 57 72
+Yonne,3,45 58 71 73 79 86
+Territoire de Belfort,3,39 63 70 84
+Essonne,1,46 60 64 69 88
+Hauts-de-Seine,1,41 42 46 47 49 55 76 78 88
+Seine-Saint-Denis,1,42 43 48 72 88
+Val-de-Marne,1,42 43 45 48 49 56 88 47
+Val-d'Oise,1,30 34 39 41 48 88

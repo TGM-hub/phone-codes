@@ -20,11 +20,15 @@ Philippines (37 codes, provinces), Thailand (22 codes, provinces), Turkey (82 co
 Russia (89 codes, federal subjects), Poland (49 zones, rebuilt on powiats), Spain (province prefixes),
 Peru (24 codes, departments), Colombia (60X zones, departments), South Africa (36 codes, rebuilt on
 local municipalities), Malaysia (14 codes, districts), Australia (4 codes, states), New Zealand (5 codes, regions),
-Romania (41 county codes), Ukraine (27 oblast codes), Croatia (20 county codes), France (5 zones, départements),
+Romania (41 county codes), Ukraine (27 oblast codes), Croatia (20 county codes), France (224 "0Z AB" codes on départements, zone then département),
 Germany (first digit 02-09, rebuilt on Kreise), Hungary (54 codes, rebuilt on járások), Greece (second digit 21-28, regions),
 South Korea (17 codes, provinces and metropolitan cities), United States + Canada (427 area codes,
-state/province level; also opens with #ca and #pr).
-Next: Mexico, Argentina, Italy (need a district-level source). Chile has no geographic codes.
+state/province level; also opens with #ca and #pr), Argentina (300 características, rebuilt on departamentos/partidos),
+Mexico (382 claves LADA, state level), Ecuador (6 codes, provinces), Bolivia (3 codes, departments),
+Uruguay (19 codes, departments), Portugal (48 codes on the mainland concelhos; Madeira and the Azores left out),
+Taiwan (12 codes, counties), Vietnam (63 codes on the 63 pre-2025 provinces), Serbia (27 codes, rebuilt on
+municipalities; Kosovo left out), Bulgaria (109 town codes, rebuilt on obshtini).
+Italy (231 districts, rebuilt on the comuni; San Marino's 0549 left out). Chile has no geographic codes.
 
 ## How it works
 
@@ -93,3 +97,19 @@ Indonesia: codes from [indonesia-kabupaten](https://github.com/TGM-hub/indonesia
 Brazil and Japan data come from the earlier trainers
 [brasil-phone-code](https://github.com/TGM-hub/brasil-phone-code) and
 [japan-phone-code](https://github.com/TGM-hub/japan-phone-code).
+
+France: English Wikipedia *Local telephone area codes in France* (read 2026-10-28), table by département,
+checked against its table by code (`tools/import_france.py`).
+Argentina and Mexico: Google libphonenumber geocoding data (`resources/geocoding/en/54.txt`, `52.txt`, Apache 2.0).
+Argentina: town positions from GeoNames cities1000 (CC BY 4.0, as shipped in the `reverse_geocoder` package),
+34 typed by hand (`src/ar/places.csv`); each partido/departamento takes the code of its nearest code town
+(`tools/import_lpn.py`), so borders are approximate. Mexico: state of each code from libphonenumber, two
+corrections (987 Cozumel, 427 San Juan del Río) and seven big-city codes added by hand (`tools/import_mexico.py`).
+Ecuador, Bolivia, Uruguay, Taiwan, Serbia: codes per province or town typed from libphonenumber and the
+English Wikipedia pages *Telephone numbers in <country>*; Serbian zones attached to municipalities by nearest
+code town (`src/rs/seeds.csv`). Portugal, Vietnam, Bulgaria: libphonenumber (`351.txt`, `84.txt`, `359.txt`);
+Portugal and Bulgaria rebuilt with `tools/import_lpn.py` (Bulgaria: codes of 1-3 digits only, places.csv for
+20 towns). Local scripts typed by Claude: Taiwan (Chinese), Serbia and Bulgaria (Cyrillic, main towns).
+Italy: Italian Wikipedia *Prefissi telefonici italiani* (columns Distretto and Aree locali, read 2026-10-29);
+each comune (geoBoundaries ITA ADM4) joins the district of the nearest listed town and the comuni of a
+district are merged with shapely (`tools/import_italy.py`), so borders are approximate.

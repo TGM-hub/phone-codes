@@ -1,0 +1,17 @@
+{
+  "iso": "EC",
+  "name": {"fr": "Équateur", "en": "Ecuador"},
+  "display": "({code})",
+  "system": {"fr": "Código de área", "en": "Código de área"},
+  "group_label": {"fr": "Bloc", "en": "Block"},
+  "match": "admin",
+  "groups": [{"id": "0", "name": {"fr": "Fixes (02-07)", "en": "Landlines (02-07)"}, "color": "#EFE04A"}],
+  "anchors": ["02", "03", "04", "05", "06", "07"],
+  "twins": [],
+  "tips": [
+    {"title": "02 → 07", "codes": [],
+     "fr": "Un seul chiffre après le 0, suivi de 7 chiffres. 02 Quito (Pichincha, Santo Domingo), 03 la sierra centrale et Pastaza (Ambato, Riobamba, Latacunga), 04 Guayaquil et Santa Elena, 05 Manabí, Los Ríos et les Galápagos, 06 le nord et l'Amazonie du nord (Ibarra, Tulcán, Esmeraldas, Tena), 07 le sud (Cuenca, Loja, Machala, Macas). 09 = portable.",
+     "en": "A single digit after the 0, then 7 digits. 02 Quito (Pichincha, Santo Domingo), 03 the central highlands and Pastaza (Ambato, Riobamba, Latacunga), 04 Guayaquil and Santa Elena, 05 Manabí, Los Ríos and the Galápagos, 06 the north and northern Amazon (Ibarra, Tulcán, Esmeraldas, Tena), 07 the south (Cuenca, Loja, Machala, Macas). 09 = mobile."}
+  ],
+  "real": {"fmt": "({code}) {n}", "total": 9, "chunks": {"7": "3-4"}}
+}
