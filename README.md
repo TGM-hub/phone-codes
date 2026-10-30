@@ -12,7 +12,8 @@ Live: https://tgm-hub.github.io/phone-codes/
 - **Explore**: study map with every code, search by code, city or local name, notes on how each numbering
   system works, and a dashed "number order" line through groups, sub-blocks or codes.
 - After each answer: the city and its region in the local script (Cyrillic, Greek, Hangul, Thai, kanji).
-- Session mistakes: list and "replay my mistakes" (nothing is stored once the page is closed).
+- History kept in the browser (`localStorage`, key `phonecodes.hist`): each code sits in a Leitner box (0–5);
+  missed codes come up more often, and the codes last answered wrong stay in "Mistakes" across sessions.
 - Interface in French and English.
 
 Countries: Brazil (DDD), Japan (市外局番), Indonesia (305 codes on the 514 kabupaten/kota),

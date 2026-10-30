@@ -127,13 +127,14 @@ legend{padding:0 5px;color:var(--muted);font-size:13px}
   #side{flex:1 1 auto;min-height:0}
   #list{max-height:22vh}
 }
-.tgm-nav{display:inline-flex;gap:4px;align-items:center;margin-right:6px;flex:none}.tgm-nav a{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:7px;border:1px solid currentColor;opacity:.5;color:inherit;text-decoration:none;font-size:14px;line-height:1}.tgm-nav a:hover,.tgm-nav a:focus-visible{opacity:1}
+.tgm-nav{display:inline-flex;gap:4px;align-items:center;margin-right:6px;flex:none}.tgm-nav>a{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:7px;border:1px solid currentColor;opacity:.5;color:inherit;text-decoration:none;font-size:14px;line-height:1}.tgm-nav>a:hover,.tgm-nav>a:focus-visible{opacity:1}
+.tgm-maps{position:relative;display:inline-block}.tgm-maps>summary{list-style:none;display:inline-grid;place-items:center;width:28px;height:28px;border-radius:7px;border:1px solid currentColor;opacity:.5;cursor:pointer;font-size:14px;line-height:1}.tgm-maps>summary::-webkit-details-marker{display:none}.tgm-maps[open]>summary,.tgm-maps>summary:hover{opacity:1}.tgm-pop{position:absolute;top:34px;left:0;z-index:9999;width:min(360px,calc(100vw - 24px));background:#1b2229;color:#e8edf2;border:1px solid #3a4652;border-radius:10px;padding:10px 12px;box-shadow:0 8px 24px #0006;font:13px/1.35 system-ui,sans-serif;text-align:left}.tgm-pop b{display:block;font-size:13px;margin-bottom:6px}.tgm-pop a{display:inline;width:auto;height:auto;border:0;opacity:1;color:#e8edf2;text-decoration:none}.tgm-pop a:hover{color:#f2c94c}.tgm-pop li{display:flex;gap:8px;align-items:baseline;margin:4px 0}.tgm-pop ul{list-style:none;margin:0;padding:0}.tgm-pop .lv{flex:none;width:16px;text-align:center;font-size:11px;border:1px solid #4b5866;border-radius:3px;color:#9fb0bf}.tgm-pop .ml{margin-left:auto;flex:none;color:#9fb0bf;font-size:12px}
 </style>
 </head>
 <body>
 <div id="app">
   <div id="rail">
-<span class="tgm-nav"><a href="https://tgm-hub.github.io/Atlas/" title="Atlas">⌂</a><a href="https://tgm-hub.github.io/Atlas/daily.html" target="gg-daily" title="Révision du jour">⏱</a></span>
+<span class="tgm-nav"><a href="https://tgm-hub.github.io/Atlas/" title="Atlas">⌂</a><a href="https://tgm-hub.github.io/Atlas/daily.html" target="gg-daily" title="Révision du jour">⏱</a><details class="tgm-maps"><summary title="Maps LearnableMeta à jouer sur GeoGuessr">🎯</summary><div class="tgm-pop"><b>Maps LearnableMeta (GeoGuessr)</b><ul><li><span class="lv" title="intermédiaire">I</span><a href="https://www.geoguessr.com/maps/6824efee8646292930db9807" target="_blank" rel="noopener">Area Codes (World - ALM) ↗</a><a class="ml" href="https://learnablemeta.com/maps/6824efee8646292930db9807" target="_blank" rel="noopener">metas</a></li><li><span class="lv" title="débutant">B</span><a href="https://www.geoguessr.com/maps/67f40851b354fabddc9bd593" target="_blank" rel="noopener">Brazil Phone Codes - chrispunkt ↗</a><a class="ml" href="https://learnablemeta.com/maps/67f40851b354fabddc9bd593" target="_blank" rel="noopener">metas</a></li><li><span class="lv" title="débutant">B</span><a href="https://www.geoguessr.com/maps/6a271339a4094589672a106e" target="_blank" rel="noopener">Japan Phone Codes - chrispunkt ↗</a><a class="ml" href="https://learnablemeta.com/maps/6a271339a4094589672a106e" target="_blank" rel="noopener">metas</a></li><li><span class="lv" title="intermédiaire">I</span><a href="https://www.geoguessr.com/maps/68056586d233d6f7c45170b2" target="_blank" rel="noopener">South Africa Phone Codes - chrispunkt ↗</a><a class="ml" href="https://learnablemeta.com/maps/68056586d233d6f7c45170b2" target="_blank" rel="noopener">metas</a></li><li><span class="lv" title="intermédiaire">I</span><a href="https://www.geoguessr.com/maps/6a1b2dab1e43d71c9e8baab8" target="_blank" rel="noopener">Learnable Meta USA-Canada Area codes ↗</a><a class="ml" href="https://learnablemeta.com/maps/6a1b2dab1e43d71c9e8baab8" target="_blank" rel="noopener">metas</a></li><li><span class="lv" title="débutant">B</span><a href="https://www.geoguessr.com/maps/6a173634890bed04902dc20a" target="_blank" rel="noopener">A Learnable Meta - Canada Area Codes ↗</a><a class="ml" href="https://learnablemeta.com/maps/6a173634890bed04902dc20a" target="_blank" rel="noopener">metas</a></li><li><span class="lv" title="intermédiaire">I</span><a href="https://www.geoguessr.com/maps/696d4ec1da3957f671fb761d" target="_blank" rel="noopener">A Learnable Mexican Area Codes ↗</a><a class="ml" href="https://learnablemeta.com/maps/696d4ec1da3957f671fb761d" target="_blank" rel="noopener">metas</a></li><li><span class="lv" title="intermédiaire">I</span><a href="https://www.geoguessr.com/maps/6781dd73ca228d1e49a0d3d8" target="_blank" rel="noopener">A Learnable South Korea (area codes) ↗</a><a class="ml" href="https://learnablemeta.com/maps/6781dd73ca228d1e49a0d3d8" target="_blank" rel="noopener">metas</a></li></ul></div></details></span>
     <select id="country" aria-label="Country"></select>
     <div class="seg" id="mode-seg">
       <button data-mode="play" data-t="play"></button>
@@ -637,6 +638,25 @@ function currentLevel(){
    ============================================================ */
 let PV = null, round = null, sel = null, locked = false, timer = null;
 const SES = {seen:0, right:0, streak:0, miss:new Map(), replay:false};
+/* learning history, kept across sessions: phonecodes.hist = {ISO: {"code|city": [seen, right, box, lastOk]}}
+   Leitner boxes 0-5: a miss sends the code back to 0, a hit moves it up; low boxes come up more often */
+const HKEY = "phonecodes.hist", BOX_W = [3, 1.5, 0.7, 0.3, 0.12, 0.05];
+let H = (() => { try { return JSON.parse(localStorage.getItem(HKEY) || "{}") || {}; } catch(e){ return {}; } })();
+const saveH = () => { try { localStorage.setItem(HKEY, JSON.stringify(H)); } catch(e){} };
+const hkey = c => c.code + "|" + c.city;
+const hOf = c => (H[C.iso] || {})[hkey(c)];
+const weightOf = c => { const h = hOf(c); return h ? BOX_W[h[2]] : 1; };
+function record(c, ok){
+  const h = (H[C.iso] ||= {})[hkey(c)] ||= [0, 0, 0, 1];
+  h[0]++; if(ok){ h[1]++; h[2] = Math.min(5, h[2] + 1); } else h[2] = 0;
+  h[3] = ok ? 1 : 0; saveH();
+}
+function wpick(list){
+  let tot = 0; const w = list.map(c => (tot += weightOf(c), weightOf(c)));
+  let r = Math.random() * tot;
+  for(let i = 0; i < list.length; i++){ r -= w[i]; if(r <= 0) return list[i]; }
+  return list[list.length - 1];
+}
 const inverse = () => P.mode === "inverse";
 
 /* ---- the number on screen ----
@@ -712,8 +732,8 @@ function newRound(){
   const list = activeCodes();
   if(SES.replay && !SES.miss.size) SES.replay = false;
   const pool = SES.replay ? [...SES.miss.values()] : list;
-  let c = pool[(Math.random()*pool.length) | 0];
-  if(round && pool.length > 1) for(let i = 0; i < 5 && c.code === round.target.code; i++) c = pool[(Math.random()*pool.length) | 0];
+  let c = wpick(pool);
+  if(round && pool.length > 1) for(let i = 0; i < 5 && c.code === round.target.code; i++) c = wpick(pool);
   sel = null; locked = false;
   round = {target:c, steps: inverse() ? ["i"] : currentLevel()[1], i:0, num: newNumber(c)};
   $("#inv").value = ""; $("#inv").classList.toggle("on", inverse());
@@ -776,6 +796,7 @@ function finish(ok, html, fiche){
   locked = true;
   SES.seen++; if(ok){ SES.right++; SES.streak++; } else SES.streak = 0;
   const key = round.target.code + "|" + round.target.city;
+  record(round.target, ok);
   if(!ok) SES.miss.set(key, round.target);
   else if(SES.replay){ SES.miss.delete(key); if(!SES.miss.size){ SES.replay = false; html += " " + t("replay_done"); } }
   renderCode();
@@ -1177,6 +1198,8 @@ async function selectCountry(iso){
   $("#loading").style.display = "none";
   round = null; exGroup = null; exSub = null; exSel = null;
   SES.seen = SES.right = SES.streak = 0; SES.miss.clear(); SES.replay = false;
+  /* mistakes survive the session: the codes last answered wrong come back in "Mistakes" */
+  for(const c of C.codes){ const h = hOf(c); if(h && !h[3]) SES.miss.set(hkey(c), c); }
   setMode(P.mode);
 }
 
