@@ -230,6 +230,7 @@ legend{padding:0 5px;color:var(--muted);font-size:13px}
   </div>
 </div>
 
+<script src="tgm-core.js"></script>
 <script>
 "use strict";
 /* ============================================================
@@ -649,7 +650,18 @@ const weightOf = c => { const h = hOf(c); return h ? BOX_W[h[2]] : 1; };
 function record(c, ok){
   const h = (H[C.iso] ||= {})[hkey(c)] ||= [0, 0, 0, 1];
   h[0]++; if(ok){ h[1]++; h[2] = Math.min(5, h[2] + 1); } else h[2] = 0;
-  h[3] = ok ? 1 : 0; saveH();
+  h[3] = ok ? 1 : 0; saveH(); pushStats();
+}
+/* shared summary for the Atlas daily review (tgm.stats.phone-codes, see tgm-core.js); this app keeps its own keys */
+function pushStats(){
+  if(!window.TGM || !INDEX.length) return;
+  const all = {};
+  for(const iso in H) for(const k in H[iso]) all[iso + "\t" + k] = H[iso][k];
+  const s = TGM.stats.fromLeitner(all, k => k.slice(0, 2));
+  const n = {}; INDEX.forEach(c => n[c.iso] = c.codes || 0);
+  for(const iso in s.byCountry) if(n[iso]) s.byCountry[iso].total = n[iso];
+  s.total = INDEX.reduce((a, c) => a + (c.codes || 0), 0);
+  TGM.stats.write("phone-codes", s);
 }
 function wpick(list){
   let tot = 0; const w = list.map(c => (tot += weightOf(c), weightOf(c)));
@@ -1256,6 +1268,7 @@ async function init(){
     if(!r.ok) throw new Error(r.status);
     INDEX = await r.json();
   } catch(e){ $("#loading").textContent = T[P.lang].load_err; return; }
+  pushStats();
   /* #au opens Australia; aliases let #ca open the shared US + Canada map */
   const resolve = x => x && (INDEX.find(c => c.iso === x) || INDEX.find(c => (c.aliases || []).includes(x)) || {}).iso;
   const fromHash = resolve(location.hash.slice(1).toUpperCase());
