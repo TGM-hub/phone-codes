@@ -16,7 +16,7 @@ Live: https://tgm-hub.github.io/phone-codes/
   missed codes come up more often, and the codes last answered wrong stay in "Mistakes" across sessions.
 - Interface in French and English.
 
-Countries: Brazil (DDD), Japan (市外局番), Indonesia (305 codes on the 514 kabupaten/kota),
+Countries: Brazil (67 DDD on their real areas: IBGE municipalities merged by DDD, see tools/import_brazil_ddd.py), Japan (65 市外局番 on their real zones: MIC list of 番号区画 matched to N03 municipalities, see tools/import_japan_codes.py), Indonesia (305 codes on the 514 kabupaten/kota),
 Philippines (37 codes, provinces), Thailand (22 codes, provinces), Turkey (82 codes, provinces),
 Russia (89 codes, federal subjects), Poland (49 zones, rebuilt on powiats), Spain (province prefixes),
 Peru (24 codes, departments), Colombia (60X zones, departments), South Africa (36 codes, rebuilt on
